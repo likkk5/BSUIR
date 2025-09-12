@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\lishy\source\repos\LabRab6\Task8\x64\Debug\Test-Task8.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TestCheckStrings.TestCheckStrings1" Duration="1" />
+    <TestDuration Test="TestCheckStrings.TestCheckStrings2" Duration="1" />
+    <TestDuration Test="TestCheckStrings.TestCheckStrings3" Duration="1" />
+    <TestDuration Test="TestCheckStrings.TestCheckStrings4" Duration="1" />
+    <TestDuration Test="TestCheckStrings.TestCheckStrings5" Duration="1" />
+    <TestDuration Test="TestCheckStrings.TestCheckStrings6" Duration="1" />
+    <TestDuration Test="TestCheckStrings.TestCheckStrings7" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>

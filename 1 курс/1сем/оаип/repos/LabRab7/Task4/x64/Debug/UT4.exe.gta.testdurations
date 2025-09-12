@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\lishy\source\repos\LabRab7\Task4\x64\Debug\UT4.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="Test_to_roman.Test_to_roman1" Duration="1" />
+    <TestDuration Test="Test_to_roman.Test_to_roman2" Duration="1" />
+    <TestDuration Test="Test_to_roman.Test_to_roman3" Duration="1" />
+    <TestDuration Test="Test_to_roman.Test_to_roman4" Duration="1" />
+    <TestDuration Test="Test_to_roman.Test_to_roman5" Duration="1" />
+    <TestDuration Test="Test_to_roman.Test_to_roman6" Duration="1" />
+    <TestDuration Test="Test_to_roman.Test_to_roman7" Duration="1" />
+    <TestDuration Test="Test_to_roman.Test_to_roman8" Duration="1" />
+    <TestDuration Test="Test_to_roman.Test_to_roman9" Duration="1" />
+    <TestDuration Test="Test_to_roman.Test_to_roman10" Duration="1" />
+    <TestDuration Test="Test_to_roman.Test_to_roman11" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
