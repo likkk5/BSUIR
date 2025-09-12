@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  test.cpp
+C:\Users\lishy\source\repos\LabRab6\UT7\test.cpp(9,24): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\lishy\source\repos\LabRab6\UT7\test.cpp(16,24): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\lishy\source\repos\LabRab6\UT7\test.cpp(23,24): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  UT7.vcxproj -> C:\Users\lishy\source\repos\LabRab6\ProjectLR6\x64\Debug\UT7.exe

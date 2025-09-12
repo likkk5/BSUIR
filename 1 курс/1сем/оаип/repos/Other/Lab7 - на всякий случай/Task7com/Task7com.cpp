@@ -1,0 +1,119 @@
+﻿#include <iostream>
+#include <vector>
+#include <algorithm>
+
+typedef std::vector <int> vi;
+
+int B = 1;
+const int fm = (1 << B) - 1; // максимальный инт
+
+//быстрый перевод в 2СС
+void norm(std::vector < int >& c) {
+    for (int i = 0; i < c.size() - 1; ++i) {
+        // добавляем следущему числу двойной сдвиг вправо
+        c[i + 1] += c[i] >> B;
+        //логическое И для текущего числа в ячейке
+        c[i] &= fm;
+    }
+}
+
+//удаление лишних элементов бит
+void trim(vi& c, int x) {
+    c.resize(x / B + 1);
+    c[x / B] &= (1 << (x % B)) - 1;
+}
+
+//складываем 2 числа
+vi add(const vi& a, const vi& b, int k) {
+    vi c(std::max(a.size(), b.size()) + 1);
+    for (int i = 0; i < c.size(); ++i) {
+        if (i < a.size()) c[i] += a[i];
+        if (i < b.size()) c[i] += b[i];
+    }
+    norm(c);
+    trim(c, k);
+    return c;
+}
+
+//получаем битовое значение путем проверки остатка от деления на 1 и сдвига вправо на 1 разряд и логическое И с еденицей (вернет либо 0, либо 1)
+int get_bit(const vi& v, int b) {
+    return (v[b / B] >> (b % B)) & 1;
+}
+
+//умножение
+std::vector <int> mul(const vi& a, int x, int k) {
+    std::vector <int> b = a;
+    b.push_back(0);
+    for (int i = 0; i < b.size(); ++i) b[i] *= x;
+    norm(b);
+    trim(b, k);
+    return b;
+}
+
+//рекурсивная функция. генерируем следующее число. Рекурсивная функция, пока i <> k или получаем удовлетворительное число для указанного n
+// O(N^2)
+void gen(std::vector <int> n, const std::vector <std::vector <int>>& p, int k, int i, std::vector <std::pair <int, std::vector <int>> >& v) {
+
+    // если количество бит равно длине вектора - возвращаем
+    if (i == k) {
+        n.resize(k + 1);
+        if (get_bit(n, k)) v.push_back(make_pair(k, n));
+        return;
+    }
+    //если бит для n по i равен 1, возвращаем
+    if (get_bit(n, i)) return;
+
+    //генерируем бит
+    gen(n, p, k, i + 1, v);
+    //генерируем следующий бит
+    if (i) gen(add(n, p[i], k + 1), p, k, i + 1, v);
+}
+
+//выводит число в бинарной маске
+void print(const vi& v, int k) {
+    for (int i = k; i >= 0; --i) std::cerr << get_bit(v, i);
+    std::cerr << '\n';
+}
+
+int main() {
+    int n;
+    std::cin >> n;
+    //если первый вовзращаем 1.
+    if (n == 1) {
+        std::cout << "1\n";
+        return 0;
+    }--n;
+
+    //число которое мы ищем
+    std::vector <std::pair<int, std::vector <int>>> v;
+
+    //заполняем последовательность бит (наше число в 10СС по сути имееющее вид числа в 2СС)
+    for (int k = 1; n / 2 >= v.size(); ++k) {
+        std::vector <int> vekt(k / B + 1);
+        vekt[k / B] = 1 << (k % B);
+        //временные значения для итерации
+        std::vector <std::vector<int>> p(k + 1);
+        p[0].push_back(1);
+        //обрезаем лишние биты в строке
+        trim(p[0], k + 1);
+        //быстрое умножение элемента на 10
+        for (int i = 0; i < k; ++i) p[i + 1] = mul(p[i], 10, k + 1);
+        //генерируем массив бит
+        gen(vekt, p, k, 0, v);
+    }
+
+    for (int i = 0; i < v.size(); ++i) reverse(v[i].second.begin(), v[i].second.end());
+    sort(v.begin(), v.end());
+    //поскольку работаем с парами бит, то нам нужно бОльшее число
+    //поэтому берем последний элемент массиива и его вторую пару, куда мы положили биты
+    std::vector <int> w = v[--n / 2].second;
+    //разворачиваем последовательность
+    std::reverse(w.begin(), w.end());
+    if (n & 1) w[0] ^= 1;
+
+    //выводим найденный элемент последовательности (+1 -1)
+    for (int k = v[n / 2].first + 1 - 1; k >= 0; --k) std::cout << get_bit(w, k);
+    std::cout << '\n';
+
+    return 0;
+}

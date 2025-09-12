@@ -1,0 +1,3 @@
+﻿  342_1file.cpp
+C:\Users\lishy\source\repos\exam\342_1file\342_1file.cpp(32,36): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+  342_1file.vcxproj -> C:\Users\lishy\source\repos\exam\342_1file\x64\Debug\342_1file.exe

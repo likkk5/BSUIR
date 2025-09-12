@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\lishy\source\repos\LabRab5\Task1\x64\Debug\Task3-Test.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="test_case_name.test_name" Duration="1" />
+    <TestDuration Test="array.5" Duration="1" />
+    <TestDuration Test="TestMultiplyValid.Multiply1" Duration="1" />
+    <TestDuration Test="TestMultiplyValid.MultiplyZero" Duration="1" />
+    <TestDuration Test="TestMultiplyValid.MultiplyNegative" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\lishy\source\repos\LabRab7\Task7_2V\x64\Debug\UT7-Test7.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TestCreateBiDecimal.TestCreateBiDecimal1" Duration="47" />
+    <TestDuration Test="TestCreateBiDecimal.TestCreateBiDecimal2" Duration="41" />
+    <TestDuration Test="TestCreateBiDecimal.TestCreateBiDecimal3" Duration="38" />
+    <TestDuration Test="TestCreateBiDecimal.TestCreateBiDecimal4" Duration="7959" />
+    <TestDuration Test="TestCreateBiDecimal.TestCreateBiDecimal5" Duration="18" />
+    <TestDuration Test="TestCreateBiDecimal.TestCreateBiDecimal6" Duration="380" />
+  </TestDurations>
+</GtaTestDurations>

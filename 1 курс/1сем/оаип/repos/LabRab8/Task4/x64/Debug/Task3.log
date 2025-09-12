@@ -1,0 +1,14 @@
+﻿  Task3.cpp
+C:\Users\lishy\source\repos\LabRab8\Task4\Task3.cpp(285,16): warning C4477: "printf": в строке форматирования "%21.2f" требуется аргумент типа "double", но вариативный аргумент "8" имеет тип "Employee::<unnamed-type-ZP>"
+C:\Users\lishy\source\repos\LabRab8\Task4\Task3.cpp(358,14): warning C4101: employee: неиспользованная локальная переменная
+C:\Users\lishy\source\repos\LabRab8\Task4\Task3.cpp(411,56): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\lishy\source\repos\LabRab8\Task4\Task3.cpp(428,12): warning C4477: "printf": в строке форматирования "%21.2f" требуется аргумент типа "double", но вариативный аргумент "8" имеет тип "Employee::<unnamed-type-ZP>"
+C:\Users\lishy\source\repos\LabRab8\Task4\Task3.cpp(436,12): warning C4101: j: неиспользованная локальная переменная
+C:\Users\lishy\source\repos\LabRab8\Task4\Task3.cpp(436,9): warning C4101: i: неиспользованная локальная переменная
+C:\Users\lishy\source\repos\LabRab8\Task4\Task3.cpp(474,62): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\lishy\source\repos\LabRab8\Task4\Task3.cpp(521,9): warning C4101: editPersonalNumber: неиспользованная локальная переменная
+C:\Users\lishy\source\repos\LabRab8\Task4\Task3.cpp(519,9): warning C4101: searchEmployee: неиспользованная локальная переменная
+C:\Users\lishy\source\repos\LabRab8\Task4\Task3.cpp(566,17): warning C4101: editNumber: неиспользованная локальная переменная
+C:\Users\lishy\source\repos\LabRab8\Task4\Task3.cpp(264): warning C4172: возвращение адреса локальной или временной переменной : ch
+C:\Users\lishy\source\repos\LabRab8\Task4\Task3.cpp(217): warning C4172: возвращение адреса локальной или временной переменной : ch
+  Task3.vcxproj -> C:\Users\lishy\source\repos\LabRab8\Task4\x64\Debug\Task3.exe

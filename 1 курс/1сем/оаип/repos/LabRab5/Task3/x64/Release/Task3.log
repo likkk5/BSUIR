@@ -1,0 +1,8 @@
+﻿  Task3.cpp
+C:\Users\lishy\source\repos\LabRab5\Task3\Task3.cpp(14,12): warning C4101: j: неиспользованная локальная переменная
+C:\Users\lishy\source\repos\LabRab5\Task3\Task3.cpp(14,9): warning C4101: i: неиспользованная локальная переменная
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 146 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  Task3.vcxproj -> C:\Users\lishy\source\repos\LabRab5\Task1\x64\Release\Task3.exe

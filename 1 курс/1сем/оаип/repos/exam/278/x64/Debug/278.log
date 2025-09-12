@@ -1,0 +1,6 @@
+﻿  278.cpp
+C:\Users\lishy\source\repos\exam\278\278.cpp(54,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\lishy\source\repos\exam\278\278.cpp(56,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\lishy\source\repos\exam\278\278.cpp(59,24): warning C4244: =: преобразование "std::streamoff" в "unsigned int", возможна потеря данных
+C:\Users\lishy\source\repos\exam\278\278.cpp(66,25): warning C4244: =: преобразование "std::streamoff" в "unsigned int", возможна потеря данных
+  278.vcxproj -> C:\Users\lishy\source\repos\exam\278\x64\Debug\278.exe

@@ -1,0 +1,5 @@
+﻿  Task1.cpp
+C:\Users\lishy\source\repos\LabRab8\Task1\struct.h(17,2): warning C4091: typedef : пропускается слева от "depo", когда ни одна переменная не объявлена
+C:\Users\lishy\source\repos\LabRab8\Task1\foo.h(129): warning C4172: возвращение адреса локальной или временной переменной : ch
+C:\Users\lishy\source\repos\LabRab8\Task1\foo.h(187): warning C4172: возвращение адреса локальной или временной переменной : ch
+  Task1.vcxproj -> C:\Users\lishy\source\repos\LabRab8\Task1\x64\Debug\Task1.exe

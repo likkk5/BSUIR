@@ -1,0 +1,4 @@
+﻿  Task1.cpp
+C:\Users\lishy\source\repos\LabRab7\Task1\Task1.cpp(105,55): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\lishy\source\repos\LabRab7\Task1\Task1.cpp(109,41): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  Task1.vcxproj -> C:\Users\lishy\source\repos\LabRab7\ProjectLR7\x64\Debug\Task1.exe

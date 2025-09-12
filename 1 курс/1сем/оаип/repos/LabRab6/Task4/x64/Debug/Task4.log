@@ -1,0 +1,9 @@
+﻿  Task4.cpp
+C:\Users\lishy\source\repos\LabRab6\Task4\Task4.cpp(71,35): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\lishy\source\repos\LabRab6\Task4\Task4.cpp(281,35): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\lishy\source\repos\LabRab6\Task4\Task4.cpp(333,35): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\lishy\source\repos\LabRab6\Task4\Task4.cpp(387,31): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\lishy\source\repos\LabRab6\Task4\Task4.cpp(427,40): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\lishy\source\repos\LabRab6\Task4\Task4.cpp(429,44): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  LINK : не найден или не выполнена сборка C:\Users\lishy\source\repos\LabRab6\ProjectLR6\x64\Debug\Task4.exe при последней инкрементной компоновке; выполняется полная компоновка
+  Task4.vcxproj -> C:\Users\lishy\source\repos\LabRab6\ProjectLR6\x64\Debug\Task4.exe

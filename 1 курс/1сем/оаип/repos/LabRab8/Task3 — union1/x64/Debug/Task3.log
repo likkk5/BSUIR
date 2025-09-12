@@ -1,0 +1,16 @@
+﻿  Task3.cpp
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(357,14): warning C4101: employee: неиспользованная локальная переменная
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(410,56): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(434,12): warning C4101: j: неиспользованная локальная переменная
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(434,9): warning C4101: i: неиспользованная локальная переменная
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(472,62): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(488,96): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(492,56): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(494,53): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(515,9): warning C4101: editPersonalNumber: неиспользованная локальная переменная
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(513,9): warning C4101: searchEmployee: неиспользованная локальная переменная
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(560,17): warning C4101: editNumber: неиспользованная локальная переменная
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(216): warning C4172: возвращение адреса локальной или временной переменной : ch
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(263): warning C4172: возвращение адреса локальной или временной переменной : ch
+  LINK : не найден или не выполнена сборка C:\Users\lishy\source\repos\LabRab8\Task3\x64\Debug\Task3.exe при последней инкрементной компоновке; выполняется полная компоновка
+  Task3.vcxproj -> C:\Users\lishy\source\repos\LabRab8\Task3\x64\Debug\Task3.exe

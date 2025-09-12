@@ -1,0 +1,7 @@
+﻿  Task2.cpp
+C:\Users\lishy\source\repos\LabRab7\Task2\Task2.cpp(118,49): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\lishy\source\repos\LabRab7\Task2\Task2.cpp(122,35): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\lishy\source\repos\LabRab7\Task2\Task2.cpp(232,55): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\lishy\source\repos\LabRab7\Task2\Task2.cpp(236,41): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\lishy\source\repos\LabRab7\Task2\Task2.cpp(288,29): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  Task2.vcxproj -> C:\Users\lishy\source\repos\LabRab7\Task2\x64\Debug\Task2.exe

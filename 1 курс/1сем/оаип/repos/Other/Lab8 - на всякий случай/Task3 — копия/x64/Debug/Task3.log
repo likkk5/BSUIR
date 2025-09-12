@@ -1,0 +1,9 @@
+﻿  Task3.cpp
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(31,2): warning C4091: typedef : пропускается слева от "spisok", когда ни одна переменная не объявлена
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(340,56): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(480,62): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(547,18): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(622,17): warning C4101: editNumber: неиспользованная локальная переменная
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(251): warning C4172: возвращение адреса локальной или временной переменной : ch
+C:\Users\lishy\source\repos\LabRab8\Task3\Task3.cpp(204): warning C4172: возвращение адреса локальной или временной переменной : ch
+  Task3.vcxproj -> C:\Users\lishy\source\repos\LabRab8\Task3\x64\Debug\Task3.exe
