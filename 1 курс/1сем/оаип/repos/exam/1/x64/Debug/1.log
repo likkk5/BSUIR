@@ -1,6 +1,0 @@
-﻿  1.cpp
-C:\Users\lishy\source\repos\exam\1\1.cpp(29,23): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\lishy\source\repos\exam\1\1.cpp(31,27): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\lishy\source\repos\exam\1\1.cpp(34,33): warning C4244: =: преобразование "std::streamoff" в "unsigned int", возможна потеря данных
-C:\Users\lishy\source\repos\exam\1\1.cpp(41,37): warning C4244: =: преобразование "std::streamoff" в "unsigned int", возможна потеря данных
-  1.vcxproj -> C:\Users\lishy\source\repos\exam\1\x64\Debug\1.exe

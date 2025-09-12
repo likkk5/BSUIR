@@ -1,2 +1,0 @@
-C:\Users\lishy\source\repos\staticlib\x64\Debug\staticlib.lib
-C:\Users\lishy\source\repos\staticlib- копия\x64\Debug\staticlib.lib

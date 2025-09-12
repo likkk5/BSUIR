@@ -1,5 +1,0 @@
-﻿  Task5.cpp
-C:\Users\lishy\source\repos\LabRab6\Task5\Task5.cpp(176,35): warning C4244: аргумент: преобразование "unsigned __int64" в "int", возможна потеря данных
-C:\Users\lishy\source\repos\LabRab6\Task5\Task5.cpp(176,32): warning C4244: аргумент: преобразование "unsigned __int64" в "int", возможна потеря данных
-C:\Users\lishy\source\repos\LabRab6\Task5\Task5.cpp(152): warning C4715: CountStrings: значение возвращается не при всех путях выполнения
-  Task5.vcxproj -> C:\Users\lishy\source\repos\LabRab6\ProjectLR6\x64\Debug\Task5.exe

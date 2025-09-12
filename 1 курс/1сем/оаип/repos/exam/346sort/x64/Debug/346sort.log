@@ -1,3 +1,0 @@
-﻿  346sort.cpp
-C:\Users\lishy\source\repos\exam\346sort\346sort.cpp(46,14): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
-  346sort.vcxproj -> C:\Users\lishy\source\repos\exam\346sort\x64\Debug\346sort.exe

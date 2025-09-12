@@ -1,3 +1,0 @@
-﻿  Task 5.cpp
-C:\Users\lishy\source\repos\Laba1\Task 5\Task 5.cpp(9,18): warning C4244: =: преобразование "__int64" в "long double", возможна потеря данных
-  Task 5.vcxproj -> C:\Users\lishy\source\repos\Laba1\Task 5\x64\Debug\Task 5.exe

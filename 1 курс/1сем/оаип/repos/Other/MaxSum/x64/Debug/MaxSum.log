@@ -1,3 +1,0 @@
-﻿  MaxSum.cpp
-C:\Users\lishy\source\repos\Other\MaxSum\MaxSum.cpp(60,20): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
-  MaxSum.vcxproj -> C:\Users\lishy\source\repos\Other\MaxSum\x64\Debug\MaxSum.exe

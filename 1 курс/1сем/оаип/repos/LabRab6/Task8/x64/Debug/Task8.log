@@ -1,6 +1,0 @@
-﻿  Task8.cpp
-C:\Users\lishy\source\repos\LabRab6\Task8\Task8.cpp(16,31): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\lishy\source\repos\LabRab6\Task8\Task8.cpp(49,32): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\lishy\source\repos\LabRab6\Task8\Task8.cpp(83,24): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\lishy\source\repos\LabRab6\Task8\Task8.cpp(88,25): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-  Task8.vcxproj -> C:\Users\lishy\source\repos\LabRab6\ProjectLR6\x64\Debug\Task8.exe

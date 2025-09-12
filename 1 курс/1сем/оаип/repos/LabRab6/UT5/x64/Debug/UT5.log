@@ -1,4 +1,0 @@
-﻿  pch.cpp
-  test.cpp
-C:\Users\lishy\source\repos\LabRab6\UT5\test.cpp(177): warning C4715: CountStrings: значение возвращается не при всех путях выполнения
-  UT5.vcxproj -> C:\Users\lishy\source\repos\LabRab6\ProjectLR6\x64\Debug\UT5.exe

@@ -1,3 +1,0 @@
-﻿  100.cpp
-C:\Users\lishy\source\repos\exam\100\100.cpp(18,17): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
-  100.vcxproj -> C:\Users\lishy\source\repos\exam\100\x64\Debug\100.exe

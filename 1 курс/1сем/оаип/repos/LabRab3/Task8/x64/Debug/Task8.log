@@ -1,4 +1,0 @@
-﻿  Task8.cpp
-C:\Users\lishy\source\repos\Laba3\Task8\Task8.cpp(32,17): warning C4244: =: преобразование "double" в "unsigned long", возможна потеря данных
-C:\Users\lishy\source\repos\Laba3\Task8\Task8.cpp(7,9): warning C4101: j: неиспользованная локальная переменная
-  Task8.vcxproj -> C:\Users\lishy\source\repos\Laba3\Task8\x64\Debug\Task8.exe

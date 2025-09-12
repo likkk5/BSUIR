@@ -1,5 +1,0 @@
-﻿  Task7.cpp
-C:\Users\lishy\source\repos\LabRab7\Task7\Task7.cpp(54,49): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\lishy\source\repos\LabRab7\Task7\Task7.cpp(58,35): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\lishy\source\repos\LabRab7\Task7\Task7.cpp(126,28): warning C4101: decimal_num: неиспользованная локальная переменная
-  Task7.vcxproj -> C:\Users\lishy\source\repos\LabRab7\Task7\x64\Debug\Task7.exe

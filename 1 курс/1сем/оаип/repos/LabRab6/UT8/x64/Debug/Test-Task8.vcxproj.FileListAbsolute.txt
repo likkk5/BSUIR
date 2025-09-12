@@ -1,2 +1,0 @@
-C:\Users\lishy\source\repos\LabRab6\Test-Task8\x64\Debug\Test-Task8.vcxproj.CopyComplete
-C:\Users\lishy\source\repos\LabRab6\UT8\x64\Debug\Test-Task8.vcxproj.CopyComplete

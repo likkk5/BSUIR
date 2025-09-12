@@ -1,2 +1,0 @@
-C:\Users\lishy\source\repos\LabRab4\Task11\x64\Debug\Task11.exe
-C:\Users\lishy\source\repos\LabRab4\Task11 - количество мин\x64\Debug\Task11.exe
