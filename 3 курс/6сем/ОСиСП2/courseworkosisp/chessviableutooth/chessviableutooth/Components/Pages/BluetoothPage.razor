@@ -1,0 +1,135 @@
+﻿@page "/bluetooth"
+@using Plugin.BLE.Abstractions
+@using Plugin.BLE.Abstractions.Contracts
+@using Plugin.BLE.Abstractions.EventArgs
+@using Plugin.BLE
+@inject IBluetoothLE Bluetooth
+@inject IAdapter Adapter
+
+<h3>🔍 Поиск Bluetooth-устройств</h3>
+<button @onclick="StartScan">Начать сканирование</button>
+<button @onclick="GoToChess">♟ Играть в шахматы</button>
+
+@if (IsScanning)
+{
+    <p>⏳ Идет сканирование...</p>
+}
+
+<ul>
+    @foreach (var device in Devices)
+    {
+        <li>
+            <strong>@(string.IsNullOrEmpty(device.Name) ? device.Id.ToString() : device.Name)</strong>
+            <button @onclick="() => ConnectToDevice(device)">🔗 Подключиться</button>
+        </li>
+    }
+</ul>
+
+@if (ConnectedDevice != null)
+{
+    <h3>✅ Подключено к @ConnectedDevice.Name</h3>
+
+    @if (ChessMoveCharacteristic != null)
+    {
+        <button @onclick='() => SendData(ChessMoveCharacteristic, "e2e4")'>📤 Отправить ход e2e4</button>
+        <button @onclick='() => SubscribeToNotifications(ChessMoveCharacteristic)'>📡 Подписаться на ходы</button>
+    }
+    else
+    {
+        <p>⚠️ Характеристика не найдена</p>
+    }
+}
+
+@code {
+    private bool IsScanning = false;
+    private List<IDevice> Devices = new();
+    private IDevice? ConnectedDevice;
+    private ICharacteristic? ChessMoveCharacteristic;
+    private static readonly Guid ChessServiceGuid = new("00001111-0000-1000-8000-00805f9b34fb");
+    private static readonly Guid ChessCharacteristicGuid = new("00002222-0000-1000-8000-00805f9b34fb");
+
+    [Inject] NavigationManager Navigation { get; set; }
+
+    void GoToChess()
+    {
+        Navigation.NavigateTo("/chess");
+    }
+
+    async Task StartScan()
+    {
+        if (IsScanning) return;
+
+        IsScanning = true;
+        Devices.Clear();
+
+        Adapter.DeviceDiscovered -= OnDeviceDiscovered;
+        Adapter.DeviceDiscovered += OnDeviceDiscovered;
+
+        await Adapter.StartScanningForDevicesAsync();
+        IsScanning = false;
+    }
+
+    private void OnDeviceDiscovered(object sender, DeviceEventArgs e)
+    {
+        if (!Devices.Any(d => d.Id == e.Device.Id))
+        {
+            Devices.Add(e.Device);
+            InvokeAsync(StateHasChanged);
+        }
+    }
+
+    async Task ConnectToDevice(IDevice device)
+    {
+        try
+        {
+            await Adapter.ConnectToDeviceAsync(device);
+            ConnectedDevice = device;
+            Console.WriteLine($"✅ Подключено к {device.Name}");
+
+            var services = await device.GetServicesAsync();
+            foreach (var service in services)
+            {
+                if (service.Id == ChessServiceGuid)
+                {
+                    var characteristics = await service.GetCharacteristicsAsync();
+                    ChessMoveCharacteristic = characteristics.FirstOrDefault(c => c.Id == ChessCharacteristicGuid);
+                    if (ChessMoveCharacteristic != null)
+                    {
+                        Console.WriteLine("♟ Найдена характеристика для передачи ходов");
+                    }
+                }
+            }
+
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ Ошибка подключения: {ex.Message}");
+        }
+    }
+
+    async Task SendData(ICharacteristic characteristic, string data)
+    {
+        if (characteristic.CanWrite)
+        {
+            var bytes = System.Text.Encoding.UTF8.GetBytes(data);
+            await characteristic.WriteAsync(bytes);
+            Console.WriteLine($"📤 Отправлено: {data}");
+        }
+    }
+
+    async Task SubscribeToNotifications(ICharacteristic characteristic)
+    {
+        if (characteristic.CanUpdate)
+        {
+            characteristic.ValueUpdated += (s, e) =>
+            {
+                var data = System.Text.Encoding.UTF8.GetString(e.Characteristic.Value);
+                Console.WriteLine($"🔔 Уведомление: {data}");
+            };
+
+            await characteristic.StartUpdatesAsync();
+            Console.WriteLine("✅ Подписка на обновления активирована");
+        }
+    }
+}
