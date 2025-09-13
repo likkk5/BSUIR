@@ -1,0 +1,417 @@
+#!/usr/bin/python
+import time
+import RPi.GPIO as GPIO
+import spidev  # Для взаимодействия с MCP3008
+import json
+GPIO.setmode(GPIO.BOARD)
+GPIO.setwarnings(False)
+
+'''
+define pin for lcd
+'''
+# Timing constants
+E_PULSE = 0.0005
+E_DELAY = 0.0005
+delay = 1
+
+DETECTION_CONFIDENCE = 3  # Number of consecutive detections to confirm gas presence
+FAULT_TIMEOUT = 10.0        # Timeout (in seconds) to consider a sensor faulty if it stays in a constant state
+CHECK_INTERVAL = 5.0     # Interval between gas checks
+debounce_delay = 0.2
+CRITICAL_PPM = 1000
+recovery_timeout = 1.0  # Тайм-аут восстановления в секундах
+sensor1_last_faulty_time = None
+sensor2_last_faulty_time = None
+
+# Initialize variables for fault detection and debounce tracking
+sensor1_faulty = False
+sensor2_faulty = False
+sensor1_stable_state = None
+sensor2_stable_state = None
+sensor1_stable_start = None
+sensor2_stable_start = None
+gas_confidence_count = 0
+# Добавляем флаги для отслеживания отсутствия сигнала
+sensor1_no_signal = False
+sensor2_no_signal = False
+buzzer=37
+GPIO.setup(buzzer, GPIO.OUT)  
+
+# Define GPIO to LCD mapping
+LCD_RS = 7
+LCD_E  = 11
+LCD_D4 = 12
+LCD_D5 = 13
+LCD_D6 = 15
+LCD_D7 = 16
+gas_Sensor = 18
+gas_Sensor2 = 22
+red_light = 31
+
+Buzzer= 29
+GPIO.setup(LCD_E, GPIO.OUT)  # E
+GPIO.setup(LCD_RS, GPIO.OUT) # RS
+GPIO.setup(LCD_D4, GPIO.OUT) # DB4
+GPIO.setup(LCD_D5, GPIO.OUT) # DB5
+GPIO.setup(LCD_D6, GPIO.OUT) # DB6
+
+GPIO.setup(LCD_D7, GPIO.OUT) # DB7
+GPIO.setup(gas_Sensor, GPIO.IN) # DB7
+GPIO.setup(gas_Sensor2, GPIO.IN)
+GPIO.setup(red_light, GPIO.OUT)
+GPIO.setup(Buzzer, GPIO.OUT)
+
+# Инициализация SPI для MCP3008
+spi = spidev.SpiDev()
+spi.open(0, 0)  # SPI на шине 0, чипселект 0
+spi.max_speed_hz = 1000000
+
+
+# Define some device constants
+LCD_WIDTH = 16    # Maximum characters per line
+LCD_CHR = True
+LCD_CMD = False
+LCD_LINE_1 = 0x80 # LCD RAM address for the 1st line
+LCD_LINE_2 = 0xC0 # LCD RAM address for the 2nd line
+
+def read_channel(channel):
+    if not (0 <= channel <= 7):
+        print(f"(Channel {channel})") 
+    adc = spi.xfer2([1, (8 + channel) << 4, 0])
+    data = ((adc[1] & 3) << 8) + adc[2]
+    print(f"Raw ADC Value (Channel {channel}): {data}")  # Отладка
+    return data
+
+def convert_to_voltage(data, vref=3.3):
+    voltage = data * vref / 1023
+    print(f"Voltage: {voltage:.2f} V")  # Отладка
+    return voltage
+'''
+Function Name :lcd_init()
+Function Description : this function is used to initialized lcd by sending the different commands
+'''
+def lcd_init():
+  # Initialise display
+  lcd_byte(0x33,LCD_CMD) # 110011 Initialise
+  lcd_byte(0x32,LCD_CMD) # 110010 Initialise
+  lcd_byte(0x06,LCD_CMD) # 000110 Cursor move direction
+  lcd_byte(0x0C,LCD_CMD) # 001100 Display On,Cursor Off, Blink Off
+  lcd_byte(0x28,LCD_CMD) # 101000 Data length, number of lines, font size
+  lcd_byte(0x01,LCD_CMD) # 000001 Clear display
+  time.sleep(E_DELAY)
+'''
+Function Name :lcd_byte(bits ,mode)
+Fuction Name :the main purpose of this function to convert the byte data into bit and send to lcd port
+'''
+def lcd_byte(bits, mode):
+  # Send byte to data pins
+  # bits = data
+  # mode = True  for character
+  #        False for command
+ 
+  GPIO.output(LCD_RS, mode) # RS
+ 
+  # High bits
+  GPIO.output(LCD_D4, False)
+  GPIO.output(LCD_D5, False)
+  GPIO.output(LCD_D6, False)
+  GPIO.output(LCD_D7, False)
+  if bits&0x10==0x10:
+    GPIO.output(LCD_D4, True)
+  if bits&0x20==0x20:
+    GPIO.output(LCD_D5, True)
+  if bits&0x40==0x40:
+    GPIO.output(LCD_D6, True)
+  if bits&0x80==0x80:
+    GPIO.output(LCD_D7, True)
+ 
+  # Toggle 'Enable' pin
+  lcd_toggle_enable()
+ 
+  # Low bits
+  GPIO.output(LCD_D4, False)
+  GPIO.output(LCD_D5, False)
+  GPIO.output(LCD_D6, False)
+  GPIO.output(LCD_D7, False)
+  if bits&0x01==0x01:
+    GPIO.output(LCD_D4, True)
+  if bits&0x02==0x02:
+    GPIO.output(LCD_D5, True)
+  if bits&0x04==0x04:
+    GPIO.output(LCD_D6, True)
+  if bits&0x08==0x08:
+    GPIO.output(LCD_D7, True)
+ 
+  # Toggle 'Enable' pin
+  lcd_toggle_enable()
+'''
+Function Name : lcd_toggle_enable()
+Function Description:basically this is used to toggle Enable pin
+'''
+def lcd_toggle_enable():
+  # Toggle enable
+  time.sleep(E_DELAY)
+  GPIO.output(LCD_E, True)
+  time.sleep(E_PULSE)
+  GPIO.output(LCD_E, False)
+  time.sleep(E_DELAY)
+'''
+Function Name :lcd_string(message,line)
+Function  Description :print the data on lcd 
+'''
+def lcd_string(message,line):
+  # Send string to display
+ 
+  message = message.ljust(LCD_WIDTH," ")
+ 
+  lcd_byte(line, LCD_CMD)
+ 
+  for i in range(LCD_WIDTH):
+    lcd_byte(ord(message[i]),LCD_CHR)
+
+def detect_fault(sensor_pin, stable_state, stable_start, faulty_flag, no_signal_flag, recovery_timeout, last_faulty_time):
+    current_state = GPIO.input(sensor_pin)
+
+    # Инициализируем stable_start и last_faulty_time, если они равны None
+    if stable_start is None:
+        stable_start = time.time()
+    if last_faulty_time is None:
+        last_faulty_time = time.time()
+
+    # Если датчик в состоянии неисправности или отсутствия сигнала достаточно долго, пробуем восстановить
+    if (faulty_flag or no_signal_flag) and time.time() - last_faulty_time > recovery_timeout:
+        print(f"Attempting to recover sensor on pin {sensor_pin}")
+        faulty_flag = False
+        no_signal_flag = False
+        stable_state = None  # Сбрасываем стабильное состояние для повторной проверки
+        stable_start = time.time()  # Обновляем время начала проверки стабильного состояния
+
+    # Проверка на отсутствие сигнала (постоянный `0`)
+    if current_state == 0 and stable_state == 0:  # Сигнал всегда `LOW`
+        if time.time() - stable_start > FAULT_TIMEOUT:
+            no_signal_flag = True
+            last_faulty_time = time.time()  # Обновляем время последнего сбоя
+            print(f"No signal detected from sensor on pin {sensor_pin}")
+    elif current_state == stable_state:  # Если сигнал не меняется
+        if time.time() - stable_start > FAULT_TIMEOUT:
+            faulty_flag = True
+            last_faulty_time = time.time()  # Обновляем время последнего сбоя
+            print(f"Sensor on pin {sensor_pin} is faulty (stuck at state {current_state})")
+    else:
+        # Если сигнал изменяется, сбрасываем флаги и обновляем состояние
+        stable_state = current_state
+        stable_start = time.time()
+        no_signal_flag = False
+        faulty_flag = False
+
+    return stable_state, stable_start, faulty_flag, no_signal_flag, last_faulty_time
+	
+def load_data(filename='C:/courseworkavs/gas_data.json'):
+    try:
+        with open(filename, 'r') as json_file:
+            data = json.load(json_file)
+            if isinstance(data, list):  # Если данные - список
+                return data
+            else:
+                return []  # Если файл пуст или невалидный, возвращаем пустой список
+    except FileNotFoundError:
+        return []  # Если файл не найден, создаем новый список
+    except Exception as e:
+        print(f"Error while loading: {e}")
+        return []
+
+# Функция для сохранения данных в JSON файл
+def save_to_json(data, filename='C:/courseworkavs/gas_data.json'):
+    try:
+        # Загружаем старые данные
+        existing_data = load_data(filename)
+        
+        # Добавляем новые данные
+        existing_data.append(data)
+        
+        # Сохраняем обновленные данные в файл
+        with open(filename, 'w') as json_file:
+            json.dump(existing_data, json_file, indent=4)
+        print(f"Data saved to {filename}.")
+    except Exception as e:
+        print(f"Error while saving: {e}")    
+# Прерывистый звуковой сигнал с паузами
+def intermittent_beep(pin, duration, interval):
+    end_time = time.time() + duration
+    while time.time() < end_time:
+        GPIO.output(pin, True)  # Включить сигнал
+        time.sleep(interval)   # Интервал включения
+        GPIO.output(pin, False)  # Выключить сигнал
+        time.sleep(interval)   # Интервал выключения
+# Создаем объект PWM
+buzzer_pwm = GPIO.PWM(Buzzer, 1000)  # Частота 1000 Гц
+
+# Запускаем ШИМ с определенной мощностью
+def continuous_beep_with_pwm(pwm, frequency, duration):
+    pwm.ChangeFrequency(frequency)  # Устанавливаем частоту (Гц)
+    pwm.start(50)  # Старт с 50% скважностью (громкость)
+    time.sleep(duration)  # Звуковой сигнал длительностью duration секунд
+    pwm.stop()  # Останавливаем ШИМ
+# Плавное изменение частоты звука
+def modulated_beep(pwm, start_freq, end_freq, duration):
+    step_time = 0.05  # Время шага
+    steps = int(duration / step_time)
+    freq_step = (end_freq - start_freq) / steps
+    
+    pwm.start(50)  # Старт с 50% громкости
+    for step in range(steps):
+        current_freq = start_freq + step * freq_step
+        pwm.ChangeFrequency(current_freq)  # Меняем частоту
+        time.sleep(step_time)
+    pwm.stop()
+    
+def check_ppm_fault(gas_ppm):
+    if gas_ppm == 1023:
+        return "Possible Converter Fault"
+    elif gas_ppm == 938:
+        return "Possible Potentiometer Fault"
+    else:
+        return None  
+
+lcd_init()
+lcd_string("welcome ", LCD_LINE_1)
+time.sleep(1)
+
+# Define delay between readings
+delay = 5
+
+while True:
+    # Обновляем состояние каждого датчика (включая флаг отсутствия сигнала)
+    sensor1_stable_state, sensor1_stable_start, sensor1_faulty, sensor1_no_signal, sensor1_last_faulty_time = detect_fault(
+        gas_Sensor, sensor1_stable_state, sensor1_stable_start, sensor1_faulty, sensor1_no_signal, recovery_timeout, sensor1_last_faulty_time)
+    sensor2_stable_state, sensor2_stable_start, sensor2_faulty, sensor2_no_signal, sensor2_last_faulty_time = detect_fault(
+        gas_Sensor2, sensor2_stable_state, sensor2_stable_start, sensor2_faulty, sensor2_no_signal, recovery_timeout, sensor2_last_faulty_time)
+
+    # Проверка состояния датчиков
+    if sensor1_faulty and sensor2_faulty:
+        # Оба датчика неисправны
+        lcd_string("Sensors Fault", LCD_LINE_1)
+        lcd_string("                ", LCD_LINE_2)
+        GPIO.output(red_light, False)
+        GPIO.output(Buzzer, False)
+
+    elif sensor1_no_signal and sensor2_no_signal:
+        # Оба датчика не подают сигнала
+        lcd_string("No Signals All", LCD_LINE_1)
+        lcd_string("                ", LCD_LINE_2)
+        GPIO.output(red_light, False)
+        GPIO.output(Buzzer, False)
+
+    else:
+        # Проверка отдельных датчиков
+        if sensor1_no_signal:
+            lcd_string("No Signal: 1", LCD_LINE_1)
+        elif sensor2_no_signal:
+            lcd_string("No Signal: 2", LCD_LINE_1)
+        else:
+            lcd_string("                ", LCD_LINE_1)
+
+        if sensor1_faulty:
+            lcd_string("Sensor 1 Fault", LCD_LINE_2)
+        elif sensor2_faulty:
+            lcd_string("Sensor 2 Fault", LCD_LINE_2)
+        elif sensor1_no_signal or sensor2_no_signal:
+            lcd_string("Check Sensors!", LCD_LINE_2)
+        else:
+            lcd_string("                ", LCD_LINE_2)
+
+        # Если хотя бы один датчик исправен и подаёт сигнал, проверяем газ
+        sensor1_value = GPIO.input(gas_Sensor) if not sensor1_faulty and not sensor1_no_signal else 0
+        sensor2_value = GPIO.input(gas_Sensor2) if not sensor2_faulty and not sensor2_no_signal else 0
+
+        # Проверка наличия газа
+        gas_detected = (sensor1_value or sensor2_value)  # Проверка любого исправного датчика
+
+        gas_ppm = 0
+        gas_type = "No Gas"
+        ppm_fault = None
+
+        # Если газ обнаружен
+        if gas_detected:
+            gas_confidence_count += 1
+            if gas_confidence_count >= DETECTION_CONFIDENCE:
+                lcd_string("Gas Detected", LCD_LINE_1)
+                GPIO.output(red_light, True)
+
+                analog_value = read_channel(0)
+                gas_voltage = convert_to_voltage(analog_value)
+                gas_ppm = analog_value
+                ppm_fault = check_ppm_fault(gas_ppm)
+
+                if ppm_fault:
+                    print(ppm_fault)  # Выводим ошибку в консоль
+
+                # Уровни газа
+                if gas_ppm < 200:
+                    gas_type = "No Gas"
+                    GPIO.output(red_light, False)
+                    GPIO.output(Buzzer, False)
+                elif 200 <= gas_ppm < 400:
+                    gas_type = "Methane"
+                    intermittent_beep(Buzzer, duration=5, interval=0.2)
+                elif 400 <= gas_ppm < 600:
+                    gas_type = "LPG"
+                    continuous_beep_with_pwm(buzzer_pwm, frequency=3000, duration=5)
+                else:
+                    gas_type = "Critical"
+                    lcd_string("CRITICAL LEVEL!!!", LCD_LINE_2)
+                    modulated_beep(buzzer_pwm, start_freq=2000, end_freq=500, duration=5)
+
+                    critical_alert_end_time = time.time() + 10
+                    while time.time() < critical_alert_end_time:
+                        GPIO.output(red_light, True)
+                        GPIO.output(Buzzer, True)
+                        time.sleep(0.3)
+                        GPIO.output(red_light, False)
+                        GPIO.output(Buzzer, False)
+                        time.sleep(0.3)
+
+                gas_confidence_count = DETECTION_CONFIDENCE
+        else:
+            gas_confidence_count -= 1
+            if gas_confidence_count <= 0:
+                lcd_string("Gas Not Detected", LCD_LINE_1)
+                GPIO.output(Buzzer, False)
+                GPIO.output(red_light, False)
+                gas_confidence_count = 0
+
+        # Подготовка данных для JSON файла
+        data = {
+            'gas_detected': gas_detected,
+            'gas_type': gas_type,
+            'gas_ppm': gas_ppm,
+            'sensor1_faulty': sensor1_faulty,
+            'sensor2_faulty': sensor2_faulty,
+            'sensor1_no_signal': sensor1_no_signal,
+            'sensor2_no_signal': sensor2_no_signal,
+            'sensor1_value': sensor1_value,
+            'sensor2_value': sensor2_value,
+            'ppm_fault': ppm_fault,  # Добавляем информацию о неисправности PPM
+            'timestamp': time.time()
+        }
+
+        save_to_json(data)
+
+    # Проверка восстановления сигналов и корректная обработка газа после восстановления
+    # Если первый датчик восстановился, и второй всё еще неисправен, то проверяем только первый датчик
+    if not sensor1_faulty and not sensor1_no_signal:
+        sensor1_value = GPIO.input(gas_Sensor)
+        if sensor1_value:
+            gas_detected = True
+        else:
+            gas_detected = False
+
+    # Если второй датчик восстановился, и первый неисправен, то проверяем второй датчик
+    if not sensor2_faulty and not sensor2_no_signal:
+        sensor2_value = GPIO.input(gas_Sensor2)
+        if sensor2_value:
+            gas_detected = True
+        else:
+            gas_detected = False
+
+    time.sleep(CHECK_INTERVAL)

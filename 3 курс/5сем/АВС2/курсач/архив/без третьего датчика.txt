@@ -1,0 +1,167 @@
+#!/usr/bin/python
+import time
+import RPi.GPIO as GPIO
+import spidev  # For MCP3008
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.setwarnings(False)
+
+'''
+define pin for lcd
+'''
+# Timing constants
+E_PULSE = 0.0005
+E_DELAY = 0.0005
+delay = 1
+
+DETECTION_CONFIDENCE = 3  # Number of consecutive detections to confirm gas presence
+FAULT_TIMEOUT = 30         # Timeout (in seconds) to consider a sensor faulty if it stays in a constant state
+CHECK_INTERVAL = 0.5       # Interval between gas checks
+debounce_delay = 0.2
+
+# Initialize variables for fault detection and debounce tracking
+sensor1_faulty = False
+sensor2_faulty = False
+sensor1_stable_state = None
+sensor2_stable_state = None
+sensor1_stable_start = None
+sensor2_stable_start = None
+gas_confidence_count = 0
+
+buzzer = 37
+GPIO.setup(buzzer, GPIO.OUT)
+
+# Define GPIO to LCD mapping
+LCD_RS = 7
+LCD_E = 11
+LCD_D4 = 12
+LCD_D5 = 13
+LCD_D6 = 15
+LCD_D7 = 16
+gas_Sensor = 18
+gas_Sensor2 = 22
+red_light = 31
+
+Buzzer = 29
+GPIO.setup(LCD_E, GPIO.OUT)  # E
+GPIO.setup(LCD_RS, GPIO.OUT) # RS
+GPIO.setup(LCD_D4, GPIO.OUT) # DB4
+GPIO.setup(LCD_D5, GPIO.OUT) # DB5
+GPIO.setup(LCD_D6, GPIO.OUT) # DB6
+GPIO.setup(LCD_D7, GPIO.OUT) # DB7
+GPIO.setup(gas_Sensor, GPIO.IN)  # Gas Sensor 1
+GPIO.setup(gas_Sensor2, GPIO.IN)  # Gas Sensor 2
+GPIO.setup(red_light, GPIO.OUT)
+GPIO.setup(Buzzer, GPIO.OUT)
+
+# Define some device constants
+LCD_WIDTH = 16    # Maximum characters per line
+LCD_CHR = True
+LCD_CMD = False
+LCD_LINE_1 = 0x80  # LCD RAM address for the 1st line
+LCD_LINE_2 = 0xC0  # LCD RAM address for the 2nd line
+
+# Initialize SPI for MCP3008
+spi = spidev.SpiDev()
+spi.open(0, 0)  # SPI bus 0, chip select 0
+spi.max_speed_hz = 1000000
+
+'''
+LCD Functions
+'''
+def lcd_init():
+    lcd_byte(0x33, LCD_CMD)  # 110011 Initialise
+    lcd_byte(0x32, LCD_CMD)  # 110010 Initialise
+    lcd_byte(0x06, LCD_CMD)  # 000110 Cursor move direction
+    lcd_byte(0x0C, LCD_CMD)  # 001100 Display On, Cursor Off, Blink Off
+    lcd_byte(0x28, LCD_CMD)  # 101000 Data length, number of lines, font size
+    lcd_byte(0x01, LCD_CMD)  # 000001 Clear display
+    time.sleep(E_DELAY)
+
+def lcd_byte(bits, mode):
+    GPIO.output(LCD_RS, mode)  # RS
+    GPIO.output(LCD_D4, bits & 0x10 == 0x10)
+    GPIO.output(LCD_D5, bits & 0x20 == 0x20)
+    GPIO.output(LCD_D6, bits & 0x40 == 0x40)
+    GPIO.output(LCD_D7, bits & 0x80 == 0x80)
+    lcd_toggle_enable()
+    GPIO.output(LCD_D4, bits & 0x01 == 0x01)
+    GPIO.output(LCD_D5, bits & 0x02 == 0x02)
+    GPIO.output(LCD_D6, bits & 0x04 == 0x04)
+    GPIO.output(LCD_D7, bits & 0x08 == 0x08)
+    lcd_toggle_enable()
+
+def lcd_toggle_enable():
+    time.sleep(E_DELAY)
+    GPIO.output(LCD_E, True)
+    time.sleep(E_PULSE)
+    GPIO.output(LCD_E, False)
+    time.sleep(E_DELAY)
+
+def lcd_string(message, line):
+    message = message.ljust(LCD_WIDTH, " ")
+    lcd_byte(line, LCD_CMD)
+    for i in range(LCD_WIDTH):
+        lcd_byte(ord(message[i]), LCD_CHR)
+
+'''
+MCP3008 Function to Read ADC
+'''
+def read_adc(channel):
+    if channel < 0 or channel > 7:
+        return -1
+    adc = spi.xfer2([1, (8 + channel) << 4, 0])
+    data = ((adc[1] & 3) << 8) + adc[2]
+    return data
+
+'''
+Sensor Fault Detection
+'''
+def detect_fault(sensor_pin, stable_state, stable_start, faulty_flag):
+    current_state = GPIO.input(sensor_pin)
+    if stable_state is None or current_state != stable_state:
+        stable_state = current_state
+        stable_start = time.time()
+    elif time.time() - stable_start > FAULT_TIMEOUT:
+        faulty_flag = True
+    return stable_state, stable_start, faulty_flag
+
+# Initialize LCD
+lcd_init()
+lcd_string("Welcome", LCD_LINE_1)
+time.sleep(1)
+
+'''
+Main Program Loop
+'''
+while True:
+    # Track if sensors become faulty
+    sensor1_stable_state, sensor1_stable_start, sensor1_faulty = detect_fault(gas_Sensor, sensor1_stable_state, sensor1_stable_start, sensor1_faulty)
+    sensor2_stable_state, sensor2_stable_start, sensor2_faulty = detect_fault(gas_Sensor2, sensor2_stable_state, sensor2_stable_start, sensor2_faulty)
+
+    # Read gas sensor values
+    sensor1_value = GPIO.input(gas_Sensor) if not sensor1_faulty else 0
+    sensor2_value = GPIO.input(gas_Sensor2) if not sensor2_faulty else 0
+
+    # Read analog value from MCP3008 (channel 0)
+    analog_value = read_adc(0)
+    print(f"analog_value:{analog_value}")
+    voltage = (analog_value / 1023.0) * 3.3  # Convert ADC value to voltage
+    print(f"voltage:{voltage}")    
+    concentration = (voltage / 3.3) * 100  # Simulate concentration as a percentage
+    ppm = (voltage / 3.3)
+    print(f"ppm:{ppm}")
+
+
+    # Log output to console
+    print(f"Analog Value: {analog_value}, Voltage: {voltage:.2f}V, Concentration: {concentration:.1f}%")
+
+    # Alarm if concentration exceeds threshold
+    if concentration > 50:  # Example threshold
+        GPIO.output(Buzzer, True)
+        GPIO.output(red_light, True)
+    else:
+        GPIO.output(Buzzer, False)
+        GPIO.output(red_light, False)
+
+    time.sleep(CHECK_INTERVAL)

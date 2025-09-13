@@ -1,0 +1,175 @@
+#!/usr/bin/python
+import time
+import RPi.GPIO as GPIO
+import spidev  # Для взаимодействия с MCP3008
+
+# Инициализация GPIO
+GPIO.setmode(GPIO.BOARD)
+GPIO.setwarnings(False)
+
+# Константы
+LCD_RS = 7
+LCD_E = 11
+LCD_D4 = 12
+LCD_D5 = 13
+LCD_D6 = 15
+LCD_D7 = 16
+gas_Sensor1 = 18
+gas_Sensor2 = 22
+red_light = 31
+Buzzer = 29
+CHECK_INTERVAL = 30.0
+DETECTION_CONFIDENCE = 3
+FAULT_TIMEOUT = 30  # 30 секунд для определения сбоя датчика
+CRITICAL_PPM = 600  # Порог критической концентрации газа
+
+# Переменные для обработки датчиков
+sensor1_faulty = False
+sensor2_faulty = False
+sensor1_stable_state = None
+sensor2_stable_state = None
+sensor1_stable_start = None
+sensor2_stable_start = None
+gas_confidence_count = 0
+
+# Инициализация GPIO
+GPIO.setup(LCD_E, GPIO.OUT)
+GPIO.setup(LCD_RS, GPIO.OUT)
+GPIO.setup(LCD_D4, GPIO.OUT)
+GPIO.setup(LCD_D5, GPIO.OUT)
+GPIO.setup(LCD_D6, GPIO.OUT)
+GPIO.setup(LCD_D7, GPIO.OUT)
+GPIO.setup(gas_Sensor1, GPIO.IN)
+GPIO.setup(gas_Sensor2, GPIO.IN)
+GPIO.setup(red_light, GPIO.OUT)
+GPIO.setup(Buzzer, GPIO.OUT)
+
+# Инициализация SPI для MCP3008
+spi = spidev.SpiDev()
+spi.open(0, 0)  # SPI на шине 0, чипселект 0
+spi.max_speed_hz = 1000000
+
+# Функции для MCP3008
+def read_channel(channel):
+    if not (0 <= channel <= 7):
+        print(f"(Channel {channel})") 
+    adc = spi.xfer2([1, (8 + channel) << 4, 0])
+    data = ((adc[1] & 3) << 8) + adc[2]
+    print(f"Raw ADC Value (Channel {channel}): {data}")  # Отладка
+    return data
+
+def convert_to_voltage(data, vref=3.3):
+    voltage = data * vref / 1023
+    print(f"Voltage: {voltage:.2f} V")  # Отладка
+    return voltage
+
+# Функции для LCD
+def lcd_init():
+    lcd_byte(0x33, False)
+    lcd_byte(0x32, False)
+    lcd_byte(0x06, False)
+    lcd_byte(0x0C, False)
+    lcd_byte(0x28, False)
+    lcd_byte(0x01, False)
+    time.sleep(0.0005)
+
+def lcd_byte(bits, mode):
+    GPIO.output(LCD_RS, mode)
+    GPIO.output(LCD_D4, bits & 0x10)
+    GPIO.output(LCD_D5, bits & 0x20)
+    GPIO.output(LCD_D6, bits & 0x40)
+    GPIO.output(LCD_D7, bits & 0x80)
+    lcd_toggle_enable()
+    GPIO.output(LCD_D4, bits & 0x01)
+    GPIO.output(LCD_D5, bits & 0x02)
+    GPIO.output(LCD_D6, bits & 0x04)
+    GPIO.output(LCD_D7, bits & 0x08)
+    lcd_toggle_enable()
+
+def lcd_toggle_enable():
+    time.sleep(0.0005)
+    GPIO.output(LCD_E, True)
+    time.sleep(0.0005)
+    GPIO.output(LCD_E, False)
+    time.sleep(0.0005)
+
+def lcd_string(message, line):
+    lcd_byte(line, False)
+    for char in message.ljust(16):
+        lcd_byte(ord(char), True)
+
+# Функция обработки цифровых датчиков
+def detect_fault(sensor_pin, stable_state, stable_start, faulty_flag):
+    current_state = GPIO.input(sensor_pin)
+    if stable_state is None or current_state != stable_state:
+        stable_state = current_state
+        stable_start = time.time()
+    elif time.time() - stable_start > FAULT_TIMEOUT:  # 30 секунд для определения сбоя
+        faulty_flag = True
+    return stable_state, stable_start, faulty_flag
+
+# Основной код
+lcd_init()
+lcd_string("Welcome", 0x80)
+time.sleep(2)
+
+# Открываем файл для записи данных
+with open("C:/logs/gas_log.txt", "a") as log_file:  # Укажите корректный путь
+    while True:
+        # Считывание цифровых датчиков
+        sensor1_stable_state, sensor1_stable_start, sensor1_faulty = detect_fault(
+            gas_Sensor1, sensor1_stable_state, sensor1_stable_start, sensor1_faulty)
+        sensor2_stable_state, sensor2_stable_start, sensor2_faulty = detect_fault(
+            gas_Sensor2, sensor2_stable_state, sensor2_stable_start, sensor2_faulty)
+
+        sensor1_value = GPIO.input(gas_Sensor1) if not sensor1_faulty else 0
+        sensor2_value = GPIO.input(gas_Sensor2) if not sensor2_faulty else 0
+        gas_detected = sensor1_value or sensor2_value
+
+        # Считывание аналогового датчика через MCP3008
+        analog_value = read_channel(0)
+        print(f"analog_value {analog_value}")	
+        gas_voltage = convert_to_voltage(analog_value)
+        print(f"Gas Voltage {gas_voltage}")
+        # Примерный расчет концентрации газа (PPM)
+        gas_ppm = analog_value * 10  # Примерная формула
+        print(f"Gas Concentration (PPM): {gas_ppm:.1f}")
+
+        # Определение типа газа
+        if gas_ppm < 200:
+            gas_type = "No Gas"
+        elif 200 <= gas_ppm < 400:
+            gas_type = "Methane"
+        elif 400 <= gas_ppm < 600:
+            gas_type = "LPG"
+        else:
+            gas_type = "Critical"
+
+        # Вывод информации на консоль
+        print(f"Gas Type: {gas_type}")
+
+        # Обработка критической ситуации
+        if gas_ppm >= CRITICAL_PPM or gas_detected:
+            lcd_string(f"CRITICAL ALERT!", 0x80)
+            lcd_string(f"Gas: {gas_type}", 0xC0)
+            GPIO.output(Buzzer, True)
+            GPIO.output(red_light, True)
+            log_file.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')} - CRITICAL: Gas: {gas_type}, PPM: {gas_ppm:.1f}\n")
+        else:
+            # Нормальная ситуация
+            lcd_string(f"Gas: {gas_type}", 0x80)
+            lcd_string(f"PPM: {gas_ppm:.1f}", 0xC0)
+            GPIO.output(Buzzer, False)
+            GPIO.output(red_light, False)
+
+        # Проверка состояния датчиков
+        if sensor1_faulty or sensor2_faulty:
+            lcd_string("Sensor Fault!", 0xC0)
+            log_file.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')} - Sensor Fault Detected\n")
+
+        # Логирование текущего состояния
+        log_file.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')}, Gas: {gas_type}, PPM: {gas_ppm:.1f}, "
+                       f"Sensor1: {sensor1_value}, Sensor2: {sensor2_value}\n")
+        log_file.flush()
+
+        time.sleep(CHECK_INTERVAL)

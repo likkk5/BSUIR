@@ -1,0 +1,1129 @@
+2024-11-22 14:50:37 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:50:37, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:50:39 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:50:39, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:50:41 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:50:41, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:50:44 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:50:44, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:50:46 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:50:46, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:50:48 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:50:48, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:50:50 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:50:50, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:50:52 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:50:52, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:50:54 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:50:54, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:50:56 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:50:56, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:50:59 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:50:59, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:51:01 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:51:01, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:51:03 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:51:03, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:51:05 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:51:05, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:51:07 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:51:07, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:51:09 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:51:09 - Sensor Fault Detected
+2024-11-22 14:51:09, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:51:11 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:51:12 - Sensor Fault Detected
+2024-11-22 14:51:12, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:51:14 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:51:14 - Sensor Fault Detected
+2024-11-22 14:51:14, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:51:16 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:51:17 - Sensor Fault Detected
+2024-11-22 14:51:17, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:51:19 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:51:19 - Sensor Fault Detected
+2024-11-22 14:51:19, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:51:21 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:51:21 - Sensor Fault Detected
+2024-11-22 14:51:21, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:51:23 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:51:23 - Sensor Fault Detected
+2024-11-22 14:51:23, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 14:51:25 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 14:51:25 - Sensor Fault Detected
+2024-11-22 14:51:25, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 15:01:11 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:01:11, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 15:01:12 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:01:12, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 15:01:14 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:01:14, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-22 15:01:17 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:01:17, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 0
+2024-11-22 15:01:20 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:01:20, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:01:22 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:01:22, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:01:25 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:01:25, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:01:27 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:01:27, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:01:29 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:01:29, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:01:31 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:01:31, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:01:33 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:01:33, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:01:35 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:01:35, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:02:32 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:02:32, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:02:34 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:02:34, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:02:36 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:02:36, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:02:38 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:02:38, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:02:40 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:02:40, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:02:42 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:02:42, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:02:44 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:02:44, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:02:46 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:02:46, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:02:48 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:02:48, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:02:50 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:02:50, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:02:52 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:02:52, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:02:54 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:02:54, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:02:56 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:02:56, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:02:58 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:02:58, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-22 15:03:00 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-22 15:03:00, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-25 16:58:04 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:04, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:06 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:06, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:08 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:08, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:10 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:10, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:12 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:12, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:14 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:14, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:17 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:17, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:19 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:19, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:21 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:21, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:23 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:23, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 1
+2024-11-25 16:58:26 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:26, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:28 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:28, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:30 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:30, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:32 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:32, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:34 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:34 - Sensor Fault Detected
+2024-11-25 16:58:34, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:37 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:37 - Sensor Fault Detected
+2024-11-25 16:58:37, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:39 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:39 - Sensor Fault Detected
+2024-11-25 16:58:39, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:41 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:41 - Sensor Fault Detected
+2024-11-25 16:58:41, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:43 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:44 - Sensor Fault Detected
+2024-11-25 16:58:44, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 16:58:47 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 16:58:47 - Sensor Fault Detected
+2024-11-25 16:58:47, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:00:29 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:00:29, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:00:31 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:00:31, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:00:33 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:00:33, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:00:35 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:00:35, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:00:37 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:00:37, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:00:39 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:00:39, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:00:42 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:00:42, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:00:44 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:00:44, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:00:46 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:00:46, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:00:48 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:00:48, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:00:50 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:00:50, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:00:52 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:00:52, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:00:54 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:00:54, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:00:56 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:00:56, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:00:59 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:00:59, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:01 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:01 - Sensor Fault Detected
+2024-11-25 17:01:01, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:03 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:03 - Sensor Fault Detected
+2024-11-25 17:01:03, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:05 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:05 - Sensor Fault Detected
+2024-11-25 17:01:05, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:08 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:08 - Sensor Fault Detected
+2024-11-25 17:01:08, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:10 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:10 - Sensor Fault Detected
+2024-11-25 17:01:10, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:12 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:12 - Sensor Fault Detected
+2024-11-25 17:01:12, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:15 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:15 - Sensor Fault Detected
+2024-11-25 17:01:15, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:17 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:18 - Sensor Fault Detected
+2024-11-25 17:01:18, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:20 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:20 - Sensor Fault Detected
+2024-11-25 17:01:20, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:23 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:23 - Sensor Fault Detected
+2024-11-25 17:01:23, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:25 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:25 - Sensor Fault Detected
+2024-11-25 17:01:25, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:28 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:28 - Sensor Fault Detected
+2024-11-25 17:01:28, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:30 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:31 - Sensor Fault Detected
+2024-11-25 17:01:31, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:33 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:33 - Sensor Fault Detected
+2024-11-25 17:01:33, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:36 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:36 - Sensor Fault Detected
+2024-11-25 17:01:36, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:38 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:38 - Sensor Fault Detected
+2024-11-25 17:01:38, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:41 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:41 - Sensor Fault Detected
+2024-11-25 17:01:41, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:43 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:43 - Sensor Fault Detected
+2024-11-25 17:01:43, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:46 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:46 - Sensor Fault Detected
+2024-11-25 17:01:46, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:48 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:48 - Sensor Fault Detected
+2024-11-25 17:01:48, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:51 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:51 - Sensor Fault Detected
+2024-11-25 17:01:51, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:53 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:53 - Sensor Fault Detected
+2024-11-25 17:01:53, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:55 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:56 - Sensor Fault Detected
+2024-11-25 17:01:56, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:01:58 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:01:58 - Sensor Fault Detected
+2024-11-25 17:01:58, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:00 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:00 - Sensor Fault Detected
+2024-11-25 17:02:00, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:03 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:03 - Sensor Fault Detected
+2024-11-25 17:02:03, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:05 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:05 - Sensor Fault Detected
+2024-11-25 17:02:05, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:07 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:08 - Sensor Fault Detected
+2024-11-25 17:02:08, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:10 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:10 - Sensor Fault Detected
+2024-11-25 17:02:10, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:12 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:12 - Sensor Fault Detected
+2024-11-25 17:02:12, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:14 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:15 - Sensor Fault Detected
+2024-11-25 17:02:15, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:17 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:17 - Sensor Fault Detected
+2024-11-25 17:02:17, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:19 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:19 - Sensor Fault Detected
+2024-11-25 17:02:19, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:21 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:21 - Sensor Fault Detected
+2024-11-25 17:02:21, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:24 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:24 - Sensor Fault Detected
+2024-11-25 17:02:24, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:26 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:26 - Sensor Fault Detected
+2024-11-25 17:02:26, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:28 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:28 - Sensor Fault Detected
+2024-11-25 17:02:28, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:31 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:31 - Sensor Fault Detected
+2024-11-25 17:02:31, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:33 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:33 - Sensor Fault Detected
+2024-11-25 17:02:33, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:35 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:35 - Sensor Fault Detected
+2024-11-25 17:02:35, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:38 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:38 - Sensor Fault Detected
+2024-11-25 17:02:38, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:40 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:40 - Sensor Fault Detected
+2024-11-25 17:02:40, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:42 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:42 - Sensor Fault Detected
+2024-11-25 17:02:42, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:44 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:44 - Sensor Fault Detected
+2024-11-25 17:02:44, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:47 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:47 - Sensor Fault Detected
+2024-11-25 17:02:47, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:49 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:49 - Sensor Fault Detected
+2024-11-25 17:02:49, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:51 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:51 - Sensor Fault Detected
+2024-11-25 17:02:51, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:02:54 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:02:54 - Sensor Fault Detected
+2024-11-25 17:02:54, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:07:52 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:07:52, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:07:55 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:07:55, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:07:57 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:07:57, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:07:59 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:07:59, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:01 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:01, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:03 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:03, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:05 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:05, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:07 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:07, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:09 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:09, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:11 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:11, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:13 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:13, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:15 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:15, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:18 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:18, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:20 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:20, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:22 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:22, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:24 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:24 - Sensor Fault Detected
+2024-11-25 17:08:24, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:26 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:27 - Sensor Fault Detected
+2024-11-25 17:08:27, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:29 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:29 - Sensor Fault Detected
+2024-11-25 17:08:29, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:31 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:31 - Sensor Fault Detected
+2024-11-25 17:08:31, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:33 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:34 - Sensor Fault Detected
+2024-11-25 17:08:34, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:08:36 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:08:36 - Sensor Fault Detected
+2024-11-25 17:08:36, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:10:29 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:10:29, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:10:31 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:10:31, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:10:33 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:10:33, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:10:35 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:10:35, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:10:37 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:10:37, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:10:39 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:10:39, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:10:41 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:10:41, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:10:43 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:10:43, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:10:45 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:10:45, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:10:47 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:10:47, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:10:49 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:10:49, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:10:51 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:10:51, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:10:54 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:10:54, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:10:56 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:10:56, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:10:58 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:10:58, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:00 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:00 - Sensor Fault Detected
+2024-11-25 17:11:00, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:02 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:02 - Sensor Fault Detected
+2024-11-25 17:11:02, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:05 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:05 - Sensor Fault Detected
+2024-11-25 17:11:05, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:08 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:08 - Sensor Fault Detected
+2024-11-25 17:11:08, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:11 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:11 - Sensor Fault Detected
+2024-11-25 17:11:11, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:14 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:14 - Sensor Fault Detected
+2024-11-25 17:11:14, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:21 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:21 - Sensor Fault Detected
+2024-11-25 17:11:21, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:26 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:26 - Sensor Fault Detected
+2024-11-25 17:11:26, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:28 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:29 - Sensor Fault Detected
+2024-11-25 17:11:29, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:31 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:31 - Sensor Fault Detected
+2024-11-25 17:11:31, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:34 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:34 - Sensor Fault Detected
+2024-11-25 17:11:34, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:37 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:37 - Sensor Fault Detected
+2024-11-25 17:11:37, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:40 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:40 - Sensor Fault Detected
+2024-11-25 17:11:40, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:43 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:43 - Sensor Fault Detected
+2024-11-25 17:11:43, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:46 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:46 - Sensor Fault Detected
+2024-11-25 17:11:46, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:49 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:50 - Sensor Fault Detected
+2024-11-25 17:11:50, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:53 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:53 - Sensor Fault Detected
+2024-11-25 17:11:53, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:55 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:55 - Sensor Fault Detected
+2024-11-25 17:11:55, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 17:11:59 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 17:11:59 - Sensor Fault Detected
+2024-11-25 17:11:59, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-25 18:02:40 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 18:02:40, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-25 18:02:42 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 18:02:42, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-25 18:02:44 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 18:02:44, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-25 18:02:46 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 18:02:46, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-25 18:02:48 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 18:02:48, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-25 18:02:50 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 18:02:50, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-25 18:02:52 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 18:02:52, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-25 18:02:54 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 18:02:54, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-25 18:02:56 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 18:02:56, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-25 18:03:53 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 18:03:53, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-25 18:03:55 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-25 18:03:55, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:39:47 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:39:47, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:39:48 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:39:48, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:39:50 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:39:50, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:39:52 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:39:52, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:39:54 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:39:54, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:39:56 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:39:56, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:39:58 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:39:58, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:39:59 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:39:59, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:40:01 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:40:01, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:40:03 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:40:03, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:40:05 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:40:05, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:40:07 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:40:07, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:40:09 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:40:09, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:40:10 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:40:10, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:08 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:08, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:10 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:10, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:12 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:12, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:13 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:13, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:15 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:15, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:16 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:16, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:18 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:18, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:19 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:19, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:21 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:21, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:23 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:23, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:24 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:24, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:26 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:26, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:27 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:27, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:29 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:29, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:31 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:31, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:33 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:33, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:34 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:34, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:36 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:36, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 00:48:38 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:38 - Sensor Fault Detected
+2024-11-26 00:48:38, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:48:40 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:40 - Sensor Fault Detected
+2024-11-26 00:48:40, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:48:42 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:42 - Sensor Fault Detected
+2024-11-26 00:48:42, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:48:44 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:44 - Sensor Fault Detected
+2024-11-26 00:48:44, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:48:46 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:46 - Sensor Fault Detected
+2024-11-26 00:48:46, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:48:48 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:48 - Sensor Fault Detected
+2024-11-26 00:48:48, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:48:50 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:50 - Sensor Fault Detected
+2024-11-26 00:48:50, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:48:51 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:52 - Sensor Fault Detected
+2024-11-26 00:48:52, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:48:53 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:53 - Sensor Fault Detected
+2024-11-26 00:48:53, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:48:55 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:56 - Sensor Fault Detected
+2024-11-26 00:48:56, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:48:57 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:48:58 - Sensor Fault Detected
+2024-11-26 00:48:58, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:48:59 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:49:00 - Sensor Fault Detected
+2024-11-26 00:49:00, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:49:01 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:49:01 - Sensor Fault Detected
+2024-11-26 00:49:01, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:49:03 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:49:03 - Sensor Fault Detected
+2024-11-26 00:49:03, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:49:05 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:49:05 - Sensor Fault Detected
+2024-11-26 00:49:05, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:49:06 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:49:07 - Sensor Fault Detected
+2024-11-26 00:49:07, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:49:12 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:49:12 - Sensor Fault Detected
+2024-11-26 00:49:12, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:49:14 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:49:14 - Sensor Fault Detected
+2024-11-26 00:49:14, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:49:16 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:49:16 - Sensor Fault Detected
+2024-11-26 00:49:16, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:49:18 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:49:18 - Sensor Fault Detected
+2024-11-26 00:49:18, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:49:20 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:49:20 - Sensor Fault Detected
+2024-11-26 00:49:20, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:49:22 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:49:23 - Sensor Fault Detected
+2024-11-26 00:49:23, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:49:25 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:49:25 - Sensor Fault Detected
+2024-11-26 00:49:25, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:49:27 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:49:27 - Sensor Fault Detected
+2024-11-26 00:49:27, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:49:29 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:49:29 - Sensor Fault Detected
+2024-11-26 00:49:29, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 00:49:31 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 00:49:31 - Sensor Fault Detected
+2024-11-26 00:49:31, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:28:33 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:28:33, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:28:35 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:28:35, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:28:37 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:28:37, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:28:39 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:28:39, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:28:41 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:28:41, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:28:43 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:28:43, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:28:45 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:28:45, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:28:48 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:28:48, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:28:49 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:28:49, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:28:51 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:28:51, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:28:53 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:28:53, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:28:55 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:28:55, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:28:57 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:28:57, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:28:59 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:28:59, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:29:01 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:01, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:29:03 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:03, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:29:05 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:05 - Sensor Fault Detected
+2024-11-26 02:29:05, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:07 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:07 - Sensor Fault Detected
+2024-11-26 02:29:07, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:09 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:09 - Sensor Fault Detected
+2024-11-26 02:29:09, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:11 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:11 - Sensor Fault Detected
+2024-11-26 02:29:11, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:13 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:13 - Sensor Fault Detected
+2024-11-26 02:29:13, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:15 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:15 - Sensor Fault Detected
+2024-11-26 02:29:15, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:17 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:17 - Sensor Fault Detected
+2024-11-26 02:29:17, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:19 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:19 - Sensor Fault Detected
+2024-11-26 02:29:19, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:21 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:21 - Sensor Fault Detected
+2024-11-26 02:29:21, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:23 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:23 - Sensor Fault Detected
+2024-11-26 02:29:23, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:26 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:26 - Sensor Fault Detected
+2024-11-26 02:29:26, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:28 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:28 - Sensor Fault Detected
+2024-11-26 02:29:28, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:30 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:30 - Sensor Fault Detected
+2024-11-26 02:29:30, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:32 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:32 - Sensor Fault Detected
+2024-11-26 02:29:32, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:34 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:34 - Sensor Fault Detected
+2024-11-26 02:29:34, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:36 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:36 - Sensor Fault Detected
+2024-11-26 02:29:36, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:38 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:38 - Sensor Fault Detected
+2024-11-26 02:29:38, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:40 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:40 - Sensor Fault Detected
+2024-11-26 02:29:40, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:42 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:42 - Sensor Fault Detected
+2024-11-26 02:29:42, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:44 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:44 - Sensor Fault Detected
+2024-11-26 02:29:44, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:46 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:46 - Sensor Fault Detected
+2024-11-26 02:29:47, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:48 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:49 - Sensor Fault Detected
+2024-11-26 02:29:49, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:50 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:51 - Sensor Fault Detected
+2024-11-26 02:29:51, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:53 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:53 - Sensor Fault Detected
+2024-11-26 02:29:53, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:55 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:55 - Sensor Fault Detected
+2024-11-26 02:29:55, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:57 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:57 - Sensor Fault Detected
+2024-11-26 02:29:57, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:29:59 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:29:59 - Sensor Fault Detected
+2024-11-26 02:29:59, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:01 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:01 - Sensor Fault Detected
+2024-11-26 02:30:01, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:03 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:03 - Sensor Fault Detected
+2024-11-26 02:30:03, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:05 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:05 - Sensor Fault Detected
+2024-11-26 02:30:05, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:07 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:07 - Sensor Fault Detected
+2024-11-26 02:30:07, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:09 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:10 - Sensor Fault Detected
+2024-11-26 02:30:10, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:12 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:12 - Sensor Fault Detected
+2024-11-26 02:30:12, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:14 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:14 - Sensor Fault Detected
+2024-11-26 02:30:14, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:16 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:16 - Sensor Fault Detected
+2024-11-26 02:30:16, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:18 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:18 - Sensor Fault Detected
+2024-11-26 02:30:18, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:20 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:20 - Sensor Fault Detected
+2024-11-26 02:30:20, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:22 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:22 - Sensor Fault Detected
+2024-11-26 02:30:22, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:24 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:24 - Sensor Fault Detected
+2024-11-26 02:30:24, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:26 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:27 - Sensor Fault Detected
+2024-11-26 02:30:27, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:28 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:29 - Sensor Fault Detected
+2024-11-26 02:30:29, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:31 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:31 - Sensor Fault Detected
+2024-11-26 02:30:31, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:33 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:33 - Sensor Fault Detected
+2024-11-26 02:30:33, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:35 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:35 - Sensor Fault Detected
+2024-11-26 02:30:35, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:37 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:37 - Sensor Fault Detected
+2024-11-26 02:30:37, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:40 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:40 - Sensor Fault Detected
+2024-11-26 02:30:40, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:42 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:42 - Sensor Fault Detected
+2024-11-26 02:30:42, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:44 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:44 - Sensor Fault Detected
+2024-11-26 02:30:44, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:46 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:46 - Sensor Fault Detected
+2024-11-26 02:30:46, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:48 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:48 - Sensor Fault Detected
+2024-11-26 02:30:48, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:50 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:50 - Sensor Fault Detected
+2024-11-26 02:30:50, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:52 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:53 - Sensor Fault Detected
+2024-11-26 02:30:53, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:55 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:55 - Sensor Fault Detected
+2024-11-26 02:30:55, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:57 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:57 - Sensor Fault Detected
+2024-11-26 02:30:57, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:30:59 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:30:59 - Sensor Fault Detected
+2024-11-26 02:30:59, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:31:01 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:31:01 - Sensor Fault Detected
+2024-11-26 02:31:01, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:31:03 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:31:03 - Sensor Fault Detected
+2024-11-26 02:31:03, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:31:05 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:31:05 - Sensor Fault Detected
+2024-11-26 02:31:05, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:31:07 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:31:08 - Sensor Fault Detected
+2024-11-26 02:31:08, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:31:10 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:31:10 - Sensor Fault Detected
+2024-11-26 02:31:10, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:31:12 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:31:12 - Sensor Fault Detected
+2024-11-26 02:31:12, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:31:14 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:31:14 - Sensor Fault Detected
+2024-11-26 02:31:14, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:31:15 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:31:16 - Sensor Fault Detected
+2024-11-26 02:31:16, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-26 02:31:17 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:32:13 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:32:13, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:32:15 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:32:15, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:32:17 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:32:17, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:32:19 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:32:19, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:32:21 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:32:21, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:32:22 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:32:22, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:32:24 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:32:24, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:32:26 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:32:26, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:32:28 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:32:28, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:33:10 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:33:10, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:33:12 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:33:12, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:33:14 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:33:14, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:33:15 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:33:15, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:33:17 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:33:17, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:33:19 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:33:19, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:33:21 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:33:21, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:33:23 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:33:23, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:33:24 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:33:24, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:34:46 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:34:46, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:34:47 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:34:47, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:34:49 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:34:49, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:34:50 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:34:50, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 02:42:00 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-26 02:42:00, Gas: Critical, PPM: 1023.0, Sensor1: 1, Sensor2: 1
+2024-11-26 14:02:10 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 14:02:10, Gas: Critical, PPM: 10230.0, Sensor1: 1, Sensor2: 1
+2024-11-26 14:05:11 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 14:05:11, Gas: Critical, PPM: 10230.0, Sensor1: 1, Sensor2: 1
+2024-11-26 17:30:17 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 17:30:17, Gas: Critical, PPM: 10230.0, Sensor1: 1, Sensor2: 1
+2024-11-26 17:31:55 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 17:31:55 - Sensor Fault Detected
+2024-11-26 17:31:55, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 17:32:52 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 17:32:52, Gas: Critical, PPM: 10230.0, Sensor1: 1, Sensor2: 1
+2024-11-26 17:41:09 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 17:41:09, Gas: Critical, PPM: 10230.0
+2024-11-26 17:42:12 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 17:42:12, Gas: Critical, PPM: 10230.0
+2024-11-26 17:43:23 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 17:43:23, Gas: Critical, PPM: 10230.0
+2024-11-26 17:46:36 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 17:46:36, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 17:51:30 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 17:51:30, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 17:52:35 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 17:52:36 - Sensor Fault Detected
+2024-11-26 17:52:36, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 17:53:44 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 17:53:44 - Sensor Fault Detected
+2024-11-26 17:53:44, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 18:12:02 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 18:12:02, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 18:16:13 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 18:16:13, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 18:17:21 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 18:17:21 - Sensor Fault Detected
+2024-11-26 18:17:21, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 18:18:34 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 18:18:34 - Sensor Fault Detected
+2024-11-26 18:18:34, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 18:19:52 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 18:19:52 - Sensor Fault Detected
+2024-11-26 18:19:52, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 18:20:29 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 18:20:29, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 20:48:16 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 20:48:16, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 20:49:29 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 20:49:29, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 20:51:40 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 20:51:40, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 20:52:42 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 20:52:42, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 20:55:51 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 20:55:51 - Sensor Fault Detected
+2024-11-26 20:55:51, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-26 20:58:01 - CRITICAL: Gas: Critical, PPM: 10230.0
+2024-11-26 20:58:01, Gas: Critical, PPM: 10230.0, Sensor1: 0, Sensor2: 0
+2024-11-28 02:22:40 - CRITICAL: Gas: Critical, PPM: 3580.0
+2024-11-28 02:22:40, Gas: Critical, PPM: 3580.0, Sensor1: 0, Sensor2: 0
+2024-11-28 02:23:23, Gas: Methane, PPM: 358.0, Sensor1: 0, Sensor2: 0
+2024-11-28 02:31:47, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 02:35:30 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-28 02:35:30, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-28 02:36:21, Gas: No Gas, PPM: 8.0, Sensor1: 0, Sensor2: 0
+2024-11-28 02:37:55 - CRITICAL: Gas: Critical, PPM: 931.0
+2024-11-28 02:37:55, Gas: Critical, PPM: 931.0, Sensor1: 0, Sensor2: 0
+2024-11-28 02:39:44, Gas: No Gas, PPM: 123.0, Sensor1: 0, Sensor2: 0
+2024-11-28 02:40:19, Gas: Methane, PPM: 307.0, Sensor1: 0, Sensor2: 0
+2024-11-28 02:43:25, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 02:44:29 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-28 02:44:29, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-28 02:45:15, Gas: Methane, PPM: 327.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:17:15, Gas: Methane, PPM: 327.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:04, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:06, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:08, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:09, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:11, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:13, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:15, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:17, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:19, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:21, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:23, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:24, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:26, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:28, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:31, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:32, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:35 - Sensor Fault Detected
+2024-11-28 10:21:35, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:37 - Sensor Fault Detected
+2024-11-28 10:21:37, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:39 - Sensor Fault Detected
+2024-11-28 10:21:39, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:41 - Sensor Fault Detected
+2024-11-28 10:21:41, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:43 - Sensor Fault Detected
+2024-11-28 10:21:43, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:46 - Sensor Fault Detected
+2024-11-28 10:21:46, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:48 - Sensor Fault Detected
+2024-11-28 10:21:48, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:50 - Sensor Fault Detected
+2024-11-28 10:21:50, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:52 - Sensor Fault Detected
+2024-11-28 10:21:52, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:54 - Sensor Fault Detected
+2024-11-28 10:21:54, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:57 - Sensor Fault Detected
+2024-11-28 10:21:57, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:21:59 - Sensor Fault Detected
+2024-11-28 10:21:59, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:01 - Sensor Fault Detected
+2024-11-28 10:22:01, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:04 - Sensor Fault Detected
+2024-11-28 10:22:04, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:06 - Sensor Fault Detected
+2024-11-28 10:22:06, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:08 - Sensor Fault Detected
+2024-11-28 10:22:08, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:10 - Sensor Fault Detected
+2024-11-28 10:22:10, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:13 - Sensor Fault Detected
+2024-11-28 10:22:13, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:15 - Sensor Fault Detected
+2024-11-28 10:22:15, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:17 - Sensor Fault Detected
+2024-11-28 10:22:17, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:19 - Sensor Fault Detected
+2024-11-28 10:22:19, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:21 - Sensor Fault Detected
+2024-11-28 10:22:21, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:24 - Sensor Fault Detected
+2024-11-28 10:22:24, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:26 - Sensor Fault Detected
+2024-11-28 10:22:26, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:28 - Sensor Fault Detected
+2024-11-28 10:22:28, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:31 - Sensor Fault Detected
+2024-11-28 10:22:31, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:33 - Sensor Fault Detected
+2024-11-28 10:22:33, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:35 - Sensor Fault Detected
+2024-11-28 10:22:35, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:38 - Sensor Fault Detected
+2024-11-28 10:22:38, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:40 - Sensor Fault Detected
+2024-11-28 10:22:40, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:42 - Sensor Fault Detected
+2024-11-28 10:22:42, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:44 - Sensor Fault Detected
+2024-11-28 10:22:44, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:46 - Sensor Fault Detected
+2024-11-28 10:22:46, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:49 - Sensor Fault Detected
+2024-11-28 10:22:49, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:51 - Sensor Fault Detected
+2024-11-28 10:22:51, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:53 - Sensor Fault Detected
+2024-11-28 10:22:53, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:55 - Sensor Fault Detected
+2024-11-28 10:22:55, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:22:58 - Sensor Fault Detected
+2024-11-28 10:22:58, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 10:23:00 - Sensor Fault Detected
+2024-11-28 10:23:00, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:12:32, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:12:34, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:12:37, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:12:39, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:12:41, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:12:43, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:12:45, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:12:47, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:13:27 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-28 14:13:27, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:13:29 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-28 14:13:29, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:13:31 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-28 14:13:31, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:13:33 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-28 14:13:33, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:13:35 - CRITICAL: Gas: Critical, PPM: 1023.0
+2024-11-28 14:13:35, Gas: Critical, PPM: 1023.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:13:59, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:01, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:03, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:06, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:07, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:09, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:11, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:13, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:15, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:17, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:19, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:21, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:23, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:25, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:26, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:28, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:30 - Sensor Fault Detected
+2024-11-28 14:14:30, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:32 - Sensor Fault Detected
+2024-11-28 14:14:32, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:35 - Sensor Fault Detected
+2024-11-28 14:14:35, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:37 - Sensor Fault Detected
+2024-11-28 14:14:37, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:39 - Sensor Fault Detected
+2024-11-28 14:14:39, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:41 - Sensor Fault Detected
+2024-11-28 14:14:41, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:43 - Sensor Fault Detected
+2024-11-28 14:14:43, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:45 - Sensor Fault Detected
+2024-11-28 14:14:45, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-11-28 14:14:47 - Sensor Fault Detected
+2024-11-28 14:14:47, Gas: No Gas, PPM: 0.0, Sensor1: 0, Sensor2: 0
+2024-12-01 17:35:24, Gas: Critical, PPM: 624.0
+2024-12-01 17:35:28, Gas: Critical, PPM: 624.0
+2024-12-01 17:35:33, Gas: Critical, PPM: 624.0
+2024-12-01 17:50:08 - CRITICAL: Gas: Critical, PPM: 624.0
+2024-12-01 17:50:08, Gas: Critical, PPM: 624.0, Sensor1: 1, Sensor2: 1
+2024-12-01 17:50:14 - CRITICAL: Gas: Critical, PPM: 624.0
+2024-12-01 17:50:14, Gas: Critical, PPM: 624.0, Sensor1: 1, Sensor2: 1
+2024-12-01 17:50:18 - CRITICAL: Gas: Critical, PPM: 624.0
+2024-12-01 17:50:18, Gas: Critical, PPM: 624.0, Sensor1: 1, Sensor2: 1
+2024-12-01 17:50:23 - CRITICAL: Gas: Critical, PPM: 624.0
+2024-12-01 17:50:23, Gas: Critical, PPM: 624.0, Sensor1: 1, Sensor2: 1
+2024-12-01 17:50:26 - CRITICAL: Gas: Critical, PPM: 624.0
+2024-12-01 17:50:26, Gas: Critical, PPM: 624.0, Sensor1: 1, Sensor2: 1
+2024-12-01 17:50:31 - CRITICAL: Gas: Critical, PPM: 614.0
+2024-12-01 17:50:31, Gas: Critical, PPM: 614.0, Sensor1: 1, Sensor2: 1
+2024-12-01 17:50:36 - CRITICAL: Gas: Critical, PPM: 614.0
+2024-12-01 17:50:36, Gas: Critical, PPM: 614.0, Sensor1: 1, Sensor2: 1

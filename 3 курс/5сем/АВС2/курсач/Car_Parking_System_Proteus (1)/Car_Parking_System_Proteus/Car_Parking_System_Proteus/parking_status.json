@@ -1,0 +1,1 @@
+{"Slot 1": {"status": "Parked", "start_time": "2024-11-28 03:42:01.076911", "potentiometr_errors": [], "adc_errors": null, "ir_errors": "IR1 Sensor Broken", "two_potentiometr_errors": []}, "Slot 2": {"status": "free", "start_time": null, "potentiometr_errors": [], "adc_errors": null, "ir_errors": "IR2 Sensor Broken", "two_potentiometr_errors": []}}

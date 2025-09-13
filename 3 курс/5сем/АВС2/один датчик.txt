@@ -1,0 +1,11 @@
+while True:
+    gas_detected = GPIO.input(gas_Sensor) or GPIO.input(gas_Sensor2)
+    
+    if gas_detected:
+        lcd_string("Gas Detected", LCD_LINE_1)
+        GPIO.output(Buzzer, True)
+        GPIO.output(red_light, True)
+    else:
+        lcd_string("Gas Not Detected", LCD_LINE_1)
+        GPIO.output(Buzzer, False)
+        GPIO.output(red_light, False)
