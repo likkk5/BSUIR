@@ -1,0 +1,38 @@
+<?php
+// 1. Типы переменных и структуры данных
+$boolVar = true;
+$charVar = 'A';
+$intVar = 10;
+$floatVar = 3.14;
+$stringVar = "Hello, PHP!";
+$arrayVar = [1, 2, 3];
+$assocArray = ["key" => "value"];
+$obj = new stdClass();
+$obj->name = "John";
+$json = json_encode($arrayVar);
+$linkedList = new SplDoublyLinkedList();
+$linkedList->push(10);
+$linkedList->push(20);
+$nullVar = null;
+
+//$123invalidVar = "Ошибка"; 
+//$unterminatedString = "Hello, PHP!;
+
+// Работа с файлом
+$filename = "file.txt";
+file_put_contents($filename, "Sample text inside file.");
+$resourceVar = fopen($filename, "r");
+
+// Вывод переменных
+var_dump($boolVar, $charVar, $intVar, $floatVar, $stringVar, $arrayVar, $assocArray, $obj, $json, $linkedList, $nullVar, $resourceVar);
+
+// Читаем и выводим содержимое файла
+if ($resourceVar) {
+    echo "File Content: " . fread($resourceVar, filesize($filename)) . PHP_EOL;
+    fclose($resourceVar);
+} else {
+    echo "Ошибка открытия файла!" . PHP_EOL;
+}
+
+echo PHP_EOL;
+?>

@@ -1,0 +1,108 @@
+Program
+   assign: =
+      id: $boolVar
+      bool: true
+   assign: =
+      id: $charVar
+      string: 'A'
+   assign: =
+      id: $intVar
+      int: 10
+   assign: =
+      id: $floatVar
+      float: 3.14
+   assign: =
+      id: $stringVar
+      string: "Hello, PHP!"
+   assign: =
+      id: $arrayVar
+      array
+         int: 1
+         int: 2
+         int: 3
+   assign: =
+      id: $assocArray
+      array
+         pair
+            string: "key"
+            string: "value"
+   assign: =
+      id: $obj
+      new
+         stdClass
+         args
+   assign: =
+      operator: ->
+         id: $obj
+         property: name
+      string: "John"
+   assign: =
+      id: $json
+      function_call
+         json_encode
+         id: $arrayVar
+   assign: =
+      id: $linkedList
+      new
+         SplDoublyLinkedList
+         args
+   method_call
+      operator: ->
+         id: $linkedList
+         property: push
+      int: 10
+   method_call
+      operator: ->
+         id: $linkedList
+         property: push
+      int: 20
+   assign: =
+      id: $nullVar
+      null: null
+   assign: =
+      id: $filename
+      string: "file.txt"
+   function_call
+      file_put_contents
+      id: $filename
+      string: "Sample text inside file."
+   assign: =
+      id: $resourceVar
+      function_call
+         fopen
+         id: $filename
+         string: "r"
+   var_dump
+      id: $boolVar
+      id: $charVar
+      id: $intVar
+      id: $floatVar
+      id: $stringVar
+      id: $arrayVar
+      id: $assocArray
+      id: $obj
+      id: $json
+      id: $linkedList
+      id: $nullVar
+      id: $resourceVar
+   if
+      id: $resourceVar
+      block
+         echo
+            "File Content: "
+            function_call
+               fread
+               id: $resourceVar
+               function_call
+                  filesize
+                  id: $filename
+            PHP_EOL
+         function_call
+            fclose
+            id: $resourceVar
+      block
+         echo
+            "Ошибка открытия файла!"
+            PHP_EOL
+   echo
+      PHP_EOL

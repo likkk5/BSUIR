@@ -1,0 +1,217 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "assign",
+      "operator": "=",
+      "left": { "type": "id", "value": "$boolVar" },
+      "right": { "type": "bool", "value": true }
+    },
+    {
+      "type": "assign",
+      "operator": "=",
+      "left": { "type": "id", "value": "$charVar" },
+      "right": { "type": "string", "value": "A" }
+    },
+    {
+      "type": "assign",
+      "operator": "=",
+      "left": { "type": "id", "value": "$intVar" },
+      "right": { "type": "int", "value": 10 }
+    },
+    {
+      "type": "assign",
+      "operator": "=",
+      "left": { "type": "id", "value": "$floatVar" },
+      "right": { "type": "float", "value": 3.14 }
+    },
+    {
+      "type": "assign",
+      "operator": "=",
+      "left": { "type": "id", "value": "$stringVar" },
+      "right": { "type": "string", "value": "Hello, PHP!" }
+    },
+    {
+      "type": "assign",
+      "operator": "=",
+      "left": { "type": "id", "value": "$arrayVar" },
+      "right": {
+        "type": "array",
+        "elements": [
+          { "type": "int", "value": 1 },
+          { "type": "int", "value": 2 },
+          { "type": "int", "value": 3 }
+        ]
+      }
+    },
+    {
+      "type": "assign",
+      "operator": "=",
+      "left": { "type": "id", "value": "$assocArray" },
+      "right": {
+        "type": "array",
+        "elements": [
+          {
+            "type": "pair",
+            "key": { "type": "string", "value": "key" },
+            "value": { "type": "string", "value": "value" }
+          }
+        ]
+      }
+    },
+    {
+      "type": "assign",
+      "operator": "=",
+      "left": { "type": "id", "value": "$obj" },
+      "right": {
+        "type": "new",
+        "class": "stdClass",
+        "args": { "type": "args", "value": [] }
+      }
+    },
+    {
+      "type": "assign",
+      "operator": "=",
+      "left": {
+        "type": "operator",
+        "operator": "->",
+        "object": { "type": "id", "value": "$obj" },
+        "property": { "type": "property", "value": "name" }
+      },
+      "right": { "type": "string", "value": "John" }
+    },
+    {
+      "type": "assign",
+      "operator": "=",
+      "left": { "type": "id", "value": "$json" },
+      "right": {
+        "type": "function_call",
+        "name": "json_encode",
+        "args": [{ "type": "id", "value": "$arrayVar" }]
+      }
+    },
+    {
+      "type": "assign",
+      "operator": "=",
+      "left": { "type": "id", "value": "$linkedList" },
+      "right": {
+        "type": "new",
+        "class": "SplDoublyLinkedList",
+        "args": { "type": "args", "value": [] }
+      }
+    },
+    {
+      "type": "method_call",
+      "operator": "->",
+      "object": { "type": "id", "value": "$linkedList" },
+      "method": { "type": "property", "value": "push" },
+      "args": [{ "type": "int", "value": 10 }]
+    },
+    {
+      "type": "method_call",
+      "operator": "->",
+      "object": { "type": "id", "value": "$linkedList" },
+      "method": { "type": "property", "value": "push" },
+      "args": [{ "type": "int", "value": 20 }]
+    },
+    {
+      "type": "assign",
+      "operator": "=",
+      "left": { "type": "id", "value": "$nullVar" },
+      "right": { "type": "null", "value": null }
+    },
+    {
+      "type": "assign",
+      "operator": "=",
+      "left": { "type": "id", "value": "$filename" },
+      "right": { "type": "string", "value": "file.txt" }
+    },
+    {
+      "type": "function_call",
+      "name": "file_put_contents",
+      "args": [
+        { "type": "id", "value": "$filename" },
+        { "type": "string", "value": "Sample text inside file." }
+      ]
+    },
+    {
+      "type": "assign",
+      "operator": "=",
+      "left": { "type": "id", "value": "$resourceVar" },
+      "right": {
+        "type": "function_call",
+        "name": "fopen",
+        "args": [
+          { "type": "id", "value": "$filename" },
+          { "type": "string", "value": "r" }
+        ]
+      }
+    },
+    {
+      "type": "var_dump",
+      "args": [
+        { "type": "id", "value": "$boolVar" },
+        { "type": "id", "value": "$charVar" },
+        { "type": "id", "value": "$intVar" },
+        { "type": "id", "value": "$floatVar" },
+        { "type": "id", "value": "$stringVar" },
+        { "type": "id", "value": "$arrayVar" },
+        { "type": "id", "value": "$assocArray" },
+        { "type": "id", "value": "$obj" },
+        { "type": "id", "value": "$json" },
+        { "type": "id", "value": "$linkedList" },
+        { "type": "id", "value": "$nullVar" },
+        { "type": "id", "value": "$resourceVar" }
+      ]
+    },
+    {
+      "type": "if",
+      "condition": { "type": "id", "value": "$resourceVar" },
+      "thenBlock": {
+        "type": "block",
+        "body": [
+          {
+            "type": "echo",
+            "args": [
+              { "type": "string", "value": "File Content: " },
+              {
+                "type": "function_call",
+                "name": "fread",
+                "args": [
+                  { "type": "id", "value": "$resourceVar" },
+                  {
+                    "type": "function_call",
+                    "name": "filesize",
+                    "args": [{ "type": "id", "value": "$filename" }]
+                  }
+                ]
+              },
+              { "type": "constant", "value": "PHP_EOL" }
+            ]
+          },
+          {
+            "type": "function_call",
+            "name": "fclose",
+            "args": [{ "type": "id", "value": "$resourceVar" }]
+          }
+        ]
+      },
+      "elseBlock": {
+        "type": "block",
+        "body": [
+          {
+            "type": "echo",
+            "args": [
+              { "type": "string", "value": "Ошибка открытия файла!" },
+              { "type": "constant", "value": "PHP_EOL" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "echo",
+      "args": [{ "type": "constant", "value": "PHP_EOL" }]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // 1. Чтение токенов из JSON-файла
+            List<Token> tokens = readTokensFromJson("C:/tokens/tokens.json");
+
+            // 2. Создание и запуск парсера
+            PHPParser parser = new PHPParser(tokens);
+            SyntaxTreeNode syntaxTree = parser.parse();
+
+            // 3. Вывод результатов
+            System.out.println("Синтаксическое дерево:");
+            System.out.println(syntaxTree);
+
+            System.out.println("\nОшибки синтаксического анализа:");
+            parser.getErrors().forEach(System.out::println);
+
+        } catch (IOException e) {
+            System.err.println("Ошибка при чтении файла токенов: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    private static List<Token> readTokensFromJson(String filePath) throws IOException {
+        String content = new String(Files.readAllBytes(Paths.get(filePath)));
+        List<Token> tokens = new ArrayList<>();
+
+        // Удаляем все пробелы и переносы строк для упрощения парсинга
+        content = content.replaceAll("\\s+", "");
+
+        // Разбиваем на отдельные токены
+        String[] tokenParts = content.split("\\},\\{");
+
+        for (String part : tokenParts) {
+            // Очищаем часть от лишних символов
+            part = part.replaceAll("[\\[\\]{}]", "").trim();
+            if (part.isEmpty()) continue;
+
+            try {
+                String type = extractValue(part, "type");
+                String value = extractValue(part, "value");
+                int line = Integer.parseInt(extractValue(part, "line"));
+                int pos = Integer.parseInt(extractValue(part, "pos"));
+
+                // Безопасное получение enum-значения
+                TokenType tokenType;
+                try {
+                    tokenType = TokenType.valueOf(type.toUpperCase());
+                } catch (IllegalArgumentException e) {
+                    System.err.println("Неизвестный тип токена: " + type + ". Используется UNKNOWN.");
+                    continue; // Пропускаем токены с неизвестными типами
+                }
+
+                tokens.add(new Token(
+                        tokenType,
+                        unescapeJsonString(value),
+                        line,
+                        pos,
+                        value.length()
+                ));
+            } catch (Exception e) {
+                System.err.println("Ошибка при разборе токена: " + part);
+                e.printStackTrace();
+            }
+        }
+        return tokens;
+    }
+
+    private static String extractValue(String json, String key) {
+        String pattern = "\"" + key + "\":\"?([^,\"]+)\"?";
+        java.util.regex.Pattern r = java.util.regex.Pattern.compile(pattern);
+        java.util.regex.Matcher m = r.matcher(json);
+        if (m.find()) {
+            return m.group(1).replace("\"", "").trim();
+        }
+        return "";
+    }
+
+    private static String unescapeJsonString(String value) {
+        return value.replace("\\\"", "\"")
+                .replace("\\n", "\n")
+                .replace("\\t", "\t");
+    }
+
+}

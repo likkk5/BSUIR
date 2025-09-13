@@ -1,0 +1,23 @@
+Program
+   assign
+      id: x
+      int: 10
+   assign
+      id: x
+      string: "повтор"
+   assign
+      id: y
+      operator: +
+         int: 5
+         string: "abc"
+   assign
+      id: z
+      id: undeclaredVar
+   if
+      bool: true
+      assign
+         id: x
+         int: 1
+      assign
+         id: x
+         string: "локальная"  # x во вложенном блоке — ОК, нет ошибки
