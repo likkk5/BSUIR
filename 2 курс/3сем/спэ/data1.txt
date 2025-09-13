@@ -1,0 +1,4345 @@
+[
+    {
+        "value": {
+            "start": 0,
+            "end": 14,
+            "text": "Joe C. Campbell",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 17,
+            "end": 60,
+            "text": "M3C Recent Advances in Avalanche Photodiodes",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 63,
+            "end": 105,
+            "text": "Optical Fiber Communication Conference 2015",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 108,
+            "end": 123,
+            "text": "22–26 March 2015",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 126,
+            "end": 136,
+            "text": "Los Angeles",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 139,
+            "end": 148,
+            "text": "California",
+            "labels": [
+                "STATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 151,
+            "end": 163,
+            "text": "USA",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Joe C. Campbell. M3C Recent Advances in Avalanche Photodiodes. Optical Fiber Communication Conference 2015, 22–26 March 2015. Los Angeles. California, United States"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 14,
+            "text": "George Petrakos",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 17,
+            "end": 35,
+            "text": "Konstantinos Rontos",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 38,
+            "end": 50,
+            "text": "Chara Vavoura",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 53,
+            "end": 68,
+            "text": "Ioannis Vavouras",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 71,
+            "end": 161,
+            "text": "Quantifying the Effects of Recent Economic and Fiscal Crises on Income Inequality in Greece",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 164,
+            "end": 213,
+            "text": "2022 International Conference on Applied Economics",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 216,
+            "end": 228,
+            "text": "7-9 July 2022",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 231,
+            "end": 237,
+            "text": "455-472",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 240,
+            "end": 245,
+            "text": "Madrid",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 248,
+            "end": 252,
+            "text": "Spain",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "George Petrakos, Konstantinos Rontos, Chara Vavoura, Ioannis Vavouras. Quantifying the Effects of Recent Economic and Fiscal Crises on Income Inequality in Greece. 2022 International Conference on Applied Economics, 7-9 July 2022. 455-472. Madrid, Spain"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 11,
+            "text": "Yingfan Wang",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 14,
+            "end": 26,
+            "text": "Haiyang Huang",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 29,
+            "end": 41,
+            "text": "Cynthia Rudin",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 44,
+            "end": 59,
+            "text": "Yaron Shaposhnik",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 61,
+            "end": 201,
+            "text": "Understanding how dimension reduction tools work: an empirical approach to deciphering t-SNE, UMAP, TriMap, and PaCMAP for data visualization",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 204,
+            "end": 271,
+            "text": "The 29th Conference on User Modeling, Adaptation and Personalization",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 274,
+            "end": 288,
+            "text": "01 January 2021",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 291,
+            "end": 299,
+            "text": "9219-9201",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 302,
+            "end": 316,
+            "text": "Duke University",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 319,
+            "end": 321,
+            "text": "USA",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Yingfan Wang, Haiyang Huang, Cynthia Rudin, Yaron Shaposhnik.Understanding how dimension reduction tools work: an empirical approach to deciphering t-SNE, UMAP, TriMap, and PaCMAP for data visualization. The 29th Conference on User Modeling, Adaptation and Personalization. 01 January 2021. 9219-9201. Duke University, USA"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 13,
+            "text": "Carlos Estrela",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 16,
+            "end": 37,
+            "text": "Luiz Eduardo G. Rabelo",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 40,
+            "end": 60,
+            "text": "João Batista de Souza",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 63,
+            "end": 83,
+            "text": "Ana Helena G. Alencar",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 86,
+            "end": 104,
+            "text": "Cyntia R.A. Estrela",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 107,
+            "end": 130,
+            "text": "Manoel Damião Sousa Neto",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 133,
+            "end": 151,
+            "text": "Jesus Djalma Pécora",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 154,
+            "end": 252,
+            "text": "Frequency of Root Canal Isthmi in Human Permanent Teeth Determined by Cone-beam Computed Tomography",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 258,
+            "end": 299,
+            "text": "Research Challenges in Information Science",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 301,
+            "end": 314,
+            "text": "28 August 2015",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 317,
+            "end": 325,
+            "text": "1535-1539",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 328,
+            "end": 391,
+            "text": "Department of Stomatologic Sciences, Federal University of Goiás",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 394,
+            "end": 400,
+            "text": "Goiânia",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 403,
+            "end": 407,
+            "text": "Goiás",
+            "labels": [
+                "STATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 410,
+            "end": 415,
+            "text": "Brazil",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Carlos Estrela, Luiz Eduardo G. Rabelo, João Batista de Souza, Ana Helena G. Alencar, Cyntia R.A. Estrela, Manoel Damião Sousa Neto, Jesus Djalma Pécora. Frequency of Root Canal Isthmi in Human Permanent Teeth Determined by Cone-beam Computed Tomography. in Research Challenges in Information Science 28 August 2015. 1535-1539. Department of Stomatologic Sciences, Federal University of Goiás, Goiânia, Goiás, Brazil"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 14,
+            "text": "Kyriaki Glyptou",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 17,
+            "end": 34,
+            "text": "John A. Paravantis",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 37,
+            "end": 57,
+            "text": "Andreas Papatheodorou",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 60,
+            "end": 75,
+            "text": "Ioannis Spilanis",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 77,
+            "end": 145,
+            "text": "Tourism sustainability methodologies: A critical assessment IISA 2014",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 148,
+            "end": 234,
+            "text": "The 5th International Conference on Information, Intelligence, Systems and Applications",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 237,
+            "end": 243,
+            "text": "182-187",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 246,
+            "end": 259,
+            "text": "18 August 2014",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 262,
+            "end": 267,
+            "text": "Chania",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 270,
+            "end": 275,
+            "text": "Greece",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Kyriaki Glyptou; John A. Paravantis; Andreas Papatheodorou; Ioannis Spilanis. Tourism sustainability methodologies: A critical assessment. IISA 2014, The 5th International Conference on Information, Intelligence, Systems and Applications. 182-187. 18 August 2014. Chania, Greece"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 12,
+            "text": "Nicolas Morew",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 15,
+            "end": 30,
+            "text": "Mohammad Norouzi",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 33,
+            "end": 45,
+            "text": "Ali Jannesari",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 48,
+            "end": 57,
+            "text": "Felix Wolf",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 60,
+            "end": 133,
+            "text": "Skipping Non-essential Instructions Makes Data-Dependence Profiling Faster",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 136,
+            "end": 197,
+            "text": "European Conference on Parallel and Distributed Computing 2020",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 200,
+            "end": 203,
+            "text": "3-17",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 206,
+            "end": 238,
+            "text": "Technische Universitaet Darmstadt",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 241,
+            "end": 249,
+            "text": "Darmstadt",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 252,
+            "end": 258,
+            "text": "Germany",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 261,
+            "end": 274,
+            "text": "18 August 2020",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Nicolas Morew, Mohammad Norouzi, Ali Jannesari, Felix Wolf. Skipping Non-essential Instructions Makes Data-Dependence Profiling Faster. European Conference on Parallel and Distributed Computing 2020. 3-17. Technische Universitaet Darmstadt, Darmstadt, Germany. 18 August 2020."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 6,
+            "text": "Zhen Li",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 9,
+            "end": 21,
+            "text": "Ali Jannesari",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 24,
+            "end": 33,
+            "text": "Felix Wolf",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 36,
+            "end": 109,
+            "text": "An Efficient Data-Dependence Profiler for Sequential and Parallel Programs",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 112,
+            "end": 180,
+            "text": "2015 IEEE International Parallel and Distributed Processing Symposium",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 183,
+            "end": 215,
+            "text": "Technische Universitaet Darmstadt",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 218,
+            "end": 226,
+            "text": "Darmstadt",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 229,
+            "end": 235,
+            "text": "Germany",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 238,
+            "end": 244,
+            "text": "484–493",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 246,
+            "end": 257,
+            "text": "20 July 2015",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Zhen Li, Ali Jannesari, Felix Wolf. An Efficient Data-Dependence Profiler for Sequential and Parallel Programs. 2015 IEEE International Parallel and Distributed Processing Symposium. Technische Universitaet Darmstadt, Darmstadt, Germany. 484–493 20 July 2015."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 13,
+            "text": "Vincent Martin",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 16,
+            "end": 77,
+            "text": "Predicting the French Stock Market Using Social Media Analysis",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 80,
+            "end": 170,
+            "text": "2013 8th International Workshop on Semantic and Social Media Adaptation and Personalization",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 174,
+            "end": 189,
+            "text": "12 December 2013",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 192,
+            "end": 199,
+            "text": "La Garde",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 202,
+            "end": 207,
+            "text": "France",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Vincent Martin. Predicting the French Stock Market Using Social Media Analysis. 2013 8th International Workshop on Semantic and Social Media Adaptation and Personalization. 12 December 2013. La Garde, France"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 15,
+            "text": "Hamed AL-Rubaiee",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 18,
+            "end": 26,
+            "text": "Renxi Qiu",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 29,
+            "end": 36,
+            "text": "Dayou Li",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 39,
+            "end": 121,
+            "text": "Analysis of the relationship between Saudi twitter posts and the Saudi stock market",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 124,
+            "end": 223,
+            "text": "2015 IEEE Seventh International Conference on Intelligent Computing and Information Systems (ICICIS)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 226,
+            "end": 232,
+            "text": "660-665",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 235,
+            "end": 250,
+            "text": "12 December 2015",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 253,
+            "end": 264,
+            "text": "Bedfordshire",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 267,
+            "end": 280,
+            "text": "United Kingdom",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Hamed AL-Rubaiee, Renxi Qiu, Dayou Li. Analysis of the relationship between Saudi twitter posts and the Saudi stock market. 2015 IEEE Seventh International Conference on Intelligent Computing and Information Systems (ICICIS), 660-665. 12 December 2015. Bedfordshire, United Kingdom"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 9,
+            "text": "Jegham, I.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 12,
+            "end": 26,
+            "text": "Ben Khalifa, A.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 29,
+            "end": 39,
+            "text": "Alouani, I.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 42,
+            "end": 54,
+            "text": "Mahjoub, M.A.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 56,
+            "end": 115,
+            "text": "Safe driving: driver action recognition using SURF keypoints",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 119,
+            "end": 173,
+            "text": "30th International Conference on Microelectronics (ICM)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 176,
+            "end": 180,
+            "text": "60–63",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 183,
+            "end": 195,
+            "text": "December 2018",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 198,
+            "end": 211,
+            "text": "United Kingdom",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Jegham, I., Ben Khalifa, A., Alouani, I., Mahjoub, M.A. Safe driving: driver action recognition using SURF keypoints.  30th International Conference on Microelectronics (ICM). 60–63. December 2018. United Kingdom"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 8,
+            "text": "Busija L.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 11,
+            "end": 16,
+            "text": "Lim K.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 19,
+            "end": 28,
+            "text": "Sanders K.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 31,
+            "end": 39,
+            "text": "McCabe M.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+     {
+        "value": {
+            "start": 42,
+            "end": 151,
+            "text": "Systematic review and synthesis of physical and mental health multimorbidity: Discrete categories or continua?",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 155,
+            "end": 225,
+            "text": "Annual Conference of the European Health Psychology Society (EHPS 2019)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 228,
+            "end": 234,
+            "text": "661-661",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 237,
+            "end": 245,
+            "text": "Dubrovnik",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 248,
+            "end": 254,
+            "text": "Croatia",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Busija L., Lim K., Sanders K., McCabe M.. Systematic review and synthesis of physical and mental health multimorbidity: Discrete categories or continua?.. Annual Conference of the European Health Psychology Society (EHPS 2019). 661-661. Dubrovnik, Croatia."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 9,
+            "text": "Soranzo A.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 12,
+            "end": 22,
+            "text": "Newberry M.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 25,
+            "end": 117,
+            "text": "The 'uncatchable smile' illusion in Da Vinci's Bella Principessa depends on the viewing angle",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 120,
+            "end": 167,
+            "text": "2nd Visual Science of Art Conference (VSAC 2014)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 170,
+            "end": 186,
+            "text": "23-24 August 2014",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 189,
+            "end": 196,
+            "text": "Belgrade",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 199,
+            "end": 204,
+            "text": "Serbia",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Soranzo A., Newberry M.. The 'uncatchable smile' illusion in Da Vinci's Bella Principessa depends on the viewing angle. 2nd Visual Science of Art Conference (VSAC 2014). 23-24 August 2014. Belgrade, Serbia"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 9,
+            "text": "Daniel, F.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+     {
+        "value": {
+            "start": 12,
+            "end": 26,
+            "text": "Papadopoulos G.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 28,
+            "end": 37,
+            "text": "Thiran, P.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 39,
+            "end": 50,
+            "text": "Computing 97",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 53,
+            "end": 97,
+            "text": "Mobile web information systems (MobiWIS 2013)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 100,
+            "end": 106,
+            "text": "983–984",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 109,
+            "end": 128,
+            "text": "University of Trento",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 131,
+            "end": 135,
+            "text": "Italy",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 138,
+            "end": 151,
+            "text": "19 August 2014",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Daniel, F., Papadopoulos G.,Thiran, P. Computing 97. Mobile web information systems (MobiWIS 2013). 983–984. University of Trento, Italy. 19 August 2014"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 10,
+            "text": "Pachiti, I.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 13,
+            "end": 29,
+            "text": "Dimitropoulou, P.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 32,
+            "end": 43,
+            "text": "Spyridou, R.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 45,
+            "end": 201,
+            "text": "An intervention program combining parent training, child training and virtual reality for children with attention deficits: Insights from a feasibility study",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 204,
+            "end": 288,
+            "text": "43rd Annual Conference of the International School Psychology Association (ISPA 2022)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 291,
+            "end": 299,
+            "text": "July 2022",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 302,
+            "end": 307,
+            "text": "Leuven",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 310,
+            "end": 316,
+            "text": "Belgium",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Pachiti, I., Dimitropoulou, P., Spyridou, R. An intervention program combining parent training, child training and virtual reality for children with attention deficits: Insights from a feasibility study. 43rd Annual Conference of the International School Psychology Association (ISPA 2022). July 2022. Leuven, Belgium."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 11,
+            "text": "Monteiro, D.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 14,
+            "end": 24,
+            "text": "Liang, H.N.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 27,
+            "end": 34,
+            "text": "Wang, J.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 37,
+            "end": 44,
+            "text": "Wang, L.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 47,
+            "end": 54,
+            "text": "Wang, X.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 57,
+            "end": 63,
+            "text": "Yue, Y.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 66,
+            "end": 185,
+            "text": "Evaluating the effects of a cartoon-like character with emotions on users’ behaviour within virtual reality environments",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 188,
+            "end": 279,
+            "text": "2018 IEEE International Conference on Artificial Intelligence and Virtual Reality, AIVR 2018",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 282,
+            "end": 288,
+            "text": "229–236",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 291,
+            "end": 296,
+            "text": "Suzhou",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 299,
+            "end": 303,
+            "text": "China",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Monteiro, D., Liang, H.N., Wang, J., Wang, L., Wang, X., Yue, Y.. Evaluating the effects of a cartoon-like character with emotions on users’ behaviour within virtual reality environments. 2018 IEEE International Conference on Artificial Intelligence and Virtual Reality, AIVR 2018. 229–236. Suzhou, China"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 11,
+            "text": "Monteiro, D.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 14,
+            "end": 24,
+            "text": "Liang, H.N.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 27,
+            "end": 32,
+            "text": "Li, H.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 35,
+            "end": 40,
+            "text": "Fu, Y.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 43,
+            "end": 50,
+            "text": "Wang, X.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+ {
+        "value": {
+            "start": 52,
+            "end": 144,
+            "text": "Evaluating the Need and Effect of an Audience in a Virtual Reality Presentation Training Tool",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 147,
+            "end": 207,
+            "text": "https://link.springer.com/chapter/10.1007/978-3-030-63426-1_7",
+            "labels": [
+                "LINK"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 209,
+            "end": 307,
+            "text": "Computer Animation and Social Agents. CASA 2020. Communications in Computer and Information Science",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+ 
+    {
+        "value": {
+            "start": 310,
+            "end": 325,
+            "text": "25 November 2020",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 328,
+            "end": 335,
+            "text": "Springer",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 338,
+            "end": 341,
+            "text": "Cham",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    
+  {
+        "data": {
+            "text": "Monteiro, D., Liang, H.N., Li, H., Fu, Y., Wang, X. Evaluating the Need and Effect of an Audience in a Virtual Reality Presentation Training Tool. https://link.springer.com/chapter/10.1007/978-3-030-63426-1_7 Computer Animation and Social Agents. CASA 2020. Communications in Computer and Information Science. 25 November 2020. Springer, Cham"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 14,
+            "text": "Grégory Legrain",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 17,
+            "end": 28,
+            "text": "Nicolas Moes",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 31,
+            "end": 119,
+            "text": "Resolution strategies for nearly singular solutions using non-conforming high-order grids",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 122,
+            "end": 217,
+            "text": "Sixth International Workshop on High-Order Finite Element and Isogeometric Methods (HOFEIM 2014)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 220,
+            "end": 227,
+            "text": "Jul 2014",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 230,
+            "end": 250,
+            "text": "Frauenchiemsee Island",
+            "labels": [
+                "ISLAND"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 253,
+            "end": 259,
+            "text": "Germany",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Grégory Legrain, Nicolas Moes. Resolution strategies for nearly singular solutions using non-conforming high-order grids. Sixth International Workshop on High-Order Finite Element and Isogeometric Methods (HOFEIM 2014). Jul 2014, Frauenchiemsee Island, Germany."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 17,
+            "text": "Jayatilake, L.V.K.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 19,
+            "end": 120,
+            "text": "Job Satisfaction Factors Among University Staff Officers in an Emerging Economy: The Case of Sri Lanka",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 123,
+            "end": 207,
+            "text": "Advances in Applied Economic Research. Springer Proceedings in Business and Economics",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 210,
+            "end": 214,
+            "text": "37-48",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 217,
+            "end": 224,
+            "text": "Springer",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 227,
+            "end": 230,
+            "text": "Cham",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Jayatilake, L.V.K. Job Satisfaction Factors Among University Staff Officers in an Emerging Economy: The Case of Sri Lanka. Advances in Applied Economic Research. Springer Proceedings in Business and Economics. 37-48. Springer, Cham"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 13,
+            "text": "Catarina Silva",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 16,
+            "end": 33,
+            "text": "João Paulo Barraca",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 36,
+            "end": 99,
+            "text": "Dynamic Delegation-based Privacy Preserving in IoT Architectures",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 102,
+            "end": 183,
+            "text": "2022 9th International Conference on Future Internet of Things and Cloud (FiCloud)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 186,
+            "end": 190,
+            "text": "46-54",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 193,
+            "end": 209,
+            "text": "22-24 August 2022",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 212,
+            "end": 217,
+            "text": "Aveiro",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 220,
+            "end": 227,
+            "text": "Portugal",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Catarina Silva, João Paulo Barraca. Dynamic Delegation-based Privacy Preserving in IoT Architectures. 2022 9th International Conference on Future Internet of Things and Cloud (FiCloud). 46-54. 22-24 August 2022. Aveiro, Portugal."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 5,
+            "text": "Lam Sf",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 8,
+            "end": 14,
+            "text": "Chan Wl",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 17,
+            "end": 24,
+            "text": "Shum Kmk",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 27,
+            "end": 34,
+            "text": "Tsoi Wse",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 38,
+            "end": 177,
+            "text": "Acceptance of outgroup members in schools: Developmental trend and roles of supportive school culture, stigma awareness, and teacher support",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 180,
+            "end": 263,
+            "text": "The 40th Annual Conference of the International School Psychology Association (ISPA)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 265,
+            "end": 271,
+            "text": "159-160",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 274,
+            "end": 288,
+            "text": "25-28 July 2018",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 291,
+            "end": 295,
+            "text": "Tokyo",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 298,
+            "end": 302,
+            "text": "Japan",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+	{
+        "data": {
+            "text": "Lam Sf, Chan Wl, Shum Kmk, Tsoi Wse. Acceptance of outgroup members in schools: Developmental trend and roles of supportive school culture, stigma awareness, and teacher support. The 40th Annual Conference of the International School Psychology Association (ISPA). 159-160. 25-28 July 2018. Tokyo, Japan."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 11,
+            "text": "Rozas, David",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 14,
+            "end": 27,
+            "text": "Bernhard Resch",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 34,
+            "end": 46,
+            "text": "Eve Zelickson",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },	
+    {
+        "value": {
+            "start": 49,
+            "end": 168,
+            "text": "Maintaining Spirit in Collaborative Communities: Event Atmospheres as Participation Architecture for Affective Commoning",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 171,
+            "end": 206,
+            "text": "12th International Process Symposium",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 209,
+            "end": 227,
+            "text": "September 1-4, 2021",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 230,
+            "end": 235,
+            "text": "Rhodes",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 238,
+            "end": 243,
+            "text": "Greece",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Rozas, David, Bernhard Resch, and Eve Zelickson. Maintaining Spirit in Collaborative Communities: Event Atmospheres as Participation Architecture for Affective Commoning. 12th International Process Symposium. September 1-4, 2021, Rhodes, Greece."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 9,
+            "text": "Vitolla F.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 12,
+            "end": 19,
+            "text": "Raimo N.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 21,
+            "end": 29,
+            "text": "Rubino M.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 32,
+            "end": 135,
+            "text": "Intellectual Capital Disclosure and Firm Performance: An Empirical Analysis Through Integrated Reporting",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 138,
+            "end": 144,
+            "text": "245-255",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 147,
+            "end": 150,
+            "text": "2019",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 153,
+            "end": 201,
+            "text": "Governance Research and Development Centre (CIRU)",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+	  {
+        "value": {
+            "start": 204,
+            "end": 209,
+            "text": "Zagreb",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Vitolla F., Raimo N., Rubino M.. Intellectual Capital Disclosure and Firm Performance: An Empirical Analysis Through Integrated Reporting. 245-255. 2019. Governance Research and Development Centre (CIRU), Zagreb"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 17,
+            "text": "Veloso, Cláudia M.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 20,
+            "end": 34,
+            "text": "Magueta, Daniel",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 37,
+            "end": 55,
+            "text": "Fernandes, Paula O.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 58,
+            "end": 74,
+            "text": "Ribeiro, Humberto",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 77,
+            "end": 193,
+            "text": "The effects of customer satisfaction service quality and perceived value on behavioural intentions in retail industry",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 196,
+            "end": 273,
+            "text": "In 23nd International Scientific Conference on Economic and Social Development",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 276,
+            "end": 282,
+            "text": "330-342",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 285,
+            "end": 288,
+            "text": "2017",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 291,
+            "end": 296,
+            "text": "Madrid",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+	  {
+        "value": {
+            "start": 299,
+            "end": 305,
+            "text": "Espanha",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Veloso, Cláudia M.; Magueta, Daniel; Fernandes, Paula O.; Ribeiro, Humberto. The effects of customer satisfaction service quality and perceived value on behavioural intentions in retail industry. In 23nd International Scientific Conference on Economic and Social Development. 330-342. 2017. Madrid, Espanha."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 7,
+            "text": "Kinra A.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 9,
+            "end": 135,
+            "text": "A Framework for Understanding the International Uncertainty-Based Cross-Border Supply Chain Options of Internationalizing Firms",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 138,
+            "end": 189,
+            "text": "Advances in Production Management Systems Conference",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 192,
+            "end": 211,
+            "text": "26-28 September 2011",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 214,
+            "end": 222,
+            "text": "Stavanger",
+            "labels": [
+                 "TOWN"
+            ]
+        }
+    },	
+    {
+        "data": {
+            "text": "Kinra A. A Framework for Understanding the International Uncertainty-Based Cross-Border Supply Chain Options of Internationalizing Firms. Advances in Production Management Systems Conference, 26-28 September 2011, Stavanger"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 8,
+            "text": "Nyberg G.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 11,
+            "end": 28,
+            "text": "Gupta, Narendra K.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 31,
+            "end": 41,
+            "text": "Doughert M.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 44,
+            "end": 51,
+            "text": "Yella S.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 54,
+            "end": 131,
+            "text": "Monitoring vegetation on railway embankments: supporting maintenance decisions",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 134,
+            "end": 211,
+            "text": "Proceedings of the 2013 International Conference on Ecology and Transportation",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 214,
+            "end": 219,
+            "text": "1 - 18",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 222,
+            "end": 237,
+            "text": "25 November 2013",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 240,
+            "end": 246,
+            "text": "Arizona",
+            "labels": [
+                "STATE"
+            ]
+        }
+    },
+	{
+        "value": {
+            "start": 249,
+            "end": 251,
+            "text": "USA",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Nyberg G., Gupta, Narendra K., Doughert M., Yella S. Monitoring vegetation on railway embankments: supporting maintenance decisions. Proceedings of the 2013 International Conference on Ecology and Transportation. 1 - 18. 25 November 2013. Arizona, USA"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 9,
+            "text": "Zirkle, J.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 13,
+            "end": 21,
+            "text": "Reese, L.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 25,
+            "end": 34,
+            "text": "Claman, D.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 36,
+            "end": 183,
+            "text": "Implementation of BridgeWatch: A Program for Monitoring Scour Critical and Unknown Foundation Bridges; Using BridgeWatch to Monitor Road Overtopping",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 186,
+            "end": 231,
+            "text": "National Hydraulic Engineering Conference 2014",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Zirkle, J. & Reese, L. & Claman, D. Implementation of BridgeWatch: A Program for Monitoring Scour Critical and Unknown Foundation Bridges; Using BridgeWatch to Monitor Road Overtopping. National Hydraulic Engineering Conference 2014."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 7,
+            "text": "Rice, J.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+
+    {
+        "value": {
+            "start": 10,
+            "end": 21,
+            "text": "van Beek, V.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 26,
+            "end": 37,
+            "text": "Bezuijen, A.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 39,
+            "end": 85,
+            "text": "History and future of backward erosion research",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 88,
+            "end": 147,
+            "text": "10th International Conference on Scour and Erosion (ICSE-10)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 150,
+            "end": 153,
+            "text": "1–23",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 156,
+            "end": 197,
+            "text": "American Society of Civil Engineers (ASCE)",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Rice, J., van Beek, V., & Bezuijen, A. History and future of backward erosion research. 10th International Conference on Scour and Erosion (ICSE-10), 1–23. American Society of Civil Engineers (ASCE)."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 6,
+            "text": "Prem H.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 9,
+            "end": 16,
+            "text": "Ayton G.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+     {
+        "value": {
+            "start": 20,
+            "end": 87,
+            "text": "Improved Techniques for Assessing Ride Quality on Concrete Pavements",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 89,
+            "end": 140,
+            "text": "Eghth International Conference on Concrete Pavements",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 143,
+            "end": 149,
+            "text": "733-754",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 152,
+            "end": 164,
+            "text": "28 April 2009",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 167,
+            "end": 175,
+            "text": "Australia",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Prem H., Ayton G. Improved Techniques for Assessing Ride Quality on Concrete Pavements Eghth International Conference on Concrete Pavements. 733-754. 28 April 2009. Australia"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 10,
+            "text": "Nkomo, S.M.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 13,
+            "end": 19,
+            "text": "Cox, T.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 21,
+            "end": 107,
+            "text": "Factors affecting the upward mobility of black managers in private sector organizations",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 110,
+            "end": 132,
+            "text": "Rev Black Polit Econ 18",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 135,
+            "end": 139,
+            "text": "39–57",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 142,
+            "end": 145,
+            "text": "1990",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Nkomo, S.M., Cox, T. Factors affecting the upward mobility of black managers in private sector organizations. Rev Black Polit Econ 18, 39–57. 1990."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 7,
+            "text": "Benoit L",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 10,
+            "end": 15,
+            "text": "Spie R",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 18,
+            "end": 34,
+            "text": "Favoulet P, et al.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 37,
+            "end": 67,
+            "text": "Management of ureteral injuries",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 70,
+            "end": 73,
+            "text": "SPIE",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 76,
+            "end": 89,
+            "text": "September 2005",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 92,
+            "end": 98,
+            "text": "451-457",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Benoit L, Spie R, Favoulet P, et al. Management of ureteral injuries. SPIE. September 2005. 451-457"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 15,
+            "text": "Rubtcova, Mariia",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 21,
+            "end": 34,
+            "text": "Pavenkov, Oleg",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 37,
+            "end": 75,
+            "text": "Theory of Calculation of Media-coverage",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 78,
+            "end": 154,
+            "text": "The IIER - 517th International Conference on Law and Political Science(ICLPS)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 156,
+            "end": 162,
+            "text": "CHENNAI",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 165,
+            "end": 174,
+            "text": "Tamil Nadu",
+            "labels": [
+                "STATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 177,
+            "end": 181,
+            "text": "India",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 183,
+            "end": 202,
+            "text": "23rd-24th April 2019",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Rubtcova, Mariia and Pavenkov, Oleg, Theory of Calculation of Media-coverage. The IIER - 517th International Conference on Law and Political Science(ICLPS) CHENNAI, Tamil Nadu, India 23rd-24th April 2019."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 19,
+            "text": "Shaik Imran Mohammad",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 22,
+            "end": 36,
+            "text": "K. Suvarna Vani",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 39,
+            "end": 53,
+            "text": "Ganta Lokeshwar",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 56,
+            "end": 73,
+            "text": "K.S Vijaya Lakshmi",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 76,
+            "end": 187,
+            "text": "Ensemble Model for Predicting the Best Fruit Crop based on Soil Chemical Composition and Environmental Variables",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 190,
+            "end": 247,
+            "text": "2023 World Conference on Communication & Computing (WCONF)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 250,
+            "end": 252,
+            "text": "1-7",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+	{
+        "value": {
+            "start": 255,
+            "end": 258,
+            "text": "2023",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Shaik Imran Mohammad, K. Suvarna Vani, Ganta Lokeshwar, K.S Vijaya Lakshmi. Ensemble Model for Predicting the Best Fruit Crop based on Soil Chemical Composition and Environmental Variables, 2023 World Conference on Communication & Computing (WCONF), 1-7, 2023."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 18,
+            "text": "Rakshi Anuja Dinesh",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 21,
+            "end": 39,
+            "text": "Jayashree Shanmugam",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 42,
+            "end": 53,
+            "text": "Kunal Biswas",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 56,
+            "end": 133,
+            "text": "Integration of Technology and Nanoscience in Precision Agriculture and Farming",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 136,
+            "end": 199,
+            "text": "Contemporary Developments in Agricultural Cyber-Physical Systems",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 202,
+            "end": 204,
+            "text": "149",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 207,
+            "end": 210,
+            "text": "2023",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Rakshi Anuja Dinesh, Jayashree Shanmugam, Kunal Biswas. Integration of Technology and Nanoscience in Precision Agriculture and Farming. Contemporary Developments in Agricultural Cyber-Physical Systems, 149, 2023."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 15,
+            "text": "Rubtcova, Mariia",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 21,
+            "end": 34,
+            "text": "Pavenkov, Oleg",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 37,
+            "end": 113,
+            "text": "Essence and Role of Stereotypes in the Process of Intercultural Communication",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 115,
+            "end": 214,
+            "text": "International Conference on Recent Developments in Social Science and Business Management (ICRDSSBM)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 217,
+            "end": 226,
+            "text": "Coimbatore",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 229,
+            "end": 238,
+            "text": "Tamil Nadu",
+            "labels": [
+                "STATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 241,
+            "end": 245,
+            "text": "India",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 249,
+            "end": 258,
+            "text": "22.09.2019",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Rubtcova, Mariia and Pavenkov, Oleg, Essence and Role of Stereotypes in the Process of Intercultural Communication. International Conference on Recent Developments in Social Science and Business Management (ICRDSSBM), Coimbatore, Tamil Nadu, India . 22.09.2019."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 15,
+            "text": "Vallabhuni, R.R.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 18,
+            "end": 84,
+            "text": "High speed energy efficient multiplier using 20nm FinFET technology",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 87,
+            "end": 201,
+            "text": "In Proceedings of the International Conference on IoT Based Control Networks and Intelligent Systems (ICICNIS 2020)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 204,
+            "end": 217,
+            "text": "10–11 Dec 2020",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 220,
+            "end": 222,
+            "text": "1–8",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 225,
+            "end": 229,
+            "text": "Palai",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 232,
+            "end": 236,
+            "text": "India",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Vallabhuni, R.R.. High speed energy efficient multiplier using 20nm FinFET technology. In Proceedings of the International Conference on IoT Based Control Networks and Intelligent Systems (ICICNIS 2020), 10–11 Dec 2020, 1–8. Palai, India."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 11,
+            "text": "Rajeev, R.V.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 14,
+            "end": 88,
+            "text": "Performance analysis: D-Latch modules designed using 18nm FinFET Technology",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 91,
+            "end": 170,
+            "text": "In 2020 International Conference on Smart Electronics and Communication (ICOSEC)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 173,
+            "end": 187,
+            "text": "September 10–12",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 190,
+            "end": 198,
+            "text": "1171–1176",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 201,
+            "end": 211,
+            "text": "Tholurpatti",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 214,
+            "end": 218,
+            "text": "India",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Rajeev, R.V.. Performance analysis: D-Latch modules designed using 18nm FinFET Technology. In 2020 International Conference on Smart Electronics and Communication (ICOSEC), September 10–12. 1171–1176. Tholurpatti, India."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 5,
+            "text": "Li, X.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 8,
+            "end": 15,
+            "text": "Chen, Z.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 17,
+            "end": 110,
+            "text": "Single image super-resolution reconstruction based on fusion of internal and external features",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 113,
+            "end": 118,
+            "text": "ICCVPR",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 121,
+            "end": 129,
+            "text": "1589–1605",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 132,
+            "end": 135,
+            "text": "2022",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 138,
+            "end": 142,
+            "text": "Hebei",
+            "labels": [
+                "PROVINCE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 145,
+            "end": 149,
+            "text": "China",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Li, X., Chen, Z. Single image super-resolution reconstruction based on fusion of internal and external features. ICCVPR, 1589–1605. 2022. Hebei, China"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 10,
+            "text": "Touhafi, A.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 13,
+            "end": 128,
+            "text": "Design and Implementation of a Novel Emotions-based Model to Describe Electronic Circuits Behavior in a Hedonics Way",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 131,
+            "end": 262,
+            "text": "In ICEER 2013 (2013 ed., pp. 930-936). (Proceedings of ICEER 2013 International conference on Engineering Education and Research). ICEER.",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Touhafi, A.. Design and Implementation of a Novel Emotions-based Model to Describe Electronic Circuits Behavior in a Hedonics Way. In ICEER 2013 (2013 ed., pp. 930-936). (Proceedings of ICEER 2013 International conference on Engineering Education and Research). ICEER."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 11,
+            "text": "Tanmoy Maity",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 14,
+            "end": 31,
+            "text": "Partha Sarathi Das",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 34,
+            "end": 48,
+            "text": "Mithu Mukherjee",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 51,
+            "end": 124,
+            "text": "A wireless surveillance and safety system for mine workers based on Zigbee",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 127,
+            "end": 211,
+            "text": "2012 1st International Conference on Recent Advances in Information Technology (RAIT)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	{
+        "value": {
+            "start": 214,
+            "end": 220,
+            "text": "148-151",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 223,
+            "end": 226,
+            "text": "2012",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Tanmoy Maity, Partha Sarathi Das, Mithu Mukherjee. A wireless surveillance and safety system for mine workers based on Zigbee. 2012 1st International Conference on Recent Advances in Information Technology (RAIT), 148-151, 2012."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 20,
+            "text": "N. Surendranath Reddy,",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 23,
+            "end": 40,
+            "text": "M Srinivasa Saketh,",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 43,
+            "end": 53,
+            "text": "Sourav Dhar.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 56,
+            "end": 138,
+            "text": "Review of sensor technology for mine safety monitoring systems: A holistic approach",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 141,
+            "end": 230,
+            "text": "2016 IEEE First International Conference on Control, Measurement and Instrumentation (CMI)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	{
+        "value": {
+            "start": 233,
+            "end": 239,
+            "text": "429-434",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+	{
+        "value": {
+            "start": 242,
+            "end": 245,
+            "text": "2016",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "N. Surendranath Reddy, M Srinivasa Saketh, Sourav Dhar. Review of sensor technology for mine safety monitoring systems: A holistic approach. 2016 IEEE First International Conference on Control, Measurement and Instrumentation (CMI), 429-434, 2016."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 10,
+            "text": "S. Kadambar",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 13,
+            "end": 24,
+            "text": "A. R. Godala",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 27,
+            "end": 41,
+            "text": "A. K. R. Chavva",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 47,
+            "end": 62,
+            "text": "V. S. Tijoriwala",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },	
+    {
+        "value": {
+            "start": 65,
+            "end": 112,
+            "text": "Learning Based CSI Feedback Prediction for 5G NR",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 115,
+            "end": 190,
+            "text": "2021 IEEE 18th Annual Consumer Communications & Networking Conference (CCNC)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 193,
+            "end": 201,
+            "text": "Las Vegas",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 204,
+            "end": 205,
+            "text": "NV",
+            "labels": [
+                "STATE"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 208,
+            "end": 210,
+            "text": "USA",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 213,
+            "end": 216,
+            "text": "2021",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+	{
+        "value": {
+            "start": 219,
+            "end": 221,
+            "text": "1-6",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "S. Kadambar, A. R. Godala, A. K. R. Chavva and V. S. Tijoriwala. Learning Based CSI Feedback Prediction for 5G NR. 2021 IEEE 18th Annual Consumer Communications & Networking Conference (CCNC), Las Vegas, NV, USA, 2021, 1-6."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 11,
+            "text": "Y. -J. Chang",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 14,
+            "end": 23,
+            "text": "F. -Y. Leu",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 26,
+            "end": 36,
+            "text": "S. -C. Chen",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 42,
+            "end": 52,
+            "text": "H. -L. Wong.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 55,
+            "end": 128,
+            "text": "Applying Web Crawlers to Develop a Sale Management System for Online Malls",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 131,
+            "end": 230,
+            "text": "2015 9th International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 233,
+            "end": 246,
+            "text": "Santa Catarina",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 249,
+            "end": 254,
+            "text": "Brazil",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 257,
+            "end": 260,
+            "text": "2015",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 263,
+            "end": 269,
+            "text": "408-413",
+            "labels": [
+                "PAGES"
+     		]
+        }
+    },
+    {
+        "data": {
+            "text": "Y. -J. Chang, F. -Y. Leu, S. -C. Chen and H. -L. Wong. Applying Web Crawlers to Develop a Sale Management System for Online Malls. 2015 9th International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing, Santa Catarina, Brazil, 2015, 408-413."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 14,
+            "text": "Andrzej Grzesik",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 17,
+            "end": 32,
+            "text": "Tereza Klimošová",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 35,
+            "end": 50,
+            "text": "Marcin Pilipczuk",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 57,
+            "end": 72,
+            "text": "Michał Pilipczuk",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 75,
+            "end": 153,
+            "text": "Polynomial-time. Algorithm for Maximum Weight Independent Set on P6-free Graphs",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 156,
+            "end": 193,
+            "text": "ACM Trans. Algorithms 18, 1, Article 4",
+            "labels": [
+                "JOURNAL"
+            ]
+        }
+    },
+	{
+        "value": {
+            "start": 195,
+            "end": 208,
+            "text": "(January 2022)",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 211,
+            "end": 212,
+            "text": "57",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Andrzej Grzesik, Tereza Klimošová, Marcin Pilipczuk, and Michał Pilipczuk. Polynomial-time. Algorithm for Maximum Weight Independent Set on P6-free Graphs. ACM Trans. Algorithms 18, 1, Article 4 (January 2022), 57."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 7,
+            "text": "Vega, F.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 9,
+            "end": 39,
+            "text": "Note on the Riemann Hypothesis:",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 41,
+            "end": 115,
+            "text": "International Conference on Recent Developments in Mathematics (ICRDM 2022)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 118,
+            "end": 138,
+            "text": "Cambridge Open Engage",
+            "labels": [
+                "ORG"
+           ]
+        }
+    },
+	    {
+        "value": {
+            "start": 141,
+            "end": 154,
+            "text": "19 August 2022",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Vega, F. Note on the Riemann Hypothesis: International Conference on Recent Developments in Mathematics (ICRDM 2022). Cambridge Open Engage. 19 August 2022"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 14,
+            "text": "Hisao Ishibuchi",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 17,
+            "end": 25,
+            "text": "Ryo Imada",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 28,
+            "end": 39,
+            "text": "Yu Setoguchi",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 46,
+            "end": 58,
+            "text": "Yusuke Nojima",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+   {
+        "value": {
+            "start": 61,
+            "end": 157,
+            "text": "Reference point specification in hypervolume calculation for fair comparison and efficient search",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+	  {
+        "value": {
+            "start": 160,
+            "end": 240,
+            "text": "In Proceedings of the Genetic and Evolutionary Computation Conference (GECCO '17)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	{
+        "value": {
+            "start": 243,
+            "end": 277,
+            "text": "Association for Computing Machinery",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },  
+	{
+        "value": {
+            "start": 280,
+            "end": 287,
+            "text": "New York",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+		{
+        "value": {
+            "start": 290,
+            "end": 291,
+            "text": "NY",
+            "labels": [
+                "STATE"
+            ]
+        }
+    },
+	  {
+        "value": {
+            "start": 294,
+            "end": 296,
+            "text": "USA",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+	  {
+        "value": {
+            "start": 299,
+            "end": 305,
+            "text": "585–592",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Hisao Ishibuchi, Ryo Imada, Yu Setoguchi, and Yusuke Nojima. Reference point specification in hypervolume calculation for fair comparison and efficient search. In Proceedings of the Genetic and Evolutionary Computation Conference (GECCO '17). Association for Computing Machinery, New York, NY, USA, 585–592."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 7,
+            "text": "Yang Xia",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 10,
+            "end": 23,
+            "text": "Seiji Uenohara",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 26,
+            "end": 40,
+            "text": "Kazuyuki Aihara",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 43,
+            "end": 55,
+            "text": "Timothée Levi",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 58,
+            "end": 126,
+            "text": "Real-time implementation of ReSuMe learning in Spiking Neural Network",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 129,
+            "end": 134,
+            "text": "ICAROB",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 137,
+            "end": 144,
+            "text": "Jan 2019",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 147,
+            "end": 151,
+            "text": "Beppu",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+	 {
+        "value": {
+            "start": 154,
+            "end": 158,
+            "text": "Japan",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Yang Xia, Seiji Uenohara, Kazuyuki Aihara, Timothée Levi. Real-time implementation of ReSuMe learning in Spiking Neural Network. ICAROB, Jan 2019, Beppu, Japan."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 10,
+            "text": "Bonnett, M.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 13,
+            "end": 22,
+            "text": "Wallis, T.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 25,
+            "end": 36,
+            "text": "Rossmann, M.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 38,
+            "end": 118,
+            "text": "Histopathologic Analysis of Atypical Lesions in Image-Guided Core Breast Biopsies",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 122,
+            "end": 125,
+            "text": "NCBB",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 128,
+            "end": 134,
+            "text": "154–160",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 136,
+            "end": 141,
+            "text": "(2003)",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 144,
+            "end": 150,
+            "text": "Detroit",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },	
+	    {
+        "value": {
+            "start": 153,
+            "end": 160,
+            "text": "Michigan",
+            "labels": [
+                "STATE"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Bonnett, M., Wallis, T., Rossmann, M. Histopathologic Analysis of Atypical Lesions in Image-Guided Core Breast Biopsies.  NCBB. 154–160 (2003). Detroit, Michigan"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 11,
+            "text": "Tsang, Y. F. ",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	{
+        "value": {
+            "start": 13,
+            "end": 98,
+            "text": "Control of filamentous growth in activated sluge process treating papermaking effluent",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+	{
+        "value": {
+            "start": 101,
+            "end": 247,
+            "text": "Paper presented at the International Conference on Biodiversity and Conservation of Wetland in South China - From Preservation to Green Development",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 250,
+            "end": 281,
+            "text": "The Open University of Hong Kong",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+	   {
+        "value": {
+            "start": 284,
+            "end": 288,
+            "text": "China",
+            "labels": [
+                "COUNTRY"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Tsang, Y. F. Control of filamentous growth in activated sluge process treating papermaking effluent. Paper presented at the International Conference on Biodiversity and Conservation of Wetland in South China - From Preservation to Green Development, The Open University of Hong Kong, China."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 9,
+            "text": "Lihui Wang",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	 {
+        "value": {
+            "start": 12,
+            "end": 24,
+            "text": "Yonghui Zhang",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	 {
+        "value": {
+            "start": 27,
+            "end": 39,
+            "text": "Haoyuan Zheng",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 42,
+            "end": 117,
+            "text": "Design of smart factory network architecture based on non-uniform clustering",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 120,
+            "end": 161,
+            "text": "2022 41st Chinese Control Conference (CCC)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 164,
+            "end": 172,
+            "text": "5759-5764",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 175,
+            "end": 178,
+            "text": "2022",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Lihui Wang, Yonghui Zhang, Haoyuan Zheng. Design of smart factory network architecture based on non-uniform clustering. 2022 41st Chinese Control Conference (CCC), 5759-5764, 2022"
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 6,
+            "text": "Hui Liu",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 9,
+            "end": 18,
+            "text": "Zhenyu Liu",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 21,
+            "end": 32,
+            "text": "Weiqiang Jia",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+	    {
+        "value": {
+            "start": 35,
+            "end": 44,
+            "text": "Xianke Lin",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 47,
+            "end": 132,
+            "text": "A Novel Deep Learning-Based Encoder-Decoder Model for Remaining Useful Life Prediction",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 135,
+            "end": 196,
+            "text": "2019 International Joint Conference on Neural Networks (IJCNN)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 199,
+            "end": 201,
+            "text": "1-8",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 204,
+            "end": 207,
+            "text": "2019",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Hui Liu, Zhenyu Liu, Weiqiang Jia, Xianke Lin. A Novel Deep Learning-Based Encoder-Decoder Model for Remaining Useful Life Prediction. 2019 International Joint Conference on Neural Networks (IJCNN), 1-8, 2019"
+        }
+    }
+]

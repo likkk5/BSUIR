@@ -1,0 +1,4414 @@
+[
+{
+    "value": {
+        "start": 0,
+        "end": 8,
+        "text": "Jiwei Yan",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 11,
+        "end": 22,
+        "text": "Shixin Zhang",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 25,
+        "end": 34,
+        "text": "Yepang Liu",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 37,
+        "end": 43,
+        "text": "Xi Deng",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 46,
+        "end": 52,
+        "text": "Jun Yan",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 55,
+        "end": 64,
+        "text": "Jian Zhang",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 67,
+        "end": 129,
+        "text": "A Comprehensive Evaluation of Android ICC Resolution Techniques",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 132,
+        "end": 203,
+        "text": "37th IEEE/ACM International Conference on Automated Software Engineering",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 206,
+        "end": 220,
+        "text": "05 January 2023",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 223,
+        "end": 226,
+        "text": "1–13",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 229,
+        "end": 263,
+        "text": "Association for Computing Machinery",
+        "labels": [
+            "ORG"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 266,
+        "end": 273,
+        "text": "New York",
+        "labels": [
+            "TOWN"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "Jiwei Yan, Shixin Zhang, Yepang Liu, Xi Deng, Jun Yan, Jian Zhang. A Comprehensive Evaluation of Android ICC Resolution Techniques. 37th IEEE/ACM International Conference on Automated Software Engineering, 05 January 2023. 1–13. Association for Computing Machinery, New York"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 11,
+        "text": "Amina Annane",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 14,
+        "end": 37,
+        "text": "Nathalie Aussenac-Gilles",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 40,
+        "end": 50,
+        "text": "Mouna Kamel",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 53,
+        "end": 116,
+        "text": "BBO: BPMN 2.0 Based Ontology for Business Process Representation",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 119,
+        "end": 178,
+        "text": "20th European Conference on Knowledge Management (ECKM 2019)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 181,
+        "end": 197,
+        "text": "05 September 2019",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 200,
+        "end": 233,
+        "text": "IRIT, CNRS, University of Toulouse",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 236,
+        "end": 243,
+        "text": "Toulouse",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 246,
+        "end": 251,
+        "text": "France",
+        "labels": ["COUNTRY"]
+    }
+},
+{
+    "data": {
+        "text": "Amina Annane, Nathalie Aussenac-Gilles, Mouna Kamel. BBO: BPMN 2.0 Based Ontology for Business Process Representation. 20th European Conference on Knowledge Management (ECKM 2019), 05 September 2019. IRIT, CNRS, University of Toulouse, Toulouse, France"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 17,
+        "text": "Eduardo García-Roa",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 20,
+        "end": 49,
+        "text": "José Antonio Marmolejo-Saucedo",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 52,
+        "end": 69,
+        "text": "Ana Paula Martínez",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 72,
+        "end": 91,
+        "text": "Fernando Elizarrarás",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 94,
+        "end": 169,
+        "text": "A Greenfield Analysis for Supply Chains Enhanced with Agent-Based Simulation",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 171,
+        "end": 271,
+        "text": "6th EAI International Conference on Computer Science and Engineering in Health Services (COMPSE 2022)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 274,
+        "end": 288,
+        "text": "Springer Nature",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 291,
+        "end": 301,
+        "text": "Mexico City",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 304,
+        "end": 315,
+        "text": "28 July 2022",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 318,
+        "end": 322,
+        "text": "39-46",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Eduardo García-Roa, José Antonio Marmolejo-Saucedo, Ana Paula Martínez, Fernando Elizarrarás. A Greenfield Analysis for Supply Chains Enhanced with Agent-Based Simulation. 6th EAI International Conference on Computer Science and Engineering in Health Services (COMPSE 2022). Springer Nature. Mexico City. 28 July 2022. 39-46."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 14,
+        "text": "Venkat Krishnan",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 17,
+        "end": 27,
+        "text": "Haifeng Liu",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 33,
+        "end": 49,
+        "text": "D. McCalley James",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 52,
+        "end": 127,
+        "text": "Coordinated Reactive Power Planning against Power System Voltage Instability",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 130,
+        "end": 189,
+        "text": "2009 IEEE/PES Power Systems Conference and Exposition (PSCE)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 192,
+        "end": 240,
+        "text": "Institute of Electrical and Electronics Engineers",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 243,
+        "end": 249,
+        "text": "Seattle",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 252,
+        "end": 261,
+        "text": "Washington",
+        "labels": ["STATE"]
+    }
+},
+{
+    "value": {
+        "start": 264,
+        "end": 279,
+        "text": "15-18 March 2009",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 282,
+        "end": 284,
+        "text": "1-8",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Venkat Krishnan, Haifeng Liu and D. McCalley James. Coordinated Reactive Power Planning against Power System Voltage Instability. 2009 IEEE/PES Power Systems Conference and Exposition (PSCE). Institute of Electrical and Electronics Engineers. Seattle, Washington. 15-18 March 2009. 1-8."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 13,
+        "text": "Stephen Keeley",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 16,
+        "end": 30,
+        "text": "Benjamin Letham",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 33,
+        "end": 45,
+        "text": "Craig Sanders",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 48,
+        "end": 58,
+        "text": "Chase Tymms",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 61,
+        "end": 78,
+        "text": "Michael Shvartsman",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 81,
+        "end": 172,
+        "text": "A Semi-parametric Model for Decision Making in High-Dimensional Sensory Discrimination Tasks",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 175,
+        "end": 222,
+        "text": "37-th AAAI Conference on Artificial Intelligence",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 225,
+        "end": 234,
+        "text": "AAAI Press",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 237,
+        "end": 246,
+        "text": "Washington",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 249,
+        "end": 250,
+        "text": "DC",
+        "labels": ["STATE"]
+    }
+},
+{
+    "value": {
+        "start": 253,
+        "end": 271,
+        "text": "February 7–14, 2023",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 274,
+        "end": 278,
+        "text": "40-47",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Stephen Keeley, Benjamin Letham, Craig Sanders, Chase Tymms, Michael Shvartsman. A Semi-parametric Model for Decision Making in High-Dimensional Sensory Discrimination Tasks. 37-th AAAI Conference on Artificial Intelligence. AAAI Press. Washington, DC. February 7–14, 2023. 40-47."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 11,
+        "text": "Matthew West",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 14,
+        "end": 31,
+        "text": "Geoffrey L. Herman",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 34,
+        "end": 45,
+        "text": "Craig Zilles",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 48,
+        "end": 166,
+        "text": "PrairieLearn: Mastery-based Online Problem Solving with Adaptive Scoring and Recommendations Driven by Machine Learning",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 169,
+        "end": 208,
+        "text": "2015 ASEE Annual Conference & Exposition",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 211,
+        "end": 252,
+        "text": "American Society for Engineering Education",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 255,
+        "end": 261,
+        "text": "Seattle",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 264,
+        "end": 273,
+        "text": "Washington",
+        "labels": ["STATE"]
+    }
+},
+{
+    "value": {
+        "start": 276,
+        "end": 288,
+        "text": "June 14, 2015",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 291,
+        "end": 312,
+        "text": "26.1238.1 - 26.1238.14",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Matthew West, Geoffrey L. Herman, Craig Zilles. PrairieLearn: Mastery-based Online Problem Solving with Adaptive Scoring and Recommendations Driven by Machine Learning. 2015 ASEE Annual Conference & Exposition. American Society for Engineering Education. Seattle, Washington. June 14, 2015. 26.1238.1 - 26.1238.14."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 8,
+        "text": "A Mahdavi",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 11,
+        "end": 17,
+        "text": "B Rader",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 20,
+        "end": 89,
+        "text": "Integrated buildings and systems design: Approaches, tools, and actors",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 92,
+        "end": 156,
+        "text": "11th European Conference on Product & Process Modeling, ECPPM2016",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 159,
+        "end": 167,
+        "text": "CRC Press",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 170,
+        "end": 177,
+        "text": "Limassol",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 180,
+        "end": 199,
+        "text": "07-09 September 2016",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 202,
+        "end": 206,
+        "text": "57-63",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "A Mahdavi, B Rader. Integrated buildings and systems design: Approaches, tools, and actors. 11th European Conference on Product & Process Modeling, ECPPM2016. CRC Press. Limassol. 07-09 September 2016. 57-63."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 13,
+        "text": "Cameron Neylon",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 16,
+        "end": 64,
+        "text": "Openness in Scholarshil: A Return to Core Values?",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 66,
+        "end": 135,
+        "text": "The 21st International Conference on Electronic Publishing, ELPUB 2017",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 138,
+        "end": 146,
+        "text": "IOS Press",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 149,
+        "end": 156,
+        "text": "Limassol",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 159,
+        "end": 173,
+        "text": "06-08 June 2017",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 176,
+        "end": 179,
+        "text": "6-17",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Cameron Neylon. Openness in Scholarshil: A Return to Core Values? The 21st International Conference on Electronic Publishing, ELPUB 2017. IOS Press. Limassol. 06-08 June 2017. 6-17."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 23,
+        "text": "Christodoulou Charikleia",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 26,
+        "end": 143,
+        "text": "Urban sprawl typologies in medium-sized Greek cities: Α qualitative morphological analysis in the peri-urban landscape",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 146,
+        "end": 174,
+        "text": "1st CyNUM Regional Conference",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 177,
+        "end": 181,
+        "text": "CyNUM",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 184,
+        "end": 190,
+        "text": "Nicosia",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 193,
+        "end": 207,
+        "text": "16-18 May, 2018",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 210,
+        "end": 216,
+        "text": "134-146",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Christodoulou Charikleia. Urban sprawl typologies in medium-sized Greek cities: Α qualitative morphological analysis in the peri-urban landscape. 1st CyNUM Regional Conference. CyNUM. Nicosia. 16-18 May, 2018. 134-146."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 21,
+        "text": "Konstantinidis Stathis",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 24,
+        "end": 33,
+        "text": "Tilley Zoe",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 36,
+        "end": 42,
+        "text": "Ko Stan",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 45,
+        "end": 59,
+        "text": "Henderson James",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 62,
+        "end": 78,
+        "text": "Cunningham Sheila",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 81,
+        "end": 89,
+        "text": "Hodge Pam",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 92,
+        "end": 113,
+        "text": "Stefanowicz-Kocol Anna",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 116,
+        "end": 144,
+        "text": "Jankowicz-Szymanska Agnieszka",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 147,
+        "end": 162,
+        "text": "Grochowska Aneta",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 165,
+        "end": 180,
+        "text": "Kołpa Małgorzata",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 183,
+        "end": 201,
+        "text": "Lillo-Crespo Manuel",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 204,
+        "end": 225,
+        "text": "Riquelme Galindo Jorge",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 228,
+        "end": 255,
+        "text": "Catala Rodriguez Maria Pilar",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 258,
+        "end": 276,
+        "text": "Höijer-Brear Viveka",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 279,
+        "end": 288,
+        "text": "Törne Mari",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 291,
+        "end": 306,
+        "text": "Feliciano Sandra",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 309,
+        "end": 325,
+        "text": "Camilleri Anthony",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 328,
+        "end": 349,
+        "text": "Poultourtzidis Ioannis",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 352,
+        "end": 366,
+        "text": "Papamalis Fivos",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 369,
+        "end": 385,
+        "text": "Spachos Dimitrios",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 388,
+        "end": 407,
+        "text": "Athanasopoulos Nikos",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 410,
+        "end": 425,
+        "text": "Nikolaidou Maria",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 428,
+        "end": 445,
+        "text": "Bamidis Panagiotis",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 448,
+        "end": 457,
+        "text": "Hall Carol",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 460,
+        "end": 609,
+        "text": "Co-creation of a virtual interactive teaching package for auditors of healthcare placements – towards assurance of quality of health care traineeships",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 612,
+        "end": 683,
+        "text": "15th International Conference on Education and New Learning Technologies",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 686,
+        "end": 690,
+        "text": "IATED",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 693,
+        "end": 697,
+        "text": "Palma",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 700,
+        "end": 714,
+        "text": "03-05 July 2023",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 717,
+        "end": 725,
+        "text": "3189-3195",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Konstantinidis Stathis, Tilley Zoe, Ko Stan, Henderson James, Cunningham Sheila, Hodge Pam, Stefanowicz-Kocol Anna, Jankowicz-Szymanska Agnieszka, Grochowska Aneta, Kołpa Małgorzata, Lillo-Crespo Manuel, Riquelme Galindo Jorge, Catala Rodriguez Maria Pilar, Höijer-Brear Viveka, Törne Mari, Feliciano Sandra, Camilleri Anthony, Poultourtzidis Ioannis, Papamalis Fivos, Spachos Dimitrios, Athanasopoulos Nikos, Nikolaidou Maria, Bamidis Panagiotis, Hall Carol. Co-creation of a virtual interactive teaching package for auditors of healthcare placements – towards assurance of quality of health care traineeships. 15th International Conference on Education and New Learning Technologies. IATED. Palma. 03-05 July 2023. 3189-3195."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 22,
+        "text": "Andreopoulou Zacharoula",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 25,
+        "end": 48,
+        "text": "Papagiannopoulou Dimitra",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 51,
+        "end": 65,
+        "text": "Tsitsoni Thekla",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 68,
+        "end": 135,
+        "text": "Online app for the evaluation of climate impact in urban green areas",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 138,
+        "end": 193,
+        "text": "21st International Conference on e-Society 2023 (ES2023)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 196,
+        "end": 263,
+        "text": "International Association for Development of the Information Society",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 266,
+        "end": 271,
+        "text": "Lisbon",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 274,
+        "end": 289,
+        "text": "12-13 March 2023",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 292,
+        "end": 298,
+        "text": "485-488",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Andreopoulou Zacharoula, Papagiannopoulou Dimitra, Tsitsoni Thekla. Online app for the evaluation of climate impact in urban green areas. 21st International Conference on e-Society 2023 (ES2023). International Association for Development of the Information Society. Lisbon. 12-13 March 2023. 485-488."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 6,
+        "text": "Liu Bin",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 9,
+        "end": 27,
+        "text": "Tsoumakas Grigorios",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 30,
+        "end": 82,
+        "text": "Making Classifier Chains Resilient to Class Imbalance",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 85,
+        "end": 137,
+        "text": "10th Asian Conference on Machine Learning (ACML 2018)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 140,
+        "end": 154,
+        "text": "MLResearchPress",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 157,
+        "end": 163,
+        "text": "Beijing",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 166,
+        "end": 184,
+        "text": "14-16 November 2018",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 187,
+        "end": 193,
+        "text": "280-295",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Liu Bin, Tsoumakas Grigorios. Making Classifier Chains Resilient to Class Imbalance. 10th Asian Conference on Machine Learning (ACML 2018). MLResearchPress. Beijing. 14-16 November 2018. 280-295."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 12,
+        "text": "Koutsianti C.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 15,
+        "end": 35,
+        "text": "Zoumpoulis Anastasios",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 38,
+        "end": 54,
+        "text": "Mitrakas Manassis",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 57,
+        "end": 77,
+        "text": "Kikkinides Eustathios",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 80,
+        "end": 178,
+        "text": "Evaluation of polyimide membrane's performance in terms of laboratory-scale CO2 removal from biogas",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 181,
+        "end": 229,
+        "text": "Protection and Restoration of the Environment XVI",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 232,
+        "end": 267,
+        "text": "Stevens Institute of Technology, USA",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 270,
+        "end": 336,
+        "text": "Department of Civil Engineering of the University of Patras, Greece",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 339,
+        "end": 346,
+        "text": "Kalamata",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 349,
+        "end": 364,
+        "text": "05-08 July, 2022",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 367,
+        "end": 370,
+        "text": "1-10",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Koutsianti C., Zoumpoulis Anastasios, Mitrakas Manassis, Kikkinides Eustathios. Evaluation of polyimide membrane's performance in terms of laboratory-scale CO2 removal from biogas. Protection and Restoration of the Environment XVI. Stevens Institute of Technology, USA; Department of Civil Engineering of the University of Patras, Greece. Kalamata. 05-08 July, 2022. 1-10."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 16,
+        "text": "Koufogianidis Ar.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 19,
+        "end": 37,
+        "text": "Siakavara Katherine",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 40,
+        "end": 98,
+        "text": "Coupled Microstrip Filters on Multilayered Dielectric Media",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 101,
+        "end": 184,
+        "text": "Second International Symposium of Trans Black Sea Region on Applied Electromagnetism",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 187,
+        "end": 191,
+        "text": "BSUAE",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 194,
+        "end": 199,
+        "text": "Xanthi",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 202,
+        "end": 216,
+        "text": "27-29 June 2000",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 219,
+        "end": 221,
+        "text": "107",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Koufogianidis Ar., Siakavara Katherine. Coupled Microstrip Filters on Multilayered Dielectric Media. Second International Symposium of Trans Black Sea Region on Applied Electromagnetism. BSUAE. Xanthi. 27-29 June 2000. 107."
+    }
+},
+    {
+        "value": {
+            "start": 0,
+            "end": 10,
+            "text": "Ganatsos T.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 13,
+            "end": 31,
+            "text": "Siakavara Katherine",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 34,
+            "end": 118,
+            "text": "Improved Microstrip Antenna Polarization by Using Electromagnetic Band-Gap Substrates",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 121,
+            "end": 180,
+            "text": "International Conference on Antenna Technologies (ICAT 2005)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 183,
+            "end": 199,
+            "text": "Allied Publishers",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 202,
+            "end": 210,
+            "text": "Ahmedabad",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 213,
+            "end": 231,
+            "text": "23–24 February 2005",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 234,
+            "end": 240,
+            "text": "539-543",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "15 Ganatsos T., Siakavara Katherine. Improved Microstrip Antenna Polarization by Using Electromagnetic Band-Gap Substrates. International Conference on Antenna Technologies (ICAT 2005). Allied Publishers. Ahmedabad. 23–24 February 2005. 539-543."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 9,
+            "text": "Young M.W.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 12,
+            "end": 21,
+            "text": "Xanthos M.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 24,
+            "end": 45,
+            "text": "Karagiannidis Georgios",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 48,
+            "end": 65,
+            "text": "Bikiaris Dimitrios",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 68,
+            "end": 139,
+            "text": "Rheological modification of PET by reactive processing with polyepoxides",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 142,
+            "end": 230,
+            "text": "57th Annual Technical Conference of the SPE on Plastics Bridging the Millennia (ANTEC 99)",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 233,
+            "end": 261,
+            "text": "Society of Plastics Engineers",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 264,
+            "end": 271,
+            "text": "New York",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 274,
+            "end": 287,
+            "text": "02-06 May 1999",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 290,
+            "end": 298,
+            "text": "2022-2026",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "16 Young M.W., Xanthos M., Karagiannidis Georgios, Bikiaris Dimitrios. Rheological modification of PET by reactive processing with polyepoxides. 57th Annual Technical Conference of the SPE on Plastics Bridging the Millennia (ANTEC 99). Society of Plastics Engineers. New York. 02-06 May 1999. 2022-2026."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 20,
+            "text": "Zoumpoulis Anastasios",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 23,
+            "end": 37,
+            "text": "Tzoupanos N. D.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 40,
+            "end": 52,
+            "text": "Moussas P. A.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 55,
+            "end": 124,
+            "text": "Inorganic pre-polymerized coagulants: current status and future trends",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 127,
+            "end": 229,
+            "text": "3rd IASME/WSEAS International Conference on Energy, Environment, Ecosystems and Sustainable Development",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 232,
+            "end": 297,
+            "text": "World Scientific and Engineering Academy and Society (WSEAS Press)",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 300,
+            "end": 311,
+            "text": "Crete Island",
+            "labels": [
+                "Island"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 314,
+            "end": 328,
+            "text": "24-26 June 2007",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 331,
+            "end": 337,
+            "text": "292-300",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Zoumpoulis Anastasios, Tzoupanos N. D., Moussas P. A.. Inorganic pre-polymerized coagulants: current status and future trends. 3rd IASME/WSEAS International Conference on Energy, Environment, Ecosystems and Sustainable Development. World Scientific and Engineering Academy and Society (WSEAS Press). Crete Island. 24-26 June 2007. 292-300."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 14,
+            "text": "Ioannidis T. A.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 17,
+            "end": 37,
+            "text": "Zoumpoulis Anastasios",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 40,
+            "end": 117,
+            "text": "Treatment of lead-loaded solid toxic industrial residues by selective leaching",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 120,
+            "end": 196,
+            "text": "6th International Conference on Protection and Restoration of the Environment",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 199,
+            "end": 205,
+            "text": "Grafima",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 208,
+            "end": 222,
+            "text": "Skiathos Island",
+            "labels": [
+                "Island"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 225,
+            "end": 239,
+            "text": "01-05 July 2002",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 242,
+            "end": 248,
+            "text": "659-666",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Ioannidis T. A., Zoumpoulis Anastasios. Treatment of lead-loaded solid toxic industrial residues by selective leaching. 6th International Conference on Protection and Restoration of the Environment. Grafima. Skiathos Island. 01-05 July 2002. 659-666."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 17,
+            "text": "Tsakalidou Venetia",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 20,
+            "end": 37,
+            "text": "Kalogirou Nikolaos",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 40,
+            "end": 130,
+            "text": "Modern Greek cities: Investigating the relationship between obsolescence and sustainability",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 133,
+            "end": 220,
+            "text": "International Conference 2023: Repurposing Places for Social and Environmental Resilience",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 223,
+            "end": 277,
+            "text": "CounterArchitecture, in collaboration with UEL and Arup",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 280,
+            "end": 285,
+            "text": "London",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 288,
+            "end": 303,
+            "text": "23-24 April 2023",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 306,
+            "end": 312,
+            "text": "230-233",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Tsakalidou Venetia, Kalogirou Nikolaos. Modern Greek cities: Investigating the relationship between obsolescence and sustainability. International Conference 2023: Repurposing Places for Social and Environmental Resilience. CounterArchitecture, in collaboration with UEL and Arup. London. 23-24 April 2023. 230-233."
+        }
+    },
+    {
+        "value": {
+            "start": 0,
+            "end": 10,
+            "text": "Chantzis G.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 13,
+            "end": 25,
+            "text": "Symeonidou M.",
+            "labels": [
+            "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 28,
+            "end": 40,
+            "text": "Antoniadou P.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 43,
+            "end": 57,
+            "text": "Giama Effrosyni",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 60,
+            "end": 69,
+            "text": "Boemi S.N.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 72,
+            "end": 85,
+            "text": "Chadiarakou S.",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 88,
+            "end": 104,
+            "text": "Papadopoulos Agis",
+            "labels": [
+                "SNAME_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 107,
+            "end": 194,
+            "text": "Analysis and evaluation of the thermophysical properties of ventilated façade typologies",
+            "labels": [
+                "TITLE_IN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 197,
+            "end": 291,
+            "text": "STEPGRAD 2022 - International Conference on Contemporary Theory and Practice in Construction XV",
+            "labels": [
+                "EVENT"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 294,
+            "end": 317,
+            "text": "University of Banja Luka",
+            "labels": [
+                "ORG"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 320,
+            "end": 329,
+            "text": "Banja Luka",
+            "labels": [
+                "TOWN"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 332,
+            "end": 346,
+            "text": "16-17 June 2022",
+            "labels": [
+                "DATE"
+            ]
+        }
+    },
+    {
+        "value": {
+            "start": 349,
+            "end": 355,
+            "text": "153-159",
+            "labels": [
+                "PAGES"
+            ]
+        }
+    },
+    {
+        "data": {
+            "text": "Chantzis G., Symeonidou M., Antoniadou P., Giama Effrosyni, Boemi S.N., Chadiarakou S., Papadopoulos Agis. Analysis and evaluation of the thermophysical properties of ventilated façade typologies. STEPGRAD 2022 - International Conference on Contemporary Theory and Practice in Construction XV. University of Banja Luka. Banja Luka. 16-17 June 2022. 153-159."
+        }
+    },
+  {
+    "value": {
+      "start": 0,
+      "end": 12,
+      "text": "El-Sallam, A.",
+      "labels": [
+        "SNAME_IN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 15,
+      "end": 27,
+      "text": "Bennamoun, M.",
+      "labels": [
+        "SNAME_IN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 30,
+      "end": 38,
+      "text": "Honda, K.",
+      "labels": [
+        "SNAME_IN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 41,
+      "end": 50,
+      "text": "Lyttle, A.",
+      "labels": [
+        "SNAME_IN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 53,
+      "end": 64,
+      "text": "Alderson, J.",
+      "labels": [
+        "SNAME_IN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 66,
+      "end": 203,
+      "text": "Towards a fully automatic markerless motion analysis system for the estimation of body joint kinematics with application to sport analysis",
+      "labels": [
+        "TITLE_IN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 206,
+      "end": 363,
+      "text": "International Conference on Computer Graphics Theory and Applications, GRAPP 2015 - 10th International Conference on Computer Graphics Theory and Applications",
+      "labels": [
+        "EVENT"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 366,
+      "end": 386,
+      "text": "VISlGRAPP Proceedings",
+      "labels": [
+        "ORG"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 390,
+      "end": 395,
+      "text": "Berlin",
+      "labels": [
+        "TOWN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 398,
+      "end": 413,
+      "text": "11-14 March 2015",
+      "labels": [
+        "DATE"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 416,
+      "end": 420,
+      "text": "58-69",
+      "labels": [
+        "PAGES"
+      ]
+    }
+  },
+  {
+    "data": {
+      "text": "El-Sallam, A., Bennamoun, M., Honda, K., Lyttle, A., Alderson, J. Towards a fully automatic markerless motion analysis system for the estimation of body joint kinematics with application to sport analysis. International Conference on Computer Graphics Theory and Applications, GRAPP 2015 - 10th International Conference on Computer Graphics Theory and Applications. VISlGRAPP Proceedings.  Berlin. 11-14 March 2015. 58-69."
+    }
+  },
+  {
+    "value": {
+      "start": 0,
+      "end": 12,
+      "text": "Yueming Zhang",
+      "labels": [
+        "SNAME_IN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 15,
+      "end": 24,
+      "text": "Yongkun Li",
+      "labels": [
+        "SNAME_IN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 27,
+      "end": 33,
+      "text": "Fan Guo",
+      "labels": [
+        "SNAME_IN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 36,
+      "end": 43,
+      "text": "Cheng Li",
+      "labels": [
+        "SNAME_IN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 46,
+      "end": 55,
+      "text": "Yinlong Xu",
+      "labels": [
+        "SNAME_IN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 58,
+      "end": 157,
+      "text": "ElasticBF: fine-grained and elastic bloom filter towards efficient read for LSM-tree-based KV stores",
+      "labels": [
+        "TITLE_IN"
+      ]
+    }
+  },
+
+
+  {
+    "value": {
+      "start": 160,
+      "end": 257,
+      "text": "HotStorage'18: Proceedings of the 10th USENIX Conference on Hot Topics in Storage and File Systems",
+      "labels": [
+        "EVENT"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 260,
+      "end": 277,
+      "text": "USENIX Association",
+      "labels": [
+        "ORG"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 280,
+      "end": 285,
+      "text": "Boston",
+      "labels": [
+        "TOWN"
+      ]
+    }
+  },
+ {
+    "value": {
+      "start": 288,
+      "end": 289,
+      "text": "MA",
+      "labels": [
+        "STATE"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 292,
+      "end": 306,
+      "text": "09-10 July 2018",
+      "labels": [
+        "DATE"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 309,
+      "end": 310,
+      "text": "11",
+      "labels": [
+        "PAGES"
+      ]
+    }
+  },
+  {
+    "data": {
+      "text": "Yueming Zhang, Yongkun Li, Fan Guo, Cheng Li, Yinlong Xu. ElasticBF: fine-grained and elastic bloom filter towards efficient read for LSM-tree-based KV stores. HotStorage'18: Proceedings of the 10th USENIX Conference on Hot Topics in Storage and File Systems. USENIX Association. Boston, MA. 09-10 July 2018. 11."
+    }
+  },
+  {
+    "value": {
+      "start": 0,
+      "end": 16,
+      "text": "Lamberto Tronchin",
+      "labels": [
+        "SNAME_IN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 19,
+      "end": 33,
+      "text": "Kristian Fabbri",
+      "labels": [
+      "SNAME_IN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 36,
+      "end": 51,
+      "text": "Valerio Tarabusi",
+      "labels": [
+        "SNAME_IN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 54,
+      "end": 108,
+      "text": "The subjective evaluation in the auralisation technique",
+      "labels": [
+        "TITLE_IN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 111,
+      "end": 200,
+      "text": "10th WSEAS International Conference on ACOUSTICS & MUSIC: THEORY & APPLICATIONS (AMTA '09)",
+      "labels": [
+        "EVENT"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 203,
+      "end": 213,
+      "text": "WSEAS Press",
+      "labels": [
+        "ORG"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 216,
+      "end": 221,
+      "text": "Prague",
+      "labels": [
+        "TOWN"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 224,
+      "end": 239,
+      "text": "23-25 March 2009",
+      "labels": [
+        "DATE"
+      ]
+    }
+  },
+  {
+    "value": {
+      "start": 242,
+      "end": 246,
+      "text": "13-18",
+      "labels": [
+        "PAGES"
+      ]
+    }
+  },
+  {
+    "data": {
+      "text": "Lamberto Tronchin, Kristian Fabbri, Valerio Tarabusi. The subjective evaluation in the auralisation technique. 10th WSEAS International Conference on ACOUSTICS & MUSIC: THEORY & APPLICATIONS (AMTA '09). WSEAS Press. Prague. 23-25 March 2009. 13-18."
+    }
+  },
+{
+    "value": {
+        "start": 0,
+        "end": 12,
+        "text": "Marek Vinkler",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 15,
+        "end": 30,
+        "text": "Vlastimil Havran",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 33,
+        "end": 76,
+        "text": "Register efficient memory allocator for GPUs",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 79,
+        "end": 113,
+        "text": "High Performance Graphics (HPG '14)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 116,
+        "end": 139,
+        "text": "Eurographics Association",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 142,
+        "end": 145,
+        "text": "Lyon",
+        "labels": ["TOWN"]
+    }
+},
+
+{
+    "value": {
+        "start": 148,
+        "end": 159,
+        "text": "23 June 2014",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 162,
+        "end": 166,
+        "text": "19–28",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Marek Vinkler, Vlastimil Havran. Register efficient memory allocator for GPUs. High Performance Graphics (HPG '14). Eurographics Association. Lyon. 23 June 2014. 19–28."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 14,
+        "text": "James E McKenna",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 17,
+        "end": 58,
+        "text": "A New Proof and a Tree Algorithm for RECAL",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 61,
+        "end": 198,
+        "text": "Performance '87: Proceedings of the 12th IFIP WG 7.3 International Symposium on Computer Performance Modelling, Measurement and Evaluation",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 201,
+        "end": 228,
+        "text": "North-Holland Publishing Co.",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 231,
+        "end": 238,
+        "text": "Brussels",
+        "labels": ["TOWN"]
+    }
+},
+
+{
+    "value": {
+        "start": 241,
+        "end": 256,
+        "text": "07 December 1987",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 259,
+        "end": 262,
+        "text": "3–16",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "James E McKenna. A New Proof and a Tree Algorithm for RECAL. Performance '87: Proceedings of the 12th IFIP WG 7.3 International Symposium on Computer Performance Modelling, Measurement and Evaluation. North-Holland Publishing Co.. Brussels. 07 December 1987. 3–16."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 17,
+        "text": "Ravi Krishnamurthy",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 20,
+        "end": 35,
+        "text": "Stephen P Morgan",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 38,
+        "end": 117,
+        "text": "Query Processing on Personal Computers: A Pragmatic Approach (Extended Abstract)",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 120,
+        "end": 184,
+        "text": "10th International Conference on Very Large Data Bases (VLDB '84)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 187,
+        "end": 217,
+        "text": "Morgan Kaufmann Publishers Inc.",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 219,
+        "end": 227,
+        "text": "Singapore",
+        "labels": ["TOWN"]
+    }
+},
+
+{
+    "value": {
+        "start": 230,
+        "end": 243,
+        "text": "27 August 1984",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 246,
+        "end": 250,
+        "text": "26–29",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Ravi Krishnamurthy, Stephen P Morgan. Query Processing on Personal Computers: A Pragmatic Approach (Extended Abstract). 10th International Conference on Very Large Data Bases (VLDB '84). Morgan Kaufmann Publishers Inc. Singapore. 27 August 1984. 26–29."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 10,
+        "text": "Petr Homola",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 13,
+        "end": 85,
+        "text": "Natural language understanding as first-order abduction via stable models",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 88,
+        "end": 197,
+        "text": "DARe'15: Proceedings of the 2015 International Conference on Defeasible and Ampliative Reasoning - Volume 1423",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 200,
+        "end": 210,
+        "text": "CEUR-WS.org",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 213,
+        "end": 224,
+        "text": "Buenos Aires",
+        "labels": ["TOWN"]
+    }
+},
+
+{
+    "value": {
+        "start": 227,
+        "end": 238,
+        "text": "27 July 2015",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 241,
+        "end": 245,
+        "text": "16–22",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Petr Homola. Natural language understanding as first-order abduction via stable models. DARe'15: Proceedings of the 2015 International Conference on Defeasible and Ampliative Reasoning - Volume 1423. CEUR-WS.org. Buenos Aires. 27 July 2015. 16–22."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 17,
+        "text": "Ganiyu O Ajisegiri",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 20,
+        "end": 33,
+        "text": "Frans L Muller",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 36,
+        "end": 132,
+        "text": "Effect of Price Dynamics in the Design of Eco-Industrial Parks: An Agent-based Modelling Approach",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 135,
+        "end": 251,
+        "text": "8th International Conference on Simulation and Modeling Methodologies, Technologies and Applications (SIMULTECH 2018)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 254,
+        "end": 301,
+        "text": "SCITEPRESS - Science and Technology Publications",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 304,
+        "end": 308,
+        "text": "Porto",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 311,
+        "end": 322,
+        "text": "29 July 2018",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 325,
+        "end": 329,
+        "text": "83–90",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Ganiyu O Ajisegiri, Frans L Muller. Effect of Price Dynamics in the Design of Eco-Industrial Parks: An Agent-based Modelling Approach. 8th International Conference on Simulation and Modeling Methodologies, Technologies and Applications (SIMULTECH 2018). SCITEPRESS - Science and Technology Publications. Porto. 29 July 2018. 83–90."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 12,
+        "text": "Lociano Silva",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 15,
+        "end": 40,
+        "text": "Olga Regina Pereira Bellon",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 43,
+        "end": 59,
+        "text": "Paulo F U Gotardo",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 62,
+        "end": 73,
+        "text": "Percy Nohama",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 76,
+        "end": 134,
+        "text": "MouseLupe: An Accessibility Tool for People with Low Vision",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 137,
+        "end": 243,
+        "text": "Proceedings of the IFIP 17th World Computer Congress - TC13 Stream on Usability: Gaining a Competitive Edge",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 246,
+        "end": 256,
+        "text": "Kluwer, B.V.",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 259,
+        "end": 266,
+        "text": "Montréal",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 269,
+        "end": 274,
+        "text": "Québec",
+        "labels": ["Province"]
+    }
+},
+{
+    "value": {
+        "start": 277,
+        "end": 290,
+        "text": "25 August 2002",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 293,
+        "end": 299,
+        "text": "191–202",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Lociano Silva, Olga Regina Pereira Bellon, Paulo F U Gotardo, Percy Nohama. MouseLupe: An Accessibility Tool for People with Low Vision. Proceedings of the IFIP 17th World Computer Congress - TC13 Stream on Usability: Gaining a Competitive Edge. Kluwer, B.V. Montréal, Québec. 25 August 2002. 191–202."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 9,
+        "text": "Jens Happe",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 12,
+        "end": 22,
+        "text": "Jean Berger",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 25,
+        "end": 98,
+        "text": "CoUAV: a multi-UAV cooperative search path planning simulation environment",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 101,
+        "end": 153,
+        "text": "2010 Summer Computer Simulation Conference (SCSC '10)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 156,
+        "end": 200,
+        "text": "Society for Computer Simulation International",
+        "labels": ["ORG"]
+    }
+},
+
+{
+    "value": {
+        "start": 203,
+        "end": 208,
+        "text": "Ottawa",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 211,
+        "end": 217,
+        "text": "Ontario",
+        "labels": ["Province"]
+    }
+},
+{
+    "value": {
+        "start": 220,
+        "end": 231,
+        "text": "11 July 2010",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 234,
+        "end": 238,
+        "text": "86–93",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Jens Happe, Jean Berger. CoUAV: a multi-UAV cooperative search path planning simulation environment. 2010 Summer Computer Simulation Conference (SCSC '10). Society for Computer Simulation International. Ottawa, Ontario. 11 July 2010. 86–93."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 18,
+        "text": "Caroline Tambellini",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 21,
+        "end": 65,
+        "text": "A language model which integrates uncertainty",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 68,
+        "end": 143,
+        "text": "1st BCS IRSG conference on Future Directions in Information Access (FDIA'07)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 146,
+        "end": 176,
+        "text": "BCS Learning & Development Ltd.",
+        "labels": ["ORG]"]
+    }
+},
+{
+    "value": {
+        "start": 178,
+        "end": 184,
+        "text": "Glasgow",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 187,
+        "end": 200,
+        "text": "28 August 2007",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 203,
+        "end": 204,
+        "text": "11",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Caroline Tambellini. A language model which integrates uncertainty. 1st BCS IRSG conference on Future Directions in Information Access (FDIA'07). BCS Learning & Development Ltd. Glasgow. 28 August 2007. 11."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 12,
+        "text": "Taniya Mishra",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 15,
+        "end": 32,
+        "text": "Srinivas Bangalore",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 35,
+        "end": 98,
+        "text": "Qme!: a speech-based question-answering system on mobile devices",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 101,
+        "end": 243,
+        "text": "HLT '10: Human Language Technologies: The 2010 Annual Conference of the North American Chapter of the Association for Computational Linguistics",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 246,
+        "end": 286,
+        "text": "Association for Computational Linguistics",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 289,
+        "end": 299,
+        "text": "Los Angeles",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 302,
+        "end": 311,
+        "text": "California",
+        "labels": ["STATE"]
+    }
+},
+{
+    "value": {
+        "start": 314,
+        "end": 325,
+        "text": "02 June 2010",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 328,
+        "end": 332,
+        "text": "55–63",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Taniya Mishra, Srinivas Bangalore. Qme!: a speech-based question-answering system on mobile devices. HLT '10: Human Language Technologies: The 2010 Annual Conference of the North American Chapter of the Association for Computational Linguistics. Association for Computational Linguistics. Los Angeles, California. 02 June 2010. 55–63."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 21,
+        "text": "Jón Egill Kristjánsson",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 24,
+        "end": 97,
+        "text": "Tests of a new cloud treatment in an atmospheric general circulation model",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 100,
+        "end": 192,
+        "text": "13th annual international conference of the center for nonlinear studies on Nonlinear science",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 195,
+        "end": 227,
+        "text": "Elsevier Science Publishers B. V.",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 229,
+        "end": 238,
+        "text": "Los Alamos",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 241,
+        "end": 250,
+        "text": "New Mexico",
+        "labels": ["STATE"]
+    }
+},
+
+{
+    "value": {
+        "start": 253,
+        "end": 267,
+        "text": "01 October 1994",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 270,
+        "end": 274,
+        "text": "23–32",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Jón Egill Kristjánsson. Tests of a new cloud treatment in an atmospheric general circulation model. 13th annual international conference of the center for nonlinear studies on Nonlinear science. Elsevier Science Publishers B. V. Los Alamos, New Mexico. 01 October 1994. 23–32."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 20,
+        "text": "Thomas-Bernard Kennif",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 23,
+        "end": 107,
+        "text": "Translation and Narrative as Foundations for Spatial Literacy in Environmental Design",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 110,
+        "end": 187,
+        "text": "Initiations: practices of teaching 1st year design in architecture (TFYD 2019)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 190,
+        "end": 209,
+        "text": "University of Cyprus",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 212,
+        "end": 218,
+        "text": "Nicosia",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 221,
+        "end": 238,
+        "text": "23-25 October 2019",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 241,
+        "end": 245,
+        "text": "19-28",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Thomas-Bernard Kennif. Translation and Narrative as Foundations for Spatial Literacy in Environmental Design. Initiations: practices of teaching 1st year design in architecture (TFYD 2019). University of Cyprus. Nicosia. 23-25 October 2019. 19-28."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 14,
+        "text": "Carole Delforge",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 17,
+        "end": 34,
+        "text": "Julie Van de Vyver",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 37,
+        "end": 49,
+        "text": "Alice Meurice",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 52,
+        "end": 115,
+        "text": "Learning to design a mobile hunt on Actionbound: a complex task?",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 117,
+        "end": 151,
+        "text": "EUROCALL 2019 - CALL and Complexity",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 154,
+        "end": 176,
+        "text": "Research-publishing.net",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 179,
+        "end": 194,
+        "text": "Louvain-la-Neuve",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 197,
+        "end": 209,
+        "text": "December 2019",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 212,
+        "end": 218,
+        "text": "100-106",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Carole Delforge, Julie Van de Vyver, Alice Meurice. Learning to design a mobile hunt on Actionbound: a complex task? EUROCALL 2019 - CALL and Complexity. Research-publishing.net. Louvain-la-Neuve. December 2019. 100-106."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 15,
+        "text": "Peter Wittenburg",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 18,
+        "end": 31,
+        "text": "Hennie Brugman",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 34,
+        "end": 46,
+        "text": "Albert Russel",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 49,
+        "end": 62,
+        "text": "Alex Klassmann",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 69,
+        "end": 80,
+        "text": "Han Sloetjes",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 83,
+        "end": 139,
+        "text": "ELAN: a Professional Framework for Multimodality Research",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 142,
+        "end": 216,
+        "text": "5th International Conference on Language Resources and Evaluation (LREC’06)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 219,
+        "end": 264,
+        "text": "European Language Resources Association (ELRA)",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 267,
+        "end": 271,
+        "text": "Genoa",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 274,
+        "end": 287,
+        "text": "24-26 May 2006",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 290,
+        "end": 298,
+        "text": "1556-1559",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Peter Wittenburg, Hennie Brugman, Albert Russel, Alex Klassmann, and Han Sloetjes. ELAN: a Professional Framework for Multimodality Research. 5th International Conference on Language Resources and Evaluation (LREC’06). European Language Resources Association (ELRA). Genoa. 24-26 May 2006. 1556-1559."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 9,
+        "text": "Shu-Yi Xie",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 12,
+        "end": 25,
+        "text": "Chia-Hao Chang",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 28,
+        "end": 36,
+        "text": "Zhi Zhang",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 39,
+        "end": 45,
+        "text": "Yang Mo",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 48,
+        "end": 61,
+        "text": "Lian-Xin Jiang",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 64,
+        "end": 77,
+        "text": "Yu-Sheng Huang",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 84,
+        "end": 97,
+        "text": "Jian-Ping Shen",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 100,
+        "end": 197,
+        "text": "A Hybrid Approach of Deep Semantic Matching and Deep Rank for Context Aware Question Answer System",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 200,
+        "end": 280,
+        "text": "31st Conference on Computational Linguistics and Speech Processing (ROCLING 2019)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 283,
+        "end": 368,
+        "text": "The Association for Computational Linguistics and Chinese Language Processing (ACLCLP)",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 371,
+        "end": 385,
+        "text": "New Taipei City",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 388,
+        "end": 405,
+        "text": "03-05 October 2019",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 408,
+        "end": 412,
+        "text": "72–81",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Shu-Yi Xie, Chia-Hao Chang, Zhi Zhang, Yang Mo, Lian-Xin Jiang, Yu-Sheng Huang, and Jian-Ping Shen. A Hybrid Approach of Deep Semantic Matching and Deep Rank for Context Aware Question Answer System. 31st Conference on Computational Linguistics and Speech Processing (ROCLING 2019). The Association for Computational Linguistics and Chinese Language Processing (ACLCLP). New Taipei City. 03-05 October 2019. 72–81."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 18,
+        "text": "Starkaður Barkarson",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 24,
+        "end": 45,
+        "text": "Steinþór Steingrímsson",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 48,
+        "end": 115,
+        "text": "Compiling and Filtering ParIce: An English-Icelandic Parallel Corpus",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 118,
+        "end": 168,
+        "text": "22nd Nordic Conference on Computational Linguistics",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 171,
+        "end": 207,
+        "text": "Linköping University Electronic Press",
+        "labels": ["LOCATION"]
+    }
+},
+{
+    "value": {
+        "start": 210,
+        "end": 214,
+        "text": "Turku",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 217,
+        "end": 244,
+        "text": "30 September-02 October 2019",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 247,
+        "end": 253,
+        "text": "140–145",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Starkaður Barkarson and Steinþór Steingrímsson. Compiling and Filtering ParIce: An English-Icelandic Parallel Corpus. 22nd Nordic Conference on Computational Linguistics. Linköping University Electronic Press. Turku. 30 September-02 October 2019. 140–145."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 11,
+        "text": "Shirley Dita",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 14,
+        "end": 70,
+        "text": "The grammar and semantics of disjuncts in World Englishes",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 73,
+        "end": 153,
+        "text": "30th Pacific Asia Conference on Language, Information and Computation (PACLIC 30)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 156,
+        "end": 247,
+        "text": "Institute for the Study of Language and Information at Kyung Hee University, Hankookmunhwasa",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 250,
+        "end": 254,
+        "text": "Seoul",
+        "labels": ["TOWN"]
+    }
+},
+
+{
+    "value": {
+        "start": 257,
+        "end": 274,
+        "text": "28-30 October 2016",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 277,
+        "end": 278,
+        "text": "35",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Shirley Dita. The grammar and semantics of disjuncts in World Englishes. 30th Pacific Asia Conference on Language, Information and Computation (PACLIC 30). Institute for the Study of Language and Information at Kyung Hee University, Hankookmunhwasa. Seoul. 28-30 October 2016. 35."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 21,
+        "text": "Niklas von Boguszewski",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 24,
+        "end": 32,
+        "text": "Sana Moin",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 35,
+        "end": 50,
+        "text": "Anirban Bhowmick",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 53,
+        "end": 68,
+        "text": "Seid Muhie Yimam",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 75,
+        "end": 87,
+        "text": "Chris Biemann",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 90,
+        "end": 154,
+        "text": "How Hateful are Movies? A Study and Prediction on Movie Subtitles",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 157,
+        "end": 217,
+        "text": "17th Conference on Natural Language Processing (KONVENS 2021)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 220,
+        "end": 342,
+        "text": "KONVENS 2021 Organizers",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 245,
+        "end": 254,
+        "text": "Düsseldorf",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 257,
+        "end": 276,
+        "text": "06-09 September 2021",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 279,
+        "end": 283,
+        "text": "37–48",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Niklas von Boguszewski, Sana Moin, Anirban Bhowmick, Seid Muhie Yimam, and Chris Biemann. How Hateful are Movies? A Study and Prediction on Movie Subtitles. 17th Conference on Natural Language Processing (KONVENS 2021). KONVENS 2021 Organizers. Düsseldorf. 06-09 September 2021. 37–48."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 11,
+        "text": "Mihael Arcan",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 14,
+        "end": 31,
+        "text": "John Philip McCrae",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 38,
+        "end": 51,
+        "text": "Paul Buitelaar",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 54,
+        "end": 127,
+        "text": "Expanding wordnets to new languages with multilingual sense disambiguation",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 130,
+        "end": 201,
+        "text": "26th International Conference on Computational Linguistics (COLING 2016)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 204,
+        "end": 239,
+        "text": "The COLING 2016 Organizing Committee",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 242,
+        "end": 246,
+        "text": "Osaka",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 249,
+        "end": 267,
+        "text": "13-16 December 2016",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 270,
+        "end": 275,
+        "text": "97–108",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Mihael Arcan, John Philip McCrae, and Paul Buitelaar. Expanding wordnets to new languages with multilingual sense disambiguation. 26th International Conference on Computational Linguistics (COLING 2016). The COLING 2016 Organizing Committee. Osaka. 13-16 December 2016. 97–108."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 14,
+        "text": "Prashant Mathur",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 17,
+        "end": 29,
+        "text": "Mauro Cettolo",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 32,
+        "end": 48,
+        "text": "Marcello Federico",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 55,
+        "end": 72,
+        "text": "José G.C. de Souza",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 75,
+        "end": 132,
+        "text": "Online multi-user adaptive statistical machine translation",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 135,
+        "end": 2208,
+        "text": "11th Conference of the Association for Machine Translation in the Americas",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 211,
+        "end": 261,
+        "text": "Association for Machine Translation in the Americas",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 264,
+        "end": 272,
+        "text": "Vancouver",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 275,
+        "end": 292,
+        "text": "22-26 October 2014",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 295,
+        "end": 301,
+        "text": "152–165",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Prashant Mathur, Mauro Cettolo, Marcello Federico, and José G.C. de Souza. Online multi-user adaptive statistical machine translation. 11th Conference of the Association for Machine Translation in the Americas. Association for Machine Translation in the Americas. Vancouver. 22-26 October 2014. 152–165."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 8,
+        "text": "Jun Iwata",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 11,
+        "end": 23,
+        "text": "John Telloyan",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 26,
+        "end": 37,
+        "text": "Lynne Murphy",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 40,
+        "end": 51,
+        "text": "Shudong Wang",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 57,
+        "end": 68,
+        "text": "John Clayton",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 71,
+        "end": 128,
+        "text": "The use of a digital badge as an indicator and a motivator",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 131,
+        "end": 207,
+        "text": "IADIS International Conference Educational Technologies 2017 (ICEduTech 2017)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 210,
+        "end": 214,
+        "text": "IADIS",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 217,
+        "end": 222,
+        "text": "Sydney",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 225,
+        "end": 243,
+        "text": "11-13 December 2017",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 246,
+        "end": 252,
+        "text": "171-174",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Jun Iwata, John Telloyan, Lynne Murphy, Shudong Wang and John Clayton. The use of a digital badge as an indicator and a motivator. IADIS International Conference Educational Technologies 2017 (ICEduTech 2017). IADIS. Sydney. 11-13 December 2017. 171-174."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 11,
+        "text": "Silverman K.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 14,
+        "end": 24,
+        "text": "Beckman, M.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 27,
+        "end": 38,
+        "text": "Pitrelli, J.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 551,
+        "end": 53,
+        "text": "Ostendorf, M.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 56,
+        "end": 67,
+        "text": "Wightman, C.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 70,
+        "end": 78,
+        "text": "Price, P.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 81,
+        "end": 97,
+        "text": "Pierrehumbert, J.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 103,
+        "end": 116,
+        "text": "Hirschberg, J.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 118,
+        "end": 162,
+        "text": "ToBI: A standard for Labeling English Prosody",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 165,
+        "end": 235,
+        "text": "2nd International Conference on Spoken Language Processing (ICSLP 1992)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 238,
+        "end": 268,
+        "text": "The University of Alberta Press",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 271,
+        "end": 275,
+        "text": "Banff",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 278,
+        "end": 284,
+        "text": "Alberta",
+        "labels": ["Province"]
+    }
+},
+{
+    "value": {
+        "start": 287,
+        "end": 304,
+        "text": "13-16 October 1992",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 307,
+        "end": 313,
+        "text": "867-870",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Silverman K., Beckman, M., Pitrelli, J., Ostendorf, M., Wightman, C., Price, P., Pierrehumbert, J. and Hirschberg, J. ToBI: A standard for Labeling English Prosody. 2nd International Conference on Spoken Language Processing (ICSLP 1992). The University of Alberta Press. Banff, Alberta. 13-16 October 1992. 867-870."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 20,
+        "text": "Demetra Pitta-Pantazi",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 26,
+        "end": 46,
+        "text": "Paraskevi Sophocleous",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 49,
+        "end": 105,
+        "text": "Higher order thinking in mathematics: a complex construct",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 108,
+        "end": 140,
+        "text": "10th MCG International Conference",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 143,
+        "end": 187,
+        "text": "Department of Education, University of Cyprus",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 190,
+        "end": 196,
+        "text": "Nicosia",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 199,
+        "end": 215,
+        "text": "24-26 April, 2017",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 218,
+        "end": 222,
+        "text": "72-78",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Demetra Pitta-Pantazi and Paraskevi Sophocleous. Higher order thinking in mathematics: a complex construct. 10th MCG International Conference. Department of Education, University of Cyprus. Nicosia. 24-26 April, 2017. 72-78."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 11,
+        "text": "Michael Luby",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 17,
+        "end": 26,
+        "text": "Noam Nisan",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 29,
+        "end": 94,
+        "text": "A parallel approximation algorithm for positive linear programming",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 97,
+        "end": 174,
+        "text": "In Proceedings of the Twenty-Fifth Annual ACM Symposium on Theory of Computing",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 177,
+        "end": 190,
+        "text": "16-18 May 1993",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 193,
+        "end": 201,
+        "text": "San Diego",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 204,
+        "end": 205,
+        "text": "CA",
+        "labels": ["STATE"]
+    }
+},
+{
+    "value": {
+        "start": 208,
+        "end": 210,
+        "text": "USA",
+        "labels": ["COUNTRY"]
+    }
+},
+
+{
+    "value": {
+        "start": 213,
+        "end": 219,
+        "text": "448–457",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Michael Luby and Noam Nisan. A parallel approximation algorithm for positive linear programming. In Proceedings of the Twenty-Fifth Annual ACM Symposium on Theory of Computing. 16-18 May 1993. San Diego, CA, USA. 448–457."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 13,
+        "text": "Rajesh Chitnis",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 16,
+        "end": 29,
+        "text": "Graham Cormode",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 32,
+        "end": 49,
+        "text": "Hossein Esfandiari",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 52,
+        "end": 75,
+        "text": "MohammadTaghi Hajiaghayi",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 78,
+        "end": 92,
+        "text": "Andrew McGregor",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 95,
+        "end": 113,
+        "text": "Morteza Monemizadeh",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 116,
+        "end": 132,
+        "text": "Sofya Vorotnikova",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 135,
+        "end": 245,
+        "text": "Kernelization via Sampling with Applications to Finding Matchings and Related Problems in Dynamic Graph Streams",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 248,
+        "end": 300,
+        "text": "27th Annual ACM-SIAM Symposium on Discrete Algorithms",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 303,
+        "end": 348,
+        "text": "Society for Industrial and Applied Mathematics",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 351,
+        "end": 359,
+        "text": "Arlington",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 362,
+        "end": 369,
+        "text": "Virginia",
+        "labels": ["STATE"]
+    }
+},
+{
+    "value": {
+        "start": 372,
+        "end": 389,
+        "text": "10-12 January 2016",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 392,
+        "end": 400,
+        "text": "1326–1344",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Rajesh Chitnis, Graham Cormode, Hossein Esfandiari, MohammadTaghi Hajiaghayi, Andrew McGregor, Morteza Monemizadeh, Sofya Vorotnikova. Kernelization via Sampling with Applications to Finding Matchings and Related Problems in Dynamic Graph Streams. 27th Annual ACM-SIAM Symposium on Discrete Algorithms. Society for Industrial and Applied Mathematics. Arlington, Virginia. 10-12 January 2016. 1326–1344."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 11,
+        "text": "Olivier Brun",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 14,
+        "end": 33,
+        "text": "Balakrishna J Prabhu",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 36,
+        "end": 51,
+        "text": "Tatiana Seregina",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 54,
+        "end": 119,
+        "text": "On the convergence of the best-response algorithm in routing games",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 121,
+        "end": 215,
+        "text": "7th International Conference on Performance Evaluation Methodologies and Tools (ValueTools '13)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 218,
+        "end": 310,
+        "text": "ICST (Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering)",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 313,
+        "end": 318,
+        "text": "Torino",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 321,
+        "end": 339,
+        "text": "10-12 December 2013",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 342,
+        "end": 348,
+        "text": "136–144",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Olivier Brun, Balakrishna J Prabhu, Tatiana Seregina. On the convergence of the best-response algorithm in routing games. 7th International Conference on Performance Evaluation Methodologies and Tools (ValueTools '13). ICST (Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering). Torino. 10-12 December 2013. 136–144."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 12,
+        "text": "Seemanta Saha",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 15,
+        "end": 26,
+        "text": "Ripon K Saha",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 29,
+        "end": 43,
+        "text": "Mukul R. Prasad",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 46,
+        "end": 95,
+        "text": "Harnessing evolution for multi-hunk program repair",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 98,
+        "end": 161,
+        "text": "41st International Conference on Software Engineering (ICSE '19)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 164,
+        "end": 173,
+        "text": "IEEE Press",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 176,
+        "end": 183,
+        "text": "Montreal",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 186,
+        "end": 191,
+        "text": "Quebec",
+        "labels": ["Province"]
+    }
+},
+{
+    "value": {
+        "start": 194,
+        "end": 207,
+        "text": "25-31 May 2019",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 210,
+        "end": 214,
+        "text": "13–24",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Seemanta Saha, Ripon K Saha, Mukul R. Prasad. Harnessing evolution for multi-hunk program repair. 41st International Conference on Software Engineering (ICSE '19). IEEE Press. Montreal, Quebec. 25-31 May 2019. 13–24."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 17,
+        "text": "Ran Gilad-Bachrach",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 20,
+        "end": 32,
+        "text": "Nathan Dowlin",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 35,
+        "end": 43,
+        "text": "Kim Laine",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 46,
+        "end": 59,
+        "text": "Kristin Lauter",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 62,
+        "end": 76,
+        "text": "Michael Naehrig",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 79,
+        "end": 91,
+        "text": "John Wernsing",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 94,
+        "end": 181,
+        "text": "Cryptonets: Applying neural networks to encrypted data with high throughput and accuracy",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 184,
+        "end": 242,
+        "text": "33rd International Conference on Machine Learning (ICML'16)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 245,
+        "end": 252,
+        "text": "JMLR.org",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 255,
+        "end": 262,
+        "text": "New York",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 265,
+        "end": 276,
+        "text": "19 June 2016",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 279,
+        "end": 285,
+        "text": "201–210",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Ran Gilad-Bachrach, Nathan Dowlin, Kim Laine, Kristin Lauter, Michael Naehrig, John Wernsing. Cryptonets: Applying neural networks to encrypted data with high throughput and accuracy. 33rd International Conference on Machine Learning (ICML'16). JMLR.org. New York. 19 June 2016. 201–210."
+    }
+}
+]

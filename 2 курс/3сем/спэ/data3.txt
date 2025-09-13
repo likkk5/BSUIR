@@ -1,0 +1,4186 @@
+[
+{
+    "value": {
+        "start": 0,
+        "end": 9,
+        "text": "Nima Anari",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 12,
+        "end": 22,
+        "text": "Yizhi Huang",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 26,
+        "end": 35,
+        "text": "Tianyu Liu",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 39,
+        "end": 54,
+        "text": "Thuy-Duong Vuong",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 57,
+        "end": 64,
+        "text": "Brian Xu",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 67,
+        "end": 78,
+        "text": "Katherine Yu",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 81,
+        "end": 127,
+        "text": "Parallel Discrete Sampling via Continuous Walks",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 130,
+        "end": 177,
+        "text": "55th Annual ACM Symposium on Theory of Computing",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 180,
+        "end": 191,
+        "text": "02 June 2023",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 194,
+        "end": 200,
+        "text": "103–116",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "value": {
+        "start": 203,
+        "end": 237,
+        "text": "Association for Computing Machinery",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 240,
+        "end": 247,
+        "text": "New York",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "data": {
+        "text": "Nima Anari, Yizhi Huang, Tianyu Liu, Thuy-Duong Vuong, Brian Xu, Katherine Yu. Parallel Discrete Sampling via Continuous Walks. 55th Annual ACM Symposium on Theory of Computing. 02 June 2023. 103–116. Association for Computing Machinery. New York"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 12,
+        "text": "Ming-Yang Kao",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 15,
+        "end": 27,
+        "text": "Andreas Nolte",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 30,
+        "end": 44,
+        "text": "Stephen R. Tate",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 47,
+        "end": 123,
+        "text": "The risk profile problem for stock portfolio optimization (extended abstract)",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 126,
+        "end": 182,
+        "text": "Thirty-second annual ACM symposium on Theory of computing",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 185,
+        "end": 195,
+        "text": "01 May 2000",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 198,
+        "end": 204,
+        "text": "228–234",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "value": {
+        "start": 207,
+        "end": 241,
+        "text": "Association for Computing Machinery",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 244,
+        "end": 251,
+        "text": "New York",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "data": {
+        "text": "Ming-Yang Kao, Andreas Nolte, Stephen R. Tate. The risk profile problem for stock portfolio optimization (extended abstract). Thirty-second annual ACM symposium on Theory of computing. 01 May 2000. 228–234. Association for Computing Machinery. New York"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 6,
+        "text": "M. Dyer",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 9,
+        "end": 17,
+        "text": "A. Frieze",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 24,
+        "end": 32,
+        "text": "R. Kannan",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 35,
+        "end": 114,
+        "text": "A random polynomial-time algorithm for approximating the volume of convex bodies",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 117,
+        "end": 134,
+        "text": "Journal of the ACM",
+        "labels": ["Journal"]
+    }
+},
+{
+    "value": {
+        "start": 137,
+        "end": 146,
+        "text": "38(1):1-17",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "value": {
+        "start": 149,
+        "end": 152,
+        "text": "1991",
+        "labels": ["DATE"]
+    }
+},
+{
+    "data": {
+        "text": "M. Dyer, A. Frieze, and R. Kannan. A random polynomial-time algorithm for approximating the volume of convex bodies. Journal of the ACM, 38(1):1-17, 1991"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 12,
+        "text": "Tyler Helmuth",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 15,
+        "end": 26,
+        "text": "Will Perkins",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 29,
+        "end": 38,
+        "text": "Guus Regts",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 41,
+        "end": 72,
+        "text": "Algorithmic Pirogov-Sinai theory",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 75,
+        "end": 129,
+        "text": "51st Annual ACM SIGACT Symposium on Theory of Computing",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 132,
+        "end": 143,
+        "text": "23 June 2019",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 146,
+        "end": 154,
+        "text": "1009–1020",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "value": {
+        "start": 157,
+        "end": 191,
+        "text": "Association for Computing Machinery",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 194,
+        "end": 201,
+        "text": "New York",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "data": {
+        "text": "Tyler Helmuth, Will Perkins, Guus Regts. Algorithmic Pirogov-Sinai theory. 51st Annual ACM SIGACT Symposium on Theory of Computing. 23 June 2019. 1009–1020. Association for Computing Machinery. New York"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 17,
+        "text": "Alexander Barvinok",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 20,
+        "end": 69,
+        "text": "Computing the permanent of (some) complex matrices",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 72,
+        "end": 111,
+        "text": "Foundations of Computational Mathematics",
+        "labels": ["Journal"]
+    }
+},
+{
+    "value": {
+        "start": 114,
+        "end": 126,
+        "text": "16(2):329–342",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "value": {
+        "start": 129,
+        "end": 132,
+        "text": "2016",
+        "labels": ["DATE"]
+    }
+},
+{
+    "data": {
+        "text": "Alexander Barvinok. Computing the permanent of (some) complex matrices. Foundations of Computational Mathematics, 16(2):329–342, 2016"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 15,
+        "text": "Tsukasa Fukusato",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 18,
+        "end": 32,
+        "text": "Akinobu Maejima",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 35,
+        "end": 106,
+        "text": "Interactive Viewpoint Exploration for Constructing View-Dependent Models",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 109,
+        "end": 169,
+        "text": "14th ACM SIGGRAPH Conference on Motion, Interaction and Games",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 172,
+        "end": 187,
+        "text": "10 November 2021",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 190,
+        "end": 192,
+        "text": "1–8",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "value": {
+        "start": 195,
+        "end": 229,
+        "text": "Association for Computing Machinery",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 232,
+        "end": 239,
+        "text": "New York",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "data": {
+        "text": "Tsukasa Fukusato, Akinobu Maejima. Interactive Viewpoint Exploration for Constructing View-Dependent Models. 14th ACM SIGGRAPH Conference on Motion, Interaction and Games. 10 November 2021. 1–8. Association for Computing Machinery. New York"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 12,
+        "text": "Daryl Peralta",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 15,
+        "end": 27,
+        "text": "Joel Casimiro",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 30,
+        "end": 50,
+        "text": "Aldrin Michael Nilles",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 53,
+        "end": 74,
+        "text": "Justine Aletta Aguilar",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 77,
+        "end": 89,
+        "text": "Rowel Atienza",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 96,
+        "end": 110,
+        "text": "Rhandley Cajote",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 113,
+        "end": 116,
+        "text": "2020",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 119,
+        "end": 161,
+        "text": "Next-best view policy for 3D reconstruction",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 164,
+        "end": 213,
+        "text": "European Conference on Computer Vision Workshop",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 216,
+        "end": 223,
+        "text": "Springer",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 226,
+        "end": 229,
+        "text": "Cham",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 232,
+        "end": 242,
+        "text": "Switzerland",
+        "labels": ["COUNTRY"]
+    }
+},
+{
+    "value": {
+        "start": 245,
+        "end": 251,
+        "text": "558–573",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Daryl Peralta, Joel Casimiro, Aldrin Michael Nilles, Justine Aletta Aguilar, Rowel Atienza, and Rhandley Cajote. 2020. Next-best view policy for 3D reconstruction. In European Conference on Computer Vision Workshop. Springer, Cham, Switzerland, 558–573"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 13,
+        "text": "Michaël Ortega",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 19,
+        "end": 32,
+        "text": "Thomas Vincent",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 35,
+        "end": 38,
+        "text": "2014",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 41,
+        "end": 97,
+        "text": "Direct Drawing on 3D Shapes with Automated Camera Control",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 100,
+        "end": 186,
+        "text": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ’14)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 189,
+        "end": 191,
+        "text": "ACM",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 194,
+        "end": 201,
+        "text": "New York",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 204,
+        "end": 205,
+        "text": "NY",
+        "labels": ["STATE"]
+    }
+},
+{
+    "value": {
+        "start": 206,
+        "end": 210,
+        "text": "USA",
+        "labels": ["COUNTRY"]
+    }
+},
+{
+    "value": {
+        "start": 213,
+        "end": 221,
+        "text": "2047–2050",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Michaël Ortega and Thomas Vincent. 2014. Direct Drawing on 3D Shapes with Automated Camera Control. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ’14). ACM, New York, NY, USA, 2047–2050."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 17,
+        "text": "Nikolaos A Massios",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 20,
+        "end": 34,
+        "text": "Robert B Fisher",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 37,
+        "end": 40,
+        "text": "1998",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 43,
+        "end": 112,
+        "text": "A best next view selection algorithm incorporating a quality criterion",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 115,
+        "end": 184,
+        "text": "Proceedings of the 9th British Machine Vision Conference (BMVC ’98)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 187,
+        "end": 248,
+        "text": "Department of Artificial Intelligence, University of Edinburgh",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 251,
+        "end": 260,
+        "text": "78:1–78:10",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Nikolaos A Massios, Robert B Fisher, 1998. A best next view selection algorithm incorporating a quality criterion. In Proceedings of the 9th British Machine Vision Conference (BMVC ’98). Department of Artificial Intelligence, University of Edinburgh, 78:1–78:10"
+    }
+}, 
+{
+    "value": {
+        "start": 0,
+        "end": 10,
+        "text": "Moeko Ishii",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 16,
+        "end": 28,
+        "text": "Takayuki Itoh",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 31,
+        "end": 34,
+        "text": "2020",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 37,
+        "end": 91,
+        "text": "Viewpoint Selection for Sketch-based Hairstyle Modeling",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 94,
+        "end": 148,
+        "text": "In Proceedings of Nicograph International (NicoInt ’20)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 151,
+        "end": 154,
+        "text": "IEEE",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 157,
+        "end": 161,
+        "text": "Tokyo",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 164,
+        "end": 168,
+        "text": "Japan",
+        "labels": ["COUNTRY"]
+    }
+},
+{
+    "value": {
+        "start": 171,
+        "end": 175,
+        "text": "82–85",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Moeko Ishii and Takayuki Itoh. 2020. Viewpoint Selection for Sketch-based Hairstyle Modeling. In Proceedings of Nicograph International (NicoInt ’20). IEEE, Tokyo, Japan, 82–85."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 11,
+        "text": "Enrique Dunn",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 17,
+        "end": 33,
+        "text": "Jan-Michael Frahm",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 36,
+        "end": 39,
+        "text": "2009",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 42,
+        "end": 93,
+        "text": "Next Best View Planning for Active Model Improvement",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 96,
+        "end": 161,
+        "text": "In Proceedings of the British Machine Vision Conference (BMVC ’09)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 164,
+        "end": 173,
+        "text": "BMVA Press",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 176,
+        "end": 185,
+        "text": "53:1–53:11",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Enrique Dunn and Jan-Michael Frahm. 2009. Next Best View Planning for Active Model Improvement. In Proceedings of the British Machine Vision Conference (BMVC ’09). BMVA Press, 53:1–53:11."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 11,
+        "text": "Bruno Defude",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 14,
+        "end": 26,
+        "text": "Thierry Delot",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 29,
+        "end": 56,
+        "text": "Jose-Luis Zechinelli Martini",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 59,
+        "end": 75,
+        "text": "Nicolas Cenerario",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 78,
+        "end": 90,
+        "text": "Sergio Ilarri",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 93,
+        "end": 159,
+        "text": "Extraction de connaissances dans les réseaux ad hoc inter-véhicules",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 162,
+        "end": 226,
+        "text": "4th French-speaking conference on Mobility and ubiquity computing",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 229,
+        "end": 239,
+        "text": "28 May 2008",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 242,
+        "end": 246,
+        "text": "17–20",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "value": {
+        "start": 249,
+        "end": 283,
+        "text": "Association for Computing Machinery",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 286,
+        "end": 293,
+        "text": "New York",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "data": {
+        "text": "Bruno Defude, Thierry Delot, Jose-Luis Zechinelli Martini, Nicolas Cenerario, Sergio Ilarri. Extraction de connaissances dans les réseaux ad hoc inter-véhicules. 4th French-speaking conference on Mobility and ubiquity computing. 28 May 2008. 17–20. Association for Computing Machinery. New York."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 11,
+        "text": "Bierbaum, A.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 14,
+        "end": 21,
+        "text": "Just, C.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 24,
+        "end": 35,
+        "text": "Hartling, P.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 38,
+        "end": 48,
+        "text": "Meinert, K.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 51,
+        "end": 59,
+        "text": "Baker, A.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 66,
+        "end": 79,
+        "text": "Cruz-Neira, C.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 81,
+        "end": 154,
+        "text": "Vr juggler: A virtual platform for virtual reality application development",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 157,
+        "end": 217,
+        "text": "In VR '01: Proceedings of the Virtual Reality 2001 Conference",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 220,
+        "end": 229,
+        "text": "Washington",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 232,
+        "end": 234,
+        "text": "USA",
+        "labels": ["COUNTRY"]
+    }
+},
+{
+    "value": {
+        "start": 237,
+        "end": 240,
+        "text": "2001",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 242,
+        "end": 245,
+        "text": "IEEE",
+        "labels": ["ORG"]
+    }
+},
+{
+    "data": {
+        "text": "Bierbaum, A., Just, C., Hartling, P., Meinert, K., Baker, A., and Cruz-Neira, C. Vr juggler: A virtual platform for virtual reality application development. In VR '01: Proceedings of the Virtual Reality 2001 Conference, Washington, USA, 2001 IEEE."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 9,
+        "text": "Charfi, S.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 12,
+        "end": 21,
+        "text": "Dubois, E.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 28,
+        "end": 38,
+        "text": "Bastide, R.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 40,
+        "end": 126,
+        "text": "Articulating Interaction and Task Models for the Design of Advanced Interactive Systems",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 129,
+        "end": 175,
+        "text": "In TAsk MOdels DIAgrams for UI design (TAMODIA)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 178,
+        "end": 185,
+        "text": "Toulouse",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 188,
+        "end": 191,
+        "text": "2007",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 194,
+        "end": 208,
+        "text": "Springer-Verlag",
+        "labels": ["ORG"]
+    }
+},
+{
+    "data": {
+        "text": "Charfi, S., Dubois, E., and Bastide, R. Articulating Interaction and Task Models for the Design of Advanced Interactive Systems. In TAsk MOdels DIAgrams for UI design (TAMODIA), Toulouse, 2007, Springer-Verlag."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 7,
+        "text": "Kato, H.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 14,
+        "end": 29,
+        "text": "Billinghurst, M.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 31,
+        "end": 121,
+        "text": "Marker tracking and HMD calibration for a video-based augmented reality conferencing system",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 124,
+        "end": 192,
+        "text": "In Proceedings of the 2nd International Workshop on Augmented Reality",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 195,
+        "end": 207,
+        "text": "San Francisco",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 210,
+        "end": 212,
+        "text": "USA",
+        "labels": ["COUNTRY"]
+    }
+},
+{
+    "value": {
+        "start": 215,
+        "end": 218,
+        "text": "1999",
+        "labels": ["DATE"]
+    }
+},
+{
+    "data": {
+        "text": "Kato, H., and Billinghurst, M. Marker tracking and HMD calibration for a video-based augmented reality conferencing system. In Proceedings of the 2nd International Workshop on Augmented Reality, San Francisco, USA, 1999."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 9,
+        "text": "Ritter, T.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 12,
+        "end": 19,
+        "text": "Born, M.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 22,
+        "end": 36,
+        "text": "Unterschutz, T.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 43,
+        "end": 50,
+        "text": "Weis, T.",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 52,
+        "end": 122,
+        "text": "A qos metamodel and its realization in a corba component infrastructure",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 125,
+        "end": 196,
+        "text": "In Proceedings of the Hawaii International Conference on System Sciences",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 199,
+        "end": 204,
+        "text": "Hawaii",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 207,
+        "end": 209,
+        "text": "USA",
+        "labels": ["COUNTRY"]
+    }
+},
+{
+    "value": {
+        "start": 211,
+        "end": 214,
+        "text": "2003",
+        "labels": ["DATE"]
+    }
+},
+{
+    "data": {
+        "text": "Ritter, T., Born, M., Unterschutz, T., and Weis, T. A qos metamodel and its realization in a corba component infrastructure. In Proceedings of the Hawaii International Conference on System Sciences, Hawaii, USA 2003."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 18,
+        "text": "Domenico Amalfitano",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 21,
+        "end": 38,
+        "text": "Anna Rita Fasolino",
+        "labels": ["SNAME_IN"]
+    }
+},
+  {
+    "value": {
+        "start": 45,
+        "end": 63,
+        "text": "Porfirio Tramontana",
+        "labels": ["SNAME_IN"]
+		}
+ },
+{
+    "value": {
+        "start": 66,
+        "end": 69,
+        "text": "2008",
+        "labels": ["DATE"]
+    }
+}, 
+{
+    "value": {
+        "start": 72,
+        "end": 144,
+        "text": "Reverse Engineering Finite State Machines from Rich Internet Applications",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 147,
+        "end": 230,
+        "text": "In Proceedings of the 2008 15th Working Conference on Reverse Engineering (WCRE '08)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 233,
+        "end": 253,
+        "text": "IEEE Computer Society",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 256,
+        "end": 258,
+        "text": "USA",
+        "labels": ["COUNTRY"]
+    }
+},
+{
+    "value": {
+        "start": 261,
+        "end": 265,
+        "text": "69-73",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Domenico Amalfitano, Anna Rita Fasolino, and Porfirio Tramontana. 2008. Reverse Engineering Finite State Machines from Rich Internet Applications. In Proceedings of the 2008 15th Working Conference on Reverse Engineering (WCRE '08). IEEE Computer Society, USA, 69-73."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 19,
+        "text": "Alessandro Marchetto",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 22,
+        "end": 34,
+        "text": "Paolo Tonella",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 41,
+        "end": 53,
+        "text": "Filippo Ricca",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 56,
+        "end": 59,
+        "text": "2008",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 62,
+        "end": 105,
+        "text": "State-Based Testing of Ajax Web Applications",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 108,
+        "end": 219,
+        "text": "In Proceedings of the 2008 International Conference on Software Testing, Verification, and Validation (ICST '08)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 222,
+        "end": 242,
+        "text": "IEEE Computer Society",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 245,
+        "end": 254,
+        "text": "Washington",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 257,
+        "end": 258,
+        "text": "DC",
+        "labels": ["STATE"]
+    }
+},
+{
+    "value": {
+        "start": 261,
+        "end": 263,
+        "text": "USA",
+        "labels": ["COUNTRY"]
+    }
+},
+{
+    "value": {
+        "start": 266,
+        "end": 272,
+        "text": "121-130",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Alessandro Marchetto, Paolo Tonella, and Filippo Ricca. 2008. State-Based Testing of Ajax Web Applications. In Proceedings of the 2008 International Conference on Software Testing, Verification, and Validation (ICST '08). IEEE Computer Society, Washington, DC, USA, 121-130."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 12,
+        "text": "Pedro Antunes",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 15,
+        "end": 28,
+        "text": "Gustavo Zurita",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 35,
+        "end": 48,
+        "text": "Nelson Baloian",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 51,
+        "end": 54,
+        "text": "2009",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 57,
+        "end": 121,
+        "text": "A Model for Designing Geocollaborative Artifacts and Applications",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 124,
+        "end": 226,
+        "text": "In Groupware: Design, Implementation, and Use, Luís Carriço, Nelson Baloian and Benjamim Fonseca (eds.)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 229,
+        "end": 254,
+        "text": "Springer Berlin Heidelberg",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 257,
+        "end": 262,
+        "text": "Berlin",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 265,
+        "end": 274,
+        "text": "Heidelberg",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 277,
+        "end": 283,
+        "text": "278-294",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Pedro Antunes, Gustavo Zurita, and Nelson Baloian. 2009. A Model for Designing Geocollaborative Artifacts and Applications. In Groupware: Design, Implementation, and Use, Luís Carriço, Nelson Baloian and Benjamim Fonseca (eds.). Springer Berlin Heidelberg, Berlin, Heidelberg, 278-294."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 18,
+        "text": "Gregorio Convertino",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 21,
+        "end": 30,
+        "text": "Dejin Zhao",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 33,
+        "end": 45,
+        "text": "Craig H Ganoe",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 48,
+        "end": 61,
+        "text": "John M Carroll",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 68,
+        "end": 83,
+        "text": "Mary Beth Rosson",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 86,
+        "end": 89,
+        "text": "2007",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 92,
+        "end": 159,
+        "text": "A Role-Based Multiple View Approach to Distributed Geo-Collaboration",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 162,
+        "end": 242,
+        "text": "In Human-Computer Interaction. HCI Applications and Services, Julie A Jacko (ed.)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 245,
+        "end": 270,
+        "text": "Springer Berlin Heidelberg",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 273,
+        "end": 278,
+        "text": "Berlin",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 281,
+        "end": 290,
+        "text": "Heidelberg",
+        "labels": ["TOWN"]
+    }
+},
+{
+    "value": {
+        "start": 293,
+        "end": 299,
+        "text": "561-570",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Gregorio Convertino, Dejin Zhao, Craig H Ganoe, John M Carroll, and Mary Beth Rosson. 2007. A Role-Based Multiple View Approach to Distributed Geo-Collaboration. In Human-Computer Interaction. HCI Applications and Services, Julie A Jacko (ed.). Springer Berlin Heidelberg, Berlin, Heidelberg, 561-570."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 9,
+        "text": "Ron Cytron",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 12,
+        "end": 26,
+        "text": "Jeanne Ferrante",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 29,
+        "end": 42,
+        "text": "Barry K. Rosen",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 45,
+        "end": 58,
+        "text": "Mark N. Wegman",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 65,
+        "end": 81,
+        "text": "F. Kenneth Zadeck",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 84,
+        "end": 87,
+        "text": "1991",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 90,
+        "end": 173,
+        "text": "Efficiently Computing Static Single Assignment Form and the Control Dependence Graph",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 176,
+        "end": 240,
+        "text": "ACM Transactions on Programming Languages and Systems (TOPLAS) 13",
+        "labels": ["Journal"]
+    }
+},
+{
+    "value": {
+        "start": 243,
+        "end": 255,
+        "text": "4 (Oct. 1991)",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 258,
+        "end": 264,
+        "text": "451–490",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Ron Cytron, Jeanne Ferrante, Barry K. Rosen, Mark N. Wegman, and F. Kenneth Zadeck. 1991. Efficiently Computing Static Single Assignment Form and the Control Dependence Graph. ACM Transactions on Programming Languages and Systems (TOPLAS) 13, 4 (Oct. 1991), 451–490."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 12,
+        "text": "Magnus Madsen",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 18,
+        "end": 30,
+        "text": "Ondřej Lhoták",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 33,
+        "end": 36,
+        "text": "2018",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 39,
+        "end": 79,
+        "text": "Safe and Sound Program Analysis with FLIX",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 82,
+        "end": 176,
+        "text": "In Proceedings of the 27th ACM SIGSOFT International Symposium on Software Testing and Analysis",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 179,
+        "end": 181,
+        "text": "ACM",
+        "labels": ["ORG"]
+		}
+},
+    {
+	"value": {
+        "start": 184,
+        "end": 188,
+        "text": "38–48",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Magnus Madsen and Ondřej Lhoták. 2018. Safe and Sound Program Analysis with FLIX. In Proceedings of the 27th ACM SIGSOFT International Symposium on Software Testing and Analysis. ACM, 38–48."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 13,
+        "text": "Cédric Bastoul",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 16,
+        "end": 19,
+        "text": "2004",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 22,
+        "end": 71,
+        "text": "Improving Data Locality in Static Control Programs",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 74,
+        "end": 91,
+        "text": "Ph.D. Dissertation",
+        "labels": ["PUBLICATION"]
+    }
+},
+{
+    "value": {
+        "start": 94,
+        "end": 134,
+        "text": "University Paris 6, Pierre et Marie Curie",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 137,
+        "end": 142,
+        "text": "France",
+        "labels": ["COUNTRY"]
+    }
+},
+{
+    "data": {
+        "text": "Cédric Bastoul. 2004. Improving Data Locality in Static Control Programs. Ph.D. Dissertation. University Paris 6, Pierre et Marie Curie, France."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 15,
+        "text": "Michael A Bender",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 18,
+        "end": 33,
+        "text": "Roozbeh Ebrahimi",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 36,
+        "end": 51,
+        "text": "Jeremy T Fineman",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 54,
+        "end": 72,
+        "text": "Golnaz Ghasemiesfeh",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 75,
+        "end": 85,
+        "text": "Rob Johnson",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 92,
+        "end": 106,
+        "text": "Samuel McCauley",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 109,
+        "end": 112,
+        "text": "2014",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 115,
+        "end": 138,
+        "text": "Cacheadaptive algorithms",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 141,
+        "end": 223,
+        "text": "In Proceedings of the twenty-fifth annual ACM-SIAM symposium on Discrete algorithms",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 226,
+        "end": 271,
+        "text": "Society for Industrial and Applied Mathematics",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 274,
+        "end": 280,
+        "text": "958–971",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Michael A Bender, Roozbeh Ebrahimi, Jeremy T Fineman, Golnaz Ghasemiesfeh, Rob Johnson, and Samuel McCauley. 2014. Cacheadaptive algorithms. In Proceedings of the twenty-fifth annual ACM-SIAM symposium on Discrete algorithms. Society for Industrial and Applied Mathematics, 958–971."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 14,
+        "text": "Uday Bondhugula",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 17,
+        "end": 28,
+        "text": "Sanjeeb Dash",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 31,
+        "end": 42,
+        "text": "Oktay Gunluk",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 49,
+        "end": 79,
+        "text": "Lakshminarayanan Renganarayanan",
+        "labels": ["SNAME_IN"]
+    }
+},
+{
+    "value": {
+        "start": 82,
+        "end": 85,
+        "text": "2010",
+        "labels": ["DATE"]
+    }
+},
+{
+    "value": {
+        "start": 88,
+        "end": 160,
+        "text": "A model for fusion and code motion in an automatic parallelizing compiler",
+        "labels": ["TITLE_IN"]
+    }
+},
+{
+    "value": {
+        "start": 163,
+        "end": 259,
+        "text": "In 2010 19th International Conference on Parallel Architectures and Compilation Techniques (PACT)",
+        "labels": ["EVENT"]
+    }
+},
+{
+    "value": {
+        "start": 262,
+        "end": 265,
+        "text": "IEEE",
+        "labels": ["ORG"]
+    }
+},
+{
+    "value": {
+        "start": 268,
+        "end": 274,
+        "text": "343–352",
+        "labels": ["PAGES"]
+    }
+},
+{
+    "data": {
+        "text": "Uday Bondhugula, Sanjeeb Dash, Oktay Gunluk, and Lakshminarayanan Renganarayanan. 2010. A model for fusion and code motion in an automatic parallelizing compiler. In 2010 19th International Conference on Parallel Architectures and Compilation Techniques (PACT). IEEE, 343–352."
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 15,
+        "text": "Rezaul Chowdhury",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 18,
+        "end": 33,
+        "text": "Pramod Ganapathi",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 36,
+        "end": 53,
+        "text": "Jesmin Jahan Tithi",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 56,
+        "end": 72,
+        "text": "Charles Bachmeier",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 75,
+        "end": 92,
+        "text": "Bradley C Kuszmaul",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 95,
+        "end": 113,
+        "text": "Charles E Leiserson",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 116,
+        "end": 134,
+        "text": "Armando SolarLezama",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 141,
+        "end": 149,
+        "text": "Yuan Tang",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 152,
+        "end": 155,
+        "text": "2016",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 158,
+        "end": 262,
+        "text": "AutoGen: automatic discovery of cache-oblivious parallel recursive algorithms for solving dynamic programs",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 265,
+        "end": 295,
+        "text": "In ACM SIGPLAN Notices, Vol. 51",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 298,
+        "end": 300,
+        "text": "ACM",
+        "labels": [
+            "ORG"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 303,
+        "end": 304,
+        "text": "10",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "Rezaul Chowdhury, Pramod Ganapathi, Jesmin Jahan Tithi, Charles Bachmeier, Bradley C Kuszmaul, Charles E Leiserson, Armando SolarLezama, and Yuan Tang. 2016. AutoGen: automatic discovery of cacheoblivious parallel recursive algorithms for solving dynamic programs. In ACM SIGPLAN Notices, Vol. 51. ACM, 10"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 20,
+        "text": "Rezaul Alam Chowdhury",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 26,
+        "end": 44,
+        "text": "Vijaya Ramachandran",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 47,
+        "end": 50,
+        "text": "2008",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 53,
+        "end": 112,
+        "text": "Cache-efficient dynamic programming algorithms for multicores",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 115,
+        "end": 133,
+        "text": "University of Texas",
+        "labels": [
+            "ORG"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 136,
+        "end": 141,
+        "text": "Austin",
+        "labels": [
+            "TOWN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 144,
+        "end": 166,
+        "text": "Technical Report (2008)",
+        "labels": [
+            "PUBLICATION]"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "Rezaul Alam Chowdhury and Vijaya Ramachandran. 2008. Cacheefficient dynamic programming algorithms for multicores. University of Texas, Austin, Technical Report (2008)"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 13,
+        "text": "Albert Hartono",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 16,
+        "end": 40,
+        "text": "Muthu Manikandan Baskaran",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 43,
+        "end": 56,
+        "text": "Cédric Bastoul",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 59,
+        "end": 70,
+        "text": "Albert Cohen",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 73,
+        "end": 93,
+        "text": "Sriram Krishnamoorthy",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 96,
+        "end": 108,
+        "text": "Boyana Norris",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 111,
+        "end": 131,
+        "text": "Jagannathan Ramanujam",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 138,
+        "end": 158,
+        "text": "Ponnuswamy Sadayappan",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 161,
+        "end": 164,
+        "text": "2009",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 167,
+        "end": 223,
+        "text": "Parametric multi-level tiling of imperfectly nested loops",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 226,
+        "end": 294,
+        "text": "In Proceedings of the 23rd international conference on Supercomputing",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 297,
+        "end": 299,
+        "text": "ACM",
+        "labels": [
+            "ORG"
+        ]
+    }
+},{
+    "value": {
+        "start": 302,
+        "end": 308,
+        "text": "147–157",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "Albert Hartono, Muthu Manikandan Baskaran, Cédric Bastoul, Albert Cohen, Sriram Krishnamoorthy, Boyana Norris, Jagannathan Ramanujam, and Ponnuswamy Sadayappan. 2009. Parametric multi-level tiling of imperfectly nested loops. In Proceedings of the 23rd international conference on Supercomputing. ACM, 147–157"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 23,
+        "text": "Mohammad Mahdi Javanmard",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 26,
+        "end": 41,
+        "text": "Pramod Ganapathr",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 44,
+        "end": 54,
+        "text": "Rathish Das",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 57,
+        "end": 67,
+        "text": "Zafar Ahmad",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 70,
+        "end": 84,
+        "text": "Stephen Tschudi",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 91,
+        "end": 106,
+        "text": "Rezaul Chowdhury",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 109,
+        "end": 112,
+        "text": "2019",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 115,
+        "end": 195,
+        "text": "Toward efficient architecture-independent algorithms for dynamic programs: poster",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 198,
+        "end": 284,
+        "text": "In Proceedings of the 24th Symposium on Principles and Practice of Parallel Programming",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 287,
+        "end": 289,
+        "text": "ACM",
+        "labels": [
+            "ORG"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 292,
+        "end": 298,
+        "text": "413–414",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "Mohammad Mahdi Javanmard, Pramod Ganapathr, Rathish Das, Zafar Ahmad, Stephen Tschudi, and Rezaul Chowdhury. 2019. Toward efficient architecture-independent algorithms for dynamic programs: poster. In Proceedings of the 24th Symposium on Principles and Practice of Parallel Programming. ACM, 413–414"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 18,
+        "text": "Efrén Mezura-Montes",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 21,
+        "end": 41,
+        "text": "Edgar Portilla Flores",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 48,
+        "end": 70,
+        "text": "Betania Hernández Ocaña",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 73,
+        "end": 76,
+        "text": "2011",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 79,
+        "end": 168,
+        "text": "Optimization of a mechanical design problem with the modified bacterial foraging algorithm",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 171,
+        "end": 226,
+        "text": "In XVII Congreso Argentino de Ciencias de la Computación",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "Efrén Mezura-Montes, Edgar Portilla Flores, and Betania Hernández Ocaña. 2011. Optimization of a mechanical design problem with the modified bacterial foraging algorithm. In XVII Congreso Argentino de Ciencias de la Computación"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 8,
+        "text": "H. Bowman",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 11,
+        "end": 20,
+        "text": "H. Cameron",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 23,
+        "end": 29,
+        "text": "P. King",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 38,
+        "end": 43,
+        "text": "S. Thompson",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 45,
+        "end": 138,
+        "text": "Specification and prototyping of structured multimedia documents using interval temporal logic",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 141,
+        "end": 174,
+        "text": "Proc. Int. Conf. on Temporal Logic",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 177,
+        "end": 196,
+        "text": "Applied Logic Series",
+        "labels": [
+            "PUBLICATION"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 199,
+        "end": 204,
+        "text": "Kluwer",
+        "labels": [
+            "ORG"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 207,
+        "end": 210,
+        "text": "1997",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "H. Bowman, H. Cameron, P. King & S. Thompson. Specification and prototyping of structured multimedia documents using interval temporal logic. Proc. Int. Conf. on Temporal Logic, Applied Logic Series, Kluwer, 1997"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 9,
+        "text": "L. Hardman",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 12,
+        "end": 21,
+        "text": "P. Schmitz",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 24,
+        "end": 42,
+        "text": "J. van Ossenbruggen",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 45,
+        "end": 55,
+        "text": "W. ten Kate",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 60,
+        "end": 70,
+        "text": "L. Rutledge",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 73,
+        "end": 156,
+        "text": "The link vs the event: activating and deactivating elements in time-based hypermedia",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 159,
+        "end": 201,
+        "text": "The New Review of Hypermedia and Multimedia",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 204,
+        "end": 210,
+        "text": "6, 2000",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 213,
+        "end": 218,
+        "text": "89-110",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "L. Hardman, P. Schmitz, J. van Ossenbruggen, W. ten Kate, & L. Rutledge. The link vs the event: activating and deactivating elements in time-based hypermedia. The New Review of Hypermedia and Multimedia, 6, 2000, 89-110"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 13,
+        "text": "Antonacci M.J.",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 16,
+        "end": 35,
+        "text": "Muchaluat-Saade D.C.",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 38,
+        "end": 51,
+        "text": "Rodrigues R.F.",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 54,
+        "end": 66,
+        "text": "Soares L.F.G.",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 68,
+        "end": 141,
+        "text": "'Improving the expressiveness of XML-based Hypermedia Authoring Languages'",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 144,
+        "end": 173,
+        "text": "Multimedia Modeling Conference",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 176,
+        "end": 181,
+        "text": "Nagano",
+        "labels": [
+            "TOWN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 184,
+        "end": 188,
+        "text": "Japan",
+        "labels": [
+            "COUNTRY"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 191,
+        "end": 203,
+        "text": "November 2000",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "Antonacci M.J., Muchaluat-Saade D.C., Rodrigues R.F., Soares L.F.G. 'Improving the expressiveness of XML-based Hypermedia Authoring Languages'. Multimedia Modeling Conference, Nagano, Japan, November 2000"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 19,
+        "text": "Muchaluat-Saade D.C.",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 22,
+        "end": 34,
+        "text": "Soares L.F.G.",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 36,
+        "end": 121,
+        "text": "'Hypermedia Spatio-Temporal Synchronization Relations also Deserve First-Class Status'",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 124,
+        "end": 153,
+        "text": "Multimedia Modeling Conference",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 156,
+        "end": 164,
+        "text": "Amsterdam",
+        "labels": [
+            "TOWN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 167,
+        "end": 179,
+        "text": "November 2001",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "Muchaluat-Saade D.C., Soares L.F.G. 'Hypermedia Spatio-Temporal Synchronization Relations also Deserve First-Class Status'. Multimedia Modeling Conference, Amsterdam, November 2001"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 15,
+        "text": "Pérez-Luque M.J.",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 18,
+        "end": 30,
+        "text": "Little T.D.C.",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 32,
+        "end": 94,
+        "text": "'A Temporal Reference Framework for Multimedia Synchronization",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 97,
+        "end": 151,
+        "text": "IEEE Journal on Selected Areas in Communications, 14(1)",
+        "labels": [
+            "Journal"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 154,
+        "end": 165,
+        "text": "January 1996",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+
+{
+    "data": {
+        "text": "Pérez-Luque M.J., Little T.D.C. 'A Temporal Reference Framework for Multimedia Synchronization', EEE Journal on Selected Areas in Communications, 14(1), January 1996"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 12,
+        "text": "Soares L.F.G.",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 15,
+        "end": 25,
+        "text": "Casanova M.",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 28,
+        "end": 39,
+        "text": "Rodriguez N.",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 41,
+        "end": 113,
+        "text": "'Nested Composite Nodes and Version Control in an Open Hypermedia System'",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 116,
+        "end": 166,
+        "text": "International Journal on Information Systems, 20(6)",
+        "labels": [
+            "Journal"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 169,
+        "end": 184,
+        "text": "Elsevier Science",
+        "labels": [
+            "ORG"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 187,
+        "end": 193,
+        "text": "England",
+        "labels": [
+            "COUNTRY"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 196,
+        "end": 209,
+        "text": "September 1995",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "Soares L.F.G., Casanova M., Rodriguez N. 'Nested Composite Nodes and Version Control in an Open Hypermedia System', International Journal on Information Systems, 20(6), Elsevier Science, England, September 1995"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 4,
+        "text": "C. XU",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 10,
+        "end": 21,
+        "text": "J. L. PRINCE",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 23,
+        "end": 77,
+        "text": "'Gradient Vector Flow: A New External Force for Snakes'",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 79,
+        "end": 152,
+        "text": "IEEE Proc. Conference of Computer Vision and Pattern Recognition (CVPR'97)",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 155,
+        "end": 162,
+        "text": "San Juan",
+        "labels": [
+            "TOWN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 165,
+        "end": 181,
+        "text": "Puerto Rico (USA)",
+        "labels": [
+            "Island"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 184,
+        "end": 192,
+        "text": "June 1997",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 195,
+        "end": 199,
+        "text": "66-71",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "C. XU and J. L. PRINCE. 'Gradient Vector Flow: A New External Force for Snakes'. IEEE Proc. Conference of Computer Vision and Pattern Recognition (CVPR'97), San Juan, Puerto Rico (USA), June 1997, 66-71"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 7,
+        "text": "A. Amano",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 10,
+        "end": 17,
+        "text": "N. Asada",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 20,
+        "end": 31,
+        "text": "T. Montoymam",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 34,
+        "end": 45,
+        "text": "T. Sumiyoshi",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 52,
+        "end": 60,
+        "text": "K. Suzuki",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 63,
+        "end": 127,
+        "text": "Table Form Document Synthesis by Grammar-Based Structure Analysis",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 130,
+        "end": 229,
+        "text": "In Proceedings of the Sixth International Conference on Document Analysis and Recognition (ICDAR'01)",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 232,
+        "end": 239,
+        "text": "533-537",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 242,
+        "end": 248,
+        "text": "Seattle",
+        "labels": [
+            "TOWN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 251,
+        "end": 260,
+        "text": "Washington",
+        "labels": [
+            "STATE"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 263,
+        "end": 276,
+        "text": "September 2001",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "A. Amano, N. Asada, T. Montoymam, T. Sumiyoshi, and K. Suzuki. Table Form Document Synthesis by Grammar-Based Structure Analysis. In Proceedings of the Sixth International Conference on Document Analysis and Recognition (ICDAR'01), 533-537, Seattle, Washington, September 2001"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 10,
+        "text": "A. El-Nasan",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 16,
+        "end": 22,
+        "text": "G. Nagy",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 25,
+        "end": 32,
+        "text": "Ink-Link",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 35,
+        "end": 120,
+        "text": "In Proceedings of the 15th International Conference on Pattern Recognition (ICPR-2000)",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 123,
+        "end": 129,
+        "text": "573-576",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 132,
+        "end": 140,
+        "text": "Barcelona",
+        "labels": [
+            "TOWN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 143,
+        "end": 147,
+        "text": "Spain",
+        "labels": [
+            "COUNTRY"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 150,
+        "end": 164,
+        "text": "September, 2000",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "A. El-Nasan and G. Nagy. Ink-Link. In Proceedings of the 15th International Conference on Pattern Recognition (ICPR-2000), 573-576, Barcelona, Spain, September, 2000"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 7,
+        "text": "M. Hurst",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 13,
+        "end": 22,
+        "text": "S. Douglas",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 25,
+        "end": 110,
+        "text": "Layout and Language: Preliminary Investigations in Recognizing the Structure of Tables",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 113,
+        "end": 206,
+        "text": "In Proceedings of the International Conference on Document Analysis and Recognition (ICDAR'97)",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 209,
+        "end": 217,
+        "text": "1043-1047",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 220,
+        "end": 222,
+        "text": "Ulm",
+        "labels": [
+            "TOWN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 225,
+        "end": 231,
+        "text": "Germany",
+        "labels": [
+            "COUNTRY"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 234,
+        "end": 245,
+        "text": "August, 1997",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "M. Hurst and S. Douglas. Layout and Language: Preliminary Investigations in Recognizing the Structure of Tables. In Proceedings of the International Conference on Document Analysis and Recognition (ICDAR'97), 1043--1047, Ulm, Germany, August, 1997"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 9,
+        "text": "A. Jobbins",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 15,
+        "end": 22,
+        "text": "L. Evett",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 25,
+        "end": 76,
+        "text": "Segmenting Documents Using Multiple Lexical Features",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 79,
+        "end": 178,
+        "text": "In Proceedings of the Fifth International Conference on Document Analysis and Recognition (ICDAR'99)",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 181,
+        "end": 187,
+        "text": "721-724",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 190,
+        "end": 198,
+        "text": "Bangalore",
+        "labels": [
+            "TOWN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 201,
+        "end": 205,
+        "text": "India",
+        "labels": [
+            "COUNTRY"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 208,
+        "end": 222,
+        "text": "September, 1999",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "A. Jobbins and L. Evett. Segmenting Documents Using Multiple Lexical Features. In Proceedings of the Fifth International Conference on Document Analysis and Recognition (ICDAR'99), 721-724, Bangalore, India, September, 1999"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 7,
+        "text": "T. Kochi",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 13,
+        "end": 21,
+        "text": "T. Saitoh",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 24,
+        "end": 116,
+        "text": "User-defined Template for Identifying Document Type and Extracting Information from Documents",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 119,
+        "end": 207,
+        "text": "In Proceedings of the Fifth International Conference on Document Analysis and Recognition",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 210,
+        "end": 216,
+        "text": "127-130",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 219,
+        "end": 227,
+        "text": "Bangalore",
+        "labels": [
+            "TOWN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 230,
+        "end": 234,
+        "text": "India",
+        "labels": [
+            "COUNTRY"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 237,
+        "end": 251,
+        "text": "September, 1999",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "T. Kochi and T. Saitoh. User-defined Template for Identifying Document Type and Extracting Information from Documents. In Proceedings of the Fifth International Conference on Document Analysis and Recognition, 127-130, Bangalore, India, September, 1999"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 7,
+        "text": "K. Zuyev",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 10,
+        "end": 33,
+        "text": "Table Image Segmentation",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 36,
+        "end": 129,
+        "text": "In Proceedings of the International Conference on Document Analysis and Recognition (ICDAR'97)",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 132,
+        "end": 138,
+        "text": "705-708",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 141,
+        "end": 143,
+        "text": "Ulm",
+        "labels": [
+            "TOWN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 146,
+        "end": 152,
+        "text": "Germany",
+        "labels": [
+            "COUNTRY"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 155,
+        "end": 166,
+        "text": "August, 1997",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "K. Zuyev. Table Image Segmentation. In Proceedings of the International Conference on Document Analysis and Recognition (ICDAR'97), 705-708, Ulm, Germany, August, 1997"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 8,
+        "text": "H. Ahonen",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 11,
+        "end": 22,
+        "text": "B. Heikkinen",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 25,
+        "end": 35,
+        "text": "O. Heinonen",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 38,
+        "end": 48,
+        "text": "J. Jaakkola",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 51,
+        "end": 64,
+        "text": "P. Kilpeläinen",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 71,
+        "end": 79,
+        "text": "G. Lindén",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 82,
+        "end": 139,
+        "text": "Design and Implementation of a Document Assembly Workbench",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 142,
+        "end": 489,
+        "text": "In R. D. Hersch, J. André, and H. Brown, editors, Electronic Publishing, Artistic Imaging, and Digital Typography, Proceedings of the 7th International Conference on Electronic Publishing, EP '98, Held Jointly with the 4th International Conference on Raster Imaging and Digital Typography, RIDT '98, number 1375 in Lecture Notes in Computer Science",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 492,
+        "end": 498,
+        "text": "476-486",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 501,
+        "end": 515,
+        "text": "Springer-Verlag",
+        "labels": [
+            "ORG"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 518,
+        "end": 531,
+        "text": "Mar./Apr. 1998",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "H. Ahonen, B. Heikkinen, O. Heinonen, J. Jaakkola, P. Kilpeläinen, and G. Lindén. Design and Implementation of a Document Assembly Workbench. In R. D. Hersch, J. André, and H. Brown, editors, Electronic Publishing, Artistic Imaging, and Digital Typography, Proceedings of the 7th International Conference on Electronic Publishing, EP '98, Held Jointly with the 4th International Conference on Raster Imaging and Digital Typography, RIDT '98, number 1375 in Lecture Notes in Computer Science, 476-486. Springer-Verlag, Mar./Apr. 1998"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 11,
+        "text": "S. L. Harris",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 14,
+        "end": 62,
+        "text": "Managing Virtual Documents: Correctness by Design",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 65,
+        "end": 148,
+        "text": "In Proceedings of the 15th Annual International Conference on Computer Documentation",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 151,
+        "end": 157,
+        "text": "131-135",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 160,
+        "end": 168,
+        "text": "ACM Press",
+        "labels": [
+            "ORG"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 171,
+        "end": 174,
+        "text": "1997",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "S. L. Harris. Managing Virtual Documents: Correctness by Design. In Proceedings of the 15th Annual International Conference on Computer Documentation, 131-135. ACM Press, 1997"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 8,
+        "text": "J. Ingram",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 11,
+        "end": 86,
+        "text": "From the Real Toward the Ideal: A Case Study in Virtual Document Development",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 89,
+        "end": 172,
+        "text": "In Proceedings of the 15th Annual International Conference on Computer Documentation",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 175,
+        "end": 181,
+        "text": "137-144",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 184,
+        "end": 192,
+        "text": "ACM Press",
+        "labels": [
+            "ORG"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 195,
+        "end": 198,
+        "text": "1997",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "J. Ingram. From the Real Toward the Ideal: A Case Study in Virtual Document Development. In Proceedings of the 15th Annual International Conference on Computer Documentation, 137-144. ACM Press, 1997"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 15,
+        "text": "S. Krishnamurthi",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 18,
+        "end": 24,
+        "text": "K. Gray",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 31,
+        "end": 40,
+        "text": "P. Graunke",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 43,
+        "end": 75,
+        "text": "Transformation-by-Example for XML",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 78,
+        "end": 226,
+        "text": "In E. Pontelli and V. Santos~Costa, editors, Proceedings of the Second International Workshop on Practical Aspects of Declarative Languages (PADL'00)",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 229,
+        "end": 272,
+        "text": "Lecture Notes in Computer Science, Vol. 1753",
+        "labels": [
+            "PUBLICATION"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 275,
+        "end": 281,
+        "text": "249-262",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 284,
+        "end": 298,
+        "text": "Springer-Verlag",
+        "labels": [
+            "ORG"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 301,
+        "end": 306,
+        "text": "Boston",
+        "labels": [
+            "TOWN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 309,
+        "end": 310,
+        "text": "MA",
+        "labels": [
+            "STATE"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 313,
+        "end": 315,
+        "text": "USA",
+        "labels": [
+            "COUNTRY"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 318,
+        "end": 321,
+        "text": "2000",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "S. Krishnamurthi, K. Gray, and P. Graunke. Transformation-by-Example for XML. In E. Pontelli and V. Santos~Costa, editors, Proceedings of the Second International Workshop on Practical Aspects of Declarative Languages (PADL'00), Lecture Notes in Computer Science, Vol. 1753, 249-262. Springer-Verlag, Boston, MA, USA, 2000"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 8,
+        "text": "E. Kuikka",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 11,
+        "end": 21,
+        "text": "P. Leinonen",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 28,
+        "end": 39,
+        "text": "M. Penttonen",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 42,
+        "end": 105,
+        "text": "Overview of Tree Transducer Based Document Transformation System",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 108,
+        "end":260,
+        "text": "In E. Munson and D. Wood, editors, Preliminary Proceedings of the Fifth International Workshop on Principles of Digital Document Processing, PODDP'00, 13",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 263,
+        "end": 268,
+        "text": "Munich",
+        "labels": [
+            "TOWN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 271,
+        "end": 277,
+        "text": "Germany",
+        "labels": [
+            "COUNTRY"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 280,
+        "end": 283,
+        "text": "2000",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "E. Kuikka, P. Leinonen, and M. Penttonen. Overview of Tree Transducer Based Document Transformation System. In E. Munson and D. Wood, editors, Preliminary Proceedings of theFifth International Workshop on Principles of Digital Document Processing, PODDP'00, 13, Munich, Germany, 2000"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 6,
+        "text": "X. Tang",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 12,
+        "end": 19,
+        "text": "F. Tompa",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 22,
+        "end": 72,
+        "text": "Specifying Transformations for Structured Documents",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 75,
+        "end": 156,
+        "text": "In Proceedings of 4th International Workshop on the Web and Databases (WebDB'2001)",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 159,
+        "end": 163,
+        "text": "67-72",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 166,
+        "end": 179,
+        "text": "May 24-25 2001",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "X. Tang and F. Tompa. Specifying Transformations for Structured Documents. In Proceedings of 4th International Workshop on the Web and Databases (WebDB'2001), 67-72, May 24-25 2001"
+    }
+},
+{
+    "value": {
+        "start": 0,
+        "end": 9,
+        "text": "L.D. Baker",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 15,
+        "end": 27,
+        "text": "A.K. McCallum",
+        "labels": [
+            "SNAME_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 30,
+        "end": 87,
+        "text": "Distributional Clustering of Words for Text Classification",
+        "labels": [
+            "TITLE_IN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 90,
+        "end": 262,
+        "text": "In R. Wilkinson, B. Croft, K. van Rijsbergen, A. Moffat, and J. Zobel, editors, Proc. ACM-SIGIR International Conference on Research and Development in Information Retrieval",
+        "labels": [
+            "EVENT"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 265,
+        "end": 269,
+        "text": "81-89",
+        "labels": [
+            "PAGES"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 272,
+        "end": 280,
+        "text": "Melbourne",
+        "labels": [
+            "TOWN"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 283,
+        "end": 291,
+        "text": "Australia",
+        "labels": [
+            "COUNTRY"
+        ]
+    }
+},
+{
+    "value": {
+        "start": 294,
+        "end": 302,
+        "text": "July 1998",
+        "labels": [
+            "DATE"
+        ]
+    }
+},
+{
+    "data": {
+        "text": "L.D. Baker and A.K. McCallum. Distributional Clustering of Words for Text Classification. In R. Wilkinson, B. Croft, K. van Rijsbergen, A. Moffat, and J. Zobel, editors, Proc. ACM-SIGIR International Conference on Research and Development in Information Retrieval, 81-89, Melbourne, Australia, July 1998"
+    }
+}
+]
