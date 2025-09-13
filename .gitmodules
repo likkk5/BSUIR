@@ -7,3 +7,6 @@
 [submodule "3 курс/5сем/СППР/WEB_253502_TicTacToe"]
 	path = 3 курс/5сем/СППР/WEB_253502_TicTacToe
 	url = https://github.com/likkk5/TicTacToe.git
+[submodule "3 курс/5сем/СТРweb-пр/pythonvenv"]
+	path = 3 курс/5сем/СТРweb-пр/pythonvenv
+	url = https://github.com/likkk5/pythonvenv.git
