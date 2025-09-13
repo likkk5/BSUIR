@@ -1,0 +1,12 @@
+This is a test text for text analysis.
+It contains multiple sentences, such as this one.
+And this one too!
+
+Do you like smileys? :--) :-)) ;)
+
+Here are some binary numbers: 1010, 1101, 11110000.
+Do they look correct?
+
+Let's see if we can find some words that start with vowels and end with consonants. For example, "apple" or "banana".
+
+And finally, let's count how many times each character repeats in this text.

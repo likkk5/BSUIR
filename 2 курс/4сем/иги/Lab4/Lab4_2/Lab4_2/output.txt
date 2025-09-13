@@ -1,0 +1,37 @@
+Total sentences: 9
+Sentences: ['This is a test text for text analysis', 'It contains multiple sentences, such as this one', 'And this one too', 'Do you like smileys', 'Here are some binary numbers: 1010, 1101, 11110000', 'Do they look correct', "Let's see if we can find some words that start with vowels and end with consonants", 'For example, "apple" or "banana"', "And finally, let's count how many times each character repeats in this text"]
+Narrative sentences: 7
+Interrogative sentences: 1
+Imperative sentences: 1
+Average sentence length: 34.0
+Average word length: 4.25
+Smiley count: 3 [':--)', ':-))', ';)']
+Binary numbers: ['1010', '1101', '11110000']
+Vowel-consonant words: ['is', 'analysis', 'It', 'as', 'one', 'And', 'one', 'are', 'if', 'and', 'end', 'example', 'apple', 'or', 'And', 'in']
+Start vowel words count: 18
+End vowel words count: 18
+List of start-end vowels: (['is', 'a', 'analysis', 'It', 'as', 'one', 'And', 'one', 'are', 'if', 'and', 'end', 'example', 'apple', 'or', 'And', 'each', 'in'], ['a', 'multiple', 'one', 'one', 'too', 'Do', 'you', 'like', 'Here', 'are', 'some', 'Do', 'see', 'we', 'some', 'example', 'apple', 'banana'])
+Character occurrences:
+t: 32
+h: 13
+i: 19
+s: 28
+a: 25
+e: 35
+x: 4
+f: 5
+o: 22
+r: 14
+n: 24
+l: 13
+y: 7
+c: 11
+m: 8
+u: 5
+p: 5
+d: 8
+k: 2
+b: 3
+w: 6
+v: 1
+Words after comma (sorted): ['let', 'such']

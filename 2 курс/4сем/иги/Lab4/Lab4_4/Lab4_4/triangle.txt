@@ -1,0 +1,1 @@
+Isosceles triangle with base 5.0, height 6.0, color red, label text, area 15.0
