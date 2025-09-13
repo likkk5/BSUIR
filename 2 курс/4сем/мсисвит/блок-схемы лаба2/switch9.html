@@ -1,0 +1,2946 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://codetoflow.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Create visual flowchart from code.  Codetoflow explains the code and generates visual flowchart to understand the code better">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://codetoflow.com/static/favicon.bbc26f10f055.ico" type="image/x-icon">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Code to Flow: Understand your code and flow</title>
+    <style>
+      /*! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com*/
+      *,
+      :after,
+      :before {
+        box-sizing: border-box;
+        border: 0 solid #e5e7eb;
+      }
+      :after,
+      :before {
+        --tw-content: "";
+      }
+      :host,
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -moz-tab-size: 4;
+        -o-tab-size: 4;
+        tab-size: 4;
+        font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        margin: 0;
+        line-height: inherit;
+      }
+      hr {
+        height: 0;
+        color: inherit;
+        border-top-width: 1px;
+      }
+      abbr:where([title]) {
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      b,
+      strong {
+        font-weight: bolder;
+      }
+      code,
+      kbd,
+      pre,
+      samp {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        font-size: 1em;
+      }
+      small {
+        font-size: 80%;
+      }
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: initial;
+      }
+      sub {
+        bottom: -0.25em;
+      }
+      sup {
+        top: -0.5em;
+      }
+      table {
+        text-indent: 0;
+        border-color: inherit;
+        border-collapse: collapse;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-feature-settings: inherit;
+        font-variation-settings: inherit;
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      [type="button"],
+      [type="reset"],
+      [type="submit"],
+      button {
+        -webkit-appearance: button;
+        background-color: initial;
+        background-image: none;
+      }
+      :-moz-focusring {
+        outline: auto;
+      }
+      :-moz-ui-invalid {
+        box-shadow: none;
+      }
+      progress {
+        vertical-align: initial;
+      }
+      ::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        height: auto;
+      }
+      [type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+      }
+      ::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+      summary {
+        display: list-item;
+      }
+      blockquote,
+      dd,
+      dl,
+      figure,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      hr,
+      p,
+      pre {
+        margin: 0;
+      }
+      fieldset {
+        margin: 0;
+      }
+      fieldset,
+      legend {
+        padding: 0;
+      }
+      menu,
+      ol,
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      dialog {
+        padding: 0;
+      }
+      textarea {
+        resize: vertical;
+      }
+      input::-moz-placeholder,
+      textarea::-moz-placeholder {
+        opacity: 1;
+        color: #9ca3af;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        opacity: 1;
+        color: #9ca3af;
+      }
+      [role="button"],
+      button {
+        cursor: pointer;
+      }
+      :disabled {
+        cursor: default;
+      }
+      audio,
+      canvas,
+      embed,
+      iframe,
+      img,
+      object,
+      svg,
+      video {
+        display: block;
+        vertical-align: middle;
+      }
+      img,
+      video {
+        max-width: 100%;
+        height: auto;
+      }
+      [hidden] {
+        display: none;
+      }
+      [multiple],
+      [type="date"],
+      [type="datetime-local"],
+      [type="email"],
+      [type="month"],
+      [type="number"],
+      [type="password"],
+      [type="search"],
+      [type="tel"],
+      [type="text"],
+      [type="time"],
+      [type="url"],
+      [type="week"],
+      input:where(:not([type])),
+      select,
+      textarea {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: #fff;
+        border-color: #6b7280;
+        border-width: 1px;
+        border-radius: 0;
+        padding: 0.5rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        --tw-shadow: 0 0 #0000;
+      }
+      [multiple]:focus,
+      [type="date"]:focus,
+      [type="datetime-local"]:focus,
+      [type="email"]:focus,
+      [type="month"]:focus,
+      [type="number"]:focus,
+      [type="password"]:focus,
+      [type="search"]:focus,
+      [type="tel"]:focus,
+      [type="text"]:focus,
+      [type="time"]:focus,
+      [type="url"]:focus,
+      [type="week"]:focus,
+      input:where(:not([type])):focus,
+      select:focus,
+      textarea:focus {
+        outline: 2px solid #0000;
+        outline-offset: 2px;
+        --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: #2563eb;
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+        border-color: #2563eb;
+      }
+      input::-moz-placeholder,
+      textarea::-moz-placeholder {
+        color: #6b7280;
+        opacity: 1;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        color: #6b7280;
+        opacity: 1;
+      }
+      ::-webkit-datetime-edit-fields-wrapper {
+        padding: 0;
+      }
+      ::-webkit-date-and-time-value {
+        min-height: 1.5em;
+        text-align: inherit;
+      }
+      ::-webkit-datetime-edit {
+        display: inline-flex;
+      }
+      ::-webkit-datetime-edit,
+      ::-webkit-datetime-edit-day-field,
+      ::-webkit-datetime-edit-hour-field,
+      ::-webkit-datetime-edit-meridiem-field,
+      ::-webkit-datetime-edit-millisecond-field,
+      ::-webkit-datetime-edit-minute-field,
+      ::-webkit-datetime-edit-month-field,
+      ::-webkit-datetime-edit-second-field,
+      ::-webkit-datetime-edit-year-field {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      select {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3E%3C/svg%3E");
+        background-position: right 0.5rem center;
+        background-repeat: no-repeat;
+        background-size: 1.5em 1.5em;
+        padding-right: 2.5rem;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      [multiple],
+      [size]:where(select:not([size="1"])) {
+        background-image: none;
+        background-position: 0 0;
+        background-repeat: unset;
+        background-size: initial;
+        padding-right: 0.75rem;
+        -webkit-print-color-adjust: unset;
+        print-color-adjust: unset;
+      }
+      [type="checkbox"],
+      [type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        display: inline-block;
+        vertical-align: middle;
+        background-origin: border-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        flex-shrink: 0;
+        height: 1rem;
+        width: 1rem;
+        color: #2563eb;
+        background-color: #fff;
+        border-color: #6b7280;
+        border-width: 1px;
+        --tw-shadow: 0 0 #0000;
+      }
+      [type="checkbox"] {
+        border-radius: 0;
+      }
+      [type="radio"] {
+        border-radius: 100%;
+      }
+      [type="checkbox"]:focus,
+      [type="radio"]:focus {
+        outline: 2px solid #0000;
+        outline-offset: 2px;
+        --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+        --tw-ring-offset-width: 2px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: #2563eb;
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+      [type="checkbox"]:checked,
+      [type="radio"]:checked {
+        border-color: #0000;
+        background-color: currentColor;
+        background-size: 100% 100%;
+        background-position: 50%;
+        background-repeat: no-repeat;
+      }
+      [type="checkbox"]:checked {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath d='M12.207 4.793a1 1 0 0 1 0 1.414l-5 5a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L6.5 9.086l4.293-4.293a1 1 0 0 1 1.414 0z'/%3E%3C/svg%3E");
+      }
+      @media (forced-colors: active) {
+        [type="checkbox"]:checked {
+          -webkit-appearance: auto;
+          -moz-appearance: auto;
+          appearance: auto;
+        }
+      }
+      [type="radio"]:checked {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='3'/%3E%3C/svg%3E");
+      }
+      @media (forced-colors: active) {
+        [type="radio"]:checked {
+          -webkit-appearance: auto;
+          -moz-appearance: auto;
+          appearance: auto;
+        }
+      }
+      [type="checkbox"]:checked:focus,
+      [type="checkbox"]:checked:hover,
+      [type="checkbox"]:indeterminate,
+      [type="radio"]:checked:focus,
+      [type="radio"]:checked:hover {
+        border-color: #0000;
+        background-color: currentColor;
+      }
+      [type="checkbox"]:indeterminate {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3E%3C/svg%3E");
+        background-size: 100% 100%;
+        background-position: 50%;
+        background-repeat: no-repeat;
+      }
+      @media (forced-colors: active) {
+        [type="checkbox"]:indeterminate {
+          -webkit-appearance: auto;
+          -moz-appearance: auto;
+          appearance: auto;
+        }
+      }
+      [type="checkbox"]:indeterminate:focus,
+      [type="checkbox"]:indeterminate:hover {
+        border-color: #0000;
+        background-color: currentColor;
+      }
+      [type="file"] {
+        background: unset;
+        border-color: inherit;
+        border-width: 0;
+        border-radius: 0;
+        padding: 0;
+        font-size: unset;
+        line-height: inherit;
+      }
+      [type="file"]:focus {
+        outline: 1px solid ButtonText;
+        outline: 1px auto -webkit-focus-ring-color;
+      }
+      *,
+      ::backdrop,
+      :after,
+      :before {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: #3b82f680;
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+      }
+      .container {
+        width: 100%;
+      }
+      @media (min-width: 640px) {
+        .container {
+          max-width: 640px;
+        }
+      }
+      @media (min-width: 768px) {
+        .container {
+          max-width: 768px;
+        }
+      }
+      @media (min-width: 1024px) {
+        .container {
+          max-width: 1024px;
+        }
+      }
+      @media (min-width: 1280px) {
+        .container {
+          max-width: 1280px;
+        }
+      }
+      @media (min-width: 1536px) {
+        .container {
+          max-width: 1536px;
+        }
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+      .static {
+        position: static;
+      }
+      .fixed {
+        position: fixed;
+      }
+      .absolute {
+        position: absolute;
+      }
+      .relative {
+        position: relative;
+      }
+      .inset-0 {
+        inset: 0;
+      }
+      .bottom-0 {
+        bottom: 0;
+      }
+      .right-0 {
+        right: 0;
+      }
+      .top-0 {
+        top: 0;
+      }
+      .isolate {
+        isolation: isolate;
+      }
+      .z-10 {
+        z-index: 10;
+      }
+      .z-50 {
+        z-index: 50;
+      }
+      .col-span-2 {
+        grid-column: span 2 / span 2;
+      }
+      .col-span-3 {
+        grid-column: span 3 / span 3;
+      }
+      .col-span-6 {
+        grid-column: span 6 / span 6;
+      }
+      .col-start-1 {
+        grid-column-start: 1;
+      }
+      .col-start-3 {
+        grid-column-start: 3;
+      }
+      .col-start-4 {
+        grid-column-start: 4;
+      }
+      .col-start-5 {
+        grid-column-start: 5;
+      }
+      .float-right {
+        float: right;
+      }
+      .m-1 {
+        margin: 0.25rem;
+      }
+      .m-2 {
+        margin: 0.5rem;
+      }
+      .-mx-1 {
+        margin-left: -0.25rem;
+        margin-right: -0.25rem;
+      }
+      .-mx-1\.5 {
+        margin-left: -0.375rem;
+        margin-right: -0.375rem;
+      }
+      .-my-1 {
+        margin-top: -0.25rem;
+        margin-bottom: -0.25rem;
+      }
+      .-my-1\.5 {
+        margin-top: -0.375rem;
+        margin-bottom: -0.375rem;
+      }
+      .mx-0 {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .mx-2 {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .-ml-1 {
+        margin-left: -0.25rem;
+      }
+      .mb-2 {
+        margin-bottom: 0.5rem;
+      }
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+      .mb-6 {
+        margin-bottom: 1.5rem;
+      }
+      .ml-10 {
+        margin-left: 2.5rem;
+      }
+      .ml-3 {
+        margin-left: 0.75rem;
+      }
+      .ml-auto {
+        margin-left: auto;
+      }
+      .mr-10 {
+        margin-right: 2.5rem;
+      }
+      .mr-3 {
+        margin-right: 0.75rem;
+      }
+      .mr-4 {
+        margin-right: 1rem;
+      }
+      .mt-0 {
+        margin-top: 0;
+      }
+      .mt-0\.5 {
+        margin-top: 0.125rem;
+      }
+      .mt-10 {
+        margin-top: 2.5rem;
+      }
+      .mt-12 {
+        margin-top: 3rem;
+      }
+      .mt-16 {
+        margin-top: 4rem;
+      }
+      .mt-2 {
+        margin-top: 0.5rem;
+      }
+      .mt-20 {
+        margin-top: 5rem;
+      }
+      .mt-4 {
+        margin-top: 1rem;
+      }
+      .mt-5 {
+        margin-top: 1.25rem;
+      }
+      .mt-6 {
+        margin-top: 1.5rem;
+      }
+      .mt-8 {
+        margin-top: 2rem;
+      }
+      .block {
+        display: block;
+      }
+      .inline-block {
+        display: inline-block;
+      }
+      .inline {
+        display: inline;
+      }
+      .flex {
+        display: flex;
+      }
+      .inline-flex {
+        display: inline-flex;
+      }
+      .table {
+        display: table;
+      }
+      .hidden {
+        display: none;
+      }
+      .h-1 {
+        height: 0.25rem;
+      }
+      .h-5 {
+        height: 1.25rem;
+      }
+      .h-6 {
+        height: 1.5rem;
+      }
+      .h-screen {
+        height: 100vh;
+      }
+      .min-h-full {
+        min-height: 100%;
+      }
+      .w-0 {
+        width: 0;
+      }
+      .w-1\/2 {
+        width: 50%;
+      }
+      .w-2\/3 {
+        width: 66.666667%;
+      }
+      .w-2\/5 {
+        width: 40%;
+      }
+      .w-5 {
+        width: 1.25rem;
+      }
+      .w-56 {
+        width: 14rem;
+      }
+      .w-6 {
+        width: 1.5rem;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .min-w-full {
+        min-width: 100%;
+      }
+      .max-w-2xl {
+        max-width: 42rem;
+      }
+      .max-w-4xl {
+        max-width: 56rem;
+      }
+      .max-w-7xl {
+        max-width: 80rem;
+      }
+      .max-w-md {
+        max-width: 28rem;
+      }
+      .flex-1 {
+        flex: 1 1 0%;
+      }
+      .flex-none {
+        flex: none;
+      }
+      .flex-shrink-0 {
+        flex-shrink: 0;
+      }
+      .transform {
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(1turn);
+        }
+      }
+      .animate-spin {
+        animation: spin 1s linear infinite;
+      }
+      .cursor-pointer {
+        cursor: pointer;
+      }
+      .list-inside {
+        list-style-position: inside;
+      }
+      .list-decimal {
+        list-style-type: decimal;
+      }
+      .grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+      .flex-col {
+        flex-direction: column;
+      }
+      .items-end {
+        align-items: flex-end;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .items-baseline {
+        align-items: baseline;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .gap-4 {
+        gap: 1rem;
+      }
+      .gap-6 {
+        gap: 1.5rem;
+      }
+      .gap-x-1 {
+        -moz-column-gap: 0.25rem;
+        column-gap: 0.25rem;
+      }
+      .gap-x-3 {
+        -moz-column-gap: 0.75rem;
+        column-gap: 0.75rem;
+      }
+      .gap-x-4 {
+        -moz-column-gap: 1rem;
+        column-gap: 1rem;
+      }
+      .space-x-2 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+        margin-left: calc(0.5rem * (1 - var(--tw-space-x-reverse)));
+      }
+      .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(1rem * var(--tw-space-x-reverse));
+        margin-left: calc(1rem * (1 - var(--tw-space-x-reverse)));
+      }
+      .space-y-16 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(4rem * (1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(4rem * var(--tw-space-y-reverse));
+      }
+      .space-y-3 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(0.75rem * (1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+      }
+      .space-y-4 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(1rem * (1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+      }
+      .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(2rem * (1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+      }
+      .overflow-auto {
+        overflow: auto;
+      }
+      .overflow-hidden {
+        overflow: hidden;
+      }
+      .overflow-y-auto {
+        overflow-y: auto;
+      }
+      .rounded {
+        border-radius: 0.25rem;
+      }
+      .rounded-3xl {
+        border-radius: 1.5rem;
+      }
+      .rounded-full {
+        border-radius: 9999px;
+      }
+      .rounded-lg {
+        border-radius: 0.5rem;
+      }
+      .rounded-md {
+        border-radius: 0.375rem;
+      }
+      .rounded-l-md {
+        border-top-left-radius: 0.375rem;
+        border-bottom-left-radius: 0.375rem;
+      }
+      .border {
+        border-width: 1px;
+      }
+      .border-0 {
+        border-width: 0;
+      }
+      .border-b {
+        border-bottom-width: 1px;
+      }
+      .border-b-2 {
+        border-bottom-width: 2px;
+      }
+      .border-l-4 {
+        border-left-width: 4px;
+      }
+      .border-t-4 {
+        border-top-width: 4px;
+      }
+      .border-blue-500 {
+        --tw-border-opacity: 1;
+        border-color: rgb(59 130 246 / var(--tw-border-opacity));
+      }
+      .border-gray-100 {
+        --tw-border-opacity: 1;
+        border-color: rgb(243 244 246 / var(--tw-border-opacity));
+      }
+      .border-gray-200 {
+        --tw-border-opacity: 1;
+        border-color: rgb(229 231 235 / var(--tw-border-opacity));
+      }
+      .border-gray-300 {
+        --tw-border-opacity: 1;
+        border-color: rgb(209 213 219 / var(--tw-border-opacity));
+      }
+      .border-gray-400 {
+        --tw-border-opacity: 1;
+        border-color: rgb(156 163 175 / var(--tw-border-opacity));
+      }
+      .border-indigo-600 {
+        --tw-border-opacity: 1;
+        border-color: rgb(79 70 229 / var(--tw-border-opacity));
+      }
+      .border-red-400 {
+        --tw-border-opacity: 1;
+        border-color: rgb(248 113 113 / var(--tw-border-opacity));
+      }
+      .border-slate-600 {
+        --tw-border-opacity: 1;
+        border-color: rgb(71 85 105 / var(--tw-border-opacity));
+      }
+      .border-yellow-400 {
+        --tw-border-opacity: 1;
+        border-color: rgb(250 204 21 / var(--tw-border-opacity));
+      }
+      .bg-blue-100 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+      }
+      .bg-blue-400 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+      }
+      .bg-blue-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+      }
+      .bg-blue-600 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+      }
+      .bg-gray-100 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+      }
+      .bg-gray-50 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+      }
+      .bg-gray-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+      }
+      .bg-gray-600 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+      }
+      .bg-green-50 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(240 253 244 / var(--tw-bg-opacity));
+      }
+      .bg-indigo-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+      }
+      .bg-indigo-600 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+      }
+      .bg-red-100 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+      }
+      .bg-transparent {
+        background-color: initial;
+      }
+      .bg-white {
+        --tw-bg-opacity: 1;
+        background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+      }
+      .bg-yellow-50 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(254 252 232 / var(--tw-bg-opacity));
+      }
+      .bg-opacity-50 {
+        --tw-bg-opacity: 0.5;
+      }
+      .bg-opacity-75 {
+        --tw-bg-opacity: 0.75;
+      }
+      .p-1 {
+        padding: 0.25rem;
+      }
+      .p-1\.5 {
+        padding: 0.375rem;
+      }
+      .p-2 {
+        padding: 0.5rem;
+      }
+      .p-2\.5 {
+        padding: 0.625rem;
+      }
+      .p-3 {
+        padding: 0.75rem;
+      }
+      .p-4 {
+        padding: 1rem;
+      }
+      .p-6 {
+        padding: 1.5rem;
+      }
+      .p-8 {
+        padding: 2rem;
+      }
+      .px-2 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+      .px-3 {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+      }
+      .px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .px-5 {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+      .px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      .py-0 {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .py-1 {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+      }
+      .py-1\.5 {
+        padding-top: 0.375rem;
+        padding-bottom: 0.375rem;
+      }
+      .py-12 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+      .py-16 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+      .py-2 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+      .py-2\.5 {
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+      }
+      .py-3 {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+      }
+      .py-4 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .py-5 {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+      }
+      .py-6 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+      .py-8 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+      .pb-4 {
+        padding-bottom: 1rem;
+      }
+      .pl-3 {
+        padding-left: 0.75rem;
+      }
+      .pt-5 {
+        padding-top: 1.25rem;
+      }
+      .text-left {
+        text-align: left;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .font-serif {
+        font-family: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+      }
+      .text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      .text-5xl {
+        font-size: 3rem;
+        line-height: 1;
+      }
+      .text-base {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+      .text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+      .text-sm {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+      .text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+      .text-xs {
+        font-size: 0.75rem;
+        line-height: 1rem;
+      }
+      .font-bold {
+        font-weight: 700;
+      }
+      .font-extrabold {
+        font-weight: 800;
+      }
+      .font-medium {
+        font-weight: 500;
+      }
+      .font-normal {
+        font-weight: 400;
+      }
+      .font-semibold {
+        font-weight: 600;
+      }
+      .uppercase {
+        text-transform: uppercase;
+      }
+      .leading-10 {
+        line-height: 2.5rem;
+      }
+      .leading-6 {
+        line-height: 1.5rem;
+      }
+      .leading-7 {
+        line-height: 1.75rem;
+      }
+      .leading-8 {
+        line-height: 2rem;
+      }
+      .leading-none {
+        line-height: 1;
+      }
+      .leading-normal {
+        line-height: 1.5;
+      }
+      .leading-tight {
+        line-height: 1.25;
+      }
+      .tracking-normal {
+        letter-spacing: 0;
+      }
+      .tracking-tight {
+        letter-spacing: -0.025em;
+      }
+      .tracking-wider {
+        letter-spacing: 0.05em;
+      }
+      .text-black {
+        --tw-text-opacity: 1;
+        color: rgb(0 0 0 / var(--tw-text-opacity));
+      }
+      .text-blue-400 {
+        --tw-text-opacity: 1;
+        color: rgb(96 165 250 / var(--tw-text-opacity));
+      }
+      .text-blue-600 {
+        --tw-text-opacity: 1;
+        color: rgb(37 99 235 / var(--tw-text-opacity));
+      }
+      .text-blue-700 {
+        --tw-text-opacity: 1;
+        color: rgb(29 78 216 / var(--tw-text-opacity));
+      }
+      .text-gray-500 {
+        --tw-text-opacity: 1;
+        color: rgb(107 114 128 / var(--tw-text-opacity));
+      }
+      .text-gray-600 {
+        --tw-text-opacity: 1;
+        color: rgb(75 85 99 / var(--tw-text-opacity));
+      }
+      .text-gray-700 {
+        --tw-text-opacity: 1;
+        color: rgb(55 65 81 / var(--tw-text-opacity));
+      }
+      .text-gray-800 {
+        --tw-text-opacity: 1;
+        color: rgb(31 41 55 / var(--tw-text-opacity));
+      }
+      .text-gray-900 {
+        --tw-text-opacity: 1;
+        color: rgb(17 24 39 / var(--tw-text-opacity));
+      }
+      .text-green-500 {
+        --tw-text-opacity: 1;
+        color: rgb(34 197 94 / var(--tw-text-opacity));
+      }
+      .text-green-800 {
+        --tw-text-opacity: 1;
+        color: rgb(22 101 52 / var(--tw-text-opacity));
+      }
+      .text-indigo-500 {
+        --tw-text-opacity: 1;
+        color: rgb(99 102 241 / var(--tw-text-opacity));
+      }
+      .text-indigo-600 {
+        --tw-text-opacity: 1;
+        color: rgb(79 70 229 / var(--tw-text-opacity));
+      }
+      .text-red-700 {
+        --tw-text-opacity: 1;
+        color: rgb(185 28 28 / var(--tw-text-opacity));
+      }
+      .text-white {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+      }
+      .text-yellow-300 {
+        --tw-text-opacity: 1;
+        color: rgb(253 224 71 / var(--tw-text-opacity));
+      }
+      .text-yellow-400 {
+        --tw-text-opacity: 1;
+        color: rgb(250 204 21 / var(--tw-text-opacity));
+      }
+      .text-yellow-700 {
+        --tw-text-opacity: 1;
+        color: rgb(161 98 7 / var(--tw-text-opacity));
+      }
+      .underline {
+        text-decoration-line: underline;
+      }
+      .line-through {
+        text-decoration-line: line-through;
+      }
+      .decoration-blue-400 {
+        text-decoration-color: #60a5fa;
+      }
+      .decoration-8 {
+        text-decoration-thickness: 8px;
+      }
+      .opacity-25 {
+        opacity: 0.25;
+      }
+      .opacity-75 {
+        opacity: 0.75;
+      }
+      .shadow {
+        --tw-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+        --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+      }
+      .shadow,
+      .shadow-lg {
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      .shadow-lg {
+        --tw-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+        --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+      }
+      .shadow-md {
+        --tw-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+        --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+      }
+      .shadow-md,
+      .shadow-sm {
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      .shadow-sm {
+        --tw-shadow: 0 1px 2px 0 #0000000d;
+        --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+      }
+      .shadow-xl {
+        --tw-shadow: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
+        --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      .outline-none {
+        outline: 2px solid #0000;
+        outline-offset: 2px;
+      }
+      .ring-1 {
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+      }
+      .ring-1,
+      .ring-2 {
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+      }
+      .ring-2 {
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+      }
+      .ring-inset {
+        --tw-ring-inset: inset;
+      }
+      .ring-gray-900\/5 {
+        --tw-ring-color: #1118270d;
+      }
+      .ring-indigo-600 {
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgb(79 70 229 / var(--tw-ring-opacity));
+      }
+      .transition {
+        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+      }
+      .transition-all {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+      }
+      .transition-colors {
+        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+      }
+      .transition-opacity {
+        transition-property: opacity;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+      }
+      .duration-300 {
+        transition-duration: 0.3s;
+      }
+      .ease-in-out {
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .file\:mr-4::file-selector-button {
+        margin-right: 1rem;
+      }
+      .file\:border-0::file-selector-button {
+        border-width: 0;
+      }
+      .file\:bg-indigo-50::file-selector-button {
+        --tw-bg-opacity: 1;
+        background-color: rgb(238 242 255 / var(--tw-bg-opacity));
+      }
+      .file\:px-4::file-selector-button {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .file\:py-2::file-selector-button {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+      .file\:text-sm::file-selector-button {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+      .file\:font-semibold::file-selector-button {
+        font-weight: 600;
+      }
+      .file\:text-indigo-700::file-selector-button {
+        --tw-text-opacity: 1;
+        color: rgb(67 56 202 / var(--tw-text-opacity));
+      }
+      .hover\:bg-blue-500:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+      }
+      .hover\:bg-blue-700:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+      }
+      .hover\:bg-gray-100:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+      }
+      .hover\:bg-green-100:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+      }
+      .hover\:bg-indigo-500:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+      }
+      .hover\:bg-indigo-600:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+      }
+      .hover\:bg-indigo-700:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(67 56 202 / var(--tw-bg-opacity));
+      }
+      .hover\:bg-red-200:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+      }
+      .hover\:text-blue-400:hover {
+        --tw-text-opacity: 1;
+        color: rgb(96 165 250 / var(--tw-text-opacity));
+      }
+      .hover\:text-blue-800:hover {
+        --tw-text-opacity: 1;
+        color: rgb(30 64 175 / var(--tw-text-opacity));
+      }
+      .hover\:text-indigo-500:hover {
+        --tw-text-opacity: 1;
+        color: rgb(99 102 241 / var(--tw-text-opacity));
+      }
+      .hover\:text-indigo-800:hover {
+        --tw-text-opacity: 1;
+        color: rgb(55 48 163 / var(--tw-text-opacity));
+      }
+      .hover\:text-white:hover {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+      }
+      .hover\:text-yellow-600:hover {
+        --tw-text-opacity: 1;
+        color: rgb(202 138 4 / var(--tw-text-opacity));
+      }
+      .hover\:file\:bg-indigo-100::file-selector-button:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(224 231 255 / var(--tw-bg-opacity));
+      }
+      .focus\:border-blue-500:focus {
+        --tw-border-opacity: 1;
+        border-color: rgb(59 130 246 / var(--tw-border-opacity));
+      }
+      .focus\:outline-none:focus {
+        outline: 2px solid #0000;
+        outline-offset: 2px;
+      }
+      .focus\:ring-2:focus {
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+      }
+      .focus\:ring-2:focus,
+      .focus\:ring-4:focus {
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+      }
+      .focus\:ring-4:focus {
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+      }
+      .focus\:ring-blue-300:focus {
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgb(147 197 253 / var(--tw-ring-opacity));
+      }
+      .focus\:ring-blue-500:focus {
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
+      }
+      .focus\:ring-gray-600:focus {
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgb(75 85 99 / var(--tw-ring-opacity));
+      }
+      .focus\:ring-green-600:focus {
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgb(22 163 74 / var(--tw-ring-opacity));
+      }
+      .focus\:ring-opacity-50:focus {
+        --tw-ring-opacity: 0.5;
+      }
+      .focus\:ring-offset-2:focus {
+        --tw-ring-offset-width: 2px;
+      }
+      .focus\:ring-offset-green-50:focus {
+        --tw-ring-offset-color: #f0fdf4;
+      }
+      .focus-visible\:outline:focus-visible {
+        outline-style: solid;
+      }
+      .focus-visible\:outline-2:focus-visible {
+        outline-width: 2px;
+      }
+      .focus-visible\:outline-offset-2:focus-visible {
+        outline-offset: 2px;
+      }
+      .focus-visible\:outline-indigo-600:focus-visible {
+        outline-color: #4f46e5;
+      }
+      .focus-visible\:ring-2:focus-visible {
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+      }
+      .focus-visible\:ring-indigo-500:focus-visible {
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
+      }
+      @media (min-width: 640px) {
+        .sm\:my-8 {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+        .sm\:mt-0 {
+          margin-top: 0;
+        }
+        .sm\:mt-16 {
+          margin-top: 4rem;
+        }
+        .sm\:inline {
+          display: inline;
+        }
+        .sm\:flex {
+          display: flex;
+        }
+        .sm\:grid {
+          display: grid;
+        }
+        .sm\:w-auto {
+          width: auto;
+        }
+        .sm\:w-full {
+          width: 100%;
+        }
+        .sm\:max-w-2xl {
+          max-width: 42rem;
+        }
+        .sm\:max-w-md {
+          max-width: 28rem;
+        }
+        .sm\:grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .sm\:flex-row-reverse {
+          flex-direction: row-reverse;
+        }
+        .sm\:items-center {
+          align-items: center;
+        }
+        .sm\:gap-x-6 {
+          -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+        }
+        .sm\:gap-y-16 {
+          row-gap: 4rem;
+        }
+        .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+          --tw-space-y-reverse: 0;
+          margin-top: calc(0px * (1 - var(--tw-space-y-reverse)));
+          margin-bottom: calc(0px * var(--tw-space-y-reverse));
+        }
+        .sm\:p-0 {
+          padding: 0;
+        }
+        .sm\:p-6 {
+          padding: 1.5rem;
+        }
+        .sm\:p-8 {
+          padding: 2rem;
+        }
+        .sm\:px-6 {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
+        .sm\:py-24 {
+          padding-top: 6rem;
+          padding-bottom: 6rem;
+        }
+        .sm\:pb-4 {
+          padding-bottom: 1rem;
+        }
+        .sm\:text-5xl {
+          font-size: 3rem;
+          line-height: 1;
+        }
+        .sm\:text-sm {
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+        }
+      }
+      @media (min-width: 768px) {
+        .md\:mt-0 {
+          margin-top: 0;
+        }
+        .md\:block {
+          display: block;
+        }
+        .md\:inline {
+          display: inline;
+        }
+        .md\:grid {
+          display: grid;
+        }
+        .md\:h-screen {
+          height: 100vh;
+        }
+        .md\:w-1\/2 {
+          width: 50%;
+        }
+        .md\:max-w-2xl {
+          max-width: 42rem;
+        }
+        .md\:grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .md\:flex-row {
+          flex-direction: row;
+        }
+        .md\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
+          --tw-space-y-reverse: 0;
+          margin-top: calc(1.5rem * (1 - var(--tw-space-y-reverse)));
+          margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+        }
+        .md\:text-left {
+          text-align: left;
+        }
+        .md\:text-4xl {
+          font-size: 2.25rem;
+          line-height: 2.5rem;
+        }
+        .md\:text-5xl {
+          font-size: 3rem;
+          line-height: 1;
+        }
+      }
+      @media (min-width: 1024px) {
+        .lg\:flex {
+          display: flex;
+        }
+        .lg\:w-auto {
+          width: auto;
+        }
+        .lg\:max-w-4xl {
+          max-width: 56rem;
+        }
+        .lg\:gap-x-10 {
+          -moz-column-gap: 2.5rem;
+          column-gap: 2.5rem;
+        }
+        .lg\:px-8 {
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+        .lg\:py-0 {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        .lg\:text-5xl {
+          font-size: 3rem;
+          line-height: 1;
+        }
+        .lg\:text-xl {
+          font-size: 1.25rem;
+          line-height: 1.75rem;
+        }
+      }
+      @media (min-width: 1280px) {
+        .xl\:mx-0 {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .xl\:max-w-none {
+          max-width: none;
+        }
+        .xl\:grid-cols-6 {
+          grid-template-columns: repeat(6, minmax(0, 1fr));
+        }
+        .xl\:p-0 {
+          padding: 0;
+        }
+      }
+      @media (prefers-color-scheme: dark) {
+        .dark\:border {
+          border-width: 1px;
+        }
+        .dark\:border-gray-600 {
+          --tw-border-opacity: 1;
+          border-color: rgb(75 85 99 / var(--tw-border-opacity));
+        }
+        .dark\:border-gray-700 {
+          --tw-border-opacity: 1;
+          border-color: rgb(55 65 81 / var(--tw-border-opacity));
+        }
+        .dark\:bg-blue-600 {
+          --tw-bg-opacity: 1;
+          background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+        }
+        .dark\:bg-gray-700 {
+          --tw-bg-opacity: 1;
+          background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+        }
+        .dark\:bg-gray-800 {
+          --tw-bg-opacity: 1;
+          background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+        }
+        .dark\:bg-gray-900 {
+          --tw-bg-opacity: 1;
+          background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+        }
+        .dark\:text-gray-300 {
+          --tw-text-opacity: 1;
+          color: rgb(209 213 219 / var(--tw-text-opacity));
+        }
+        .dark\:text-gray-400 {
+          --tw-text-opacity: 1;
+          color: rgb(156 163 175 / var(--tw-text-opacity));
+        }
+        .dark\:text-white {
+          --tw-text-opacity: 1;
+          color: rgb(255 255 255 / var(--tw-text-opacity));
+        }
+        .dark\:decoration-blue-600 {
+          text-decoration-color: #2563eb;
+        }
+        .dark\:placeholder-gray-400::-moz-placeholder {
+          --tw-placeholder-opacity: 1;
+          color: rgb(156 163 175 / var(--tw-placeholder-opacity));
+        }
+        .dark\:placeholder-gray-400::placeholder {
+          --tw-placeholder-opacity: 1;
+          color: rgb(156 163 175 / var(--tw-placeholder-opacity));
+        }
+        .dark\:hover\:bg-blue-700:hover {
+          --tw-bg-opacity: 1;
+          background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+        }
+        .dark\:focus\:border-blue-500:focus {
+          --tw-border-opacity: 1;
+          border-color: rgb(59 130 246 / var(--tw-border-opacity));
+        }
+        .dark\:focus\:ring-blue-500:focus {
+          --tw-ring-opacity: 1;
+          --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
+        }
+        .dark\:focus\:ring-blue-800:focus {
+          --tw-ring-opacity: 1;
+          --tw-ring-color: rgb(30 64 175 / var(--tw-ring-opacity));
+        }
+      }
+    </style>
+    <script async="" src="./switch9_files/clarity.js.загрузка"></script><script async="" src="./switch9_files/jr6m0lakjz"></script><script defer="" src="./switch9_files/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6B2L4VKB8M");
+    </script>
+  <meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+  <!-- <nav class="w-full bg-blue-600 text-white shadow-md z-50">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+      <h1><a href="/" class="text-xl font-bold">Code to Flowchart</a></h1>
+      
+
+      <ul id="menu-items" class=" lg:flex space-x-4 justify-center items-center w-full lg:w-auto text-sm">
+        
+        <li>
+          <a href="https://www.producthunt.com/posts/code-to-flow-visualize-your-code?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-code&#0045;to&#0045;flow&#0045;visualize&#0045;your&#0045;code" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=425544&theme=light" alt="Code&#0032;to&#0032;Flow&#0058;&#0032;Visualize&#0032;your&#0032;code - Visualize&#0044;&#0032;analyze&#0032;&#0038;&#0032;understand&#0032;your&#0032;code&#0032;flow | Product Hunt" style="width: 250px; height: 30px;" width="250" height="54" /></a>
+        </li>
+
+        <li><a href="/upgrade" target="_blank" class="hover:text-blue-400 font-bold	"><b>Upgrade to Pro </b>(PH launch - get 51% off)</a></li>
+
+        <li><a href="/codeflows/" target="_blank" class="hover:text-blue-400 font-bold	">Your codeflows</a></li>
+
+        <li><a href="mailto:codetoflow@gmail.com?subject=Hey&body=Message%20here" class="hover:text-blue-400">Contact</a></li>
+
+        <li><a href="https://feedaiback.com/form/codetoflow_feedback" target="_blank" class="hover:text-blue-400 font-bold	">Feedback and suggestions</a></li>
+
+
+
+
+        
+      
+      <li><a href="/accounts/login/" class="text-white">Login</a></li>
+      <li><a href="/accounts/signup/" class="text-white">Signup</a></li>
+      
+
+    </div>
+
+  </nav> -->
+
+  <body class="bg-blue-100 px-2 py-0"><nav class="w-full bg-blue-600 text-white shadow-md z-50">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+      <h4><a href="https://codetoflow.com/" class="text-xl font-bold">Code to Flowchart</a></h4>
+
+      <!-- Upgrade Link Outside Dropdown -->
+      <div class="flex items-center space-x-4">
+        
+
+        <a href="https://codetoflow.com/upgrade" target="_blank" class="hover:text-blue-400 font-semibold hidden md:block text-xl">
+          <b>Try Codetoflow Pro</b>
+        </a>
+
+        <a href="https://feedaiback.com/form/codetoflow_feedback_upgrade" target="_blank" class="block px-4 py-2 hover:bg-blue-500 hover:text-white font-base">Feedback</a>
+
+         
+
+        <a href="https://codetoflow.com/accounts/signup/" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Signup</a>
+        
+
+        <!-- Dropdown Menu Trigger -->
+        <div class="relative">
+          <button id="dropdownButton" class="text-white focus:outline-none">
+            <!-- Icon for Dropdown (e.g., Hamburger Icon) -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+          </button>
+
+          <!-- Dropdown Menu -->
+          <div id="dropdownMenu" class="hidden absolute right-0 w-56 mt-2 py-2 bg-white rounded-md shadow-xl text-gray-700">
+            
+
+            <a href="https://codetoflow.com/upgrade" target="_blank" class="block px-4 py-2 hover:bg-blue-500 hover:text-white"> <b>Upgrade to Pro</b> (20% off) </a>
+
+            
+
+            <a href="https://codetoflow.com/codeflows/" target="_blank" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Your codeflows</a>
+            <a href="mailto:codetoflow@gmail.com" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Contact</a>
+
+            
+            <a href="https://codetoflow.com/accounts/login/" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Login</a>
+            <a href="https://codetoflow.com/accounts/signup/" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Signup</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const dropdownButton = document.getElementById("dropdownButton");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    // Toggle dropdown
+    dropdownButton.addEventListener("click", function () {
+      dropdownMenu.classList.toggle("hidden");
+    });
+
+    // Close dropdown when clicking outside
+    window.addEventListener("click", function (e) {
+      if (!dropdownMenu.contains(e.target) && !dropdownButton.contains(e.target)) {
+        dropdownMenu.classList.add("hidden");
+      }
+    });
+  </script>
+
+   
+
+<div class="rounded-md bg-green-50 p-4 hidden" id="phbanner">
+  <div class="flex">
+    <div class="flex-shrink-0">
+      <svg class="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd"></path>
+      </svg>
+    </div>
+    <div class="ml-3">
+<a href="https://codetoflow.com/upgrade" target="_blank" onclick="onUpgradeBannerClick()"> </a><p class="text-sm font-medium text-green-800"><a href="https://codetoflow.com/upgrade" target="_blank" onclick="onUpgradeBannerClick()">New: Try the code debugging option to find and fix errors in the code </a> </p>
+    </div>
+    <div class="ml-auto pl-3">
+      <div class="-mx-1.5 -my-1.5">
+        <button type="button" class="inline-flex rounded-md bg-green-50 p-1.5 text-green-500 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 focus:ring-offset-green-50" id="dismissBanner">
+          <span class="sr-only">Later</span>
+          <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <div class="max-w-4xl mx-auto">
+    <p></p>
+    <br>
+    <h1 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-5xl dark:text-white">
+      Code to Flow: <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600">Visualize, Analyze, and Understand Your Code!</span>
+    </h1>
+    <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Turn Code into Interactive Flowcharts with AI. Simplify Complex Logic Instantly.</p>
+    <br>
+
+    <textarea id="codeEditor" class="w-full p-3 border rounded-md shadow-sm border-gray-400" placeholder="Paste your code to visualise and understand it" rows="5"></textarea>
+    <input type="text" id="questionInput" class="w-full p-3 border rounded-md shadow-sm mb-2 bg-gray-100 border-gray-100 text-gray-700" placeholder="Have a specific question related to code? Ask here! (Optional)">
+
+    <div class="mt flex justify-between items-center">
+      <select id="code_selection" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-2/3 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-1/2 mr-4">
+        <option>Flow diagram (recommended)</option>
+        <option>Sequence Diagram</option>
+        <!-- <option>CSS structure</option> -->
+        <option>Class diagram</option>
+        
+        <!--         <option>Choose whats best</option>
+                <option>ELI5 (very simple explanation)</option> -->
+        <option>Explain tech concepts</option>
+        <option>User journey</option>
+      </select>
+
+      <!--             <select id="detail_level" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-2/3 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-1/2 mr-10">
+              <option>Detailed</option>
+              <option>Very detailed</option>
+              <option>Broad level</option>
+
+          </select> -->
+
+      <button class="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" id="submitButton">
+        <span id="buttonText">Analyse my code</span>
+        <svg id="loadingIcon" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" style="display: none;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0116 0H4z"></path>
+        </svg>
+        <div id="loadingTimer" class="mt-0.5 w-0 bg-white h-1" style="display: none; width: 0px;"></div>
+      </button>
+    </div>
+  </div>
+  <style>
+    @keyframes fillTimer {
+      from {
+        width: 0%;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    #loadingTimer {
+      animation: fillTimer 20s linear forwards;
+    }
+  </style>
+  <!-- Modal container (initially hidden) -->
+<!-- Modal container -->
+<div id="graphModal" class="fixed inset-0 bg-gray-500 bg-opacity-75 hidden items-center justify-center p-4 z-50 mx-0 w-full">
+  <!-- Modal content -->
+  <div class="relative bg-white rounded-lg" style="max-width: 200vw; max-height: 200vh">
+    <!-- Close button -->
+    <button onclick="closeGraphModal()" class="p-2 ml-auto bg-transparent border-0 text-black absolute right-0 top-0 text-3xl leading-none font-semibold outline-none focus:outline-none">
+      <span class="bg-transparent text-black h-6 w-6 text-2xl block outline-none focus:outline-none">×</span>
+    </button>
+    <!-- Scrollable container for the zoomed-in graph -->
+    <div class="overflow-auto p-4" id="zoomedGraphContainer">
+      <!-- The content of the graph will be cloned here -->
+    </div>
+  </div>
+</div>
+
+<style>
+#mermaidContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mermaidGraph {
+  width: 100%;
+  min-height: 200%;
+  overflow: auto;
+  transform-origin: top left; /* Adjust based on your needs */
+  
+}
+
+#zoomControls {
+  position: fixed; /* Changed from absolute to fixed */
+  bottom: 20px;
+  left: 50%; /* Center the controls */
+  transform: translateX(-50%); /* Offset the controls by half their width to truly center */
+  z-index: 10; /* Ensure it's above other elements */
+  display: none;
+  gap: 10px;
+}
+
+.zoom-btn {
+  padding: 10px 20px;
+  font-size: 24px;
+  background-color: #a7c3ff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.zoom-btn:hover {
+  background-color: #f0f0f0;
+}
+
+</style>
+  <br><br><br>
+  <div class="mt-6 max-w-full bg-white" id="graph_explanation_details">
+    <div class="convertToImage">
+      <div class=" flex flex-col">
+        <div id="mermaidGraph" class="flex-1 p-8 shadow-lg overflow-scroll bg-white justify-center"><pre class="mermaid" data-processed="true"><svg aria-roledescription="flowchart-v2" role="graphics-document document" viewBox="-7.5 -8 9269.8125 657.5" style="max-width: 9269.8125px;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1711734632501"><style>#mermaid-1711734632501{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1711734632501 .error-icon{fill:#552222;}#mermaid-1711734632501 .error-text{fill:#552222;stroke:#552222;}#mermaid-1711734632501 .edge-thickness-normal{stroke-width:2px;}#mermaid-1711734632501 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1711734632501 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1711734632501 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1711734632501 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1711734632501 .marker{fill:#333333;stroke:#333333;}#mermaid-1711734632501 .marker.cross{stroke:#333333;}#mermaid-1711734632501 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1711734632501 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1711734632501 .cluster-label text{fill:#333;}#mermaid-1711734632501 .cluster-label span,#mermaid-1711734632501 p{color:#333;}#mermaid-1711734632501 .label text,#mermaid-1711734632501 span,#mermaid-1711734632501 p{fill:#333;color:#333;}#mermaid-1711734632501 .node rect,#mermaid-1711734632501 .node circle,#mermaid-1711734632501 .node ellipse,#mermaid-1711734632501 .node polygon,#mermaid-1711734632501 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1711734632501 .flowchart-label text{text-anchor:middle;}#mermaid-1711734632501 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-1711734632501 .node .label{text-align:center;}#mermaid-1711734632501 .node.clickable{cursor:pointer;}#mermaid-1711734632501 .arrowheadPath{fill:#333333;}#mermaid-1711734632501 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1711734632501 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1711734632501 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1711734632501 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1711734632501 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaid-1711734632501 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1711734632501 .cluster text{fill:#333;}#mermaid-1711734632501 .cluster span,#mermaid-1711734632501 p{color:#333;}#mermaid-1711734632501 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1711734632501 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaid-1711734632501 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><marker orient="auto" markerHeight="12" markerWidth="12" markerUnits="userSpaceOnUse" refY="5" refX="6" viewBox="0 0 10 10" class="marker flowchart" id="mermaid-1711734632501_flowchart-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerHeight="12" markerWidth="12" markerUnits="userSpaceOnUse" refY="5" refX="4.5" viewBox="0 0 10 10" class="marker flowchart" id="mermaid-1711734632501_flowchart-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="11" viewBox="0 0 10 10" class="marker flowchart" id="mermaid-1711734632501_flowchart-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="-1" viewBox="0 0 10 10" class="marker flowchart" id="mermaid-1711734632501_flowchart-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="12" viewBox="0 0 11 11" class="marker cross flowchart" id="mermaid-1711734632501_flowchart-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="-1" viewBox="0 0 11 11" class="marker cross flowchart" id="mermaid-1711734632501_flowchart-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"></g><g class="edgeLabels"></g><g class="nodes"><g transform="translate(-7.5, -8)" class="root"><g class="clusters"><g id="CheckElement" class="cluster default flowchart-label"><rect height="641.5" width="9253.812644958496" y="8" x="8" ry="0" rx="0" style=""></rect><g transform="translate(4583.831321716309, 8)" class="cluster-label"><foreignobject height="24" width="102.1500015258789"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">CheckElement</span></div></foreignobject></g></g></g><g class="edgePaths"><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-Start LE-CheckElementValue" id="L-Start-CheckElementValue-0" d="M216.125,244L220.292,244C224.458,244,232.792,244,240.242,244C247.692,244,254.258,244,257.542,244L260.825,244"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-CheckElementValue LE-Case9" id="L-CheckElementValue-Case9-0" d="M689.225,244L700.532,244C711.84,244,734.454,244,756.185,244C777.917,244,798.765,244,809.189,244L819.613,244"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-Case9 LE-PrintNumberNine" id="L-Case9-PrintNumberNine-0" d="M1426.413,244L1430.579,244C1434.746,244,1443.079,244,1450.529,244C1457.979,244,1464.546,244,1467.829,244L1471.113,244"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-PrintNumberNine LE-CheckEven" id="L-PrintNumberNine-CheckEven-0" d="M2084.488,244L2088.654,244C2092.821,244,2101.154,244,2108.604,244C2116.054,244,2122.621,244,2125.904,244L2129.188,244"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-CheckEven LE-PrintEven" id="L-CheckEven-PrintEven-0" d="M2575.906,212.5L2631.216,189.5C2686.525,166.5,2797.144,120.5,2858.559,97.5C2919.975,74.5,2932.188,74.5,2938.294,74.5L2944.4,74.5"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-CheckEven LE-PrintOdd" id="L-CheckEven-PrintOdd-0" d="M2727.406,275.5L2757.465,279.667C2787.525,283.833,2847.644,292.167,2884.445,296.333C2921.246,300.5,2934.729,300.5,2941.471,300.5L2948.213,300.5"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-PrintOdd LE-CheckDivisibleBy3" id="L-PrintOdd-CheckDivisibleBy3-0" d="M3594.813,300.5L3599.615,300.5C3604.417,300.5,3614.021,300.5,3622.106,300.5C3630.192,300.5,3636.758,300.5,3640.042,300.5L3643.325,300.5"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-CheckDivisibleBy3 LE-PrintDivisibleBy3" id="L-CheckDivisibleBy3-PrintDivisibleBy3-0" d="M4064.295,269L4087.409,264.833C4110.524,260.667,4156.752,252.333,4191.068,248.167C4225.383,244,4247.785,244,4258.986,244L4270.188,244"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-CheckDivisibleBy3 LE-PrintNotDivisibleBy3" id="L-CheckDivisibleBy3-PrintNotDivisibleBy3-0" d="M3947.798,332L3990.329,355C4032.859,378,4117.92,424,4225.011,447C4332.102,470,4461.223,470,4582.426,470C4703.629,470,4816.915,470,4917.878,470C5018.842,470,5107.483,470,5204.043,470C5300.602,470,5405.079,470,5521.878,470C5638.677,470,5767.798,470,5899.416,470C6031.033,470,6165.148,470,6286.187,470C6407.225,470,6515.188,470,6623.15,470C6731.113,470,6839.075,470,6959.359,470C7079.644,470,7212.25,470,7334.442,470C7456.633,470,7568.411,470,7669.355,470C7770.3,470,7860.413,470,7959.557,470C8058.702,470,8166.879,470,8233.283,470C8299.688,470,8324.319,470,8336.634,470L8348.95,470"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-PrintDivisibleBy3 LE-CheckDivisibleBy9" id="L-PrintDivisibleBy3-CheckDivisibleBy9-0" d="M4905.2,244L4909.367,244C4913.533,244,4921.867,244,4929.317,244C4936.767,244,4943.333,244,4946.617,244L4949.9,244"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-CheckDivisibleBy9 LE-PrintDivisibleBy9" id="L-CheckDivisibleBy9-PrintDivisibleBy9-0" d="M5370.87,212.5L5393.984,208.333C5417.099,204.167,5463.328,195.833,5497.643,191.667C5531.958,187.5,5554.36,187.5,5565.562,187.5L5576.763,187.5"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-CheckDivisibleBy9 LE-PrintNotDivisibleBy9" id="L-CheckDivisibleBy9-PrintNotDivisibleBy9-0" d="M5283.497,275.5L5321.174,289.083C5358.85,302.667,5434.203,329.833,5536.44,343.417C5638.677,357,5767.798,357,5899.416,357C6031.033,357,6165.148,357,6286.187,357C6407.225,357,6515.188,357,6623.15,357C6731.113,357,6839.075,357,6959.359,357C7079.644,357,7212.25,357,7334.442,357C7456.633,357,7568.411,357,7669.355,357C7770.3,357,7860.413,357,7959.557,357C8058.702,357,8166.879,357,8233.283,357C8299.688,357,8324.319,357,8336.634,357L8348.95,357"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-PrintDivisibleBy9 LE-CheckLessThan10" id="L-PrintDivisibleBy9-CheckLessThan10-0" d="M6211.775,187.5L6226.356,187.5C6240.938,187.5,6270.1,187.5,6298.379,187.5C6326.658,187.5,6354.054,187.5,6367.752,187.5L6381.45,187.5"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-CheckLessThan10 LE-PrintLessThan10" id="L-CheckLessThan10-PrintLessThan10-0" d="M6859.55,187.5L6874.131,187.5C6888.713,187.5,6917.875,187.5,6946.154,187.5C6974.433,187.5,7001.829,187.5,7015.527,187.5L7029.225,187.5"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-PrintLessThan10 LE-CheckGreaterThan5" id="L-PrintLessThan10-CheckGreaterThan5-0" d="M7655.188,187.5L7659.354,187.5C7663.521,187.5,7671.854,187.5,7679.304,187.5C7686.754,187.5,7693.321,187.5,7696.604,187.5L7699.888,187.5"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-CheckGreaterThan5 LE-PrintGreaterThan5" id="L-CheckGreaterThan5-PrintGreaterThan5-0" d="M8131.458,156L8155.391,151.833C8179.324,147.667,8227.19,139.333,8265.078,135.167C8302.965,131,8330.873,131,8344.827,131L8358.781,131"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-CheckGreaterThan5 LE-PrintLessThan5" id="L-CheckGreaterThan5-PrintLessThan5-0" d="M8131.458,219L8155.391,223.167C8179.324,227.333,8227.19,235.667,8267.267,239.833C8307.344,244,8339.631,244,8355.775,244L8371.919,244"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-PrintGreaterThan5 LE-End" id="L-PrintGreaterThan5-End-0" d="M9002.631,131L9008.437,131C9014.242,131,9025.852,131,9048.347,164.625C9070.843,198.251,9104.223,265.502,9120.912,299.127L9137.602,332.753"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-PrintLessThan5 LE-End" id="L-PrintLessThan5-End-0" d="M8989.494,244L8997.489,244C9005.483,244,9021.473,244,9044.315,258.956C9067.157,273.913,9096.852,303.826,9111.699,318.782L9126.546,333.739"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-PrintNotDivisibleBy3 LE-End" id="L-PrintNotDivisibleBy3-End-0" d="M9012.463,470L9016.629,470C9020.796,470,9029.129,470,9048.143,455.044C9067.157,440.087,9096.852,410.174,9111.699,395.218L9126.546,380.261"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-PrintNotDivisibleBy9 LE-End" id="L-PrintNotDivisibleBy9-End-0" d="M9012.463,357L9016.629,357C9020.796,357,9029.129,357,9036.579,357C9044.029,357,9050.596,357,9053.879,357L9057.163,357"></path><path marker-end="url(#mermaid-1711734632501_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-PrintGreaterThan10 LE-End" id="L-PrintGreaterThan10-End-0" d="M9006.825,583L9011.931,583C9017.038,583,9027.25,583,9049.046,549.375C9070.843,515.749,9104.223,448.498,9120.912,414.873L9137.602,381.247"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g transform="translate(757.0687561035156, 244)" class="edgeLabel"><g transform="translate(-42.84375, -12)" class="label"><foreignobject height="24" width="85.6875"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">element = 9</span></div></foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g transform="translate(2907.7625427246094, 74.5)" class="edgeLabel"><g transform="translate(-16.9375, -12)" class="label"><foreignobject height="24" width="33.875"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">Even</span></div></foreignobject></g></g><g transform="translate(2907.7625427246094, 300.5)" class="edgeLabel"><g transform="translate(-14.30625057220459, -12)" class="label"><foreignobject height="24" width="28.61250114440918"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">Odd</span></div></foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g transform="translate(4202.981288909912, 244)" class="edgeLabel"><g transform="translate(-47.50625228881836, -12)" class="label"><foreignobject height="24" width="95.01250457763672"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">Divisible by 3</span></div></foreignobject></g></g><g transform="translate(6299.262599945068, 470)" class="edgeLabel"><g transform="translate(-62.48749923706055, -12)" class="label"><foreignobject height="24" width="124.9749984741211"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">Not Divisible by 3</span></div></foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g transform="translate(5509.556324005127, 187.5)" class="edgeLabel"><g transform="translate(-47.50625228881836, -12)" class="label"><foreignobject height="24" width="95.01250457763672"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">Divisible by 9</span></div></foreignobject></g></g><g transform="translate(6947.037586212158, 357)" class="edgeLabel"><g transform="translate(-62.48749923706055, -12)" class="label"><foreignobject height="24" width="124.9749984741211"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">Not Divisible by 9</span></div></foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g transform="translate(6947.037586212158, 187.5)" class="edgeLabel"><g transform="translate(-45.54999923706055, -12)" class="label"><foreignobject height="24" width="91.0999984741211"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">Less Than 10</span></div></foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g transform="translate(8275.0563621521, 131)" class="edgeLabel"><g transform="translate(-54.19375228881836, -12)" class="label"><foreignobject height="24" width="108.38750457763672"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">Greater Than 5</span></div></foreignobject></g></g><g transform="translate(8275.0563621521, 244)" class="edgeLabel"><g transform="translate(-41.35625076293945, -12)" class="label"><foreignobject height="24" width="82.7125015258789"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">Less Than 5</span></div></foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g></g><g class="nodes"><g transform="translate(124.5625, 244)" data-id="Start" data-node="true" id="flowchart-Start-0" class="node default default flowchart-label"><rect height="39" width="183.125" y="-19.5" x="-91.5625" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-84.0625, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="168.125"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Start Checking Element</span></div></foreignobject></g></g><g transform="translate(477.6750030517578, 244)" data-id="CheckElementValue" data-node="true" id="flowchart-CheckElementValue-1" class="node default default flowchart-label"><rect height="63" width="423.1000061035156" y="-31.5" x="-211.5500030517578" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-204.0500030517578, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="408.1000061035156"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Check Element Value<br>Explanation  Evaluate the value of the 'element' variable.</span></div></foreignobject></g></g><g transform="translate(1125.6625061035156, 244)" data-id="Case9" data-node="true" id="flowchart-Case9-2" class="node default flowchart-label"><rect height="63" width="601.5" y="-31.5" x="-300.75" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-293.25, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="586.5"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Case  element = 9<br>Explanation  The code block is executed when the 'element' variable is equal to 9.</span></div></foreignobject></g></g><g transform="translate(1780.4500122070312, 244)" data-id="PrintNumberNine" data-node="true" id="flowchart-PrintNumberNine-3" class="node default default flowchart-label"><rect height="63" width="608.0750122070312" y="-31.5" x="-304.0375061035156" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-296.5375061035156, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="593.0750122070312"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Print 'This is number nine'<br>Explanation  Outputs a message indicating that the 'element' variable is equal to 9.</span></div></foreignobject></g></g><g transform="translate(2500.156280517578, 244)" data-id="CheckEven" data-node="true" id="flowchart-CheckEven-4" class="node default default flowchart-label"><rect height="63" width="731.3375244140625" y="-31.5" x="-365.66876220703125" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-358.16876220703125, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="716.3375244140625"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Check if Element is Even<br>Explanation  Determines if the 'element' variable is an even number by checking if it's divisible by 2.</span></div></foreignobject></g></g><g transform="translate(3274.1625366210938, 74.5)" data-id="PrintEven" data-node="true" id="flowchart-PrintEven-5" class="node default flowchart-label"><rect height="63" width="648.9249877929688" y="-31.5" x="-324.4624938964844" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-316.9624938964844, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="633.9249877929688"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Print 'This is an even number'<br>Explanation  Outputs a message indicating that the 'element' variable is an even number.</span></div></foreignobject></g></g><g transform="translate(3274.1625366210938, 300.5)" data-id="PrintOdd" data-node="true" id="flowchart-PrintOdd-6" class="node default default flowchart-label"><rect height="63" width="641.2999877929688" y="-31.5" x="-320.6499938964844" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-313.1499938964844, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="626.2999877929688"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Print 'This is an odd number'<br>Explanation  Outputs a message indicating that the 'element' variable is an odd number.</span></div></foreignobject></g></g><g transform="translate(3889.550033569336, 300.5)" data-id="CheckDivisibleBy3" data-node="true" id="flowchart-CheckDivisibleBy3-7" class="node default default flowchart-label"><rect height="63" width="481.8500061035156" y="-31.5" x="-240.9250030517578" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-233.4250030517578, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="466.8500061035156"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Check if Element is Divisible by 3<br>Explanation  Determines if the 'element' variable is divisible by 3.</span></div></foreignobject></g></g><g transform="translate(4590.343803405762, 244)" data-id="PrintDivisibleBy3" data-node="true" id="flowchart-PrintDivisibleBy3-8" class="node default default flowchart-label"><rect height="63" width="629.7125244140625" y="-31.5" x="-314.85626220703125" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-307.35626220703125, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="614.7125244140625"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Print 'This number is divisible by 3'<br>Explanation  Outputs a message indicating that the 'element' variable is divisible by 3.</span></div></foreignobject></g></g><g transform="translate(8683.35637664795, 470)" data-id="PrintNotDivisibleBy3" data-node="true" id="flowchart-PrintNotDivisibleBy3-17" class="node default default flowchart-label"><rect height="63" width="658.2125244140625" y="-31.5" x="-329.10626220703125" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-321.60626220703125, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="643.2125244140625"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Print 'This number is not divisible by 3'<br>Explanation  Outputs a message indicating that the 'element' variable is not divisible by 3.</span></div></foreignobject></g></g><g transform="translate(5196.125068664551, 244)" data-id="CheckDivisibleBy9" data-node="true" id="flowchart-CheckDivisibleBy9-9" class="node default default flowchart-label"><rect height="63" width="481.8500061035156" y="-31.5" x="-240.9250030517578" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-233.4250030517578, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="466.8500061035156"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Check if Element is Divisible by 9<br>Explanation  Determines if the 'element' variable is divisible by 9.</span></div></foreignobject></g></g><g transform="translate(5896.918838500977, 187.5)" data-id="PrintDivisibleBy9" data-node="true" id="flowchart-PrintDivisibleBy9-10" class="node default default flowchart-label"><rect height="63" width="629.7125244140625" y="-31.5" x="-314.85626220703125" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-307.35626220703125, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="614.7125244140625"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Print 'This number is divisible by 9'<br>Explanation  Outputs a message indicating that the 'element' variable is divisible by 9.</span></div></foreignobject></g></g><g transform="translate(8683.35637664795, 357)" data-id="PrintNotDivisibleBy9" data-node="true" id="flowchart-PrintNotDivisibleBy9-18" class="node default default flowchart-label"><rect height="63" width="658.2125244140625" y="-31.5" x="-329.10626220703125" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-321.60626220703125, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="643.2125244140625"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Print 'This number is not divisible by 9'<br>Explanation  Outputs a message indicating that the 'element' variable is not divisible by 9.</span></div></foreignobject></g></g><g transform="translate(6623.150093078613, 187.5)" data-id="CheckLessThan10" data-node="true" id="flowchart-CheckLessThan10-11" class="node default default flowchart-label"><rect height="63" width="472.8000183105469" y="-31.5" x="-236.40000915527344" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-228.90000915527344, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="457.8000183105469"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Check if Element is Less Than 10<br>Explanation  Determines if the 'element' variable is less than 10.</span></div></foreignobject></g></g><g transform="translate(7344.856353759766, 187.5)" data-id="PrintLessThan10" data-node="true" id="flowchart-PrintLessThan10-12" class="node default default flowchart-label"><rect height="63" width="620.6625366210938" y="-31.5" x="-310.3312683105469" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-302.8312683105469, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="605.6625366210938"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Print 'This number less than 10'<br>Explanation  Outputs a message indicating that the 'element' variable is less than 10.</span></div></foreignobject></g></g><g transform="translate(7950.525115966797, 187.5)" data-id="CheckGreaterThan5" data-node="true" id="flowchart-CheckGreaterThan5-13" class="node default default flowchart-label"><rect height="63" width="490.6750183105469" y="-31.5" x="-245.33750915527344" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-237.83750915527344, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="475.6750183105469"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Check if Element is Greater Than 5<br>Explanation  Determines if the 'element' variable is greater than 5.</span></div></foreignobject></g></g><g transform="translate(8683.35637664795, 131)" data-id="PrintGreaterThan5" data-node="true" id="flowchart-PrintGreaterThan5-14" class="node default flowchart-label"><rect height="63" width="638.5499877929688" y="-31.5" x="-319.2749938964844" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-311.7749938964844, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="623.5499877929688"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Print 'This number greater than 5'<br>Explanation  Outputs a message indicating that the 'element' variable is greater than 5.</span></div></foreignobject></g></g><g transform="translate(8683.35637664795, 244)" data-id="PrintLessThan5" data-node="true" id="flowchart-PrintLessThan5-15" class="node default default flowchart-label"><rect height="63" width="612.2750244140625" y="-31.5" x="-306.13751220703125" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-298.63751220703125, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="597.2750244140625"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Print 'This number less than 5'<br>Explanation  Outputs a message indicating that the 'element' variable is less than 5.</span></div></foreignobject></g></g><g transform="translate(9149.637641906738, 357)" data-id="End" data-node="true" id="flowchart-End-19" class="node default default flowchart-label"><rect height="39" width="174.35000610351562" y="-19.5" x="-87.17500305175781" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-79.67500305175781, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="159.35000610351562"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">End Checking Element</span></div></foreignobject></g></g><g transform="translate(8683.35637664795, 583)" data-id="PrintGreaterThan10" data-node="true" id="flowchart-PrintGreaterThan10-16" class="node default default flowchart-label"><rect height="63" width="646.9375" y="-31.5" x="-323.46875" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-315.96875, -24)" style="" class="label"><rect></rect><foreignobject height="48" width="631.9375"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">Print 'This number greater than 10'<br>Explanation  Outputs a message indicating that the 'element' variable is greater than 10.</span></div></foreignobject></g></g></g></g></g></g></g></svg></pre></div>
+<div id="zoomControls" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 10; gap: 10px; display: flex;" class="hidden">
+  <button id="zoomOutBtn" class="zoom-btn">-</button>
+  <button id="zoomInBtn" class="zoom-btn">+</button>
+  
+</div>
+
+                  <div id="additionalDetails">
+
+
+        <div class="flex-1 p-8 shadow-lg" id="code_explanation">Here's a detailed Mermaid flow diagram with explanations for the provided code:Explanation:<br><br>The provided code is a switch statement that checks the value of the `element` variable. When the `element` is equal to 9, the code block within the `case 9` statement is executed.<br><br>1. The code first checks if the `element` is equal to 9 using the `CheckElementValue` decision point.<br>2. If the `element` is 9, the code proceeds to print the message "This is number nine" using the `PrintNumberNine` step.<br>3. Next, the code checks if the `element` is an even number by checking if it's divisible by 2 using the `CheckEven` decision point.<br>   - If the `element` is even, the code prints the message "This is an even number" using the `PrintEven` step.<br>   - If the `element` is odd, the code prints the message "This is an odd number" using the `PrintOdd` step.<br>4. After determining the parity of the `element`, the code checks if it's divisible by 3 using the `CheckDivisibleBy3` decision point.<br>   - If the `element` is divisible by 3, the code prints the message "This number is divisible by 3" using the `PrintDivisibleBy3` step.<br>   - If the `element` is not divisible by 3, the code prints the message "This number is not divisible by 3" using the `PrintNotDivisibleBy3` step.<br>5. If the `element` is divisible by 3, the code then checks if it's also divisible by 9 using the `CheckDivisibleBy9` decision point.<br>   - If the `element` is divisible by 9, the code prints the message "This number is divisible by 9" using the `PrintDivisibleBy9` step.<br>   - If the `element` is not divisible by 9, the code prints the message "This number is not divisible by 9" using the `PrintNotDivisibleBy9` step.<br>6. After checking the divisibility by 9, the code checks if the `element` is less than 10 using the `CheckLessThan10` decision point.<br>   - If the `element` is less than 10, the code prints the message "This number less than 10" using the `PrintLessThan10` step.<br>   - If the `element` is greater than or equal to 10, the code prints the message "This number greater than 10" using the `PrintGreaterThan10` step.<br>7. If the `element` is less than 10, the code further checks if it's greater than 5 using the `CheckGreaterThan5` decision point.<br>   - If the `element` is greater than 5, the code prints the message "This number greater than 5" using the `PrintGreaterThan5` step.<br>   - If the `element` is less than or equal to 5, the code prints the message "This number less than 5" using the `PrintLessThan5` step.<br>8. The flow diagram ends with the `End` step, indicating the completion of the code execution.<br><br>The Mermaid flow diagram provides a detailed visual representation of the code's logic and flow, with explanations for each step and decision point. This should help the user understand the functionality of the provided code.</div>
+          <ul class="space-y-4">
+            <!-- Code explanation items go here -->
+          </ul>
+        </div>
+      </div>
+      <div class="text-center py-4" id="createdUsingContainer">
+        <span class="text-sm font-semibold text-gray-700 bg-gray-100 py-1 px-3 rounded-full">Created using codetoflow.com</span>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-8xl mx-auto px-4 py-6">
+    <!-- Download Graph Button -->
+    <div class="flex justify-center mb-6">
+      <button id="downloadButton" onclick="downloadGraph()" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded shadow-lg hover:bg-indigo-700 transition">Download Graph</button>
+      <a href="https://codetoflow.com/codeflows" target="_blank"> <button id="saveButton" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded shadow-lg hover:bg-indigo-700 transition hidden mx-2">Save Graph</button></a>
+
+      <!-- Shareable Link Section -->
+      <div class="flex flex-col items-center ml-10 w-2/5" id="shareurloption">
+        <div class="flex w-full items-center">
+          <input type="text" id="shareableLinkContainer" class="flex-1 p-2 border border-gray-300 rounded-l-md text-sm focus:ring-blue-500 focus:border-blue-500" readonly="">Share this link</input>
+          <button id="copyButton" class="px-4 py-2 mx-0 text-white bg-blue-600 hover:bg-indigo-600 rounded transition duration-300 ease-in-out">Share link(Copy)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="UpgradeModalTop"></div>
+  <br><br><br>
+
+  
+<section class="bg-gradient-to-r from-blue-400 to-indigo-300">
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+      <div>
+        <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+          Discover the power of Code to Flow PRO
+        </h2>
+        <p class="mt-3 max-w-3xl text-lg text-white">
+          Transform your code into stunning flowcharts and unlock incredible features. Visualize your code logic, enhance collaboration, and boost your productivity like never before.
+        </p>
+        <div class="mt-8 sm:flex sm:justify-center lg:justify-start">
+          <div class="rounded-md shadow">
+            <a href="https://codetoflow.com/upgrade" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+              Try Code to Flow pro and get 20% OFF(CODE: UPGRADE20)
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<div class="hidden fixed inset-0 overflow-y-auto z-50" id="creditLimitModal" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+    <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">​</span>
+    <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full">
+      <div class="bg-gradient-to-r from-indigo-600 to-blue-600 px-4 py-5 sm:px-6">
+        <h3 class="text-2xl leading-6 font-bold text-white" id="modal-title">
+          You've used all your credits for today. Your limits will reset tonight. Subscribe to CodeToFlow Pro for unlimited access!
+        </h3>
+        <div class="mt-2 text-sm text-indigo-100">
+          <p>Daily flowcharts left: <span id="dailyCreditsLeft" class="font-bold"></span></p>
+          <p>Monthly flowcharts left: <span id="monthlyCreditsLeft" class="font-bold"></span></p>
+        </div>
+        <p class="mt-4 text-sm text-indigo-100">
+          Your support fuels our AI and helps us bring even more powerful features to you. Thank you!
+        </p>
+        <p class="mt-4 text-sm font-bold text-yellow-400">
+          Use code "UNLOCKPRO" for an extra 25% off on One Time Plans
+        </p>
+      </div>
+      <div class="bg-white px-4 py-5 sm:p-6">
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          
+          <!-- One Time Payment Option -->
+          <div class="bg-white border-t-4 border-indigo-600 rounded-lg shadow-lg overflow-hidden">
+
+            <div class="px-4 py-5 sm:p-6">
+              
+              <h3 class="text-lg leading-6 font-bold text-indigo-600" id="tier-freelancer">
+                One Time Payment
+              </h3>
+
+              <p class="mt-2 text-sm text-gray-500">
+                Unlock 1000 visualizations that never expire.
+              </p>
+              <div class="mt-4 flex items-center">
+                <span class="text-2xl font-extrabold text-gray-900">$27</span>
+                <span class="ml-2 text-sm font-medium text-gray-500">/ pay only once</span>
+              </div>
+              <a href="https://codetoflow.lemonsqueezy.com/checkout/buy/b666a48b-cbf9-4145-a1ed-ef0c41450e99?embed=1" target="_blank" rel="noopener noreferrer" class="mt-6 block w-full bg-indigo-600 border border-transparent rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-indigo-700 lemonsqueezy-button" onclick="trackPurchaseEvent()">
+                Get Lifetime Access
+              </a>
+              <p class="mt-2 text-sm text-center text-gray-500">
+                One-time payment, then <span class="font-medium">it's yours forever</span>
+              </p>
+              <ul class="mt-6 space-y-4">
+                <li class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <p class="ml-3 text-sm text-gray-700">
+                    1000 code visualizations (No expiry)
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <p class="ml-3 text-sm text-gray-700">
+                    Get actionable insights to optimize your code structure
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <p class="ml-3 text-sm text-gray-700">
+                    Single user
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <p class="ml-3 text-sm text-gray-700">
+                    Longer code length (up to 8k tokens)
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <p class="ml-3 text-sm text-gray-700">
+                    Free access to simplified tech explanations (Launching soon)
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <p class="ml-3 text-sm text-gray-700">
+                    Support the developer :)
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Monthly Pro Option -->
+          <div class="bg-white border-t-4 border-indigo-600 rounded-lg shadow-lg overflow-hidden">
+            <div class="px-4 py-5 sm:p-6">
+              <h3 class="text-lg leading-6 font-bold text-indigo-600" id="tier-startup">
+                Monthly Pro (Try for free)
+              </h3>
+              <p class="mt-2 text-sm text-gray-500">
+                For professionals and dedicated developers.
+              </p>
+              <div class="mt-4 flex items-center">
+                <span class="text-2xl font-extrabold text-gray-900">$4.49</span>
+                <span class="ml-2 text-sm font-medium text-gray-500">/ month</span>
+              </div>
+              <a href="https://codetoflow.lemonsqueezy.com/checkout/buy/113ed939-9164-40e6-8668-51a706651174?embed=1" target="_blank" rel="noopener noreferrer" class="mt-6 block w-full bg-indigo-600 border border-transparent rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-indigo-700 lemonsqueezy-button" onclick="trackPurchaseEvent()">
+                Activate Pro
+              </a>
+              <p class="mt-2 text-sm text-center text-gray-500">
+                Try free for <span class="font-medium">3 days!</span>
+              </p>
+              <ul class="mt-6 space-y-4">
+                <li class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <p class="ml-3 text-sm text-gray-700">
+                    Unlimited code visualizations
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <p class="ml-3 text-sm text-gray-700">
+                    Longer code length (up to 8k tokens)
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <p class="ml-3 text-sm text-gray-700">
+                    Get actionable insights to optimize your code structure
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <p class="ml-3 text-sm text-gray-700">
+                    Multiple users can share the same subscription
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <p class="ml-3 text-sm text-gray-700">
+                    Early access to new features
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <p class="ml-3 text-sm text-gray-700">
+                    Get prioritized assistance for your queries
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <p class="ml-3 text-sm text-gray-700">
+                    Support the developer :)
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <p class="ml-3 text-sm text-gray-700">
+                    Product and User flow flowcharts
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- One Time Unlimited Option -->
+          <div class="bg-white border-t-4 border-indigo-600 rounded-lg shadow-lg overflow-hidden">
+<div class="px-4 py-5 sm:p-6">
+<h3 class="text-lg leading-6 font-bold text-indigo-600" id="tier-unlimited">
+One Time - Unlimited
+</h3>
+<p class="mt-2 text-sm text-gray-500">
+Unlock unlimited lifetime visualizations.
+</p>
+<div class="mt-4 flex items-center">
+<span class="text-2xl font-extrabold text-gray-900">$67</span>
+<span class="ml-2 text-sm font-medium text-gray-500">/ pay only once</span>
+</div>
+<a href="https://codetoflow.lemonsqueezy.com/checkout/buy/f93bd8cd-44d4-472e-957f-7dcb053da54f?embed=1" target="_blank" rel="noopener noreferrer" class="mt-6 block w-full bg-indigo-600 border border-transparent rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-indigo-700 lemonsqueezy-button" onclick="trackPurchaseEvent()">
+Get Lifetime Access
+</a>
+<p class="mt-2 text-sm text-center text-gray-500">
+One-time payment, then <span class="font-medium">it's yours forever</span>
+</p>
+<ul class="mt-6 space-y-4">
+<li class="flex items-start">
+<div class="flex-shrink-0">
+<svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+</svg>
+</div>
+<p class="ml-3 text-sm text-gray-700">
+Unlimited visualizations (No expiry)
+</p>
+</li>
+<li class="flex items-start">
+<div class="flex-shrink-0">
+<svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+</svg>
+</div>
+<p class="ml-3 text-sm text-gray-700">
+Get actionable insights to optimize your code structure
+</p>
+</li>
+<li class="flex items-start">
+<div class="flex-shrink-0">
+<svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+</svg>
+</div>
+<p class="ml-3 text-sm text-gray-700">
+Single user
+</p>
+</li>
+<li class="flex items-start">
+<div class="flex-shrink-0">
+<svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+</svg>
+</div>
+<p class="ml-3 text-sm text-gray-700">
+Longer code length (up to 8k tokens)
+</p>
+</li>
+<li class="flex items-start">
+<div class="flex-shrink-0">
+<svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+</svg>
+</div>
+<p class="ml-3 text-sm text-gray-700">
+Roadmap - Request new features and improvements
+</p>
+</li>
+<li class="flex items-start">
+<div class="flex-shrink-0">
+<svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+</svg>
+</div>
+<p class="ml-3 text-sm text-gray-700">
+Free access to simplified tech explanations (Launching soon)
+</p>
+</li>
+<li class="flex items-start">
+<div class="flex-shrink-0">
+<svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+</svg>
+</div>
+<p class="ml-3 text-sm text-gray-700">
+Support the developer :)
+</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+<button type="button" onclick="closeModal()" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-200 text-base font-medium text-red-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm">
+Upgrade Later
+</button>
+<a href="https://feedaiback.com/form/codetoflow_feedback_upgrade" target="_blank" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+Share Feedback and Get 30% Off
+</a>
+</div>
+</div>
+
+</div> 
+</div>
+
+  
+
+  <br>
+
+  <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4 w-full md:w-1/2 mx-auto">
+    <div class="flex">
+      <div class="flex-shrink-0">
+        <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+        </svg>
+      </div>
+      <div class="ml-3">
+        <p class="text-sm text-yellow-700">
+          Please share us with your friends and give your feedback to make us even better :)
+          <a href="https://feedaiback.com/form/codetoflow_feedback" target="_blank" class="font-medium text-yellow-700 underline hover:text-yellow-600">Share feedback</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <!-- Credit Limit Modal -->
+  <!-- Credit Limit Modal -->
+  <div class="hidden" id="creditLimitModal1" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="fixed inset-0 bg-gray-600 bg-opacity-50 transition-opacity"></div>
+    <div class="fixed inset-0 z-10 overflow-y-auto">
+      <div class="flex items-end sm:items-center justify-center min-h-full p-4 text-center sm:p-0">
+        <div class="relative bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-2xl sm:w-full">
+          <div class="bg-indigo-600 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+            <h3 class="text-lg leading-6 font-medium text-white" id="modal-title">You've used all your credits for today. Your limits will reset tonight. You can subscribe to codetoflow pro for unlimited access!</h3>
+            <div class="mt-2 text-sm text-white">
+              <p>Daily flowcharts left: <span id="dailyCreditsLeft"></span> <br> Monthly flowcharts left: <span id="monthlyCreditsLeft"></span></p>
+            </div>
+
+            <p class="text-sm text-white mt-2 hidden">Your support fuels our AI and helps us bring even more powerful features to you. Thank you!</p>
+            <p class="text-sm text-yellow-300 font-bold mt-2">
+              NOTE: Use code "UNLOCKPRO" for an extra 25% off on One Time Plans
+            </p>
+          </div>
+          <div class="bg-white p-6">
+            <div class="space-y-4">
+              <!-- Upgrade Options -->
+              <!-- Example: One Time Payment Option -->
+              <div class="isolate mx-auto mt-5 md:grid justify-center grid-cols-1 gap-4 md:max-w-2xl md:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-cols-6">
+                <div class="ring-1 ring-indigo-600 rounded-3xl p-6 col-start-1 col-span-3 border-t-4 border-indigo-600 mb-2">
+                  <h2 id="tier-freelancer" class="text-indigo-600 text-lg font-semibold leading-8">One time payment</h2>
+                  <p class="mt-4 text-sm leading-6 text-gray-600">Unlock a seamless coding journey, with 1000 visualizations that never expire.</p>
+                  <p class="mt-6 flex items-baseline gap-x-1">
+                    <span class="text-xl tracking-tight text-gray-900 line-through">$49</span>
+                    <span class="text-3xl font-bold tracking-tight text-gray-900">$27</span>
+                    <span class="text-sm font-bold leading-6 text-gray-600">/ pay only once</span>
+                  </p>
+
+                  <a href="https://codetoflow.lemonsqueezy.com/checkout/buy/b666a48b-cbf9-4145-a1ed-ef0c41450e99?embed=1" aria-describedby="tier-freelancer" class="bg-indigo-600 text-white shadow-xl hover:bg-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 lemonsqueezy-button" onclick="trackPurchaseEvent()">Get Lifetime Access</a>
+                  <p class=" text-sm mt-2 text-center text-base-content-secondary font-medium text-gray-700 relative">One-time payment, then<!-- --> <span class="underline">it's yours forever</span></p>
+                  <!--  <div id="paypal-button-container-P-9FG54499WD923331RMU5UD2A"></div> -->
+                  <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
+                    <li class="flex gap-x-3 font-bold text-indigo-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>1000 code visualizations( No expiry )
+                    </li>
+
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Get actionable insights to optimize your code structure
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                      </svg>
+                      Single user
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Longer code length (upto 8k tokens)
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Free access to simplified tech explanations(Launching soon)
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Support the developer :)
+                    </li>
+                  </ul>
+                </div>
+                <div class="ring-2 ring-indigo-600 rounded-3xl p-6 col-start-4 col-span-3 border-t-4 border-indigo-600">
+                  <h2 id="tier-startup" class="text-indigo-600 text-lg font-semibold leading-8">Monthly Pro (Try for free)</h2>
+                  <p class="mt-4 text-sm leading-6 text-gray-600">For professionals and dedicated developers.</p>
+                  <p class="mt-6 flex items-baseline gap-x-1">
+                    <span class="text-xl tracking-tight text-gray-900 line-through">$12</span>
+                    <span class="text-3xl font-bold tracking-tight text-gray-900">$4.49</span>
+                    <span class="text-sm font-bold leading-6 text-gray-600">/ month</span>
+                  </p>
+
+                  <a href="https://codetoflow.lemonsqueezy.com/checkout/buy/113ed939-9164-40e6-8668-51a706651174?embed=1" aria-describedby="tier-startup" class="bg-indigo-500 text-white shadow-sm hover:bg-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 lemonsqueezy-button" onclick="trackPurchaseEvent()">Activate Pro</a>
+                  <p class=" text-sm mt-2 text-center text-base-content-secondary font-medium text-gray-700 relative">Try free for<!-- --> <span class="underline">3 days!</span></p>
+                  <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
+                    <li class="flex gap-x-3 font-bold text-indigo-600">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Unlimited code visualizations
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Longer code length (upto 8k tokens)
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Get actionable insights to optimize your code structure
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Multiple user can share same subscription
+                    </li>
+
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Early access to new features
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Get prioritized assistance for your queries.
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Support the developer :)
+                    </li>
+
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>GPT 4 Turbo with upto 100k token length - coming soon
+                    </li>
+                  </ul>
+                </div>
+                <div class="ring-1 ring-indigo-600 rounded-3xl p-6 col-start-1 col-span-6 border-t-4 border-indigo-600 mb-2">
+                  <h2 id="tier-freelancer" class="text-indigo-600 text-lg font-semibold leading-8">One time - Unlimited</h2>
+                  <p class="mt-4 text-sm leading-6 text-gray-600">Unlock a seamless coding journey, with unlimited lifetime visualizations.</p>
+                  <p class="mt-6 flex items-baseline gap-x-1">
+                    <span class="text-xl tracking-tight text-gray-900 line-through">$199</span>
+                    <span class="text-3xl font-bold tracking-tight text-gray-900">67</span>
+                    <span class="text-sm font-bold leading-6 text-gray-600">/ pay only once</span>
+                  </p>
+
+                  <a href="https://codetoflow.lemonsqueezy.com/checkout/buy/f93bd8cd-44d4-472e-957f-7dcb053da54f?embed=1" aria-describedby="tier-freelancer" class="bg-indigo-600 text-white shadow-xl hover:bg-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 lemonsqueezy-button" onclick="trackPurchaseEvent()">Get Lifetime Access</a>
+                  <!--  <div id="paypal-button-container-P-9FG54499WD923331RMU5UD2A"></div> -->
+                  <p class=" text-sm mt-2 text-center text-base-content-secondary font-medium text-gray-700 relative">One-time payment, then<!-- --> <span class="underline">it's yours forever</span></p>
+                  <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
+                    <li class="flex gap-x-3 font-bold text-indigo-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Unlimited visualizations( No expiry )
+                    </li>
+
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Get actionable insights to optimize your code structure
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                      </svg>
+                      Single user
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Longer code length (upto 8k tokens)
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Roadmap - to request new features and improvements
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Free access to simplified tech explanations(Launching soon)
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none text-indigo-600">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Support the developer :)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- More options can be added similarly -->
+            </div>
+          </div>
+          <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse">
+            <button onclick="closeModal()" class="w-full inline-flex justify-center rounded-md border border-gray-300 px-4 py-2 bg-white text-gray-700 hover:bg-red-200 focus:outline-none sm:mt-0 sm:w-auto sm:text-sm m-2">Upgrade Later</button>
+
+            <a href="https://feedaiback.com/form/codetoflow_feedback_upgrade" target="_blank" class="hover:bg-emerald-200 hidden">
+              <button class="w-full inline-flex justify-center rounded-md border border-gray-300 px-4 py-2 bg-white text-gray-700 focus:outline-none sm:mt-0 sm:w-auto sm:text-sm m-2">Share feedback and get 30% off</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script>
+    document.getElementById("submitButton").addEventListener("click", function () {
+      submitCode();
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var script1 = document.createElement("script");
+      script1.src = "https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js";
+      script1.defer = false;
+      document.body.appendChild(script1);
+
+      var uuid = getUUIDFromURL();
+      if (uuid) {
+        fetchAndRenderDetails(uuid);
+      }
+
+      var script2 = document.createElement("script");
+      script2.src = "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js";
+      script2.defer = true;
+      document.body.appendChild(script2);
+
+      var script3 = document.createElement("script");
+      script3.src = "https://assets.lemonsqueezy.com/lemon.js";
+      script3.defer = true;
+      document.body.appendChild(script3);
+    });
+
+    function getUUIDFromURL() {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get("uid"); // 'uid' is the query parameter that holds the UUID
+    }
+
+    function fetchAndRenderDetails(uuid) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", `/api/fetch_details/${uuid}`, true); // Update the endpoint as needed
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          var response = JSON.parse(xhr.responseText);
+          var mermaidSyntax = response.mermaidSyntax;
+          var code_explanation = response.code_explanation;
+          var shareableLink = response.uuid;
+
+          var code_explanation_div = document.getElementById("code_explanation");
+          code_explanation_div.innerText = code_explanation;
+          displayShareableLink(shareableLink);
+          document.getElementById("graph_explanation_details").classList.remove("hidden");
+          document.getElementById("downloadButton").classList.remove("hidden");
+          document.getElementById("saveButton").classList.remove("hidden");
+
+          // Render the fetched details
+          renderMermaidGraph(mermaidSyntax);
+        } else {
+          console.error("Failed to fetch details");
+        }
+      };
+      xhr.send();
+    }
+
+    function scrollToGraph() {
+      const offset = 0; // height of the navbar or the offset you want
+      const graphElement = document.getElementById("graph_explanation_details");
+
+      if (graphElement) {
+        const elementPosition = graphElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }
+    // Get the Mermaid graph container and zoom control elements
+const mermaidContainer = document.getElementById('mermaidContainer');
+const mermaidGraph = document.getElementById('mermaidGraph');
+const zoomInBtn = document.getElementById('zoomInBtn');
+const zoomOutBtn = document.getElementById('zoomOutBtn');
+
+// Set the initial zoom level
+let zoomLevel = 1;
+
+// Function to update the zoom level of the Mermaid graph
+function updateZoom() {
+  mermaidGraph.style.transform = `scale(${zoomLevel})`;
+}
+
+// Event listener for the zoom in button
+zoomInBtn.addEventListener('click', () => {
+  zoomLevel += 0.3;
+  updateZoom();
+});
+
+// Event listener for the zoom out button
+zoomOutBtn.addEventListener('click', () => {
+  if (zoomLevel > 0.5) {
+    zoomLevel -= 0.3;
+    updateZoom();
+  }
+});
+
+    document.getElementById("mermaidGraph").addEventListener("click", openGraphModal);
+
+    function submitCode() {
+      const button = document.getElementById("submitButton");
+      resetLoadingTimer();
+      document.getElementById("loadingTimer").style.display = "block";
+
+      buttonText.textContent = "AI is analysing..."; // You can put any text here
+      loadingIcon.style.display = "inline"; // Show loading icon
+      loadingTimer;
+
+      // Disable button to prevent multiple submissions
+      button.disabled = true;
+
+      var code = document.getElementById("codeEditor").value;
+      var code_selection = document.getElementById("code_selection").value;
+      var questionInput = document.getElementById("questionInput").value;
+      //document.getElementById("loadingIndicator").classList.remove("hidden");
+      gtag("event", "submit_code", {
+        code_selection: code_selection,
+      });
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "/api/convert_code", true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.setRequestHeader("X-CSRFToken", "SqEaFuZJNrUUWi01567DGEOVXakJvJjBKZx0GQxCCzqjQygxEfhqGqbRBMRsP20M"); // Add this line
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          response = JSON.parse(xhr.responseText);
+          var mermaidSyntax = response.mermaidSyntax;
+          var code_explanation = response.code_explanation;
+          var shareableLink = response.share_code;
+          var code_explanation_div = document.getElementById("code_explanation");
+          code_explanation_div.innerText = code_explanation;
+          console.log(mermaidSyntax);
+
+          console.log(mermaidSyntax);
+          if (JSON.parse(xhr.responseText).error === "limit_reached") {
+            // Show the modal
+            gtag("event", "limit_reached", {
+              code_selection: "code_selection",
+            });
+            document.getElementById("dailyCreditsLeft").textContent = response.daily_credits_left;
+            document.getElementById("monthlyCreditsLeft").textContent = response.monthly_credits_left;
+
+            document.getElementById("creditLimitModal").classList.remove("hidden");
+          }
+
+          renderMermaidGraph(mermaidSyntax);
+          displayShareableLink(shareableLink);
+
+          var svgElement = document.querySelector("#mermaidGraph svg");
+          var svgDataUrl = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svgElement.outerHTML);
+          //document.getElementById("zoomLink").href = svgDataUrl;
+          console.log("mermiaid rendered");
+          buttonText.textContent = "Analyse my code"; // Reset button text
+          loadingIcon.style.display = "none"; // Hide loading icon
+          button.disabled = false; // Enable button
+          document.getElementById("loadingTimer").style.display = "none";
+        }
+      };
+      var data = JSON.stringify({ code: code, code_selection: code_selection, questionInput: questionInput });
+      xhr.send(data);
+    }
+
+    function renderMermaidGraph(mermaidSyntax) {
+      console.log("Mermaid:", mermaidSyntax);
+      document.getElementById('zoomControls').style.display = 'flex';
+      var graphContainer = document.getElementById("mermaidGraph");
+      graphContainer.innerHTML = "";
+
+      // Create a <pre> element with the user's code
+      var preElement = document.createElement("pre");
+      preElement.className = "mermaid";
+      preElement.textContent = mermaidSyntax;
+      graphContainer.appendChild(preElement);
+      document.getElementById("graph_explanation_details").classList.remove("hidden");
+      document.getElementById("downloadButton").classList.remove("hidden");
+      document.getElementById("shareurloption").classList.remove("hidden");
+
+      //document.getElementById("loadingIndicator").classList.add("hidden");
+
+      // Initialize Mermaid with custom settings
+      mermaid.initialize({ startOnLoad: false });
+
+      // Render the graph using mermaid.run
+      mermaid.run({
+        nodes: [preElement],
+      });
+      scrollToGraph();
+      //moveUpgradeSectionUp();
+    }
+
+    function displayShareableLink(link) {
+      // Assuming you have an element with id 'shareableLinkContainer'
+      var linkContainer = document.getElementById("shareableLinkContainer");
+      if (linkContainer) {
+        var baseUrl = window.location.origin;
+        linkContainer.value = `${baseUrl}?uid=${link}`; // If it's an input
+        // OR if it's an anchor tag
+        linkContainer.href = `${baseUrl}?uid=${link}`;
+        linkContainer.textContent = "Share this link"; // Text for the anchor tag
+        linkContainer.classList.remove("hidden"); // Make sure to unhide it
+      }
+    }
+
+    function copyToClipboard(elementId) {
+      var copyText = document.getElementById(elementId);
+      copyText.select();
+      document.execCommand("copy");
+    }
+
+    // And add an event listener to your copy button
+    document.getElementById("copyButton").addEventListener("click", function () {
+      copyToClipboard("shareableLinkContainer");
+    });
+
+    function openGraphModal() {
+      var graphElement = document.getElementById("mermaidGraph");
+      var zoomedGraphContainer = document.getElementById("zoomedGraphContainer");
+      var modal = document.getElementById("graphModal");
+
+      // Clear previous content
+      zoomedGraphContainer.innerHTML = "";
+
+      // Clone the graph element and append it to the modal container
+      var clone = graphElement.cloneNode(true);
+      zoomedGraphContainer.appendChild(clone);
+
+      // Display the modal
+      modal.classList.remove("hidden");
+    }
+
+    function closeGraphModal() {
+      var modal = document.getElementById("graphModal");
+      modal.classList.add("hidden");
+    }
+
+    function downloadGraph() {
+      // Get the whole `graph_explanation_details` container, including the new wrapper
+      var mermaidGraphContainer = document.getElementById("graph_explanation_details");
+
+      // Call html2canvas and pass the whole container
+      html2canvas(mermaidGraphContainer, { scrollY: -window.scrollY, scale: 2 }).then(function (canvas) {
+        var imgData = canvas.toDataURL("image/png");
+        var link = document.createElement("a");
+        link.href = imgData;
+        link.download = "codetoflow.png";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
+    }
+
+    function resetLoadingTimer() {
+      var loadingTimer = document.getElementById("loadingTimer");
+      loadingTimer.style.animation = "none"; // Remove the animation
+      setTimeout(function () {
+        loadingTimer.style.width = "0"; // Reset width to 0
+        loadingTimer.style.animation = ""; // Reapply the animation
+      }, 10); // Short timeout to trigger reflow and restart the animation
+    }
+
+    function moveUpgradeSectionUp() {
+      var upgradeSection = document.getElementById("upgradeCTA");
+      var UpgradeModalTop = document.getElementById("UpgradeModalTop");
+
+      // Move the upgrade section above the flowchart container
+      //if(upgradeSection){UpgradeModalTop.appendChild(upgradeSection);}
+    }
+
+    function closeModal() {
+      document.getElementById("creditLimitModal").classList.add("hidden");
+    }
+
+    function onUpgradeCtaClick() {
+      gtag("event", "i_want_to_upgrade_cta", {
+        code_selection: "code_selection",
+      });
+    }
+
+    function onUpgradeBannerClick() {
+      gtag("event", "home_banner_upgrade_click", {
+        code_selection: "code_selection",
+      });
+    }
+  </script>
+
+   
+
+<link rel="stylesheet" href="./switch9_files/styles.aacaa717d1a1.css">
+
+
+
+
+  <br>
+  <!-- Add this at the end of your base.html -->
+  <br><br><br><br>
+  <br><br><br>
+  <footer class="max-w-4xl mx-auto mt-10 text-gray-700">
+    <a href="https://codetoflow.com/privacy">Privacy Policy</a> | <a href="https://codetoflow.com/terms">Terms of Service</a>
+    | Your code is safe with us. We never store or share your code.
+  </footer>
+  <!-- Google tag (gtag.js) -->
+
+  <!-- Clarity code for https://codetoflow.com/ -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var clarityScript = document.createElement("script");
+      clarityScript.text = `(function(c,l,a,r,i,t,y){        
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};        
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";        
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);    
+        })(window, document, "clarity", "script", "jr6m0lakjz");`;
+
+      document.body.appendChild(clarityScript);
+    });
+
+    document.addEventListener("DOMContentLoaded", (event) => {
+      // Get the dismiss button by its ID
+      var dismissBtn = document.getElementById("dismissBanner");
+
+      // Get the banner by its ID
+      var banner = document.getElementById("phbanner");
+
+      // Add click event listener to the dismiss button
+      if (dismissBtn) {
+        dismissBtn.addEventListener("click", function () {
+          // Hide the banner when the dismiss button is clicked
+          banner.style.display = "none";
+        });
+      }
+    });
+  </script>
+
+  <script>
+    function trackPurchaseEvent() {
+      gtag("event", "purchase_clicked", {
+        event_category: "Upgrade",
+        event_label: "LemonSqueezy Purchase",
+        value: "1",
+      });
+    }
+  </script>
+
+<script src="./switch9_files/mermaid.min.js.загрузка"></script><script src="./switch9_files/html2canvas.min.js.загрузка" defer=""></script><script src="./switch9_files/lemon.js.загрузка" defer=""></script><script>(function(c,l,a,r,i,t,y){        
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};        
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";        
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);    
+        })(window, document, "clarity", "script", "jr6m0lakjz");</script><div class="mermaidTooltip" style="opacity: 0;"></div></body></html>

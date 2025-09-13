@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "jilbo", "jilbo\jilbo.pyproj", "{FD3541C9-540A-4893-BDA1-9538F804E82E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD3541C9-540A-4893-BDA1-9538F804E82E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD3541C9-540A-4893-BDA1-9538F804E82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42C5B5F8-514B-4FEC-9884-68EFD3AB76DB}
+	EndGlobalSection
+EndGlobal

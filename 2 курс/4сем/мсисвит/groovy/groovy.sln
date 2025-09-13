@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "groovy", "groovy\groovy.pyproj", "{BB583F45-91B2-4D92-A20E-DE74B7BE3415}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB583F45-91B2-4D92-A20E-DE74B7BE3415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB583F45-91B2-4D92-A20E-DE74B7BE3415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EFE47DB-4D0D-4E60-B31E-A36A2505B5EE}
+	EndGlobalSection
+EndGlobal
