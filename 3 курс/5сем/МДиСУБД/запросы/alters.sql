@@ -1,0 +1,14 @@
+ALTER TABLE notification ADD COLUMN order_id INT NOT NULL
+ALTER TABLE notification ADD CONSTRAINT fk_order FOREIGN KEY (order_id) REFERENCES "order"(id);
+
+ALTER TABLE room ADD COLUMN id SERIAL;
+ALTER TABLE room DROP CONSTRAINT room_pkey;
+ALTER TABLE room ADD PRIMARY KEY (id);
+ALTER TABLE room ALTER COLUMN room_number TYPE VARCHAR(10);
+
+ALTER TABLE role RENAME TO roles;
+ALTER TABLE "user" DROP CONSTRAINT user_role_id_fkey;
+ALTER TABLE "user" ADD CONSTRAINT user_role_id_fkey FOREIGN KEY (role_id) REFERENCES roles(id);
+
+ALTER TABLE "order" ALTER COLUMN status SET DEFAULT 'Pending';
+ALTER TABLE guest ALTER COLUMN user_id SET NOT NULL;

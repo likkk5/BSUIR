@@ -1,0 +1,52 @@
+--7)
+CREATE TRIGGER trigger_check_room_availability
+BEFORE INSERT ON reservation
+FOR EACH ROW
+EXECUTE FUNCTION check_room_availability();
+
+CREATE OR REPLACE FUNCTION log_reservation_changes()
+RETURNS TRIGGER AS $$
+BEGIN
+    INSERT INTO reservation_log (reservation_id, action, old_data, new_data, log_datetime)
+    VALUES (
+        OLD.id,
+        'Updated Reservation',
+        ROW(OLD.*)::TEXT,
+        ROW(NEW.*)::TEXT,
+        NOW()
+    );
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trigger_log_reservation_changes
+AFTER UPDATE ON reservation
+FOR EACH ROW
+EXECUTE FUNCTION log_reservation_changes();
+
+-- Обновляем дату выезда бронирования ID 1.
+UPDATE reservation
+SET check_out_date = NOW() + INTERVAL '5 days'
+WHERE id = 1;
+--8)
+CREATE OR REPLACE FUNCTION log_guest_feedback()
+RETURNS TRIGGER AS $$
+BEGIN
+    -- Логируем действия, связанные с отзывами
+    INSERT INTO feedback_log (guest_id, feedback_id, action, log_datetime)
+    VALUES (NEW.guest_id, NEW.id, 'Added Feedback', NOW());
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trigger_log_guest_feedback
+AFTER INSERT ON feedback
+FOR EACH ROW
+EXECUTE FUNCTION log_guest_feedback();
+
+-- Добавляем отзыв от гостя ID 4.
+INSERT INTO feedback (guest_id, feedback_datetime, feedback_text, rating)
+VALUES (3, NOW(), 'Great service, loved it!', 5);
+SELECT * FROM feedback;
