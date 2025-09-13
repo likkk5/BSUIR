@@ -1,0 +1,479 @@
+function showPreloader() {
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "1";
+    preloader.style.visibility = "visible";
+}
+
+function hidePreloader() {
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0";
+    preloader.style.visibility = "hidden";
+}
+window.addEventListener("load", () => {
+    hidePreloader();
+});
+let sortOrder = 1; // 1 - по возрастанию, -1 - по убыванию
+let filteredRows = [];
+function sortTable(columnIndex) {
+    showPreloader();
+    setTimeout(() => {
+    const table = document.getElementById("contactsTable");
+    const rows = Array.from(table.querySelectorAll("tbody tr"));
+    rows.sort((rowA, rowB) => {
+        const cellA = rowA.cells[columnIndex].innerText.toLowerCase();
+        const cellB = rowB.cells[columnIndex].innerText.toLowerCase();
+
+        if (cellA < cellB) return -1 * sortOrder;
+        if (cellA > cellB) return 1 * sortOrder;
+        return 0;
+    });
+
+    const tbody = table.querySelector("tbody");
+    tbody.innerHTML = '';
+    rows.forEach(row => tbody.appendChild(row));
+    updateSortIndicator(columnIndex); 
+    
+    sortOrder *= -1; // Меняем направление сортировки
+    
+    paginateTable();
+    hidePreloader();
+}, 500);
+}
+// Функция для обновления индикатора сортировки
+function updateSortIndicator(columnIndex) {
+    const headers = document.querySelectorAll("#contactsTable thead th");
+    
+    // Убираем индикаторы сортировки с других заголовков
+    headers.forEach((header, index) => {
+        const sortIndicator = header.querySelector('.sort-indicator');
+        const sortText = header.querySelector('.sort-text');
+        if (sortIndicator) {
+            sortIndicator.remove();
+        }
+        if (sortText) {
+            sortText.remove();
+        }
+        header.classList.remove("sorted-asc", "sorted-desc");
+    });
+
+    const currentHeader = headers[columnIndex];
+    const sortIndicator = document.createElement("span");
+    sortIndicator.classList.add("sort-indicator");
+
+    const sortText = document.createElement("span");
+    sortText.classList.add("sort-text");
+
+    if (sortOrder === 1) {
+        currentHeader.classList.add("sorted-asc");
+        sortIndicator.innerText = " ↑";
+        sortText.innerText = " (по алфавиту)"; 
+    } else {
+        currentHeader.classList.add("sorted-desc");
+        sortIndicator.innerText = " ↓"; 
+        sortText.innerText = " (против алфавита)"; 
+    }
+
+    currentHeader.appendChild(sortIndicator);
+    currentHeader.appendChild(sortText);
+}
+const rowsPerPage = 3;
+let currentPage = 1;
+let totalPages = 1;
+
+function paginateTable() {
+    // const table = document.getElementById("contactsTable");
+    // const rows = Array.from(table.querySelectorAll("tbody tr"));
+    const rows = filteredRows.length ? filteredRows : Array.from(document.getElementById("contactsTable").querySelectorAll("tbody tr"));
+    const totalRows = rows.length;
+    totalPages = Math.ceil(totalRows / rowsPerPage);
+
+    const startRow = (currentPage - 1) * rowsPerPage;
+    const endRow = startRow + rowsPerPage;
+
+    rows.forEach((row, index) => {
+        row.style.display = (index >= startRow && index < endRow) ? '' : 'none';
+    });
+
+    updatePagination();
+    updatePaginationButtons();
+}
+
+function updatePagination() {
+    showPreloader();
+    setTimeout(() => {
+    const pagination = document.getElementById("pagination");
+    const pageButtons = pagination.querySelectorAll("button:not(#prevButton):not(#nextButton)");
+
+    // Удаляем старые номера страниц
+    pageButtons.forEach(button => button.remove());
+
+    for (let i = 1; i <= totalPages; i++) {
+        const pageButton = document.createElement("button");
+        pageButton.innerText = i;
+        pageButton.classList.toggle("active-page", i === currentPage);
+        pageButton.onclick = () => {
+            currentPage = i;
+            paginateTable();
+        };
+        pagination.insertBefore(pageButton, document.getElementById("nextButton")); // Вставляем перед кнопкой "Следующая"
+    }
+    hidePreloader();
+}, 500);
+}
+
+function changePage(direction) {
+    showPreloader();
+    setTimeout(() => {
+    currentPage += direction;
+    if (currentPage < 1) currentPage = 1; // Не позволяем переходить на страницу < 1
+    if (currentPage > totalPages) currentPage = totalPages; // Не позволяем переходить на страницу > totalPages
+
+    paginateTable(); // Перегружаем таблицу для текущей страницы
+    hidePreloader();
+}, 500);
+}
+
+function updatePaginationButtons() {
+    showPreloader();
+    setTimeout(() => {
+    const prevButton = document.getElementById("prevButton");
+    const nextButton = document.getElementById("nextButton");
+
+    prevButton.disabled = currentPage === 1; // Дизактивируем, если на первой странице
+    nextButton.disabled = currentPage === totalPages; // Дизактивируем, если на последней странице
+    hidePreloader();
+}, 500);
+}
+
+// Вызов функции для инициализации пагинации
+paginateTable();
+
+function filterTable() {
+    showPreloader();
+    setTimeout(() => {
+    const input = document.getElementById("filterInput").value.toLowerCase();
+    const table = document.getElementById("contactsTable");
+    const rows = Array.from(table.querySelectorAll("tbody tr"));
+
+    filteredRows = rows.filter(row => {
+        const cells = Array.from(row.cells);
+        const match = cells.some(cell => cell.innerText.toLowerCase().includes(input));
+        row.style.display = match ? '' : 'none'; // Скрываем строки, которые не подходят
+        return match; // Возвращаем только строки, которые подходят
+    });
+    currentPage = 1; 
+
+    paginateTable(); // Обновляем пагинацию после фильтрации
+    hidePreloader();
+}, 500);
+}
+
+function showDetails(name, position, phone, email, photoUrl) {
+    const detailsBlock = document.getElementById("detailsBlock");
+    showPreloader();
+    setTimeout(() => {
+    // detailsBlock.innerHTML = `<strong>ФИО:</strong> ${name}<br>
+    //                         <strong>Должность:</strong> ${position}<br>
+    //                         <strong>Телефон:</strong> ${phone}<br>
+    //                         <strong>Email:</strong> ${email}<br>
+    //                         <img src="${photoUrl}" alt="Фото" width="50">
+    //                         `;
+    // detailsBlock.style.display = 'block';
+    detailsBlock.innerHTML = `
+            <div class="details-text">
+                <strong>ФИО:</strong> ${name}<br>
+                <strong>Должность:</strong> ${position}<br>
+                <strong>Телефон:</strong> ${phone}<br>
+                <strong>Email:</strong> ${email}<br>
+            </div>
+            <img src="${photoUrl}" alt="Фото" class="details-photo">
+        `;
+        detailsBlock.style.display = 'flex';
+    hidePreloader();
+}, 500);
+}
+
+function openAddForm() {
+    document.getElementById("addForm").style.display = 'block';
+}
+
+function validateAndAdd() {
+    const name = document.getElementById("name").value;
+    const position = document.getElementById("position").value;
+    const phone = document.getElementById("phone").value;
+    const email = document.getElementById("email").value;
+    const photoUrl = document.getElementById("photoUrl").value;
+
+    let isValid = true;
+    showPreloader();
+    setTimeout(() => {
+    // Проверка телефона
+    if (!validatePhone(phone)) {
+        isValid = false;
+        highlightError("phone");
+        displayValidationMessage("Неверный формат телефона.", "phoneError");
+    } else {
+        removeErrorHighlight("phone");
+        removeValidationMessage("phoneError");
+    }
+
+    // Проверка URL
+    if (!validatePhotoUrl(photoUrl)) {
+        isValid = false;
+        highlightError("photoUrl");
+        displayValidationMessage("Неверный формат URL для фото.", "urlError");
+    } else {
+        removeErrorHighlight("photoUrl");
+        removeValidationMessage("urlError");
+    }
+
+    // Если все проверки прошли, добавляем нового сотрудника
+    if (isValid) {
+        addNewEmployee(name, position, phone, email, photoUrl);
+        document.getElementById("newEmployeeForm").reset();
+        document.getElementById("addForm").style.display = 'none';
+    }
+    hidePreloader();
+}, 500);
+}
+
+// Функция для выделения поля с ошибкой
+function highlightError(fieldId) {
+    const field = document.getElementById(fieldId);
+    field.classList.add("error");
+}
+
+// Функция для удаления выделения ошибки
+function removeErrorHighlight(fieldId) {
+    const field = document.getElementById(fieldId);
+    field.classList.remove("error");
+}
+
+// Функция для отображения сообщения об ошибке
+function displayValidationMessage(message, errorId) {
+    let errorElement = document.getElementById(errorId);
+    if (!errorElement) {
+        errorElement = document.createElement("div");
+        errorElement.id = errorId;
+        errorElement.classList.add("error-message");
+        document.getElementById("newEmployeeForm").appendChild(errorElement);
+    }
+    errorElement.textContent = message;
+}
+
+// Функция для удаления сообщения об ошибке
+function removeValidationMessage(errorId) {
+    const errorElement = document.getElementById(errorId);
+    if (errorElement) {
+        errorElement.remove();
+    }
+}
+
+// Регулярка для проверки телефона
+function validatePhone(phone) {
+    const phoneRegex = /^(?:\+375|8)\s?\(?\d{2}\)?\s?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$/;
+    return phoneRegex.test(phone);
+}
+
+// Регулярка для проверки URL
+function validatePhotoUrl(url) {
+    const urlRegex = /^(https?:\/\/)[a-zA-Z0-9\-]+\.[a-zA-Z]{2,}(?:\/[\w\-]+)*(?:\.(php|html))$/;
+    return urlRegex.test(url);
+}
+
+// Функция для добавления нового сотрудника в таблицу
+function addNewEmployee(name, position, phone, email, photoUrl) {
+    showPreloader();
+    setTimeout(() => {
+    const table = document.getElementById("contactsTable").querySelector("tbody");
+    const newRow = document.createElement("tr");
+
+    newRow.innerHTML = `
+        <td>${name}</td>
+        <td><img src="${photoUrl}" alt="Фото" width="50"></td>
+        <td>${position}</td>
+        <td>${phone}</td>
+        <td>${email}</td>
+        <td><input type="checkbox" name="premiere" value="${name}"></td>
+    `;
+    newRow.onclick = function() {
+        showDetails(name, position, phone, email);
+    };
+
+    table.appendChild(newRow);
+    paginateTable(); // Обновляем пагинацию после добавления нового сотрудника
+    hidePreloader();
+}, 500);
+}
+
+function awardBonus() {
+    showPreloader();
+    setTimeout(() => {
+    const checkboxes = Array.from(document.querySelectorAll('input[name="premiere"]:checked'));
+    const selectedEmployees = checkboxes.map(checkbox => checkbox.value);
+    const bonusMessage = document.getElementById("bonusMessage");
+
+    if (selectedEmployees.length > 0) {
+        bonusMessage.innerText = `Сотрудники ${selectedEmployees.join(', ')} премированы.`;
+    } else {
+        bonusMessage.innerText = 'Никто не выбран для премирования.';
+    }
+    hidePreloader();
+}, 500);
+}
+
+// window.addEventListener('load', () => {
+//     document.getElementById("preloader").style.display = "none";
+//     paginateTable(); // Обновляем пагинацию при загрузке страницы
+// });
+
+// // Функция отображения/скрытия панели стилей
+// function toggleStylePanel() {
+//     const stylePanel = document.getElementById('stylePanel');
+//     stylePanel.style.display = stylePanel.style.display === 'none' ? 'block' : 'none';
+// }
+window.onload = function() {
+    document.getElementById('styleCheckbox').addEventListener('click', generateStylePanel);
+};
+// function generateStylePanel() {
+//     const styleCheckbox = document.getElementById('styleCheckbox');
+//     const stylePanelContainer = document.getElementById('stylePanelContainer');
+
+//     if (!styleCheckbox.checked) {
+//         stylePanelContainer.innerHTML = '';
+//         return;
+//     }
+
+//     const stylePanel = document.createElement('div');
+//     stylePanel.id = 'stylePanel';
+//     stylePanel.className = 'style-panel'; 
+//     stylePanel.innerHTML = `
+//         <div class="style-panel-item">
+//             <label>Размер шрифта:</label>
+//             <input type="range" id="fontSizeSlider" min="10" max="30" value="16" oninput="updateFontSizeFromSlider()">
+//             <input type="number" id="fontSizeInput" min="10" max="30" value="16" oninput="updateFontSizeFromInput()">
+//         </div>
+//         <div class="style-panel-item">
+//             <label>Цвет текста:</label>
+//             <input type="color" id="textColorPicker" value="#333333" onchange="changeTextColor()">
+//         </div>
+//         <div class="style-panel-item">
+//             <label>Цвет фона:</label>
+//             <input type="color" id="bgColorPicker" value="#ffffff" onchange="changeBackgroundColor()">
+//         </div>
+//     `;
+//     stylePanelContainer.appendChild(stylePanel);
+// }
+function generateStylePanel() {
+    const styleCheckbox = document.getElementById('styleCheckbox');
+    const stylePanelContainer = document.getElementById('stylePanelContainer');
+    showPreloader();
+    setTimeout(() => {
+    // Убираем старую панель, если она существует
+    const existingPanel = document.getElementById('stylePanel');
+    if (existingPanel) {
+        stylePanelContainer.removeChild(existingPanel);
+    }
+
+    // Если флажок установлен, создаем новую панель
+    if (styleCheckbox.checked) {
+        const stylePanel = document.createElement('div');
+        stylePanel.id = 'stylePanel';
+        stylePanel.className = 'style-panel';
+
+        // Создаем элементы для панели стилей
+        const fontSizeItem = document.createElement('div');
+        fontSizeItem.className = 'style-panel-item';
+        const fontSizeLabel = document.createElement('label');
+        fontSizeLabel.textContent = 'Размер шрифта:';
+        const fontSizeSlider = document.createElement('input');
+        fontSizeSlider.type = 'range';
+        fontSizeSlider.id = 'fontSizeSlider';
+        fontSizeSlider.min = '10';
+        fontSizeSlider.max = '30';
+        fontSizeSlider.value = '16';
+        fontSizeSlider.oninput = updateFontSizeFromSlider;
+        const fontSizeInput = document.createElement('input');
+        fontSizeInput.type = 'number';
+        fontSizeInput.id = 'fontSizeInput';
+        fontSizeInput.min = '10';
+        fontSizeInput.max = '30';
+        fontSizeInput.value = '16';
+        fontSizeInput.oninput = updateFontSizeFromInput;
+        
+        fontSizeItem.appendChild(fontSizeLabel);
+        fontSizeItem.appendChild(fontSizeSlider);
+        fontSizeItem.appendChild(fontSizeInput);
+
+        const textColorItem = document.createElement('div');
+        textColorItem.className = 'style-panel-item';
+        const textColorLabel = document.createElement('label');
+        textColorLabel.textContent = 'Цвет текста:';
+        const textColorPicker = document.createElement('input');
+        textColorPicker.type = 'color';
+        textColorPicker.id = 'textColorPicker';
+        textColorPicker.value = '#333333';
+        textColorPicker.onchange = changeTextColor;
+
+        textColorItem.appendChild(textColorLabel);
+        textColorItem.appendChild(textColorPicker);
+
+        const bgColorItem = document.createElement('div');
+        bgColorItem.className = 'style-panel-item';
+        const bgColorLabel = document.createElement('label');
+        bgColorLabel.textContent = 'Цвет фона:';
+        const bgColorPicker = document.createElement('input');
+        bgColorPicker.type = 'color';
+        bgColorPicker.id = 'bgColorPicker';
+        bgColorPicker.value = '#ffffff';
+        bgColorPicker.onchange = changeBackgroundColor;
+
+        bgColorItem.appendChild(bgColorLabel);
+        bgColorItem.appendChild(bgColorPicker);
+
+        // Добавляем все элементы в панель
+        stylePanel.appendChild(fontSizeItem);
+        stylePanel.appendChild(textColorItem);
+        stylePanel.appendChild(bgColorItem);
+
+        // Добавляем панель в контейнер
+        stylePanelContainer.appendChild(stylePanel);
+    }
+    hidePreloader();
+}, 500);
+}
+
+// Изменение размера шрифта с ползунка
+function updateFontSizeFromSlider() {
+    const fontSize = document.getElementById('fontSizeSlider').value;
+    document.getElementById('fontSizeInput').value = fontSize;
+    applyFontSize(fontSize);
+}
+
+// Изменение размера шрифта с текстового поля
+function updateFontSizeFromInput() {
+    const fontSize = document.getElementById('fontSizeInput').value;
+    document.getElementById('fontSizeSlider').value = fontSize;
+    applyFontSize(fontSize);
+}
+
+// Применение размера шрифта ко всей странице
+function applyFontSize(fontSize) {
+    document.querySelectorAll('*').forEach(element => {
+        element.style.fontSize = fontSize + 'px';
+    });
+}
+
+// Изменение цвета текста для всей страницы
+function changeTextColor() {
+    const textColor = document.getElementById('textColorPicker').value;
+    document.querySelectorAll('*').forEach(element => {
+        element.style.color = textColor;
+    });
+}
+
+// Изменение цвета фона
+function changeBackgroundColor() {
+    const bgColor = document.getElementById('bgColorPicker').value;
+    document.body.style.backgroundColor = bgColor;
+}
