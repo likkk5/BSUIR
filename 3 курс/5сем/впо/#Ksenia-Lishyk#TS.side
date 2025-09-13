@@ -1,0 +1,406 @@
+{
+  "id": "cf6f33b6-d431-460b-9497-d99b24301f64",
+  "version": "2.0",
+  "name": "#Ksenia-Lishyk#TS",
+  "url": "https://sumdu.edu.ua/uk/",
+  "tests": [{
+    "id": "84511495-d3df-4e5e-814e-3fd7a1b9018b",
+    "name": "TestCase1",
+    "commands": [{
+      "id": "c8a0c607-2b07-445d-9766-baa00a51cb75",
+      "comment": "",
+      "command": "open",
+      "target": "https://sumdu.edu.ua/uk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9fb20eef-063f-40c3-b69c-efecd9b67657",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x838",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35460b4e-51b8-4f94-8a35-892177129f50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-search",
+      "targets": [
+        ["css=.fa-search", "css:finder"],
+        ["xpath=//div[@id='collapsMenu']/div/div[3]/a/i", "xpath:idRelative"],
+        ["xpath=//div[3]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43436862-c621-4c02-8edc-a40329871290",
+      "comment": "",
+      "command": "click",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//div[@id='search-form']/form/fieldset/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cfd1fd9-af7a-4bda-93b3-d8fae821dc24",
+      "comment": "",
+      "command": "click",
+      "target": "id=awesomplete_list_1_item_2",
+      "targets": [
+        ["id=awesomplete_list_1_item_2", "id"],
+        ["css=#awesomplete_list_1_item_2", "css:finder"],
+        ["xpath=//li[@id='awesomplete_list_1_item_2']", "xpath:attributes"],
+        ["xpath=//ul[@id='awesomplete_list_1']/li[3]", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'netcracker')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae4423f4-d106-470c-851c-4872f662dc89",
+      "comment": "",
+      "command": "type",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//div[@id='search-form']/form/fieldset/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "netcracker"
+    }, {
+      "id": "397d0049-bcbd-4307-b577-cc6e08e6293f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='search-form']/form/fieldset/div/div/button", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Пошук')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddb0728c-21eb-4c44-8442-f572fe738a57",
+      "comment": "",
+      "command": "click",
+      "target": "css=.result__item:nth-child(1) .result__title-text",
+      "targets": [
+        ["css=.result__item:nth-child(1) .result__title-text", "css:finder"],
+        ["xpath=//ol[@id='search-result-list']/li/p/a/span", "xpath:idRelative"],
+        ["xpath=//p/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Навчально-консультаційний центр Netcracker')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de11f908-de84-4caf-8a9a-709bae48460b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reg-button",
+      "targets": [
+        ["css=.reg-button", "css:finder"],
+        ["xpath=//a[contains(text(),'Зареєструватись')]", "xpath:link"],
+        ["xpath=//section[@id='wrapper']/section[2]/div/div/div/main/div[2]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://sumy.edu-netcracker.com/'])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9315",
+      "windowTimeout": 1000
+    }, {
+      "id": "fd02f785-b067-4b35-9a97-9f44330ec220",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "199b0520-b4e8-4eed-a35a-4622defc7803",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9315}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50876325-5590-4757-abfd-81e62f8e09f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-button_submit_dark__q1NwT",
+      "targets": [
+        ["css=.submit-button_submit_dark__q1NwT", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='banner']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "577ed536-9b5b-414c-9ddd-83f6c0139173",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3) span:nth-child(2)",
+      "targets": [
+        ["css=a:nth-child(3) span:nth-child(2)", "css:finder"],
+        ["xpath=//a[3]/button/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'TEST AUTOMATION')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1176",
+      "windowTimeout": 2000
+    }, {
+      "id": "350c8d27-22f4-4940-9e67-3af49cf2b1fa",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1176}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4a4d998-8f56-4656-9e92-c32d3c3d0bac",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "title=Навчально-консультаційний центр Netcracker",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1324400-7b55-47b0-bd69-74cba5ce650a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0cb21220-c536-456d-872b-6589838f796e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reg-button",
+      "targets": [
+        ["css=.reg-button", "css:finder"],
+        ["xpath=//a[contains(text(),'Зареєструватись')]", "xpath:link"],
+        ["xpath=//section[@id='wrapper']/section[2]/div/div/div/main/div[2]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://sumy.edu-netcracker.com/'])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win240",
+      "windowTimeout": 2000
+    }, {
+      "id": "d17a257a-3c83-4507-a0d2-a742aecfe681",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win240}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e25f8d88-cfc7-4845-8543-dc8f48a97cab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-button_submit_dark__q1NwT",
+      "targets": [
+        ["css=.submit-button_submit_dark__q1NwT", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='banner']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21f98b56-da2a-4beb-ab5a-050f6b7055f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3) > .ant-btn",
+      "targets": [
+        ["css=a:nth-child(3) > .ant-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[12]", "xpath:attributes"],
+        ["xpath=//a[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'TEST AUTOMATION')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4363",
+      "windowTimeout": 2000
+    }, {
+      "id": "436feb76-ddda-4f75-87e2-fc3860a76fe3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4363}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfa43ad2-a4be-4b65-b6f1-de159d869c83",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Курс: Test Automation (TA)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8f96a03d-1fd9-49b7-89ea-b3d3b086218a",
+    "name": "TestCase11",
+    "commands": [{
+      "id": "c9cd5551-4023-4d82-962c-54f33adca40e",
+      "comment": "",
+      "command": "open",
+      "target": "https://sumdu.edu.ua/uk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ee94cff-71b3-498d-bcb6-c784083c4fbf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x838",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db951e74-a7b9-422d-96c7-c20999a61bb2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-search",
+      "targets": [
+        ["css=.fa-search", "css:finder"],
+        ["xpath=//div[@id='collapsMenu']/div/div[3]/a/i", "xpath:idRelative"],
+        ["xpath=//div[3]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bebbd6cf-80f2-44e8-9301-d786a0ddddf4",
+      "comment": "",
+      "command": "click",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//div[@id='search-form']/form/fieldset/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b465577c-d276-40e2-b0e8-747cafd73513",
+      "comment": "",
+      "command": "click",
+      "target": "id=awesomplete_list_1_item_2",
+      "targets": [
+        ["id=awesomplete_list_1_item_2", "id"],
+        ["css=#awesomplete_list_1_item_2", "css:finder"],
+        ["xpath=//li[@id='awesomplete_list_1_item_2']", "xpath:attributes"],
+        ["xpath=//ul[@id='awesomplete_list_1']/li[3]", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'netcracker')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f52edab5-06f3-4121-a2e9-05679f21a423",
+      "comment": "",
+      "command": "type",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//div[@id='search-form']/form/fieldset/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "netcracker"
+    }, {
+      "id": "f2775607-edcb-4352-97b7-d957dec1d070",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='search-form']/form/fieldset/div/div/button", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Пошук')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07e0510c-44c9-4ffb-8f9b-00d0cc28b775",
+      "comment": "",
+      "command": "click",
+      "target": "css=.result__item:nth-child(1) .result__title-text",
+      "targets": [
+        ["css=.result__item:nth-child(1) .result__title-text", "css:finder"],
+        ["xpath=//ol[@id='search-result-list']/li/p/a/span", "xpath:idRelative"],
+        ["xpath=//p/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Навчально-консультаційний центр Netcracker')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "545a7a71-8e2d-45bf-bf52-1705ec2016ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reg-button",
+      "targets": [
+        ["css=.reg-button", "css:finder"],
+        ["xpath=//a[contains(text(),'Зареєструватись')]", "xpath:link"],
+        ["xpath=//section[@id='wrapper']/section[2]/div/div/div/main/div[2]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://sumy.edu-netcracker.com/'])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6254",
+      "windowTimeout": 2000
+    }, {
+      "id": "2d64a82d-55ed-4191-a9c1-6da742bdc89a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6254}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eeb97ee5-3430-48a3-b64e-ad26a29ac48f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-button_submit_dark__q1NwT",
+      "targets": [
+        ["css=.submit-button_submit_dark__q1NwT", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='banner']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "093229c1-b343-4c2f-8702-789b9f5e8e47",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3) span:nth-child(2)",
+      "targets": [
+        ["css=a:nth-child(3) span:nth-child(2)", "css:finder"],
+        ["xpath=//a[3]/button/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'TEST AUTOMATION')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9280",
+      "windowTimeout": 2000
+    }, {
+      "id": "57ea20f0-0754-4d61-9bcb-5ec7b01393a6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9280}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "219e95fb-af4f-419b-bea7-dd75565f8b93",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["84511495-d3df-4e5e-814e-3fd7a1b9018b"]
+  }],
+  "urls": ["https://sumdu.edu.ua/uk/search", "https://sumdu.edu.ua/uk/"],
+  "plugins": []
+}
