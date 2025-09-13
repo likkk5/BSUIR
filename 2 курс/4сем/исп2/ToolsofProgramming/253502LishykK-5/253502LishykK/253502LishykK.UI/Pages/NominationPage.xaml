@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_253502LishykK.UI.Pages.NominationPage"
+             xmlns:viewmodels="clr-namespace:_253502LishykK.UI.ViewModels"
+             xmlns:pages="clr-namespace:_253502LishykK.UI.Pages"
+             xmlns:valueconverter="clr-namespace:_253502LishykK.UI.ValueConverter"
+             x:DataType="viewmodels:NominationPageViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="NominationPage">
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Loaded" Command="{Binding UpdateGroupListCommand }"/>
+    </ContentPage.Behaviors>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <valueconverter:PointsToColorValueConverter x:Key="PointsToColorValueConverter" />
+            <valueconverter:IdToImageSourceConverter x:Key="IdToImageConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <!-- Выбор номинации -->
+        <Picker ItemsSource="{Binding Nominations}"
+                    ItemDisplayBinding="{Binding Name}"
+                    SelectedItem="{Binding SelectedNomination}"
+                    Title="Select Nomination" />
+
+        <!-- Кнопка для загрузки участников -->
+        <Button Text="Load Participants"
+                    Command="{Binding LoadParticipantsCommand}" />
+
+        <!-- Список участников -->
+        <CollectionView ItemsSource="{Binding Participants}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="5" Padding="10" BackgroundColor="{Binding MandatoryProperty, Converter={StaticResource PointsToColorValueConverter}}" CornerRadius="10" HasShadow="True">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+
+                            <Image Source="{Binding Id, Converter={StaticResource IdToImageConverter}}" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Center" Grid.Column="0" Grid.RowSpan="2" Margin="0,0,10,0"/>
+
+                            <Label Text="{Binding Name}" FontAttributes="Bold" Grid.Column="1" Grid.Row="0"/>
+                            <Label Text="{Binding MandatoryProperty, StringFormat='Баллы участника: {0}'}" Grid.Column="1" Grid.Row="1"/>
+                        </Grid>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:NominationPageViewModel}}, Path=ShowParticipantDetailsCommand}" CommandParameter="{Binding .}" />
+                        </Frame.GestureRecognizers>
+                        
+                        <!--<VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup Name="CommonStates">
+                                <VisualState Name="Selected">
+                                    <VisualState.Setters>
+                                        <Setter Property="BackgroundColor" Value="LightGray" TargetName="Frame" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>-->
+                        
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+
+    </StackLayout>
+
+</ContentPage>

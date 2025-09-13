@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lishyk253502Calculator.View.ProgressBarPage"
+             Title="ProgressBarPage">
+    <Grid Padding="5,0" ColumnSpacing="1" RowSpacing="1"
+        ColumnDefinitions="*,*,0.1*,*,*" RowDefinitions="*,*,*,*,0.5*,0.5*">
+
+        <Image  Grid.RowSpan="6" Grid.ColumnSpan="5" Aspect="AspectFill"
+            HorizontalOptions="FillAndExpand" Source="fon4.jpg" VerticalOptions="FillAndExpand"/>
+
+        <VerticalStackLayout Grid.Row="1" Grid.ColumnSpan="5">
+            <Label 
+                x:Name="label"
+                Text="Integrate[Sin(x),{x,0,1}] = ..."
+                FontAttributes="None"
+                FontSize="25"
+                TextColor="White"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+
+        <StackLayout Padding="20" Grid.Row="3" Grid.ColumnSpan="5">
+            <ProgressBar 
+                x:Name="progressBar"
+                Progress="0"
+                Background="White"
+                ProgressColor="#EEC6C6"/>
+            <Label x:Name="label_progress" Text="0%" FontSize="20"
+                VerticalOptions="Center" HorizontalOptions="Center" />
+        </StackLayout>
+
+        <Button 
+                x:Name="startButton"
+                Grid.Row="4"
+                Grid.Column="1"
+                Clicked="OnStart"
+                BackgroundColor="Transparent"
+                BorderColor="Transparent"
+                CornerRadius="5"
+                FontSize="20"
+                FontFamily="OpenSans-Semibold.ttf"
+                TextColor="White"
+                Text="Start"
+                IsEnabled="True">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="TextColor" Value="Gray" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+
+        <Button 
+                    x:Name="CancelBTN"
+                    Grid.Row="4"
+                    Grid.Column="3"
+                    Clicked="OnCancel" 
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"
+                    CornerRadius="5"
+                    FontSize="20"
+                    FontFamily="OpenSans-Semibold.ttf"
+                    TextColor="White"
+                    Text="Cancel">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="TextColor" Value="Gray" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+
+    </Grid>
+
+</ContentPage>

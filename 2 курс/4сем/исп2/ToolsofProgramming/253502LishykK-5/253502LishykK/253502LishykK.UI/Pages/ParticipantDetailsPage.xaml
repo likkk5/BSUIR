@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:_253502LishykK.UI.ViewModels"
+             x:Class="_253502LishykK.UI.Pages.ParticipantDetailsPage"
+             xmlns:valueconverter="clr-namespace:_253502LishykK.UI.ValueConverter"
+             x:DataType="viewmodels:ParticipantDetailsViewModel"
+             Title="ParticipantDetailsPage">
+    <ContentPage.Resources>
+        <valueconverter:IdToImageSourceConverter x:Key="IdToImageConverter" />
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <!-- Разметка для отображения подробной информации об участнике -->
+        <StackLayout>
+            <Label x:Name="entry1" Text="{Binding Participant.Name, StringFormat='Имя участника: {0}'}" />
+            <Label Text="{Binding Participant.MandatoryProperty, StringFormat='Баллы участника: {0}'}"/>
+            <Label Text="{Binding Participant.AdditionalProperty1, StringFormat='Категория: {0}'}" />
+            <Label Text="{Binding Participant.AdditionalProperty2, StringFormat='Тайминг: {0}'}" />
+            <Label Text="{Binding Participant.Nomination.Name, StringFormat='Номинация: {0}'}" />
+
+            <!-- Кнопка для выбора изображения -->
+            <Button Text="Select Image" Command="{Binding SelectImageCommand}" />
+
+            <!-- Предпросмотр выбранного изображения -->
+            <Image Source="{Binding SelectedImageBytes, Converter={StaticResource IdToImageConverter}}" WidthRequest="600" />
+
+            <!-- Кнопка для сохранения участника -->
+            <!--<Button Text="Save Participant" Command="{Binding SaveCommand}" />-->
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

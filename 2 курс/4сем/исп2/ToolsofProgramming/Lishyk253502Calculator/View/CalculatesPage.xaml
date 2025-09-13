@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lishyk253502Calculator.View.CalculatesPage"
+             Title="CalculatesPage">
+    <Grid RowDefinitions="2*,*,*,*,*,*,*" ColumnDefinitions="*,*,*,*,*"
+  ColumnSpacing="2" RowSpacing="2" Padding ="5" BackgroundColor="Black">
+        <ScrollView Orientation="Horizontal" Grid.Row="0" Grid.ColumnSpan="5" HorizontalOptions="End">
+            <StackLayout Orientation="Horizontal">
+               <Label x:Name="Result"
+               FontSize="64" 
+               FontAttributes="Bold"
+               Grid.ColumnSpan="5"
+               Text="0"
+               TextColor="DarkOrange"
+               BackgroundColor="Black"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="Start"
+               LineBreakMode="NoWrap"
+               Grid.Row="0"/>
+            </StackLayout>
+        </ScrollView>
+    
+        <Button Text="MC" Grid.Row="1" Grid.Column="4"
+Clicked="OnMC" TextColor="DarkOrange" BackgroundColor="#2e2d2d" FontSize="24" x:Name="OnMСButton" IsEnabled="False">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="MR" Grid.Row="2" Grid.Column="4"
+Clicked="OnMR" TextColor="DarkOrange" BackgroundColor="#2e2d2d" FontSize="24" x:Name="OnMRButton" IsEnabled="False">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="M+" Grid.Row="3" Grid.Column="4"
+Clicked="OnMPlus" TextColor="DarkOrange" BackgroundColor="#696969" FontSize="24" x:Name="OnMplusButton">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="M-" Grid.Row="4" Grid.Column="4"
+Clicked="OnMMin" TextColor="DarkOrange" BackgroundColor="#696969" FontSize="24" x:Name="OnMMinButton">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="MS" Grid.Row="5" Grid.Column="4"
+Clicked="OnMS" TextColor="DarkOrange" BackgroundColor="#696969" FontSize="24" x:Name="OnMSButton">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="MRC" Grid.Row="6" Grid.Column="4"
+Clicked="OnMRC" TextColor="DarkOrange" BackgroundColor="#2e2d2d" FontSize="24" x:Name="OnMRCButton" IsEnabled="False">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+
+        <Button Text="%" Grid.Row="1" Grid.Column="0"
+        Clicked="OnPercentage" TextColor="DarkOrange" BackgroundColor="LightGrey" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="|x|" Grid.Row="1" Grid.Column="1"
+        Clicked="OnModule" TextColor="DarkOrange" BackgroundColor="LightGrey" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="C" Grid.Row="1" Grid.Column="2"
+        Clicked="OnClear" TextColor="DarkOrange" BackgroundColor="LightGrey" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="⌫" Grid.Row="1" Grid.Column="3"
+        Clicked="OnBack" TextColor="DarkOrange" BackgroundColor="LightGray" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+
+        <Button Text="1/x" Grid.Row="2" Grid.Column="0"
+Clicked="OnFraction" TextColor="DarkOrange" BackgroundColor="LightGrey" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="x^2" Grid.Row="2" Grid.Column="1"
+Clicked="OnDegree" TextColor="DarkOrange" BackgroundColor="LightGrey" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="sqrt" Grid.Row="2" Grid.Column="2"
+Clicked="OnSqrt" TextColor="DarkOrange" BackgroundColor="LightGrey" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="÷" Grid.Row="2" Grid.Column="3"
+Clicked="OnSelectDiv" TextColor="DarkOrange" BackgroundColor="LightGrey" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+
+        <Button Text="7" Grid.Row="3" Grid.Column="0"
+        Clicked="OnSelectNumber" TextColor="Black" BackgroundColor="White" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#E65100" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="8" Grid.Row="3" Grid.Column="1"
+        Clicked="OnSelectNumber" TextColor="Black" BackgroundColor="White" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#E65100" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="9" Grid.Row="3" Grid.Column="2"
+        Clicked="OnSelectNumber" TextColor="Black" BackgroundColor="White" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#E65100" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="×" Grid.Row="3" Grid.Column="3"
+         Clicked="OnSelectMult" TextColor="DarkOrange" BackgroundColor="LightGrey" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+
+        <Button Text="4" Grid.Row="4" Grid.Column="0"
+       Clicked="OnSelectNumber" TextColor="Black" BackgroundColor="White" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#E65100" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="5" Grid.Row="4" Grid.Column="1"
+       Clicked="OnSelectNumber" TextColor="Black" BackgroundColor="White" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#E65100" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="6" Grid.Row="4" Grid.Column="2"
+       Clicked="OnSelectNumber" TextColor="Black" BackgroundColor="White" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#E65100" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="-" Grid.Row="4" Grid.Column="3"
+       Clicked="OnSelectSub" TextColor="DarkOrange" BackgroundColor="LightGrey" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+
+        <Button Text="1" Grid.Row="5" Grid.Column="0"
+       Clicked="OnSelectNumber" TextColor="Black" BackgroundColor="White" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#E65100" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="2" Grid.Row="5" Grid.Column="1"
+       Clicked="OnSelectNumber" TextColor="Black" BackgroundColor="White" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#E65100" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="3" Grid.Row="5" Grid.Column="2"
+       Clicked="OnSelectNumber" TextColor="Black" BackgroundColor="White" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#E65100" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="+" Grid.Row="5" Grid.Column="3"
+       Clicked="OnSelectSum" TextColor="DarkOrange" BackgroundColor="LightGrey" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+
+        <Button Text="+/-" Grid.Row="6" Grid.Column="0"
+       Clicked="OnNegative" TextColor="Black" BackgroundColor="White" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#E65100" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="0" Grid.Row="6" Grid.Column="1" 
+       Clicked="OnSelectNumber" TextColor="Black" BackgroundColor="White" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#E65100" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="," Grid.Row="6" Grid.Column="2" 
+       Clicked="OnSelectNumber" TextColor="Black" BackgroundColor="White" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#E65100" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+        <Button Text="=" Grid.Row="6" Grid.Column="3" 
+       Clicked="OnCalculate" TextColor="White" BackgroundColor="DarkOrange" FontSize="24">
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#212121" />
+                </Trigger>
+            </Button.Triggers>
+        </Button>
+    </Grid>
+</ContentPage>

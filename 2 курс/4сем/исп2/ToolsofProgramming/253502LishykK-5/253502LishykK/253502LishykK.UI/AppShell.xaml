@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="_253502LishykK.UI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:_253502LishykK.UI"
+    xmlns:pages="clr-namespace:_253502LishykK.UI.Pages"
+    Shell.FlyoutBehavior="Flyout"
+    FlyoutBackgroundColor="DimGrey"
+    Title="_253502LishykK.UI"
+    TabBarIsVisible="False">
+    <Shell.TitleView>
+        <Grid RowDefinitions="45" ColumnDefinitions=".10*, .30*, .20*, .10*, .10*, .20*, .20*" ColumnSpacing="5" RowSpacing="5" BackgroundColor="DimGrey">
+
+            <Label x:Name="mylabel" FontSize="Large" FontAttributes="Bold" TextColor="CadetBlue" Grid.Column="1" Grid.Row="0" HeightRequest="35" FontFamily="OpenSans-Semibold.ttf"/>
+            <Button Text="Edit Nominations" Clicked="OnAddButtonClicked" Grid.Column="5" Grid.Row="0" HeightRequest="35"></Button>
+            <Button Text="Edit Participants" Clicked="OnEditButtonClicked" Grid.Column="6" Grid.Row="0" HeightRequest="35"></Button>
+
+        </Grid>
+    </Shell.TitleView>
+
+
+    <FlyoutItem Route="home" Title="Home" Icon="home2.png">
+        <ShellContent Route="main"  ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+    <FlyoutItem Route="nomination" Title="Nominations" Icon="list2.png">
+        <ShellContent Route="nomination" ContentTemplate="{DataTemplate pages:NominationPage}" />
+    </FlyoutItem>
+    <FlyoutItem Route="nominationadd" Title="Nominationadd" Icon="edit2.png">
+        <ShellContent Route="nominationadd" ContentTemplate="{DataTemplate pages:NominationAddEditPage}" />
+    </FlyoutItem>
+    <FlyoutItem Route="participantnadd" Title="Participantadd" Icon="participants2.png">
+        <ShellContent Route="participantnadd" ContentTemplate="{DataTemplate pages:ParticipantAddEditPage}" />
+    </FlyoutItem>
+
+</Shell>

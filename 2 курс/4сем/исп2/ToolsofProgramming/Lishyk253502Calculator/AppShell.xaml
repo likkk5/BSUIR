@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Lishyk253502Calculator.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Lishyk253502Calculator"
+    xmlns:view="clr-namespace:Lishyk253502Calculator.View"
+    Shell.FlyoutBehavior="Flyout"
+    FlyoutBackgroundColor="DimGrey"
+    Title="Lishyk253502Calculator">
+
+
+    <FlyoutItem Route="home" Title="Home" Icon="home2.png">
+        <ShellContent Route="main"  ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+    <FlyoutItem Route="calculate" Title="Calculator" Icon="calc.png">
+        <ShellContent Route="calculate"  ContentTemplate="{DataTemplate view:CalculatesPage}" />
+    </FlyoutItem>
+    <FlyoutItem Route="progressbar" Title="ProgressBar" Icon="loading2.png">
+        <ShellContent Route="progressbar"  ContentTemplate="{DataTemplate view:ProgressBarPage}" />
+    </FlyoutItem>
+    <FlyoutItem Route="sqlitedemo" Title="SQLiteDemo" Icon="database2.png">
+        <ShellContent Route="sqlitedemo"  ContentTemplate="{DataTemplate view:SQLiteDemoPage}" />
+    </FlyoutItem>
+    <FlyoutItem Route="currencyconverter" Title="CurrencyConverter" Icon="money1.png">
+        <ShellContent Route="currencyconverter"  ContentTemplate="{DataTemplate view:CurrencyConverterPage}" />
+    </FlyoutItem>
+
+</Shell>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Lishyk253502Calculator.View"
+             x:Class="Lishyk253502Calculator.View.CurrencyConverterPage"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="CurrencyConverterPage">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Image Source="fon43.jpg" Grid.ColumnSpan="3"
+               Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+
+        <StackLayout Grid.Column="0">
+            <DatePicker x:Name="DatePicker" DateSelected="OnDateSelected" FontSize="18" TextColor="Black"/>
+            <Switch x:Name="ReverseSwitch" Toggled="OnReverseSwitchToggled"/>
+        </StackLayout>
+
+        <StackLayout Grid.Column="1">
+            <Label x:Name="ConversionDirectionLabel" HorizontalOptions="CenterAndExpand" FontSize="18" FontAttributes="Bold"/>
+            <Picker x:Name="CurrencyPicker" Title="Select Currency" SelectedIndexChanged="OnCurrencySelectedIndexChanged" 
+                    TitleColor="Black" FontSize="18" FontFamily="OpenSans-Semibold.ttf"/>
+
+            <Entry x:Name="AmountEntry" Placeholder="Enter amount" Keyboard="Numeric" Completed="OnAmountEntryCompleted" FontSize="18"/>
+            <Label x:Name="ResultLabel" Text="" FontSize="22" FontAttributes="Bold" TextColor="#005726"
+                   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

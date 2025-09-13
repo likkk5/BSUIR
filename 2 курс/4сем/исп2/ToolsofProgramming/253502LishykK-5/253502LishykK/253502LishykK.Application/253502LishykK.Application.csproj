@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>_253502LishykK.Application</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\253502LishykK.Domain\253502LishykK.Domain.csproj" />
+    <ProjectReference Include="..\253502LishykK.Persistence\253502LishykK.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NominationUseCase\Commands\" />
+    <Folder Include="ParticipantUseCase\Queries\" />
+  </ItemGroup>
+
+</Project>

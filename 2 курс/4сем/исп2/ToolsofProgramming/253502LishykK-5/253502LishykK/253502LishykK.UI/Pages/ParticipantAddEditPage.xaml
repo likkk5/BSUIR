@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_253502LishykK.UI.Pages.ParticipantAddEditPage"
+             xmlns:viewmodels="clr-namespace:_253502LishykK.UI.ViewModels"
+             xmlns:pages="clr-namespace:_253502LishykK.UI.Pages"
+             xmlns:valueconverter="clr-namespace:_253502LishykK.UI.ValueConverter"
+             x:DataType="viewmodels:ParticipantAddEditPageViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="ParticipantAddEditPage">
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Loaded" Command="{Binding UpdateGroupListCommand }"/>
+    </ContentPage.Behaviors>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <valueconverter:PointsToColorValueConverter x:Key="PointsToColorValueConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView> 
+
+    <StackLayout>
+        <!-- Выбор номинации -->
+        <Picker ItemsSource="{Binding Nominations}"
+                ItemDisplayBinding="{Binding Name}"
+                SelectedItem="{Binding SelectedNomination}"
+                Title="Select Nomination" />
+
+        <!-- Кнопка для загрузки участников -->
+        <Button Text="Load Participants"
+                Command="{Binding LoadParticipantsCommand}" />
+
+        <!-- Список участников -->
+        <CollectionView ItemsSource="{Binding Participants}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="5" Padding="10" BackgroundColor="{Binding MandatoryProperty, Converter={StaticResource PointsToColorValueConverter}}" CornerRadius="10" HasShadow="True">
+                        <StackLayout>
+                            <Label Text="{Binding Name}" FontAttributes="Bold" />
+                            <Label Text="{Binding MandatoryProperty, StringFormat='Баллы участника: {0}'}" />
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:ParticipantAddEditPageViewModel}}, Path=SelectParticipantCommand}" CommandParameter="{Binding .}" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        
+        <!-- Выбор целевой группы -->
+        <Picker ItemsSource="{Binding Nominations}"
+                ItemDisplayBinding="{Binding Name}"
+                SelectedItem="{Binding SelectedTargetNomination}"
+                Title="Select Target Nomination" />
+        
+        <ScrollView>
+            <StackLayout Padding="20">
+
+                <!-- Участник -->
+                <Entry Placeholder="Participant Name"
+                       Text="{Binding Name}"
+                       Margin="0,10,0,0" />
+
+                <!-- Баллы -->
+                <Entry Placeholder="Points"
+                       Text="{Binding MandatoryProperty}"
+                       Margin="0,10,0,0" />
+
+                <!-- Дополнительное свойство 1 -->
+                <Entry Placeholder="Category"
+                       Text="{Binding AdditionalProperty1}"
+                       Margin="0,10,0,0" />
+
+                <!-- Дополнительное свойство 2 -->
+                <Entry Placeholder="Time"
+                       Text="{Binding AdditionalProperty2}"
+                       Margin="0,10,0,0" />
+
+                <!-- Кнопка для сохранения -->
+                <Button Text="Save"
+                        Command="{Binding SaveCommand}"
+                        Margin="0,20,0,0" />
+                
+                <!-- Кнопка для перемещения в другую группу -->
+                <Button Text="Move to Group"
+                        Command="{Binding MoveToGroupCommand}"
+                        Margin="0,20,0,0" />
+            </StackLayout>
+        </ScrollView>
+
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

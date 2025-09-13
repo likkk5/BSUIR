@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lishyk253502Calculator.View.SQLiteDemoPage"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="SQLiteDemoPage">
+    <Grid>
+        <Image Aspect="AspectFill"
+    HorizontalOptions="FillAndExpand" Source="fon22.jpg" VerticalOptions="FillAndExpand"/>
+        <StackLayout VerticalOptions="Center">
+            <Label Text="Select Sushi Set" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" FontSize="30" FontFamily="OpenSans-Semibold.ttf" TextColor="Black"/>
+            <Picker x:Name="SushiSetPicker" SelectedIndexChanged="OnSushiSetSelectedIndexChanged" 
+                     HorizontalOptions="CenterAndExpand" TextColor="White" FontFamily="OpenSans-Semibold.ttf" FontSize="26"/>
+            <CollectionView x:Name="SushisCollectionView">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label Text="{Binding Name}" TextColor="Black" FontSize="22" FontFamily="OpenSans-Semibold.ttf" 
+                                   HorizontalOptions="Center" HorizontalTextAlignment="Start"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <!--<Button Text="Clear Database" Clicked="OnClearDatabaseButtonClicked" BackgroundColor="#EB3B15" 
+                    HeightRequest="40" WidthRequest="150" VerticalOptions="End" HorizontalOptions="Center"/>-->
+        </StackLayout>
+    </Grid>
+</ContentPage>
+
+    
+<!--<Label Text="Суши сеты" TextColor="Black" FontSize="20" FontFamily="OpenSans-Semibold.ttf"/>
+<Entry Text="{Binding Name}" TextColor="Black" Placeholder="Сеты"/>-->
