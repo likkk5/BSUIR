@@ -10,3 +10,6 @@
 [submodule "3 курс/5сем/СТРweb-пр/pythonvenv"]
 	path = 3 курс/5сем/СТРweb-пр/pythonvenv
 	url = https://github.com/likkk5/pythonvenv.git
+[submodule "3 курс/5сем/СТРweb-пр/react project"]
+	path = 3 курс/5сем/СТРweb-пр/react project
+	url = https://github.com/likkk5/react-project.git
