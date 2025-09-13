@@ -1,0 +1,61 @@
+  ADDR B1 B2 B3 B4 thrass11.tmp                                     PAGE       1
+
+                    org $8100
+
+  8100 C6 01        ldab #1
+  8102 F7 82 08     stab $8208
+  8105 C6 02        ldab #2
+  8107 F7 82 07     stab $8207
+  810A C6 03        ldab #3
+  810C F7 82 06     stab $8206
+  810F C6 04        ldab #4
+  8111 F7 82 05     stab $8205
+  8114 C6 05        ldab #5
+  8116 F7 82 04     stab $8204
+  8119 C6 06        ldab #6
+  811B F7 82 03     stab $8203
+  811E C6 07        ldab #7
+  8120 F7 82 02     stab $8202
+  8123 C6 08        ldab #8
+  8125 F7 82 01     stab $8201
+  8128 C6 00        ldab #0
+  812A F7 82 00     stab $8200
+
+  812D CE 82 08     ldx #$8208
+  8130 86 01        ldaa #1
+
+                   ;loop:
+                    ;ldab 0,x
+                    ;lslb
+                    ;stab 0,x
+                    ;dex
+                    ;deca
+                    ;bne loop
+                    ;rts
+
+  8132 CE 81 FF     ldx #$81ff
+  8135 86 03        ldaa #3
+                   loop:
+  8137 08           inx
+  8138 16           tab
+  8139 81 00        cmpa #0
+  813B 26 07        bne rorrr
+                   compare:
+  813D 8C 82 08     cpx #$8208
+  8140 26 F5        bne loop
+  8142 27 09        beq end
+
+                   rorrr:
+  8144 66 00        ror 0,x
+  8146 5A           decb
+  8147 C1 00        cmpb #0
+  8149 26 F9        bne rorrr
+  814B 27 F0        beq compare
+                   end:
+
+  Symbol Table 
+
+  RORRR              8144
+  END                814D
+  COMPARE            813D
+  LOOP               8137

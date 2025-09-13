@@ -1,0 +1,9 @@
+  ADDR B1 B2 B3 B4 thrass11.tmp                                     PAGE       1
+
+                    org $8000
+  8000 CC 03 FC     ldd #1020
+  8003 CE 02 00     ldx #512
+  8006 3C           pshx
+  8007 8F           xgdx
+  8008 18 38        puly
+  800A 02           idiv

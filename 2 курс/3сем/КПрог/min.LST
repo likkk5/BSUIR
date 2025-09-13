@@ -1,0 +1,35 @@
+  ADDR B1 B2 B3 B4 thrass11.tmp                                     PAGE       1
+
+                    org $8000
+
+  8000 86 2D        ldaa #45
+  8002 B7 82 00     staa $8200
+  8005 86 2C        ldaa #44
+  8007 B7 82 01     staa $8201
+  800A 86 6F        ldaa #111
+  800C B7 82 02     staa $8202
+  800F 86 63        ldaa #99
+  8011 B7 82 03     staa $8203
+
+  8014 CE 82 00     ldx #$8200
+
+                   loopStart:
+  8017 A6 00         ldaa 0,x
+  8019 08            inx
+  801A A1 00         cmpa 0,x
+  801C 24 02         bhs notSmaller
+  801E A7 00         staa 0,x
+
+                   notSmaller:
+  8020 8C 82 04      cpx #$8204
+  8023 26 F2         bne loopStart
+
+                   finish:
+  8025 09            dex
+  8026 E6 00         ldab 0,x
+
+  Symbol Table 
+
+  FINISH             8025
+  NOTSMALLER         8020
+  LOOPSTART          8017

@@ -1,0 +1,10 @@
+  ADDR B1 B2 B3 B4 C:\учёба\КПрог\Laba1(6).asm                      PAGE       1
+
+                    org $8000
+  8000 CE 01 F0     ldx #$1f0
+  8003 18 30        tsy
+  8005 35           txs
+  8006 3C           pshx
+  8007 36           psha
+  8008 30           tsx
+  8009 18 35        tys

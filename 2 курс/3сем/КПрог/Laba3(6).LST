@@ -1,0 +1,44 @@
+  ADDR B1 B2 B3 B4 C:\учёба\КПрог\Laba3(6).asm                      PAGE       1
+
+                    org $8000
+  8000 CE 82 1F     ldx #$821f
+  8003 DF 00        stx $0000
+  8005 C6 08        ldab #8
+  8007 D7 02        stab $0002
+  8009 CE 82 00     ldx #$8200
+  800C C6 00        ldab #0
+  800E 18 CE 00 00  ldy #0
+  8012 D7 05        stab $0005
+  8014 A6 00       start:  ldaa $0000,x
+  8016 48          label:  asla
+  8017 97 03         staa $0003
+  8019 07            tpa ;save ccr to A
+  801A 97 04         staa $0004
+  801C 96 05         ldaa $0005
+  801E 4C            inca
+  801F 91 02         cmpa $0002
+  8021 2E 10         bgt iter
+  8023 97 05         staa $0005
+  8025 96 04         ldaa $0004
+  8027 06            tap
+  8028 96 03               ldaa $0003
+  802A 25 02         bcs label2
+  802C 24 E8         bcc label
+  802E 18 08       label2: iny
+  8030 7E 80 16      jmp label
+  8033 08          iter: inx
+  8034 9C 00             cpx $0000
+  8036 2E 07             bgt finish
+  8038 86 00             ldaa #0
+  803A 97 05             staa $0005
+  803C 7E 80 14          jmp start
+  803F 18 3C       finish: pshy
+  8041 38                  pulx
+
+  Symbol Table 
+
+  LABEL2             802E
+  START              8014
+  LABEL              8016
+  FINISH             803F
+  ITER               8033

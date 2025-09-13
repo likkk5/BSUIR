@@ -1,0 +1,18 @@
+print firstfile
+    print secondfile
+    print thirdfile
+    mov ah, 9
+    lea dx, choose_program_prompt
+    int 21h
+    cmp al, '6'
+    je EXE6
+    cmp al, '5'
+    je EXE5
+    cmp al, '4'
+    je EXE4
+    
+EXE6:
+    
+EXE5:
+
+EXE4:

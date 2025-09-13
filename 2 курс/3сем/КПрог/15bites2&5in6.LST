@@ -1,0 +1,47 @@
+  ADDR B1 B2 B3 B4 C:\учёба\КПрог\15bites2&5in6.asm                 PAGE       1
+
+                    org $8000
+
+  8000 C6 04        ldab #%00000100
+  8002 F7 82 00     stab $8200
+  8005 C6 20        ldab #%00100000
+  8007 F7 82 01     stab $8201
+  800A C6 00        ldab #%00000000
+  800C F7 82 02     stab $8202
+  800F C6 24        ldab #%00100100
+  8011 F7 82 03     stab $8203
+
+  8014 CE 82 00     ldx #$8200
+
+                   loop:
+  8017 A6 00        ldaa 0,x
+  8019 E6 00        ldab 0,x
+  801B 84 04        anda #%00000100
+  801D C4 20        andb #%00100000
+  801F 48           lsla
+  8020 48           lsla
+  8021 48           lsla
+  8022 D7 01        stab $1
+  8024 98 01        eora $1
+  8026 81 00        cmpa #0
+  8028 26 08        bne make_one
+  802A 27 0F        beq make_zero
+  802C 08           inx
+  802D 8C 82 20     cpx #$8220
+  8030 23 E5        bls loop
+                   make_one:
+  8032 1C 00 40     bset 0,x,#%01000000
+  8035 08           inx
+  8036 8C 82 20     cpx #$8220
+  8039 23 DC        bls loop
+                   make_zero:
+  803B 1D 00 40     bclr 0,x,#%01000000
+  803E 08           inx
+  803F 8C 82 20     cpx #$8220
+  8042 23 D3        bls loop
+
+  Symbol Table 
+
+  MAKE_ZERO          803B
+  MAKE_ONE           8032
+  LOOP               8017

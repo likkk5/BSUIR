@@ -1,0 +1,79 @@
+  ADDR B1 B2 B3 B4 C:\учёба\КПрог\mulmatrix.asm                     PAGE       1
+
+                    org $8000
+
+  8000 CE 84 00     ldx #$8400
+
+  8003 86 01        ldaa #1
+  8005 A7 00        staa 0,x
+  8007 08           inx
+  8008 86 02        ldaa #2
+  800A A7 00        staa 0,x
+  800C 08           inx
+  800D 86 03        ldaa #3
+  800F A7 00        staa 0,x
+  8011 08           inx
+  8012 86 04        ldaa #4
+  8014 A7 00        staa 0,x
+
+  8016 CE 84 10     ldx #$8410
+
+  8019 86 05        ldaa #5
+  801B A7 00        staa 0,x
+  801D 08           inx
+  801E 86 06        ldaa #6
+  8020 A7 00        staa 0,x
+
+  8022 CE 84 20     ldx #$8420
+
+                   ; 1*5 + 2*6
+  8025 86 01        ldaa #1
+  8027 16           tab
+  8028 86 05        ldaa #5
+  802A 3D           mul
+  802B FD 84 20     std $8420
+  802E 86 02        ldaa #2
+  8030 16           tab
+  8031 86 06        ldaa #6
+  8033 3D           mul
+  8034 F3 84 20     addd $8420
+  8037 FD 84 20     std $8420
+
+                   ; 3*5+4*6
+  803A 86 03        ldaa #3
+  803C 16           tab
+  803D 86 05        ldaa #5
+  803F 3D           mul
+  8040 FD 84 22     std $8422
+  8043 86 04        ldaa #4
+  8045 16           tab
+  8046 86 06        ldaa #6
+  8048 3D           mul
+  8049 F3 84 22     addd $8422
+  804C FD 84 22     std $8422
+
+                    ; 1*5 + 2*6
+                    ;ldaa $8400
+                    ;tab
+                    ;ldaa $8410
+                    ;mul
+                    ;std $8420
+                    ;ldaa $8401
+                    ;tab
+                    ;ldaa $8411
+                    ;mul
+                    ;addd $8420
+                    ;std $8420
+
+  ADDR B1 B2 B3 B4 C:\учёба\КПрог\mulmatrix.asm                     PAGE       2
+
+                   ;3*5 + 4*6
+                    ;ldaa $8402
+                    ;ldab $8410
+                    ;mul
+                    ;std $8422
+                    ;ldaa $8403
+                    ;ldab $8411
+                    ;mul
+                    ;addd $8422
+                    ;std $8422

@@ -1,0 +1,7 @@
+  ADDR B1 B2 B3 B4 C:\учёба\КПрог\Laba2(6).asm                      PAGE       1
+
+                    org $8000
+  8000 86 17        ldaa #23
+  8002 C6 59        ldab #89
+  8004 1B           aba
+  8005 19           daa

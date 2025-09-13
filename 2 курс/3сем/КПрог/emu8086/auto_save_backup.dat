@@ -1,0 +1,331 @@
+.model	small
+.stack	100h
+.data
+
+MaxArrayLength              equ 30            
+            
+ArrayLength                 dw  ?
+InputArrayLengthMsgStr      db  'Input array length: $'
+maxNull                     db 0Ah,0Dh,'All infinity','$',0Ah,0Dh                                
+ErrorInputMsgStr            db  0Ah,0Dh,'Incorrect value!',0Ah,0Dh, '$' 
+ErrorInputArrayLengthMsgStr db  0Ah,0Dh,'Array length should be not less than 0 and not bigger than 30!', '$'                              
+InputMsgStr                 db 0Ah, 0Dh,'Input element (-32 768..32 767) : $'    
+
+CurrentEl                   db  2 dup(0)
+
+Answer                      db  20 dup('$'), 0Ah,0Dh, '$'
+                                
+NumBuffer                   dw 0
+
+NumLength                   db 7
+EnterredNum                 db 9 dup('$')              
+
+nextStr                     db 0Ah,0Dh,'$'       
+ten                         dw 10
+two                         dw 2	
+precision                   db  5             
+minus                       db  0  
+Max                         dw  0
+MaxTemp                     dw  0
+Array                       dw  MaxArrayLength dup (0)
+Temp                        dd 0
+OutputArray                 dd MaxArrayLength dup(0)
+
+msg_result db 0Ah,0Dh,'Result:',0Ah,0Dh,'$'
+minus_value dw -1 
+minus_flag dw 0 
+                              
+                              
+.code      
+
+start:                            
+mov	ax,@data                      
+mov	ds,ax                         
+                                  
+xor	ax,ax                         
+                 
+;main programm                               
+call Input_Array                     
+                     
+call output  
+
+mov ah,04Ch
+int 21h
+                                  
+Input_Array proc                      ;input array 
+    call inputArrayLength         
+    call inputArray                                    
+    ret                           
+endp     
+
+inputArrayLength proc             ;input length
+    mov cx, 1           
+    inputArrayLengthLoop:
+       call ShowInputArrayLengthMsg
+       push cx                    ;
+       call inputElementBuff
+       pop cx
+       mov ArrayLength,ax
+       cmp ArrayLength,0
+       jle lengthError
+       cmp ArrayLength,30
+       jg  lengthError
+                            
+    loop inputArrayLengthLoop     
+    ret      
+endp
+
+lengthError:
+    call ErrorInput
+    jmp  inputArrayLengthLoop
+    
+inputArray proc                           ;input elements of array
+    xor di,di                     
+                                               
+    mov cx,ArrayLength            
+    inputArrayLoop:
+       call ShowInputMsg
+       push cx                    ;
+       call inputElementBuff
+       pop cx      
+       
+       mov Array[di], ax 
+
+       add di,2                     
+    loop inputArrayLoop           
+    ret      
+endp  
+
+
+
+resetNumBuffer proc
+    mov NumBuffer, 0    
+    ret
+endp    
+
+inputElementBuff proc                        ;input element             
+    
+    xor ax,ax
+    xor cx,cx
+    
+    mov al,NumLength
+    
+    mov [EnterredNum],al
+    mov [EnterredNum+1],0
+    lea dx,EnterredNum
+    call input
+    
+    mov cl,[EnterredNum+1]
+    lea si,EnterredNum
+    add si,2
+    
+    xor ax,ax 
+    xor bx,bx
+    xor dx,dx
+    mov dx,10        
+    NextSym:
+         xor ax,ax
+         lodsb
+         cmp bl,0
+         je checkMinus
+    
+    checkSym:
+         
+         cmp al,'0'
+         jl badNum
+         cmp al,'9'
+         jg badNum
+         
+         sub ax,'0'
+         mov bx,ax
+         xor ax,ax
+         mov ax,NumBuffer
+         
+         imul dx
+         jo badNum
+         cmp minus,1
+         je doSub
+         add ax, bx
+         comeBack:
+         jo badNum
+         mov NumBuffer,ax
+         mov bx,1
+         mov dx,10
+         
+    loop NextSym 
+    
+    mov ax,NumBuffer
+    
+    
+    mov minus,0
+    
+    
+    finish: 
+    call resetNumBuffer                        
+    ret 
+doSub:
+    sub ax,bx
+    jmp comeBack       
+checkMinus:
+    inc bl
+    cmp al, '-'
+    
+    je SetMinus
+    
+    jmp checkSym
+                  
+SetMinus:
+    mov minus,1
+    dec cx
+    cmp cx,0
+    je badNum
+    jmp NextSym
+    
+badNum:
+    clc
+    mov minus,0
+    call ErrorInput
+    call resetNumBuffer
+    jmp inputElementBuff                            
+endp
+     
+input proc near
+    mov ah,0Ah
+    int 21h
+    ret
+input endp
+
+ErrorInput proc                   ;
+    lea dx, ErrorInputMsgStr      ;
+    mov ah, 09h                   ;
+    int 21h                       ;
+    ret                           ;
+endp                              ;
+      
+
+ShowInputArrayLengthMsg proc
+    push ax
+    push dx
+      
+    mov ah,09h                      
+    lea dx, InputArrayLengthMsgStr           
+    int 21h  
+    
+    pop dx
+    pop ax 
+     
+    ret
+endp          
+                                  
+ShowInputMsg proc                     
+    push ax
+    push dx                      
+                                  
+    mov ah,09h                    
+    lea dx, InputMsgStr           
+    int 21h   
+    
+    pop dx
+    pop ax                    
+    ret                           
+endp                        
+                                  
+  
+;sorting 
+call SortMainDiagonal
+
+SortMainDiagonal proc
+    ; Outer loop for each row
+    mov cx, ArrayLength
+    mov di, 0
+
+    OuterLoop:
+        ; Inner loop for each element in the row
+        mov si, di
+        mov ax, [Array + si]
+        mov bx, si
+
+        InnerLoop:
+            add bx, 2
+            cmp bx, ArrayLength
+            jge InnerLoopDone
+
+            mov dx, [Array + bx]
+            cmp ax, dx
+            jle NoSwap
+
+            ; Swap elements
+            mov [Array + bx], ax
+            mov [Array + si], dx
+
+            NoSwap:
+
+        jmp InnerLoop
+
+        InnerLoopDone:
+            inc di
+            dec cx
+            jnz OuterLoop
+
+    ret
+SortMainDiagonal endp  
+    
+output proc
+    mov dx,offset msg_result
+    mov ah,9
+    int 21h
+    
+    mov cx,0
+    lea si,[Answer] ;here the result will be stored
+    mov bx,10 ;system
+    lea di,[Array]
+    mov ax,[di] 
+    
+first_minus_check:
+    cmp ax,0
+    jge DivLoop
+    mov minus_flag,1
+    mul minus_value   
+DivLoop: ;save rests in stack   
+    mov dx,0
+    div bx 
+    push dx   
+    inc cx
+    or ax,ax
+    jnz DivLoop
+    
+    cmp minus_flag,1
+    je treat_minus_2
+    jmp SaveLoop
+    
+treat_minus_2:
+    mov [si],'-'
+    inc si
+    mov minus_flag,0
+SaveLoop: ;save rests to result string
+     pop ax
+     add ax,'0'
+     mov [si],ax
+     inc si
+loop SaveLoop
+    mov [si],' '
+    inc si
+    
+    inc di
+    inc di
+    mov ax,[di]
+    
+    dec ArrayLength
+    cmp ArrayLength,0
+    je fini
+    
+    jmp first_minus_check
+fini:
+    mov dx,offset Answer
+    mov ah,9
+    int 21h
+    ret                           
+endp
+ 
+                              
+end	start                         
