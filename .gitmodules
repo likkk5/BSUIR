@@ -4,3 +4,6 @@
 [submodule "2 курс/4сем/OOP/yoko"]
 	path = 2 курс/4сем/OOP/yoko
 	url = https://github.com/likkk5/yoko.git
+[submodule "3 курс/5сем/СППР/WEB_253502_TicTacToe"]
+	path = 3 курс/5сем/СППР/WEB_253502_TicTacToe
+	url = https://github.com/likkk5/TicTacToe.git
