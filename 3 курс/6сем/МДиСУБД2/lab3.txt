@@ -1,0 +1,913 @@
+-- Создание пользователя dev
+CREATE USER c##dev IDENTIFIED BY dev_password;
+GRANT CONNECT, RESOURCE TO c##dev;
+GRANT SELECT ANY DICTIONARY TO c##dev;
+ALTER USER c##dev QUOTA UNLIMITED ON USERS;
+--DROP USER c##dev CASCADE;
+
+-- Создание таблиц в схеме c##dev
+CREATE TABLE c##dev.FirstTable (
+  id   NUMBER PRIMARY KEY,
+  name VARCHAR2(50)
+);
+
+CREATE TABLE c##dev.SecondTable (
+  id          NUMBER PRIMARY KEY,
+  first_id        NUMBER,
+  description VARCHAR2(100),
+  CONSTRAINT fk_2_1 FOREIGN KEY (first_id) REFERENCES c##dev.FirstTable(id)
+);
+
+CREATE TABLE c##dev.ThirdTable (
+  id   NUMBER PRIMARY KEY,
+  second_id NUMBER,
+  info VARCHAR2(100),
+  CONSTRAINT fk_c_b FOREIGN KEY (second_id) REFERENCES c##dev.SecondTable(id)
+);
+
+-- Таблица, которая есть только в dev
+CREATE TABLE c##dev.DevTableOnly (
+  id   NUMBER PRIMARY KEY,
+  data VARCHAR2(100)
+);
+
+-- Таблица с другой структурой в dev
+CREATE TABLE c##dev.SameNameDifferentSchemaTable (
+  id   NUMBER PRIMARY KEY,
+  name VARCHAR2(100),
+  age  NUMBER
+);
+
+-- Создание процедуры в схеме c##dev
+CREATE OR REPLACE PROCEDURE c##dev.DevVersionProc AS
+BEGIN
+  DBMS_OUTPUT.PUT_LINE('DEV procedure version');
+END;
+/
+
+-- Процедура, которая есть только в dev
+CREATE OR REPLACE PROCEDURE c##dev.DevProc AS
+BEGIN
+  DBMS_OUTPUT.PUT_LINE('DEV only procedure');
+END;
+/
+
+-- Создание функции в схеме c##dev
+CREATE OR REPLACE FUNCTION c##dev.DevVersionFunc RETURN VARCHAR2 AS
+BEGIN
+  RETURN 'DEV function version';
+END;
+/
+
+-- Функция, которая есть только в dev
+CREATE OR REPLACE FUNCTION c##dev.DevFunc RETURN VARCHAR2 AS
+BEGIN
+  RETURN 'DEV function only';
+END;
+/
+
+-- Создание пакета в схеме c##dev
+CREATE OR REPLACE PACKAGE c##dev.CommonPackage AS
+  PROCEDURE CommonProc;
+END;
+/
+
+-- Создание тела пакета в схеме c##dev
+CREATE OR REPLACE PACKAGE BODY c##dev.CommonPackage AS
+  PROCEDURE CommonProc IS
+  BEGIN
+    DBMS_OUTPUT.PUT_LINE('Common package: procedure');
+  END;
+END;
+/
+
+-- Пакет, который есть только в dev
+CREATE OR REPLACE PACKAGE c##dev.DevPackage AS
+  PROCEDURE DevPackageProc;
+END;
+/
+
+CREATE OR REPLACE PACKAGE BODY c##dev.DevPackage AS
+  PROCEDURE DevPackageProc IS
+  BEGIN
+    DBMS_OUTPUT.PUT_LINE('DEV package: procedure');
+  END;
+END;
+/
+
+-- Создание индекса в схеме c##dev
+CREATE INDEX c##dev.SecondTableInex ON c##dev.SecondTable(description);
+
+-- Индекс, который есть только в dev
+CREATE INDEX c##dev.DevOnlyIndex ON c##dev.DevTableOnly(data);
+
+
+-- Закольцованные связи
+ CREATE TABLE c##dev.RingOne (
+     id   NUMBER PRIMARY KEY,
+     ring_two_id NUMBER,
+     info VARCHAR2(100)
+ );
+
+ CREATE TABLE c##dev.RingTwo (
+     id   NUMBER PRIMARY KEY,
+     ring_one_id NUMBER,
+     info VARCHAR2(100)
+ );
+
+ALTER TABLE c##dev.RingOne
+ADD CONSTRAINT fk_one_two
+FOREIGN KEY (ring_two_id) REFERENCES c##dev.RingTwo(id);
+
+ALTER TABLE c##devv.RingTwo
+ADD CONSTRAINT fk_two_one
+FOREIGN KEY (ring_one_id) REFERENCES c##dev.RingOne(id);
+ 
+ALTER TABLE c##dev.RingOne DROP CONSTRAINT fk_one_two;
+ALTER TABLE c##dev.RingTwo DROP CONSTRAINT fk_two_one;
+DROP TABLE c##dev.RingOne;
+DROP TABLE c##dev.RingTwo;
+
+-------------------------------------------------------------------------------
+-- Создание пользователя prod
+CREATE USER c##prod IDENTIFIED BY prod_password;
+GRANT CONNECT, RESOURCE TO c##prod;
+GRANT SELECT ANY DICTIONARY TO c##prod;
+ALTER USER c##prod QUOTA UNLIMITED ON USERS;
+--DROP USER c##prod CASCADE;
+
+-- Создание таблиц в схеме c##prod
+CREATE TABLE c##prod.FirstTable (
+  id   NUMBER PRIMARY KEY,
+  name VARCHAR2(50)
+);
+
+CREATE TABLE c##prod.SecondTable (
+  id          NUMBER PRIMARY KEY,
+  first_id        NUMBER,
+  description VARCHAR2(50),
+  CONSTRAINT fk_2_1 FOREIGN KEY (first_id) REFERENCES c##prod.FirstTable(id)
+);
+
+-- Таблица, которая есть только в prod F
+CREATE TABLE c##prod.ProdTableOnly (
+  id   NUMBER PRIMARY KEY,
+  data VARCHAR2(100)
+);
+
+-- Таблица с другой структурой в prod
+CREATE TABLE c##prod.SameNameDifferentSchemaTable (
+  id   NUMBER PRIMARY KEY,
+  name VARCHAR2(50)
+);
+
+-- Создание процедуры в схеме c##prod
+CREATE OR REPLACE PROCEDURE c##prod.DevVersionProc AS
+BEGIN
+  DBMS_OUTPUT.PUT_LINE('Overriden by PROD version');
+END;
+/
+
+-- Процедура, которая есть только в prod
+CREATE OR REPLACE PROCEDURE c##prod.ProdProcOnly AS
+BEGIN
+  DBMS_OUTPUT.PUT_LINE('Only prod procedure');
+END;
+/
+
+-- Создание функции в схеме c##prod
+CREATE OR REPLACE FUNCTION c##prod.DevVersionFunc RETURN VARCHAR2 AS
+BEGIN
+  RETURN 'Func overriden by PROD version';
+END;
+/
+
+-- Функция, которая есть только в prod
+CREATE OR REPLACE FUNCTION c##prod.FuncProdOnly RETURN VARCHAR2 AS
+BEGIN
+  RETURN 'Only prod function';
+END;
+/
+
+-- Создание пакета в схеме c##prod
+CREATE OR REPLACE PACKAGE c##prod.CommonPackage AS
+  PROCEDURE CommonProc;
+END;
+/
+
+-- Создание тела пакета в схеме c##prod
+CREATE OR REPLACE PACKAGE BODY c##prod.CommonPackage AS
+  PROCEDURE CommonProc IS
+  BEGIN
+    DBMS_OUTPUT.PUT_LINE('PROD package'); -- modify this package
+  END;
+END;
+/
+
+-- Пакет, который есть только в prod
+CREATE OR REPLACE PACKAGE c##prod.ProdPackage AS
+  PROCEDURE ProdPackageProc;
+END;
+/
+
+CREATE OR REPLACE PACKAGE BODY c##prod.ProdPackage AS
+  PROCEDURE ProdPackageProc IS
+  BEGIN
+    DBMS_OUTPUT.PUT_LINE('PROD package: prod procedure');
+  END;
+END;
+/
+
+-- Создание индекса в схеме c##prod
+CREATE INDEX c##prod.SecondTableInex ON c##prod.SecondTable(description);
+
+-- Индекс, который есть только в prod
+CREATE INDEX c##prod.ProdTableOnlyIndex ON c##prod.ProdTableOnly(data);
+-------------------------------------------------------------------------------
+
+CREATE USER c##admin_schema IDENTIFIED BY admin_password;
+GRANT CONNECT, RESOURCE TO c##admin_schema;
+GRANT SELECT ANY DICTIONARY TO c##admin_schema;
+GRANT ALL PRIVILEGES TO c##admin_schema;
+DROP USER c##admin_schema CASCADE;
+
+
+-- Проверка существования схемы
+CREATE OR REPLACE PROCEDURE ASSERT_SCHEMA_EXISTS(SCHEMA_NAME VARCHAR)
+    IS
+    SCHEMA_COUNT INTEGER;
+BEGIN
+    SELECT COUNT(*) INTO SCHEMA_COUNT FROM ALL_USERS WHERE USERNAME = UPPER(SCHEMA_NAME);
+    IF SCHEMA_COUNT = 0 THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Schema ' || SCHEMA_NAME || ' does not exist');
+    END IF;
+END;
+/
+
+-- Типы данных для работы с таблицами и внешними ключами
+CREATE OR REPLACE TYPE TABLE_ARRAY IS TABLE OF VARCHAR2(1024);
+/
+
+CREATE OR REPLACE TYPE FK_TMP IS OBJECT
+(
+    CHILD_OBJ  VARCHAR2(1024),
+    PARENT_OBJ VARCHAR2(1024)
+);
+/
+
+CREATE OR REPLACE TYPE FK_TMP_ARRAY IS TABLE OF FK_TMP;
+/
+
+-- Функция для получения таблиц в порядке зависимостей
+CREATE OR REPLACE FUNCTION GET_SCHEME_TABLES_IN_ORDER(SCHEMA_NAME IN VARCHAR2) RETURN TABLE_ARRAY IS
+    SCHEME_ORDER        FK_TMP_ARRAY DEFAULT FK_TMP_ARRAY();
+    SCHEMA_ORDER_INDEX  INT DEFAULT 1;
+    SCHEMA_TABLES       TABLE_ARRAY DEFAULT TABLE_ARRAY();
+    SCHEMA_TABLES_INDEX INT DEFAULT 1;
+    LOOPED_TIMES        INT DEFAULT 0;
+BEGIN
+    FOR SCHEMA_TABLE IN (SELECT TABLES.TABLE_NAME NAME FROM ALL_TABLES TABLES WHERE OWNER = SCHEMA_NAME)
+        LOOP
+            LOOPED_TIMES := 0;
+
+            FOR RECORD IN (SELECT DISTINCT A.TABLE_NAME, C_PK.TABLE_NAME R_TABLE_NAME
+                           FROM ALL_CONS_COLUMNS A
+                                    JOIN ALL_CONSTRAINTS C
+                                         ON A.OWNER = C.OWNER AND A.CONSTRAINT_NAME = C.CONSTRAINT_NAME
+                                    JOIN ALL_CONSTRAINTS C_PK
+                                         ON C.R_OWNER = C_PK.OWNER AND C.R_CONSTRAINT_NAME = C_PK.CONSTRAINT_NAME
+                           WHERE C.CONSTRAINT_TYPE = 'R'
+                             AND A.TABLE_NAME = SCHEMA_TABLE.NAME)
+                LOOP
+                    LOOPED_TIMES := 1;
+                    SCHEME_ORDER.EXTEND;
+                    SCHEME_ORDER(SCHEMA_ORDER_INDEX) :=
+                            FK_TMP(RECORD.TABLE_NAME, RECORD.R_TABLE_NAME);
+                    SCHEMA_ORDER_INDEX := SCHEMA_ORDER_INDEX + 1;
+                END LOOP;
+
+            IF LOOPED_TIMES = 0 THEN
+                -- no constraints
+                SCHEMA_TABLES.EXTEND;
+                SCHEMA_TABLES(SCHEMA_TABLES_INDEX) := SCHEMA_TABLE.NAME;
+                SCHEMA_TABLES_INDEX := SCHEMA_TABLES_INDEX + 1;
+            END IF;
+        END LOOP;
+
+    FOR FK_CUR IN (
+        SELECT CHILD_OBJ, PARENT_OBJ, CONNECT_BY_ISCYCLE
+        FROM TABLE (SCHEME_ORDER)
+        CONNECT BY NOCYCLE PRIOR PARENT_OBJ = CHILD_OBJ
+        ORDER BY LEVEL
+        )
+        LOOP
+            IF FK_CUR.CONNECT_BY_ISCYCLE = 0 THEN
+                SCHEMA_TABLES.EXTEND;
+                SCHEMA_TABLES(SCHEMA_TABLES_INDEX) := FK_CUR.CHILD_OBJ;
+                SCHEMA_TABLES_INDEX := SCHEMA_TABLES_INDEX + 1;
+            ELSE
+                RAISE_APPLICATION_ERROR(-20001, 'CYCLE DEPENDENCY ' || FK_CUR.CHILD_OBJ || '<->' ||
+                                                FK_CUR.PARENT_OBJ);
+            END IF;
+        END LOOP;
+
+    RETURN SCHEMA_TABLES;
+END GET_SCHEME_TABLES_IN_ORDER;
+/
+
+-- Функция для сравнения таблиц
+CREATE OR REPLACE FUNCTION COMPARE_TABLE_DIFF(SCHEMA1 VARCHAR, SCHEMA2 VARCHAR, TABLE_TO_COMPARE VARCHAR) RETURN VARCHAR IS
+    DIFF NUMBER := 0;
+BEGIN
+    SELECT COUNT(*)
+    INTO DIFF
+    FROM (SELECT TABLE1.COLUMN_NAME NAME, TABLE1.DATA_TYPE
+          FROM ALL_TAB_COLUMNS TABLE1
+          WHERE OWNER = SCHEMA1
+            AND TABLE_NAME = TABLE_TO_COMPARE) COLS1
+             FULL JOIN
+         (SELECT TABLE2.COLUMN_NAME NAME, TABLE2.DATA_TYPE
+          FROM ALL_TAB_COLUMNS TABLE2
+          WHERE OWNER = SCHEMA2
+            AND TABLE_NAME = TABLE_TO_COMPARE) COLS2
+         ON COLS1.NAME = COLS2.NAME
+    WHERE COLS1.NAME IS NULL
+       OR COLS2.NAME IS NULL;
+
+    IF DIFF > 0 THEN
+        RETURN 'Table ' || TABLE_TO_COMPARE || ' is different in provided schemas. ';
+    ELSE
+        RETURN '';
+    END IF;
+END COMPARE_TABLE_DIFF;
+/
+
+CREATE OR REPLACE FUNCTION COMPARE_SCHEMAS_V1(DEV_SCHEMA_NAME VARCHAR, PROD_SCHEMA_NAME VARCHAR)
+    RETURN CLOB IS
+    DEV_TABLES  TABLE_ARRAY;
+    PROD_TABLES TABLE_ARRAY;
+    TEXT_RESULT CLOB DEFAULT '';
+BEGIN
+    ASSERT_SCHEMA_EXISTS(DEV_SCHEMA_NAME);
+    ASSERT_SCHEMA_EXISTS(PROD_SCHEMA_NAME);
+
+    -- Получение таблиц для обеих схем
+    DEV_TABLES := GET_SCHEME_TABLES_IN_ORDER(DEV_SCHEMA_NAME);
+    PROD_TABLES := GET_SCHEME_TABLES_IN_ORDER(PROD_SCHEMA_NAME);
+
+    -- Вывод таблиц для DEV_SCHEMA
+    DBMS_OUTPUT.PUT_LINE('Таблицы в DEV-схеме:');
+    FOR i IN 1..DEV_TABLES.COUNT LOOP
+        DBMS_OUTPUT.PUT_LINE(DEV_TABLES(i));
+    END LOOP;
+
+    -- Вывод таблиц для PROD_SCHEMA
+    DBMS_OUTPUT.PUT_LINE('Таблицы в PROD-схеме:');
+    FOR i IN 1..PROD_TABLES.COUNT LOOP
+        DBMS_OUTPUT.PUT_LINE(PROD_TABLES(i));
+    END LOOP;
+
+    -- Сравнение таблиц между DEV и PROD схемами
+    FOR RECORD IN (SELECT COLUMN_VALUE AS TABLE_NAME FROM TABLE (DEV_TABLES)) LOOP
+        IF RECORD.TABLE_NAME NOT MEMBER OF PROD_TABLES THEN
+            TEXT_RESULT := TEXT_RESULT || 'Table ' || RECORD.TABLE_NAME || ' is not present in schema ' || PROD_SCHEMA_NAME ||
+                           CHR(10);
+        ELSE
+            TEXT_RESULT := TEXT_RESULT || COMPARE_TABLE_DIFF(DEV_SCHEMA_NAME, PROD_SCHEMA_NAME, RECORD.TABLE_NAME) || CHR(10);
+        END IF;
+    END LOOP;
+
+    RETURN TEXT_RESULT;
+END;
+
+-- Функция для сравнения кода объектов (процедур, функций, пакетов)
+CREATE OR REPLACE FUNCTION COMPARE_OBJECT_CODE(
+    schema1 IN VARCHAR2,
+    schema2 IN VARCHAR2,
+    object_name IN VARCHAR2,
+    object_type IN VARCHAR2
+) RETURN VARCHAR2 IS
+    code1 CLOB;
+    code2 CLOB;
+BEGIN
+    -- Получаем код объекта из первой схемы
+    SELECT LISTAGG(TEXT, CHR(10)) WITHIN GROUP (ORDER BY LINE)
+    INTO code1
+    FROM ALL_SOURCE
+    WHERE OWNER = schema1
+      AND NAME = object_name
+      AND TYPE = object_type;
+
+    -- Получаем код объекта из второй схемы
+    SELECT LISTAGG(TEXT, CHR(10)) WITHIN GROUP (ORDER BY LINE)
+    INTO code2
+    FROM ALL_SOURCE
+    WHERE OWNER = schema2
+      AND NAME = object_name
+      AND TYPE = object_type;
+
+    -- Сравниваем код
+    IF code1 = code2 THEN
+        RETURN 'Same code: ' || object_type || ' ' || object_name;
+    ELSE
+        RETURN 'Different code: ' || object_type || ' ' || object_name;
+    END IF;
+END COMPARE_OBJECT_CODE;
+/
+
+-- Функция для сравнения схем (версия 2)
+CREATE OR REPLACE FUNCTION COMPARE_SCHEMES_V2(SCHEMA1 VARCHAR, SCHEMA2 VARCHAR) RETURN CLOB IS
+    DIFF        NUMBER := 0;
+    TYPE OBJARRAY IS TABLE OF VARCHAR2(16); -- Используем TABLE вместо VARRAY
+    OBJECTS_ARR OBJARRAY := OBJARRAY('PROCEDURE', 'PACKAGE', 'INDEX', 'TABLE', 'FUNCTION');
+    TEXT_RESULT CLOB DEFAULT '';
+BEGIN
+    FOR I IN 1 .. OBJECTS_ARR.COUNT -- Используем COUNT для динамического размера
+        LOOP
+            TEXT_RESULT := TEXT_RESULT || 'Comparison ' || OBJECTS_ARR(I) ||  CHR(10);
+
+            FOR SAME_OBJECT IN (
+                SELECT OBJECTS1.OBJECT_NAME
+                FROM ALL_OBJECTS OBJECTS1
+                WHERE OWNER = SCHEMA1
+                  AND OBJECT_TYPE = OBJECTS_ARR(I)
+                INTERSECT
+                SELECT OBJECTS2.OBJECT_NAME
+                FROM ALL_OBJECTS OBJECTS2
+                WHERE OWNER = SCHEMA2
+                  AND OBJECT_TYPE = OBJECTS_ARR(I))
+                LOOP
+                    IF OBJECTS_ARR(I) IN ('PROCEDURE', 'FUNCTION', 'PACKAGE') THEN
+                        -- Сравниваем код объектов
+                        TEXT_RESULT := TEXT_RESULT || COMPARE_OBJECT_CODE(SCHEMA1, SCHEMA2, SAME_OBJECT.OBJECT_NAME, OBJECTS_ARR(I)) || CHR(10);
+                    ELSE
+                        -- Остальная логика сравнения
+                        SELECT COUNT(*)
+                        INTO DIFF
+                        FROM (SELECT TABLE1.COLUMN_NAME NAME, TABLE1.DATA_TYPE
+                              FROM ALL_TAB_COLUMNS TABLE1
+                              WHERE OWNER = SCHEMA1
+                                AND TABLE_NAME = SAME_OBJECT.OBJECT_NAME) COLS1
+                                 FULL JOIN
+                             (SELECT TABLE2.COLUMN_NAME NAME, TABLE2.DATA_TYPE
+                              FROM ALL_TAB_COLUMNS TABLE2
+                              WHERE OWNER = SCHEMA2
+                                AND TABLE_NAME = SAME_OBJECT.OBJECT_NAME) COLS2
+                             ON COLS1.NAME = COLS2.NAME
+                        WHERE COLS1.NAME IS NULL
+                           OR COLS2.NAME IS NULL;
+
+                        IF DIFF > 0 THEN
+                            TEXT_RESULT := TEXT_RESULT || 'Different code: ' || OBJECTS_ARR(I) || ' ' || SAME_OBJECT.OBJECT_NAME ||  CHR(10);
+                        ELSE
+                            TEXT_RESULT := TEXT_RESULT || 'Same code: ' || OBJECTS_ARR(I) || ' ' || SAME_OBJECT.OBJECT_NAME ||  CHR(10);
+                        END IF;
+                    END IF;
+                END LOOP;
+
+            TEXT_RESULT := TEXT_RESULT || CHR(10); -- Добавляем пустую строку для разделения
+        END LOOP;
+
+    RETURN TEXT_RESULT;
+END COMPARE_SCHEMES_V2;
+/
+
+
+CREATE OR REPLACE FUNCTION COMPARE_SCHEMES_EXISTANCE_V2(SCHEMA1 VARCHAR, SCHEMA2 VARCHAR) RETURN VARCHAR IS
+    TYPE OBJARRAY IS TABLE OF VARCHAR2(16); -- Используем TABLE вместо VARRAY
+    OBJECTS_ARR OBJARRAY := OBJARRAY('PROCEDURE', 'PACKAGE', 'INDEX', 'TABLE', 'FUNCTION');
+    TEXT_RESULT CLOB DEFAULT '';
+BEGIN
+    -- Добавляем заголовок для объектов, которые есть в SCHEMA1, но отсутствуют в SCHEMA2
+    TEXT_RESULT := TEXT_RESULT || 'Objects present in ' || SCHEMA1 || ', but missing in ' || SCHEMA2 ||  CHR(10);
+
+    FOR I IN 1 .. OBJECTS_ARR.COUNT -- Используем COUNT для динамического размера
+        LOOP
+            FOR OTHER_TABLE IN (
+                SELECT OBJECTS1.OBJECT_NAME NAME
+                FROM ALL_OBJECTS OBJECTS1
+                WHERE OWNER = SCHEMA1
+                  AND OBJECT_TYPE = OBJECTS_ARR(I)
+                  AND (OBJECTS_ARR(I) != 'INDEX' OR OBJECTS1.OBJECT_NAME NOT LIKE 'SYS\_%' ESCAPE '\')
+                MINUS
+                SELECT OBJECTS2.OBJECT_NAME
+                FROM ALL_OBJECTS OBJECTS2
+                WHERE OWNER = SCHEMA2
+                  AND OBJECT_TYPE = OBJECTS_ARR(I)
+                  AND (OBJECTS_ARR(I) != 'INDEX' OR OBJECTS2.OBJECT_NAME NOT LIKE 'SYS\_%' ESCAPE '\'))
+            LOOP
+                TEXT_RESULT := TEXT_RESULT || OBJECTS_ARR(I) || ' ' || OTHER_TABLE.NAME || CHR(10);
+            END LOOP;
+        END LOOP;
+
+    TEXT_RESULT := TEXT_RESULT || CHR(10); -- Добавляем пустую строку для разделения
+
+    -- Добавляем заголовок для объектов, которые есть в SCHEMA2, но отсутствуют в SCHEMA1
+    TEXT_RESULT := TEXT_RESULT || 'Objects present in ' || SCHEMA2 || ', but missing in ' || SCHEMA1 ||  CHR(10);
+
+    FOR I IN 1 .. OBJECTS_ARR.COUNT -- Используем COUNT для динамического размера
+        LOOP
+            FOR OTHER_TABLE IN (
+                SELECT OBJECTS2.OBJECT_NAME NAME
+                FROM ALL_OBJECTS OBJECTS2
+                WHERE OWNER = SCHEMA2
+                  AND OBJECT_TYPE = OBJECTS_ARR(I)
+                  AND (OBJECTS_ARR(I) != 'INDEX' OR OBJECTS2.OBJECT_NAME NOT LIKE 'SYS\_%' ESCAPE '\')
+                MINUS
+                SELECT OBJECTS1.OBJECT_NAME
+                FROM ALL_OBJECTS OBJECTS1
+                WHERE OWNER = SCHEMA1
+                  AND OBJECT_TYPE = OBJECTS_ARR(I)
+                  AND (OBJECTS_ARR(I) != 'INDEX' OR OBJECTS1.OBJECT_NAME NOT LIKE 'SYS\_%' ESCAPE '\'))
+            LOOP
+                TEXT_RESULT := TEXT_RESULT || OBJECTS_ARR(I) || CHR(10);
+            END LOOP;
+        END LOOP;
+
+    RETURN TEXT_RESULT;
+END COMPARE_SCHEMES_EXISTANCE_V2;
+/
+
+-- Функция для полного сравнения схем (версия 2)
+CREATE OR REPLACE FUNCTION FULL_COMPARE_V2(DEV_SCHEME_NAME VARCHAR, PROD_SCHEME_NAME VARCHAR) RETURN CLOB IS
+    TEXT_RESULT CLOB DEFAULT '';
+BEGIN
+    ASSERT_SCHEMA_EXISTS(DEV_SCHEME_NAME);
+    ASSERT_SCHEMA_EXISTS(PROD_SCHEME_NAME);
+
+
+    TEXT_RESULT := TEXT_RESULT || COMPARE_SCHEMES_EXISTANCE_V2(DEV_SCHEME_NAME, PROD_SCHEME_NAME) || CHR(10);
+
+    TEXT_RESULT := TEXT_RESULT || COMPARE_SCHEMES_V2(DEV_SCHEME_NAME, PROD_SCHEME_NAME) || CHR(10);
+
+    RETURN TEXT_RESULT;
+END;
+/
+
+-- Функция для финального сравнения схем
+CREATE OR REPLACE FUNCTION COMPARE_SCHEMA_FINAL(DEV_SCHEMA_NAME VARCHAR, PROD_SCHEMA_NAME VARCHAR) RETURN CLOB
+    IS
+    COUNTER     NUMBER;
+    COUNTER2    NUMBER;
+    TEXT        VARCHAR2(100);
+    TEXT_RESULT CLOB := ''; -- Инициализация переменной
+BEGIN
+    -- Создание таблиц, которые есть в DEV, но отсутствуют в PROD
+    FOR RES IN (SELECT TABLE_NAME
+                FROM ALL_TABLES
+                WHERE OWNER = DEV_SCHEMA_NAME
+                  AND TABLE_NAME NOT IN (SELECT TABLE_NAME FROM ALL_TABLES WHERE OWNER = PROD_SCHEMA_NAME))
+    LOOP
+        TEXT_RESULT := TEXT_RESULT || 'CREATE TABLE ' || PROD_SCHEMA_NAME || '.' || RES.TABLE_NAME ||
+                       ' AS (SELECT * FROM ' || DEV_SCHEMA_NAME || '.' || RES.TABLE_NAME || ' WHERE 1=0);' || CHR(10);
+    END LOOP;
+
+    -- Добавление столбцов в существующие таблицы
+    FOR RES IN (SELECT DISTINCT TABLE_NAME
+                FROM ALL_TAB_COLUMNS
+                WHERE OWNER = DEV_SCHEMA_NAME
+                  AND (TABLE_NAME, COLUMN_NAME) NOT IN
+                      (SELECT TABLE_NAME, COLUMN_NAME FROM ALL_TAB_COLUMNS WHERE OWNER = PROD_SCHEMA_NAME))
+    LOOP
+        COUNTER := 0;
+        SELECT COUNT(*) INTO COUNTER FROM ALL_TABLES WHERE OWNER = PROD_SCHEMA_NAME AND TABLE_NAME = RES.TABLE_NAME;
+        IF COUNTER > 0 THEN
+            FOR RES2 IN (SELECT DISTINCT COLUMN_NAME, DATA_TYPE
+                         FROM ALL_TAB_COLUMNS
+                         WHERE OWNER = DEV_SCHEMA_NAME
+                           AND TABLE_NAME = RES.TABLE_NAME
+                           AND (TABLE_NAME, COLUMN_NAME) NOT IN
+                               (SELECT TABLE_NAME, COLUMN_NAME FROM ALL_TAB_COLUMNS WHERE OWNER = PROD_SCHEMA_NAME))
+            LOOP
+                TEXT_RESULT := TEXT_RESULT || 'ALTER TABLE ' || PROD_SCHEMA_NAME || '.' || RES.TABLE_NAME || ' ADD ' ||
+                               RES2.COLUMN_NAME || ' ' || RES2.DATA_TYPE || ';' || CHR(10);
+            END LOOP;
+        END IF;
+    END LOOP;
+
+    -- Удаление столбцов из таблиц в PROD, которых нет в DEV
+    FOR RES IN (SELECT DISTINCT TABLE_NAME
+                FROM ALL_TAB_COLUMNS
+                WHERE OWNER = PROD_SCHEMA_NAME
+                  AND (TABLE_NAME, COLUMN_NAME) NOT IN
+                      (SELECT TABLE_NAME, COLUMN_NAME FROM ALL_TAB_COLUMNS WHERE OWNER = DEV_SCHEMA_NAME))
+    LOOP
+        COUNTER := 0;
+        SELECT COUNT(*) INTO COUNTER FROM ALL_TABLES WHERE OWNER = DEV_SCHEMA_NAME AND TABLE_NAME = RES.TABLE_NAME;
+        IF COUNTER > 0 THEN
+            FOR RES2 IN (SELECT COLUMN_NAME
+                         FROM ALL_TAB_COLUMNS
+                         WHERE OWNER = PROD_SCHEMA_NAME
+                           AND TABLE_NAME = RES.TABLE_NAME
+                           AND COLUMN_NAME NOT IN (SELECT COLUMN_NAME
+                                                   FROM ALL_TAB_COLUMNS
+                                                   WHERE OWNER = DEV_SCHEMA_NAME
+                                                     AND TABLE_NAME = RES.TABLE_NAME))
+            LOOP
+                TEXT_RESULT := TEXT_RESULT || 'ALTER TABLE ' || PROD_SCHEMA_NAME || '.' || RES.TABLE_NAME ||
+                               ' DROP COLUMN ' || RES2.COLUMN_NAME || ';' || CHR(10);
+            END LOOP;
+        END IF;
+    END LOOP;
+
+    -- Удаление таблиц, которые есть в PROD, но отсутствуют в DEV
+    FOR RES IN (SELECT TABLE_NAME
+                FROM ALL_TABLES
+                WHERE OWNER = PROD_SCHEMA_NAME
+                  AND TABLE_NAME NOT IN (SELECT TABLE_NAME FROM ALL_TABLES WHERE OWNER = DEV_SCHEMA_NAME))
+    LOOP
+        TEXT_RESULT := TEXT_RESULT || 'DROP TABLE ' || PROD_SCHEMA_NAME || '.' || RES.TABLE_NAME ||
+                       ' CASCADE CONSTRAINTS;' || CHR(10);
+    END LOOP;
+ -- Создание процедур, которые есть в DEV, но отсутствуют в PROD
+    FOR RES IN (SELECT DISTINCT OBJECT_NAME
+                FROM ALL_OBJECTS
+                WHERE OBJECT_TYPE = 'PROCEDURE'
+                  AND OWNER = DEV_SCHEMA_NAME
+                  AND OBJECT_NAME NOT IN
+                      (SELECT OBJECT_NAME FROM ALL_OBJECTS WHERE OWNER = PROD_SCHEMA_NAME AND OBJECT_TYPE = 'PROCEDURE'))
+    LOOP
+        COUNTER := 0;
+        TEXT_RESULT := TEXT_RESULT || 'CREATE OR REPLACE ';
+        FOR RES2 IN (SELECT TEXT
+                     FROM ALL_SOURCE
+                     WHERE TYPE = 'PROCEDURE'
+                       AND NAME = RES.OBJECT_NAME
+                       AND OWNER = DEV_SCHEMA_NAME)
+        LOOP
+            IF COUNTER != 0 THEN
+                TEXT_RESULT := TEXT_RESULT || RTRIM(RES2.TEXT, CHR(10) || CHR(13)) || CHR(10);
+            ELSE
+                --TEXT_RESULT := TEXT_RESULT || RTRIM(PROD_SCHEMA_NAME || '.' || RES2.TEXT, CHR(10) || CHR(13)) || CHR(10);
+                TEXT_RESULT := TEXT_RESULT || 'PROCEDURE ' || DEV_SCHEMA_NAME || '.' || TRIM(SUBSTR(RES2.TEXT, INSTR(RES2.TEXT, ' ') + 1)); -- || CHR(10);
+                COUNTER := 1;
+            END IF;
+        END LOOP;
+    END LOOP;
+
+    -- Удаление процедур, которые есть в PROD, но отсутствуют в DEV
+    FOR RES IN (SELECT DISTINCT OBJECT_NAME
+                FROM ALL_OBJECTS
+                WHERE OBJECT_TYPE = 'PROCEDURE'
+                  AND OWNER = PROD_SCHEMA_NAME
+                  AND OBJECT_NAME NOT IN
+                      (SELECT OBJECT_NAME FROM ALL_OBJECTS WHERE OWNER = DEV_SCHEMA_NAME AND OBJECT_TYPE = 'PROCEDURE'))
+    LOOP
+        TEXT_RESULT := TEXT_RESULT || 'DROP PROCEDURE ' || PROD_SCHEMA_NAME || '.' || RES.OBJECT_NAME || CHR(10);
+    END LOOP;
+
+    -- Обновление процедур, которые есть в обеих схемах, но с разным кодом
+    FOR RES IN (SELECT DISTINCT OBJECT_NAME
+                FROM ALL_OBJECTS
+                WHERE OBJECT_TYPE = 'PROCEDURE'
+                  AND OWNER = DEV_SCHEMA_NAME
+                  AND OBJECT_NAME IN
+                      (SELECT OBJECT_NAME FROM ALL_OBJECTS WHERE OWNER = PROD_SCHEMA_NAME AND OBJECT_TYPE = 'PROCEDURE'))
+    LOOP
+        -- Сравниваем код процедур
+        IF COMPARE_OBJECT_CODE(DEV_SCHEMA_NAME, PROD_SCHEMA_NAME, RES.OBJECT_NAME, 'PROCEDURE') LIKE 'Different%' THEN
+            COUNTER := 0;
+            TEXT_RESULT := TEXT_RESULT || '-- Обновление процедуры ' || RES.OBJECT_NAME || ' в ' || PROD_SCHEMA_NAME || CHR(10);
+            TEXT_RESULT := TEXT_RESULT || 'CREATE OR REPLACE ';
+            FOR RES2 IN (SELECT TEXT
+                         FROM ALL_SOURCE
+                         WHERE TYPE = 'PROCEDURE'
+                           AND NAME = RES.OBJECT_NAME
+                           AND OWNER = DEV_SCHEMA_NAME)
+            LOOP
+                IF COUNTER != 0 THEN
+                    TEXT_RESULT := TEXT_RESULT || RTRIM(RES2.TEXT, CHR(10)) || CHR(10);
+                ELSE
+                    --TEXT_RESULT := TEXT_RESULT || RTRIM(PROD_SCHEMA_NAME || '.' || RES2.TEXT, CHR(10)) || CHR(10);
+                    TEXT_RESULT := TEXT_RESULT || 'PROCEDURE ' || DEV_SCHEMA_NAME || '.' || TRIM(SUBSTR(RES2.TEXT, INSTR(RES2.TEXT, ' ') + 1)); -- || CHR(10);
+                    COUNTER := 1;
+                END IF;
+            END LOOP;
+        END IF;
+    END LOOP;
+
+    -- Создание функций, которые есть в DEV, но отсутствуют в PROD
+    FOR RES IN (SELECT DISTINCT OBJECT_NAME
+                FROM ALL_OBJECTS
+                WHERE OBJECT_TYPE = 'FUNCTION'
+                  AND OWNER = DEV_SCHEMA_NAME
+                  AND OBJECT_NAME NOT IN
+                      (SELECT OBJECT_NAME FROM ALL_OBJECTS WHERE OWNER = PROD_SCHEMA_NAME AND OBJECT_TYPE = 'FUNCTION'))
+    LOOP
+        COUNTER := 0;
+        TEXT_RESULT := TEXT_RESULT || 'CREATE OR REPLACE ';
+        FOR RES2 IN (SELECT TEXT
+                     FROM ALL_SOURCE
+                     WHERE TYPE = 'FUNCTION'
+                       AND NAME = RES.OBJECT_NAME
+                       AND OWNER = DEV_SCHEMA_NAME)
+        LOOP
+            IF COUNTER != 0 THEN
+                TEXT_RESULT := TEXT_RESULT || RTRIM(RES2.TEXT, CHR(10) || CHR(13)) || CHR(10);
+            ELSE
+                --TEXT_RESULT := TEXT_RESULT || RTRIM(PROD_SCHEMA_NAME || '.' || RES2.TEXT, CHR(10) || CHR(13)) || CHR(10);
+                TEXT_RESULT := TEXT_RESULT || 'FUNCTION ' || DEV_SCHEMA_NAME || '.' || TRIM(SUBSTR(RES2.TEXT, INSTR(RES2.TEXT, ' ') + 1)); -- || CHR(10);
+                COUNTER := 1;
+            END IF;
+        END LOOP;
+    END LOOP;
+
+    -- Удаление функций, которые есть в PROD, но отсутствуют в DEV
+    FOR RES IN (SELECT DISTINCT OBJECT_NAME
+                FROM ALL_OBJECTS
+                WHERE OBJECT_TYPE = 'FUNCTION'
+                  AND OWNER = PROD_SCHEMA_NAME
+                  AND OBJECT_NAME NOT IN
+                      (SELECT OBJECT_NAME FROM ALL_OBJECTS WHERE OWNER = DEV_SCHEMA_NAME AND OBJECT_TYPE = 'FUNCTION'))
+    LOOP
+        TEXT_RESULT := TEXT_RESULT || 'DROP FUNCTION ' || PROD_SCHEMA_NAME || '.' || RES.OBJECT_NAME || CHR(10);
+    END LOOP;
+
+    -- Обновление функций, которые есть в обеих схемах, но с разным кодом
+    FOR RES IN (SELECT DISTINCT OBJECT_NAME
+                FROM ALL_OBJECTS
+                WHERE OBJECT_TYPE = 'FUNCTION'
+                  AND OWNER = DEV_SCHEMA_NAME
+                  AND OBJECT_NAME IN
+                      (SELECT OBJECT_NAME FROM ALL_OBJECTS WHERE OWNER = PROD_SCHEMA_NAME AND OBJECT_TYPE = 'FUNCTION'))
+    LOOP
+        -- Сравниваем код функций
+        IF COMPARE_OBJECT_CODE(DEV_SCHEMA_NAME, PROD_SCHEMA_NAME, RES.OBJECT_NAME, 'FUNCTION') LIKE 'Different%' THEN
+            COUNTER := 0;
+            TEXT_RESULT := TEXT_RESULT || '-- Update function ' || RES.OBJECT_NAME || ' in ' || PROD_SCHEMA_NAME || CHR(10);
+            TEXT_RESULT := TEXT_RESULT || 'CREATE OR REPLACE ';
+            FOR RES2 IN (SELECT TEXT
+                         FROM ALL_SOURCE
+                         WHERE TYPE = 'FUNCTION'
+                           AND NAME = RES.OBJECT_NAME
+                           AND OWNER = DEV_SCHEMA_NAME)
+            LOOP
+                IF COUNTER != 0 THEN
+                    TEXT_RESULT := TEXT_RESULT || RTRIM(RES2.TEXT, CHR(10)) || CHR(10);
+                ELSE
+                    --TEXT_RESULT := TEXT_RESULT || RTRIM(PROD_SCHEMA_NAME || '.' || RES2.TEXT, CHR(10)) || CHR(10);
+                    TEXT_RESULT := TEXT_RESULT || 'FUNCTION ' || DEV_SCHEMA_NAME || '.' || TRIM(SUBSTR(RES2.TEXT, INSTR(RES2.TEXT, ' ') + 1)); -- || CHR(10);
+                    COUNTER := 1;
+                END IF;
+            END LOOP;
+        END IF;
+    END LOOP;
+
+    -- Создание пакетов, которые есть в DEV, но отсутствуют в PROD
+    FOR RES IN (SELECT DISTINCT OBJECT_NAME
+                FROM ALL_OBJECTS
+                WHERE OBJECT_TYPE = 'PACKAGE'
+                  AND OWNER = DEV_SCHEMA_NAME
+                  AND OBJECT_NAME NOT IN
+                      (SELECT OBJECT_NAME FROM ALL_OBJECTS WHERE OWNER = PROD_SCHEMA_NAME AND OBJECT_TYPE = 'PACKAGE'))
+    LOOP
+        -- Создание спецификации пакета
+        COUNTER := 0;
+        TEXT_RESULT := TEXT_RESULT || 'CREATE OR REPLACE PACKAGE ' || PROD_SCHEMA_NAME || '.' || RES.OBJECT_NAME || ' AS' || CHR(10);
+        FOR RES2 IN (SELECT TEXT
+                     FROM ALL_SOURCE
+                     WHERE TYPE = 'PACKAGE'
+                       AND NAME = RES.OBJECT_NAME
+                       AND OWNER = DEV_SCHEMA_NAME)
+        LOOP
+            TEXT_RESULT := TEXT_RESULT || RTRIM(RES2.TEXT, CHR(10)) || CHR(10);
+        END LOOP;
+        TEXT_RESULT := TEXT_RESULT || 'END ' || RES.OBJECT_NAME || ';' || CHR(10);
+
+        -- Создание тела пакета
+        TEXT_RESULT := TEXT_RESULT || 'CREATE OR REPLACE PACKAGE BODY ' || PROD_SCHEMA_NAME || '.' || RES.OBJECT_NAME || ' AS' || CHR(10);
+        FOR RES2 IN (SELECT TEXT
+                     FROM ALL_SOURCE
+                     WHERE TYPE = 'PACKAGE BODY'
+                       AND NAME = RES.OBJECT_NAME
+                       AND OWNER = DEV_SCHEMA_NAME)
+        LOOP
+            TEXT_RESULT := TEXT_RESULT || RTRIM(RES2.TEXT, CHR(10)) || CHR(10);
+        END LOOP;
+        TEXT_RESULT := TEXT_RESULT || 'END ' || RES.OBJECT_NAME || ';' || CHR(10);
+    END LOOP;
+
+    -- Удаление пакетов, которые есть в PROD, но отсутствуют в DEV
+    FOR RES IN (SELECT DISTINCT OBJECT_NAME
+                FROM ALL_OBJECTS
+                WHERE OBJECT_TYPE = 'PACKAGE'
+                  AND OWNER = PROD_SCHEMA_NAME
+                  AND OBJECT_NAME NOT IN
+                      (SELECT OBJECT_NAME FROM ALL_OBJECTS WHERE OWNER = DEV_SCHEMA_NAME AND OBJECT_TYPE = 'PACKAGE'))
+    LOOP
+        TEXT_RESULT := TEXT_RESULT || 'DROP PACKAGE ' || PROD_SCHEMA_NAME || '.' || RES.OBJECT_NAME || ';' || CHR(10);
+    END LOOP;
+
+    -- Обновление пакетов, которые есть в обеих схемах, но с разным кодом
+    FOR RES IN (SELECT DISTINCT OBJECT_NAME
+                FROM ALL_OBJECTS
+                WHERE OBJECT_TYPE = 'PACKAGE'
+                  AND OWNER = DEV_SCHEMA_NAME
+                  AND OBJECT_NAME IN
+                      (SELECT OBJECT_NAME FROM ALL_OBJECTS WHERE OWNER = PROD_SCHEMA_NAME AND OBJECT_TYPE = 'PACKAGE'))
+    LOOP
+        -- Сравниваем код спецификации пакета
+        IF COMPARE_OBJECT_CODE(DEV_SCHEMA_NAME, PROD_SCHEMA_NAME, RES.OBJECT_NAME, 'PACKAGE') LIKE 'Different%' THEN
+            TEXT_RESULT := TEXT_RESULT || '-- Update package specification ' || RES.OBJECT_NAME || ' в ' || PROD_SCHEMA_NAME || CHR(10);
+            TEXT_RESULT := TEXT_RESULT || 'CREATE OR REPLACE PACKAGE ' || PROD_SCHEMA_NAME || '.' || RES.OBJECT_NAME || ' AS' || CHR(10);
+            FOR RES2 IN (SELECT TEXT
+                         FROM ALL_SOURCE
+                         WHERE TYPE = 'PACKAGE'
+                           AND NAME = RES.OBJECT_NAME
+                           AND OWNER = DEV_SCHEMA_NAME)
+            LOOP
+                TEXT_RESULT := TEXT_RESULT || RTRIM(RES2.TEXT, CHR(10)) || CHR(10);
+            END LOOP;
+            TEXT_RESULT := TEXT_RESULT || 'END ' || RES.OBJECT_NAME || ';' || CHR(10);
+        END IF;
+
+        -- Сравниваем код тела пакета
+        IF COMPARE_OBJECT_CODE(DEV_SCHEMA_NAME, PROD_SCHEMA_NAME, RES.OBJECT_NAME, 'PACKAGE BODY') LIKE 'Different%' THEN
+            TEXT_RESULT := TEXT_RESULT || '-- Update package body ' || RES.OBJECT_NAME || ' в ' || PROD_SCHEMA_NAME || CHR(10);
+            TEXT_RESULT := TEXT_RESULT || 'CREATE OR REPLACE PACKAGE BODY ' || PROD_SCHEMA_NAME || '.' || RES.OBJECT_NAME || ' AS' || CHR(10);
+            FOR RES2 IN (SELECT TEXT
+                         FROM ALL_SOURCE
+                         WHERE TYPE = 'PACKAGE BODY'
+                           AND NAME = RES.OBJECT_NAME
+                           AND OWNER = DEV_SCHEMA_NAME)
+            LOOP
+                TEXT_RESULT := TEXT_RESULT || RTRIM(RES2.TEXT, CHR(10)) || CHR(10);
+            END LOOP;
+            TEXT_RESULT := TEXT_RESULT || 'END ' || RES.OBJECT_NAME || ';' || CHR(10);
+        END IF;
+    END LOOP;
+
+    -- Создание индексов, которые есть в DEV, но отсутствуют в PROD
+    FOR RES IN (SELECT INDEX_NAME, INDEX_TYPE, TABLE_NAME
+                FROM ALL_INDEXES
+                WHERE TABLE_OWNER = DEV_SCHEMA_NAME
+                  AND INDEX_NAME NOT LIKE 'SYS_%'  -- Исключаем системные индексы
+                  AND INDEX_NAME NOT IN
+                      (SELECT INDEX_NAME
+                       FROM ALL_INDEXES
+                       WHERE TABLE_OWNER = PROD_SCHEMA_NAME
+                         AND INDEX_NAME NOT LIKE 'SYS_%'))
+    LOOP
+        SELECT COLUMN_NAME
+        INTO TEXT
+        FROM ALL_IND_COLUMNS
+        WHERE INDEX_NAME = RES.INDEX_NAME
+          AND TABLE_OWNER = DEV_SCHEMA_NAME;
+        TEXT_RESULT := TEXT_RESULT || 'CREATE ' || RES.INDEX_TYPE || ' INDEX ' || RES.INDEX_NAME || ' ON ' ||
+                       PROD_SCHEMA_NAME || '.' || RES.TABLE_NAME || '(' || TEXT || ');' || CHR(10);
+    END LOOP;
+
+    -- Удаление индексов, которые есть в PROD, но отсутствуют в DEV
+    FOR RES IN (SELECT INDEX_NAME
+                FROM ALL_INDEXES
+                WHERE TABLE_OWNER = PROD_SCHEMA_NAME
+                  AND INDEX_NAME NOT LIKE 'SYS_%'  -- Исключаем системные индексы
+                  AND INDEX_NAME NOT IN
+                      (SELECT INDEX_NAME
+                       FROM ALL_INDEXES
+                       WHERE TABLE_OWNER = DEV_SCHEMA_NAME
+                         AND INDEX_NAME NOT LIKE 'SYS_%'))
+    LOOP
+        TEXT_RESULT := TEXT_RESULT || 'DROP INDEX ' || RES.INDEX_NAME || ';' || CHR(10);
+    END LOOP;
+
+    -- Возвращаем результат
+    RETURN TEXT_RESULT;
+END;
+/
+
+SET SERVEROUTPUT ON;
+-- Вызов функции для тестирования первой задачи (сравнение таблиц и их структуры)
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('---------Task1: Compare tables---------');
+    DBMS_OUTPUT.PUT_LINE(COMPARE_SCHEMAS_V1('C##DEV', 'C##PROD'));
+    DBMS_OUTPUT.PUT_LINE('-------------------------------------------------------------');
+END;
+/
+
+-- Вызов функции для тестирования второй задачи (сравнение процедур, функций, индексов и пакетов)
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('---------Task2: Compare objects---------');
+    DBMS_OUTPUT.PUT_LINE(FULL_COMPARE_V2('C##DEV', 'C##PROD'));
+    DBMS_OUTPUT.PUT_LINE('-------------------------------------------------------------');
+END;
+/
+
+-- Вызов функции для тестирования третьей задачи (генерация DDL-скрипта для обновления схемы PROD)
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('---------Task3: generate ddl script---------');
+    DBMS_OUTPUT.PUT_LINE(COMPARE_SCHEMA_FINAL('C##DEV', 'C##PROD'));
+    DBMS_OUTPUT.PUT_LINE('-------------------------------------------------------------');
+END;
+/
+
+CREATE OR REPLACE PROCEDURE C##DEV.DevProc AS
+
+BEGIN
+  DBMS_OUTPUT.PUT_LINE('DEV only procedure');
+END;
+
+CREATE OR REPLACE FUNCTION C##DEV.DevFunc RETURN VARCHAR2 AS
+BEGIN
+  RETURN 'DEV function only';
+END;
