@@ -1,0 +1,88 @@
+﻿@model WEB_253502_Lishykk.UI.Models.ListModel<WEB_253502_Lishykk.Domain.Entities.Car>
+
+@{
+    var request = ViewContext.HttpContext.Request;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-0">
+    <div class="d-inline-block mb-4" style="position: relative; left: -170px; margin-top: 0;">
+        <ul class="nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle btn"
+                   data-bs-toggle="dropdown"
+                   href="#"
+                   role="button"
+                   aria-expanded="false"
+                   style="background-color: lightcyan;">
+                    @ViewData["currentCategory"]
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" asp-controller="Car" asp-action="Index" asp-route-category="@null">All</a>
+                    </li>
+                    @foreach (var item in ViewBag.Categories)
+                    {
+                        <li>
+                            <a class="dropdown-item" asp-controller="Car" asp-action="Index" asp-route-category="@item.NormalizedName">
+                                @item.Name
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <h2>Car Catalog</h2>
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Create New</a>
+    </p>
+
+    <!-- Этот div будет обновляться через AJAX -->
+    <!-- Используем data-атрибут для передачи текущей категории -->
+    <div id="carCatalog" data-category="@ViewData["currentCategory"]">
+        @await Html.PartialAsync("_ListPartial", Model)
+    </div>
+</div>
+
+@section Scripts{
+<script>
+    $(document).ready(function () {
+        // Подписка на клики по элементам пагинации
+        $(document).on("click", ".pagination .page-link", function (event) {
+            event.preventDefault();
+            var page = $(this).data("page");
+            //var category = $('#carCatalog').data('category'); // Получаем категорию
+            // Если текущая категория - "All", то передаем null
+            var category = $('#carCatalog').data('category') === 'All' ? null : $('#carCatalog').data('category');
+            console.log("Page:", page, "Category:", category); // Логируем для отладки
+            if (page) {
+                loadPage(page); // Загружаем данные для выбранной страницы
+            }
+        });
+
+
+        function loadPage(pageNo) {
+            var category = $('#carCatalog').data('category'); // Используем data-атрибут
+            console.log("Loading page:", pageNo, "with category:", category); // Логируем параметры запроса
+            $.ajax({
+                url: '/Car', // URL для AJAX-запроса
+                type: 'GET',
+                data: {
+                    category: category,
+                    pageNo: pageNo // Передаем номер страницы
+                },
+                success: function (data) {
+                    console.log(data); // Отладка: проверяем, что возвращается от сервера
+                    $("#carCatalog").html(data); // Обновляем содержимое
+                },
+                error: function () {
+                    alert("Error loading page.");
+                }
+            });
+        }
+
+    });
+</script>
+}

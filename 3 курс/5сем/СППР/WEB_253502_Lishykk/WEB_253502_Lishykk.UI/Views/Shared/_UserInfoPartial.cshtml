@@ -1,0 +1,65 @@
+﻿@using Microsoft.AspNetCore.Http
+@await Component.InvokeAsync("Cart")
+
+@{
+    var isAuthenticated = User.Identity.IsAuthenticated;
+    var username = User.Claims.FirstOrDefault(c => c.Type == "preferred_username")?.Value;
+    var avatar = User.Claims.FirstOrDefault(c => c.Type == "avatar")?.Value ?? "/Images/usericon.jpg";
+}
+
+@if (isAuthenticated)
+{
+    <div class="dropdown ms-4 nav-color">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            @username
+            <img src="@avatar" width="25" alt="User" class="rounded nav-color" />
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li>
+                <span class="dropdown-item-text">
+                    <img src="@avatar" width="50" alt="User" class="rounded" />
+                    @username
+                </span>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+                <form id="logoutForm" method="post" asp-controller="Account" asp-action="Logout" class="form-inline">
+                    <button id="logout" type="submit" class="nav-link btn btn-link text-dark">
+                        Logout
+                    </button>
+                </form>
+            </li>
+        </ul>
+    </div>
+}
+else
+{
+    <a asp-controller="Account" asp-action="Login" class="btn btn-primary">Login</a>
+    <a asp-controller="Account" asp-action="Register" class="btn btn-secondary">Register</a>
+}
+
+@* <div class="dropdown ms-4 nav-color">
+    <button class="btn btn-secondary dropdown-toggle"
+            type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+        User@gmail.com
+        <img src="~/images/usericon.png" width="25" alt="User" class="rounded nav-color" />
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li>
+            <span class="dropdown-item-text">
+				<img src="~/<a href=" c:\учёба\сппр\web_253502_lishykk\web_253502_lishykk.ui\views\shared\_userinfopartial.cshtml">c:\учёба\сппр\web_253502_lishykk\web_253502_lishykk.ui\views\shared\_userinfopartial.cshtml</a>images/usericon.png" width="50" alt="User" class="rounded" />
+                user@gmail.com
+            </span>
+        </li>
+        <li><hr class="dropdown-divider"></li>
+        <li>
+            <form id="logoutForm" method="post" asp-area="" asp-controller="Account" asp-action="LogOut" class="form-inline">
+                <button id="logout" type="submit" class="nav-link btn btn-link text-dark">
+                    Logout
+                </button>
+            </form>
+        </li>
+    </ul>
+</div> *@

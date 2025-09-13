@@ -1,0 +1,25 @@
+﻿@using WEB_253502_Lishykk.BlazorWasm.Models
+@inject WEB_253502_Lishykk.BlazorWasm.Services.CartService CartService
+@inject NavigationManager Navigation
+
+<a href="/cart" class="cart-icon position-relative text-decoration-none">
+    <i class="fas fa-shopping-cart"></i>
+    @if (CartService.GetTotalItems() > 0)
+    {
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            @CartService.GetTotalItems()
+        </span>
+    }
+</a>
+
+@code {
+    protected override void OnInitialized()
+    {
+        CartService.OnChange += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        CartService.OnChange -= StateHasChanged;
+    }
+}

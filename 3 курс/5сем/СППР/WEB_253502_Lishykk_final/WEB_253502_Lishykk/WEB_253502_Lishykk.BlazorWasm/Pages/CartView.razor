@@ -1,0 +1,153 @@
+﻿@page "/cart"
+@attribute [Authorize]
+@using Microsoft.AspNetCore.Authorization
+@using WEB_253502_Lishykk.BlazorWasm.Models
+@inject CartService CartService
+@inject NavigationManager Navigation
+
+<div class="container py-4">
+    <!-- Заголовок и кнопка возврата -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="display-6">
+            <i class="fas fa-shopping-cart me-2"></i>Ваша корзина
+        </h1>
+        <a href="/cars" class="btn btn-outline-primary">
+            <i class="fas fa-chevron-left me-1"></i>Назад к покупкам
+        </a>
+    </div>
+
+    <!-- Состояние пустой корзины -->
+    @if (CartService.Items.Count == 0)
+    {
+        <div class="empty-cart text-center py-5">
+            <i class="fas fa-shopping-basket fa-4x text-muted mb-4"></i>
+            <h3 class="mb-3">Корзина пуста</h3>
+            <p class="text-muted mb-4">Добавьте товары, чтобы продолжить</p>
+            <a href="/cars" class="btn btn-primary px-4">
+                <i class="fas fa-store me-2"></i>Перейти в магазин
+            </a>
+        </div>
+    }
+    else
+    {
+        <!-- Список товаров -->
+        <div class="cart-items mb-4">
+            @foreach (var item in CartService.Items.Values)
+            {
+                <div class="cart-item card mb-3 shadow-sm">
+                    <div class="row g-0">
+                        <!-- Изображение товара -->
+                        <div class="col-md-2 d-flex align-items-center p-3">
+                            <img src="@item.Item.ImagePath"
+                                 class="img-fluid rounded"
+                                 alt="@item.Item.Name"
+                                 style="max-height: 100px; object-fit: contain;">
+                        </div>
+
+                        <!-- Информация о товаре -->
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title">@item.Item.Name</h5>
+                                <p class="card-text text-muted small">@item.Item.Description</p>
+                                <div class="quantity-control d-flex align-items-center mt-3">
+                                    <button class="btn btn-outline-secondary btn-sm"
+                                            @onclick="async () => await UpdateQuantity(item.Item.Id, -1)"
+                                            disabled="@(item.Count <= 1)">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <span class="mx-3">@item.Count</span>
+                                    <button class="btn btn-outline-secondary btn-sm"
+                                            @onclick="async () => await UpdateQuantity(item.Item.Id, 1)">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Цена и управление -->
+                        <div class="col-md-4 d-flex flex-column justify-content-between p-3">
+                            <div class="text-end">
+                                <h5 class="text-primary">@((item.Item.Price * item.Count).ToString("N2"))</h5>
+                                <small class="text-muted">@item.Item.Price.ToString("N2") руб. за шт.</small>
+                            </div>
+                            <button class="btn btn-outline-danger btn-sm align-self-end"
+                                    @onclick="async () => await RemoveItem(item.Item.Id)">
+                                <i class="fas fa-trash-alt me-1"></i>Удалить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Итоговая сумма -->
+        <div class="cart-summary card shadow">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h4 class="mb-0">Общая сумма:</h4>
+                        <small class="text-muted">@CartService.Items.Count товара(ов)</small>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <h3 class="text-primary mb-0 me-4">@CartService.GetTotalPrice().ToString("N2") руб.</h3>
+                        <div>
+                            <button class="btn btn-outline-danger me-2"
+                                    @onclick="async () => await ClearCart()">
+                                <i class="fas fa-broom me-1"></i>Очистить
+                            </button>
+                            <button class="btn btn-success" @onclick="Checkout">
+                                <i class="fas fa-credit-card me-1"></i>Оформить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await CartService.InitializeAsync();
+        CartService.OnChange += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        CartService.OnChange -= StateHasChanged;
+    }
+
+    private async Task UpdateQuantity(int id, int delta)
+    {
+        if (CartService.Items.TryGetValue(id, out var item))
+        {
+            var newCount = item.Count + delta;
+            if (newCount > 0)
+            {
+                item.Count = newCount;
+                await CartService.SaveCartAsync();
+                CartService.NotifyStateChanged();
+            }
+            else
+            {
+                await RemoveItem(id);
+            }
+        }
+    }
+
+    private async Task RemoveItem(int id)
+    {
+        await CartService.RemoveItem(id);
+    }
+
+    private async Task ClearCart()
+    {
+        await CartService.ClearCart();
+    }
+
+    private void Checkout()
+    {
+        Navigation.NavigateTo("/checkout");
+    }
+}

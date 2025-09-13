@@ -1,0 +1,7 @@
+https://localhost:7002/api/car/1
+https://localhost:7002/api/car/category/suv
+https://localhost:7002/api/car/category/suv?pageNo=1&pageSize=5
+https://localhost:7002/api/car/category?pageNo=1&pageSize=5
+без категории уже
+
+

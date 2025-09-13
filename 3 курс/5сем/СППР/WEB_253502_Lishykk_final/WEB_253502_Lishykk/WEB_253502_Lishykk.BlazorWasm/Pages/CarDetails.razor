@@ -1,0 +1,63 @@
+﻿@using WEB_253502_Lishykk.BlazorWasm.Models
+@code {
+    [Parameter] public Car SelectedCar { get; set; }
+}
+<style>
+    .compact-card {
+        width: 100%; 
+        max-width: 700px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin: 0 auto;
+    }
+
+        /* Изображение */
+        .compact-card .card-img-right {
+            width: 230px; 
+            height: auto; 
+            object-fit: cover;
+        }
+
+        /* Тело карточки */
+        .compact-card .card-body {
+            flex: 1; 
+            padding: 0.5rem; 
+        }
+
+        /* Заголовок */
+        .compact-card .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        /* Текст */
+        .compact-card .card-text {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* Цена */
+        .compact-card strong {
+            font-size: 1rem;
+            color: #333;
+        }
+
+</style>
+@if (SelectedCar == null)
+{
+    <p>Выберите медикамент для просмотра деталей.</p>
+}
+else
+{
+    <div class="card compact-card d-flex flex-row align-items-center p-2">
+        <img src="@SelectedCar.ImagePath" alt="@SelectedCar.Name" class="card-img-right rounded img-thumbnail ms-2" />
+
+        <div class="card-body">
+            <h5 class="card-title">@SelectedCar.Name</h5>
+            <p class="card-text">@SelectedCar.Description</p>
+            <p><strong>Цена:</strong> @SelectedCar.Price руб.</p>
+        </div>
+    </div>
+}
+

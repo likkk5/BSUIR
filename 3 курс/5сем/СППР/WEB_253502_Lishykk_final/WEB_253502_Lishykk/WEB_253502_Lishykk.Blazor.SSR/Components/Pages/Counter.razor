@@ -1,0 +1,80 @@
+﻿@page "/counter"
+@page "/counter/{InitialValue:int?}"
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Components
+@rendermode InteractiveServer //клиент и сервер поддерживают постоянное соединение, изменения синхронизируются с клиентом в режиме реального времени. Это позволяет обрабатывать действия на стороне сервера.
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<EditForm Model="@counterModel" OnValidSubmit="InitializeCounter">
+    <DataAnnotationsValidator/>
+    <ValidationSummary />
+
+    <div class="form-inline">
+        <label>Enter Initial Count:</label>
+        <InputNumber @bind-Value="counterModel.InitialCount" class="form-control mx-2" />
+        <button type="submit" class="btn btn-primary">Set Initial Count</button>
+        @* @bind привязка данных
+        @bind-Value связывает значение свойства компонента с внешним значением, переданным в компонент.
+        *@
+    </div>
+</EditForm>
+
+@code {
+    //атрибут с помощью которого данные передаются извне компоненту через параметры
+    [Parameter]
+    public int? InitialValue { get; set; }
+
+    private int currentCount = 0;
+
+    private CounterModel counterModel = new CounterModel();
+
+    protected override void OnInitialized()
+    {
+        // Set initial value if passed in query string
+        if (InitialValue.HasValue)
+        {
+            currentCount = InitialValue.Value;
+            counterModel.InitialCount = InitialValue.Value;
+        }
+    }
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    private void InitializeCounter()
+    {
+        // Set current count based on form submission
+        currentCount = counterModel.InitialCount;
+    }
+
+    // Model class with validation
+    public class CounterModel
+    {
+        [Range(0, 10, ErrorMessage = "Initial count must be between 0 and 10.")]
+        public int InitialCount { get; set; } = 0;
+    }
+}
+<style>
+    /* Используем Flexbox для горизонтального выравнивания */
+    .form-inline {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Отступы между элементами */
+    }
+
+    /* Настроим расстояние между полем ввода и кнопкой */
+    .form-control.mx-2 {
+        margin-right: 8px;
+        width: 400px;
+    }
+</style>
+@* Метод OnParameterSetAsync вызывается каждый раз, когда параметры компонента обновляются.  *@
+@* Router отвечает за маршрутизацию в приложении Blazor. Он определяет, какой компонент или страница должна быть загружена в зависимости от текущего URL. *@
+@* директива @page и параметр маршрута используется чтобы получить значение сегмента маршрута к странице *@

@@ -1,0 +1,43 @@
+﻿@model WEB_253502_Lishykk.Domain.Entities.Cart
+
+<h2>Your Cart</h2>
+
+@if (Model.CartItems.Count == 0)
+{
+    <p>Your cart is empty</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Car</th>
+                <th>Image</th>
+                <th>Description</th>
+                <th>Count</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.CartItems)
+            {
+                <tr>
+                    <td>@item.Value.Item.Name</td>
+                    <td>
+                         <img src="@item.Value.Item.ImagePath" alt="@item.Value.Item.Name" style="width: 200px; height: auto;" /> 
+                    </td>
+                    <td>@item.Value.Item.Description</td>
+                    <td>@item.Value.Count</td>
+                    <td>
+                    @*  <a asp-controller="Cart" asp-action="Remove" asp-route-id="@item.Key" class="btn btn-danger">Remove</a> *@
+                        <a asp-controller="Cart" asp-action="Remove" asp-route-id="@item.Key" class="btn btn-danger">
+                            <i class="fas fa-trash-alt"></i> Remove
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a asp-controller="Cart" asp-action="Clear" class="btn btn-danger">Clear Cart</a> 
+}

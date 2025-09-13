@@ -1,0 +1,60 @@
+﻿@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@inject NavigationManager Navigation
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject WEB_253502_Lishykk.BlazorWasm.Services.CartService CartService
+
+<AuthorizeView>
+    <Authorized>
+        Hello, @userName!
+        <button class="nav-link btn btn-link" @onclick="BeginLogOut">Log out</button>
+    </Authorized>
+    <NotAuthorized>
+        <a href="authentication/login">Log in</a>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private string userName = "Guest";
+
+    protected override async Task OnInitializedAsync()
+    {
+        AuthenticationStateProvider.AuthenticationStateChanged += OnAuthenticationStateChanged;
+        await UpdateUserName();
+    }
+
+    private async Task UpdateUserName()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity != null && user.Identity.IsAuthenticated)
+        {
+            userName = user.FindFirst(c => c.Type == "name")?.Value
+                       ?? user.FindFirst(c => c.Type == "preferred_username")?.Value
+                       ?? user.FindFirst(c => c.Type == "email")?.Value
+                       ?? "User";
+        }
+        else
+        {
+            userName = "Guest";
+        }
+
+        StateHasChanged(); // Обновляем UI после изменения состояния
+    }
+
+    private async void OnAuthenticationStateChanged(Task<AuthenticationState> task)
+    {
+        await UpdateUserName();
+    }
+
+    public async Task BeginLogOut()
+    {
+        await CartService.SaveBeforeLogout();
+        Navigation.NavigateToLogout("authentication/logout");
+    }
+
+    public void Dispose()
+    {
+        AuthenticationStateProvider.AuthenticationStateChanged -= OnAuthenticationStateChanged;
+    }
+}

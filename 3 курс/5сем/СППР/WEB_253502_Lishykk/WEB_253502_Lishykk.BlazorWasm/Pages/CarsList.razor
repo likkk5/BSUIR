@@ -1,0 +1,63 @@
+﻿@inject IDataService DataService
+@implements IDisposable
+
+<div class="container my-4">
+    <h3 class="text-center mb-4">Список медикаментов</h3>
+
+    @if (!DataService.Success)
+    {
+        <div class="alert alert-danger text-center" role="alert">
+            Ошибка: @DataService.ErrorMessage
+        </div>
+    }
+    else if (DataService.Cars == null || DataService.Cars.Count == 0)
+    {
+        <div class="alert alert-warning text-center" role="alert">
+            Медикаменты не найдены.
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var car in DataService.Cars)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="@($"{car.ImagePath}")" class="card-img-top" alt="@car.Name" style="height: 330px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">@car.Name</h5>
+                            <p class="card-text text-muted">@car.Description</p>
+                            <p class="card-text"><strong>Цена:</strong> @car.Price руб.</p>
+                            <button class="btn btn-primary btn-sm w-100 d-flex align-items-center justify-content-center" @onclick="() => SelectCar(car.Id)">
+                                <i class="fas fa-search"></i>
+                                <span class="ms-2">Подробнее</span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        // Подписываемся на событие обновления данных
+        DataService.DataLoaded += StateHasChanged;
+    }
+
+    [Parameter] public EventCallback<int> CarSelected { get; set; }
+
+    private async Task SelectCar(int carId)
+    {
+        await CarSelected.InvokeAsync(carId);
+    }
+
+    public void Dispose()
+    {
+        // Отписываемся от события при уничтожении компонента
+        DataService.DataLoaded -= StateHasChanged;
+    }
+}

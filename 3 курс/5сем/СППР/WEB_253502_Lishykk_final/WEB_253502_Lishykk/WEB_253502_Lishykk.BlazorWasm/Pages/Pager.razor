@@ -1,0 +1,71 @@
+﻿@inject IDataService DataService
+@implements IDisposable
+<style>
+    .pager-container {
+        display: flex;
+        justify-content: center; /* Центрирует пейджер горизонтально */
+    }
+</style>
+@if (DataService.TotalPages > 1)
+{
+    <nav aria-label="Навигация по страницам" class="pager-container">
+        <ul class="pagination">
+            <!-- Кнопка "Назад" -->
+            <li class="page-item @(DataService.CurrentPage == 1 ? "disabled" : "")">
+                <button class="page-link" @onclick="() => OnPageSelected(DataService.CurrentPage - 1)" aria-label="Назад">
+                    «
+                </button>
+            </li>
+
+            <!-- Цифровые кнопки страниц -->
+            @for (int i = 1; i <= DataService.TotalPages; i++)
+            {
+                var currentPage = i;
+                <li class="page-item @(currentPage == DataService.CurrentPage ? "active" : "")">
+                    <button class="page-link" @onclick="() => OnPageSelected(currentPage)">
+                        @currentPage
+                    </button>
+                </li>
+            }
+            <!-- Кнопка "Вперед" -->
+            <li class="page-item @(DataService.CurrentPage == DataService.TotalPages ? "disabled" : "")">
+                <button class="page-link" @onclick="() => OnPageSelected(DataService.CurrentPage + 1)" aria-label="Вперед">
+                    »
+                </button>
+            </li>
+
+        </ul>
+    </nav>
+}
+
+@code {
+    protected override void OnInitialized()
+    {
+        // Подписываемся на событие обновления данных
+        DataService.DataLoaded += StateHasChanged;
+    }
+
+    private async Task OnPageSelected(int pageNo)
+    {
+        Console.WriteLine($"Нажата страница: {pageNo}");
+        // Проверяем, что выбранная страница валидна и не является текущей
+        if (pageNo != DataService.CurrentPage && pageNo > 0 && pageNo <= DataService.TotalPages)
+        {
+            // Обновляем текущую страницу
+            DataService.CurrentPage = pageNo;
+
+            // Загружаем данные для выбранной страницы
+            await DataService.GetCarListAsync(DataService.SelectedCategory?.NormalizedName, pageNo);
+
+            // Обновляем интерфейс
+            StateHasChanged();
+        }
+    }
+
+
+    public void Dispose()
+    {
+        // Отписываемся от события при уничтожении компонента
+        DataService.DataLoaded -= StateHasChanged;
+    }
+}

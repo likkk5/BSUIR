@@ -1,0 +1,5 @@
+2024-10-25 15:48:47.181 +03:00 [INF] ---> Request /WEB_253502_Lishykk.UI.styles.css returns 404
+2024-10-25 15:57:03.419 +03:00 [INF] ---> Request /Account/Logout returns 302
+2024-10-25 15:57:03.583 +03:00 [INF] ---> Request /WEB_253502_Lishykk.UI.styles.css returns 404
+2024-10-25 15:57:05.226 +03:00 [INF] ---> Request /Account/Login returns 302
+2024-10-25 15:57:10.671 +03:00 [INF] ---> Request /WEB_253502_Lishykk.UI.styles.css returns 404

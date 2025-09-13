@@ -1,0 +1,44 @@
+﻿@using WEB_253502_Lishykk.BlazorWasm.Pages
+@inherits LayoutComponentBase
+
+@inject AuthenticationStateProvider AuthProvider
+@inject WEB_253502_Lishykk.BlazorWasm.Services.CartService CartService
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4 auth">
+            <LoginDisplay />
+            <CartIcon />
+            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        AuthProvider.AuthenticationStateChanged += OnAuthStateChanged;
+        await CartService.InitializeAsync();
+        CartService.OnChange += StateHasChanged;
+    }
+
+    private async void OnAuthStateChanged(Task<AuthenticationState> task)
+    {
+        await CartService.InitializeAsync();
+        StateHasChanged(); // Обновить UI после смены пользователя
+    }
+
+    public void Dispose()
+    {
+        AuthProvider.AuthenticationStateChanged -= OnAuthStateChanged;
+        CartService.OnChange -= StateHasChanged;
+    }
+}

@@ -1,0 +1,154 @@
+﻿@page
+@model WEB_253502_Lishykk.UI.Areas.Admin.Pages.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Create New</a>
+</p>
+<ul class="nav">
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle btn" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="background-color: lightcyan;">
+            @ViewData["currentCategory"]
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a class="dropdown-item" asp-page="./Index" asp-route-category="@null">All</a>
+            </li>
+            @foreach (var category in Model.Categories)
+            {
+                <li>
+                    <a class="dropdown-item" asp-page="./Index" asp-route-category="@category.NormalizedName">@category.Name</a>
+                </li>
+            }
+        </ul>
+    </li>
+</ul>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Car[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car[0].CategoryId)      
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car[0].Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car[0].ImagePath)
+            </th>
+@*             <th>
+                @Html.DisplayNameFor(model => model.Car[0].ImageMimeType)
+            </th> *@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Car)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryId) 
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    <img src="@Url.Content(item.ImagePath)" alt="@item.Name" style="max-width: 100px; max-height: 100px;" />
+                </td>
+@*                 <td>
+                    @Html.DisplayFor(modelItem => item.ImageMimeType)
+                </td> *@
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">
+                        <i class="fas fa-edit"></i> Edit
+                    </a> |
+                    <a asp-page="./Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">
+                        <i class="fas fa-info-circle"></i> Details
+                    </a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">
+                        <i class="fas fa-trash"></i> Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div style="text-align: center;">
+    <!-- Пример пагинации -->
+    @if (Model.CarListModel?.TotalPages > 1)
+    {
+        <nav>
+            <ul class="pagination justify-content-center">
+                <!-- Предыдущая страница -->
+                <li class="page-item @(Model.PageNo == 1 ? "disabled" : "")">
+                    <a class="page-link" asp-page="./Index" asp-route-pageNo="@(Model.PageNo - 1)" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+
+                <!-- Номера страниц -->
+                @for (int i = 1; i <= Model.CarListModel.TotalPages; i++)
+                {
+                    <li class="page-item @(i == Model.PageNo ? "active" : "")">
+                        <a class="page-link" asp-page="./Index" asp-route-pageNo="@i">@i</a>
+                    </li>
+                }
+
+                <!-- Следующая страница -->
+                <li class="page-item @(Model.PageNo == Model.CarListModel.TotalPages ? "disabled" : "")">
+                    <a class="page-link" asp-page="./Index" asp-route-pageNo="@(Model.PageNo + 1)" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    }
+</div>
+
+@* <!-- Пагинация -->
+@if (Model.CarListModel?.TotalPages > 1)
+{
+    <nav>
+        <ul class="pagination justify-content-center">
+            <!-- Предыдущая страница -->
+            <li class="page-item @(Model.PageNo == 1 ? "disabled" : "")">
+                <a class="page-link" asp-page="./Index" asp-route-pageNo="@(Model.PageNo - 1)" asp-route-category="@Model.CurrentCategory" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+
+            <!-- Номера страниц -->
+            @for (int i = 1; i <= Model.CarListModel.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.PageNo ? "active" : "")">
+                    <a class="page-link" asp-page="./Index" asp-route-pageNo="@i" asp-route-category="@Model.CurrentCategory">@i</a>
+                </li>
+            }
+
+            <!-- Следующая страница -->
+            <li class="page-item @(Model.PageNo == Model.CarListModel.TotalPages ? "disabled" : "")">
+                <a class="page-link" asp-page="./Index" asp-route-pageNo="@(Model.PageNo + 1)" asp-route-category="@Model.CurrentCategory" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav> 
+}*@
+

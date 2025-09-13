@@ -1,0 +1,26 @@
+﻿@page "/cars"
+@attribute [Authorize]
+@using Microsoft.AspNetCore.Authorization
+@using WEB_253502_Lishykk.BlazorWasm.Models
+@inject IDataService DataService
+
+<h3>Медикаменты</h3>
+<CategorySelector />
+<CarsList CarSelected="OnCarSelected" />
+<Pager />
+<CarDetails SelectedCar="SelectedCar" />
+
+@code {
+    private Car SelectedCar { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await DataService.GetCategoryListAsync();
+        await DataService.GetCarListAsync();
+    }
+
+    private void OnCarSelected(int id)
+    {
+        SelectedCar = DataService.Cars.FirstOrDefault(car => car.Id == id);
+    }
+}

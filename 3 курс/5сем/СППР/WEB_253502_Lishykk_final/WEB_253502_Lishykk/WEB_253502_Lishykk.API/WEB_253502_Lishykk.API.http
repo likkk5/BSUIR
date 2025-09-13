@@ -1,0 +1,6 @@
+@WEB_253502_Lishykk.API_HostAddress = http://localhost:5062
+
+GET {{WEB_253502_Lishykk.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

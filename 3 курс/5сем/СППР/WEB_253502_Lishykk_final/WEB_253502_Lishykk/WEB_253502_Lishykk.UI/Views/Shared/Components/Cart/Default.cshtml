@@ -1,0 +1,7 @@
+﻿@model CartViewModel
+
+<div class="d-flex ms-auto align-items-center">
+    <a asp-controller="Cart" asp-action="Index" class="navbar-text ms-auto">
+        @Model.TotalPrice руб. <i class="fa-solid fa-cart-shopping"></i> (@Model.ItemsCount)
+    </a>
+</div>

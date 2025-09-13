@@ -1,0 +1,73 @@
+﻿@page
+@model WEB_253502_Lishykk.UI.Areas.Admin.Pages.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Car</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data">@*позволяет загружать в форму файл не только текстовые данные*@
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label asp-for="Car.Name" class="control-label"></label> @*  атрибут asp-for, который связывает элементы управления формы с соответствующими свойствами модели *@
+                <input asp-for="Car.Name" class="form-control" />
+                <span asp-validation-for="Car.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Car.Description" class="control-label"></label>
+                <input asp-for="Car.Description" class="form-control" />
+                <span asp-validation-for="Car.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Car.Price" class="control-label"></label>
+                <input asp-for="Car.Price" class="form-control" />
+                <span asp-validation-for="Car.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Car.ImagePath" class="control-label"></label>
+                <input asp-for="Car.ImagePath" class="form-control" />
+                <span asp-validation-for="Car.ImagePath" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Car.ImageMimeType" class="control-label"></label>
+                <input asp-for="Car.ImageMimeType" class="form-control" />
+                <span asp-validation-for="Car.ImageMimeType" class="text-danger"></span>
+            </div>
+@*             <div class="form-group">
+                <label asp-for="Car.CategoryId" class="control-label"></label>
+                <select asp-for="Car.CategoryId" class ="form-control" asp-items="ViewBag.CategoryId"></select>
+            </div> *@
+            <!-- Поле для загрузки изображения -->
+            <div class="form-group">
+                @* <input type="file" asp-for="ImageFile" /> *@
+                <label asp-for="ImageFile" class="control-label">Upload Image</label>
+                <input asp-for="ImageFile" type="file" class="form-control" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+
+            <!-- Выпадающий список для выбора категории -->
+            <div class="form-group">
+                <label asp-for="Car.CategoryId" class="control-label"></label>
+                <select asp-for="Car.CategoryId" class="form-control" asp-items="Model.CategorySelectList"></select>
+                <span asp-validation-for="Car.CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
