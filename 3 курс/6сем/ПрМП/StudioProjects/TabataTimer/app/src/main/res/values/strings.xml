@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TabataTimer</string>
+
+        <!-- Массив для выбора языка -->
+        <string-array name="language_options">
+            <item>Русский</item>
+            <item>English</item>
+        </string-array>
+
+        <string-array name="language_values">
+            <item>ru</item>
+            <item>en</item>
+        </string-array>
+
+        <!-- Массив для выбора размера шрифта -->
+        <string-array name="font_size_options">
+            <item>Маленький</item>
+            <item>Средний</item>
+            <item>Большой</item>
+        </string-array>
+
+        <string-array name="font_size_values">
+            <item>small</item>
+            <item>medium</item>
+            <item>large</item>
+        </string-array>
+
+
+</resources>

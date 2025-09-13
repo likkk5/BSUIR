@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Переключатель для тёмной темы -->
+    <SwitchPreferenceCompat
+        android:key="dark_mode"
+        android:title="Темная тема"
+        android:defaultValue="false" />
+
+    <!-- Список для выбора размера шрифта -->
+    <ListPreference
+        android:key="font_size"
+        android:title="Размер шрифта"
+        android:entries="@array/font_size_options"
+        android:entryValues="@array/font_size_values"
+        android:defaultValue="medium" />
+
+    <!-- Список для выбора языка -->
+    <ListPreference
+        android:key="language"
+        android:title="Язык"
+        android:entries="@array/language_options"
+        android:entryValues="@array/language_values"
+        android:defaultValue="ru" />
+
+    <!-- Кнопка для очистки данных -->
+    <Preference
+        android:key="clear_data"
+        android:title="Очистить все данные"
+        android:summary="Все сохраненные данные будут удалены" />
+</PreferenceScreen>

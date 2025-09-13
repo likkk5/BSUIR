@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Главная тема без ActionBar -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Темы для размера шрифта -->
+    <style name="FontSizeSmall" parent="AppTheme">
+        <item name="android:textAppearance">@style/TextAppearance.Small</item>
+    </style>
+
+    <style name="FontSizeMedium" parent="AppTheme">
+        <item name="android:textAppearance">@style/TextAppearance.Medium</item>
+    </style>
+
+    <style name="FontSizeLarge" parent="AppTheme">
+        <item name="android:textAppearance">@style/TextAppearance.Large</item>
+    </style>
+
+    <!-- Размеры шрифтов -->
+    <style name="TextAppearance.Small" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.Medium" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.Large" parent="@android:style/TextAppearance">
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <!-- Тема для Splash Screen -->
+    <style name="Theme.SplashScreen" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+</resources>

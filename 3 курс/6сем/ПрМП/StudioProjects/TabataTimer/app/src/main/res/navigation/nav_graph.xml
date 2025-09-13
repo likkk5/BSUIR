@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Главный фрагмент -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.tabatatimer.ui.screens.HomeFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home">
+
+        <!-- Действие для перехода на фрагмент редактирования -->
+        <action
+            android:id="@+id/action_homeFragment_to_editSequenceFragment"
+            app:destination="@id/editSequenceFragment" />
+
+        <!-- Действие для перехода на таймер -->
+        <action
+            android:id="@+id/action_homeFragment_to_timerFragment"
+            app:destination="@id/timerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <!-- Фрагмент редактирования последовательности -->
+    <fragment
+        android:id="@+id/editSequenceFragment"
+        android:name="com.example.tabatatimer.ui.screens.EditSequenceFragment"
+        android:label="Edit Sequence Fragment"
+        tools:layout="@layout/fragment_edit_sequence" />
+
+    <!-- Фрагмент таймера -->
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.example.tabatatimer.ui.screens.TimerFragment"
+        android:label="Таймер" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.tabatatimer.ui.screens.SettingsFragment"
+        android:label="Настройки"
+        tools:layout="@xml/preferences" />
+</navigation>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+  <diagram name="Page-1">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- MainActivity -->
+        <mxCell id="2" value="MainActivity&#xa;---------------------&#xa;calculator: Calculator&#xa;isDemo: Boolean&#xa;---------------------&#xa;+ getCalculator(): Calculator&#xa;+ isDemo(): Boolean&#xa;+ changeMode()" style="rounded=1;whiteSpace=wrap;fillColor=#D9EAD3;" vertex="1" parent="1"/>
+        
+        <!-- Connector -->
+        <mxCell id="3" value="Connector&#xa;---------------------&#xa;+ getCalculator(): Calculator&#xa;+ isDemo(): Boolean" style="rounded=1;whiteSpace=wrap;fillColor=#F9CB9C;" vertex="1" parent="1"/>
+        
+        <!-- Calculator -->
+        <mxCell id="4" value="Calculator&#xa;---------------------&#xa;res: String&#xa;calculationBlocks: List<CalculationBlock>&#xa;---------------------&#xa;+ appendNumber(String)&#xa;+ setFloat()&#xa;+ delete()&#xa;+ clear()&#xa;+ equals(): Double&#xa;+ complete()&#xa;+ appendFunction(String, Function<Double, Double>)&#xa;+ appendOperation(Operations)" style="rounded=1;whiteSpace=wrap;fillColor=#C9DAF8;" vertex="1" parent="1"/>
+        
+        <!-- Operations -->
+        <mxCell id="5" value="Operations&#xa;---------------------&#xa;+ ADD&#xa;+ SUBTRACT&#xa;+ MULTIPLY&#xa;+ DIVIDE&#xa;+ POWER" style="rounded=1;whiteSpace=wrap;fillColor=#FFD966;" vertex="1" parent="1"/>
+        
+        <!-- BaseModeFragment -->
+        <mxCell id="6" value="BaseModeFragment&#xa;---------------------&#xa;activ: Connector&#xa;calculator: Calculator&#xa;isDemo: Boolean&#xa;---------------------&#xa;+ getInstance(): BaseModeFragment" style="rounded=1;whiteSpace=wrap;fillColor=#EAD1DC;" vertex="1" parent="1"/>
+        
+        <!-- ScienceModeFragment -->
+        <mxCell id="7" value="ScienceModeFragment&#xa;---------------------&#xa;activ: Connector&#xa;calculator: Calculator&#xa;mainActivity: MainActivity&#xa;---------------------&#xa;+ getInstance(): ScienceModeFragment" style="rounded=1;whiteSpace=wrap;fillColor=#D5A6BD;" vertex="1" parent="1"/>
+        
+        <!-- CalculationBlock -->
+        <mxCell id="8" value="CalculationBlock&#xa;---------------------&#xa;value: Double&#xa;operation: Operations&#xa;next: CalculationBlock?&#xa;---------------------&#xa;+ execute(): Double" style="rounded=1;whiteSpace=wrap;fillColor=#A4C2F4;" vertex="1" parent="1"/>
+        
+        <!-- Connections -->
+        <mxCell id="9" edge="1" source="2" target="3"/>
+        <mxCell id="10" edge="1" source="2" target="4"/>
+        <mxCell id="11" edge="1" source="2" target="6"/>
+        <mxCell id="12" edge="1" source="2" target="7"/>
+        <mxCell id="13" edge="1" source="4" target="5"/>
+        <mxCell id="14" edge="1" source="4" target="8"/>
+        <mxCell id="15" edge="1" source="6" target="4"/>
+        <mxCell id="16" edge="1" source="7" target="4"/>
+        <mxCell id="17" edge="1" source="8" target="5"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
