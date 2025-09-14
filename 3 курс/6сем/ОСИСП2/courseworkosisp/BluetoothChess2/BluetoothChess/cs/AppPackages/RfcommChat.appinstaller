@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="file:///D:/projects/ksu/BluetoothRfcommChat/publish/RfcommChat.appinstaller"
+	Version="1.0.0.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	<MainBundle
+		Name="Microsoft.SDKSamples.RfcommChatSampleCS.CS"
+		Version="1.0.0.0"
+		Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+		Uri="file:///D:/projects/ksu/BluetoothRfcommChat/publish/RfcommChat_1.0.0.0_Debug_Test/RfcommChat_1.0.0.0_x86_x64_Debug.msixbundle" />
+	<Dependencies>
+		<Package
+			Name="Microsoft.NET.CoreRuntime.1.1"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file:///D:/projects/ksu/BluetoothRfcommChat/publish/RfcommChat_1.0.0.0_Debug_Test/Dependencies/x64/Microsoft.NET.CoreRuntime.1.1.appx"
+			Version="1.1.27004.0" />
+		<Package
+			Name="Microsoft.NET.CoreRuntime.1.1"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x86"
+			Uri="file:///D:/projects/ksu/BluetoothRfcommChat/publish/RfcommChat_1.0.0.0_Debug_Test/Dependencies/x86/Microsoft.NET.CoreRuntime.1.1.appx"
+			Version="1.1.27004.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00.Debug"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file:///D:/projects/ksu/BluetoothRfcommChat/publish/RfcommChat_1.0.0.0_Debug_Test/Dependencies/x64/Microsoft.VCLibs.x64.Debug.14.00.appx"
+			Version="14.0.33519.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00.Debug"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x86"
+			Uri="file:///D:/projects/ksu/BluetoothRfcommChat/publish/RfcommChat_1.0.0.0_Debug_Test/Dependencies/x86/Microsoft.VCLibs.x86.Debug.14.00.appx"
+			Version="14.0.33519.0" />
+	</Dependencies>
+	<UpdateSettings>
+		<OnLaunch
+			HoursBetweenUpdateChecks="0" />
+	</UpdateSettings>
+</AppInstaller>
