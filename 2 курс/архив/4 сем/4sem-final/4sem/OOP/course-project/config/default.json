@@ -1,0 +1,20 @@
+{
+  "CORS": true,
+  "POSTGRES": {
+    "HOST": "localhost",
+    "USERNAME": "postgres",
+    "PASSWORD": "root",
+    "PORT": 5432,
+    "DB": "postgres",
+    "RETRY_ATTEMPTS": 15,
+    "RETRY_DELAY": 1000
+  },
+  "API": {
+    "PORT": 3001
+  },
+  "JWT": {
+    "ACCESS_SECRET": "secret",
+    "ACCESS_EXPIRATION_TIME": "1h",
+    "REFRESH_EXPIRATION_TIME": "100d"
+  }
+}

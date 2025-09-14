@@ -1,0 +1,15 @@
+export enum HASH {
+  SALT_LENGTH = 12,
+}
+
+export enum PASSWORD_VALIDATION_CONSTANTS {
+  MIN_LENGTH = 8,
+  MIN_LOWERCASE_CHARACTERS = 1,
+  MIN_UPPERCASE_CHARACTERS = 1,
+  MIN_NUMBERS = 1,
+  MIN_SYMBOLS = 1,
+}
+
+export const COOKIE = {
+  ACCESS_TOKEN: 'Authorization',
+};

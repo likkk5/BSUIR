@@ -1,0 +1,3 @@
+/home/inty/Desktop/acs-spring-l3/build/CMakeFiles/rebuild_cache.dir
+/home/inty/Desktop/acs-spring-l3/build/CMakeFiles/riscv_sim.dir
+/home/inty/Desktop/acs-spring-l3/build/CMakeFiles/edit_cache.dir

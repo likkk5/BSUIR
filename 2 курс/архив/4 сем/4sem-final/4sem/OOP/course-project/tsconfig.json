@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "NodeNext",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "strict": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "resolveJsonModule": true,
+    "paths": {
+      "@libs/entities": [
+        "libs/entities/src"
+      ],
+      "@libs/repositories": [
+        "libs/repositories/src"
+      ],
+      "@libs/auth": [
+        "libs/auth/src"
+      ],
+      "@libs/constants": [
+        "libs/constants/src"
+      ],
+      "@libs/api-decorators": [
+        "libs/api-decorators/src"
+      ],
+      "@libs/exceptions": [
+        "libs/exceptions/src"
+      ]
+    }
+  }
+}

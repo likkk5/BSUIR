@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bahdanau_153502.UI.Pages.AddOrUpdateLandmark"
+             xmlns:converters="clr-namespace:Bahdanau_153502.UI.ValueConverters"
+             xmlns:models="clr-namespace:Bahdanau_153502.UI.ViewModels"
+             xmlns:entities="clr-namespace:Bahdanau_153502.Domain.Entities;assembly=Bahdanau_153502.Domain"
+             x:DataType="models:AddOrUpdateLandmarkViewModel"
+             Title="AddOrUpdateLandmark">
+    <ContentPage.Resources>
+        <converters:ValueToBooleanConverter x:Key="IsNotNull"/>
+    </ContentPage.Resources>
+
+    <StackLayout Margin="10" Spacing="15">
+        <HorizontalStackLayout>
+            <Button Text="Pick a png image!" Command="{Binding PickImageCommand}"/>
+            <Label Text="Succesfully added" IsVisible="{Binding Image, Converter={StaticResource IsNotNull}}"/>
+        </HorizontalStackLayout>
+        <VerticalStackLayout>
+            <Label Text="City"/>
+            <Entry Text="{Binding LandmarkToUpsert.City}" Placeholder="City"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Label Text="Description"/>
+            <Entry Text="{Binding LandmarkToUpsert.Description}" Placeholder="Title"/>
+        </VerticalStackLayout>
+    
+        <VerticalStackLayout>
+            <Label Text="Ticket price"/>
+            <Entry Text="{Binding LandmarkToUpsert.TicketPrice}" Placeholder="0"/>
+        </VerticalStackLayout>
+
+        <Button Text="Save" Command="{Binding AddOrUpdateLandmarkCommand}"/>
+    </StackLayout>
+</ContentPage>

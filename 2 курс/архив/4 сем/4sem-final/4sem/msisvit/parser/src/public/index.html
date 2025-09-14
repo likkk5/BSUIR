@@ -1,0 +1,134 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>C++ парсер</title>
+</head>
+<body>
+
+    <header>
+        <h2>
+            Парсер C++ кода Богданов, Милейко
+        </h2>
+    </header>
+
+    <main>
+
+        <!---Code Editor-->
+        <div class="code-input-section">
+            <div class="tool-bar">
+                <div class="tool-bar-item">
+                    <div class="upload-code-button">
+                        <input type="file" class="button-file" id="input-file">
+
+                        </input>
+                    </div>
+                </div>
+                <div class="tool-bar-item">
+                    <div class="analyse-code-button">
+                        <button class="button-file" onclick="generateMetrics()">
+                            <span class="icon-analyse">
+                               Посчитать метрики
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="code-editor">
+                <textarea name="" id="code" cols="100%" rows="25%" style="background-color:#1D1E22;color: white;" >
+
+                </textarea>
+
+            </div>
+
+        </div>
+        <!--Metrics Table-->
+        <div class="code-metrics-section">
+
+            <table id="tokens" border="1px">
+                <thead>
+                    <th>Операторы</th>
+                    <th>Появления</th>
+                    <th>Операнды</th>
+                    <th>Появление</th>
+                </thead>
+
+                <tbody id="metrics-strings">
+                </tbody>
+
+            </table>
+
+
+
+        </div>
+
+        <div class="text-metrics">
+            <span>Общее число операторов в программ: </span>
+            <span id="operator-count"></span>
+
+        </div>
+        <div class="text-metrics">
+            <span>Общее число операнд в программ: </span>
+            <span id="operand-count"></span>
+
+        </div>
+
+        <div class="text-metrics">
+            <span>Длина программы: </span>
+            <span id="program-length"></span>
+
+        </div>
+        <div class="text-metrics">
+            <span>Число уникальных операторов программы: </span>
+            <span id="unique-operator-count"></span>
+
+        </div>
+        <div class="text-metrics">
+            <span>Число уникальных операнд программы: </span>
+            <span id="unique-operand-count"></span>
+
+        </div>
+        <div class="text-metrics">
+            <span>Cловарь программы: </span>
+            <span id="program-dict"></span>
+
+        </div>
+
+        <div class="text-metrics">
+            <span>Объем программы: </span>
+            <span id="program-volume"></span>
+
+        </div>
+        <div class="text-metrics">
+            <span>Сложность програмы: </span>
+            <span id="program-difficulty"></span>
+
+        </div>
+        <div class="text-metrics">
+            <span>Усилие для написания: </span>
+            <span id="program-effort"></span>
+        </div>
+        <div class="text-metrics">
+            <span>Время для пограммирования: </span>
+            <span id="program-time"></span>
+            <span>с</span>
+        </div>
+        <div class="text-metrics">
+            <span>Количество ожидаемых ошибок: </span>
+            <span id="program-bugs"></span>
+        </div>
+
+    </main>
+
+
+</body>
+<script src="index.js">
+
+</script>
+</html>

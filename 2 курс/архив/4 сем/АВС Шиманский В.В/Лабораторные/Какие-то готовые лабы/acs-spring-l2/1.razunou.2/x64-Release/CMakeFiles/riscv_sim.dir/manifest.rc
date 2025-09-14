@@ -1,0 +1,1 @@
+#pragma code_page(65001)1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/Mars/CMakeBuilds/721599f5-1b93-8538-ba8e-f2d185e6a915/build/x64-Release/CMakeFiles/riscv_sim.dir/embed.manifest"

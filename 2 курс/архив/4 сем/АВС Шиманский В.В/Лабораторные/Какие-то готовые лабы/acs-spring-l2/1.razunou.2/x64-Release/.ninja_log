@@ -1,0 +1,4 @@
+# ninja log v5
+1	632	608423706	CMakeFiles/riscv_sim.dir/src/Instruction.cpp.obj	37eed50f6974ac8f
+17	1336	608423707	CMakeFiles/riscv_sim.dir/src/main.cpp.obj	7b8e53647b445768
+1337	2202	608423708	riscv_sim.exe	a2cb966a0314d80e

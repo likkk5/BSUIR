@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bahdanau_153502.UI.Pages.LandmarkDetails"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:converters="clr-namespace:Bahdanau_153502.UI.ValueConverters"
+             xmlns:models="clr-namespace:Bahdanau_153502.UI.ViewModels"
+             xmlns:entities="clr-namespace:Bahdanau_153502.Domain.Entities;assembly=Bahdanau_153502.Domain"
+             x:DataType="models:LandmarkDetailsViewModel"
+             Title="LandmarkDetails">
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Commands">
+            <MenuFlyoutItem Text="Edit" Command="{Binding UpdateLandmarkCommand}"></MenuFlyoutItem>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+    <ContentPage.Resources>
+        <converters:IdToImageSourceConverter x:Key="IdToImageSource"/>
+    </ContentPage.Resources>
+    <VerticalStackLayout Margin="10" Spacing="15">
+        <Image
+                Source="{Binding Landmark.Id, Converter={StaticResource IdToImageSource}}"
+                HeightRequest="200"
+                HorizontalOptions="Center">
+        </Image>
+        <Frame HorizontalOptions="Center" BackgroundColor="DarkSlateGray">
+            <VerticalStackLayout>
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Label Text="City:"/>
+                    <Label Text="{Binding Landmark.City}"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Label Text="Ticket price:"/>
+                    <Label Text="{Binding Landmark.TicketPrice}"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Label Text="Description:"/>
+                    <Label Text="{Binding Landmark.Description}"/>
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+        </Frame>
+       
+    </VerticalStackLayout>
+</ContentPage>

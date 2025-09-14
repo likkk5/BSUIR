@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:models="clr-namespace:Bahdanau_153502.UI.ViewModels"
+             xmlns:converters="clr-namespace:Bahdanau_153502.UI.ValueConverters"
+             xmlns:entities="clr-namespace:Bahdanau_153502.Domain.Entities;assembly=Bahdanau_153502.Domain"
+             x:DataType="models:TouristRoutesViewModel"
+             x:Class="Bahdanau_153502.UI.Pages.TouristRoutes"
+             x:Name="TouristRoutesPage"
+             Title="TouristRoutes">
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Loaded"
+                                        Command="{Binding UpdateTouristRoutesCommand}"/>
+        <toolkit:EventToCommandBehavior EventName="NavigatedTo"
+                                        Command="{Binding UpdateTouristRoutesCommand}"/>
+    </ContentPage.Behaviors>
+    
+    <ContentPage.Resources>
+        <converters:TickerPriceToColorValueConverter x:Key="PriceToColor"/>
+        <converters:ValueToBooleanConverter x:Key="IsNotNull"/>
+        <converters:IdToImageSourceConverter x:Key="IdToImageSource"/>
+    </ContentPage.Resources>
+    
+    <ContentPage.MenuBarItems>
+        <!-- workaround for https://github.com/dotnet/maui/issues/10835 -->
+        <MenuBarItem Text="Commands" BindingContext="{Binding Path=BindingContext, Source={x:Reference TouristRoutesPage}}">
+            <MenuFlyoutItem Text="Add route" Command="{Binding AddTouristRouteCommand}"/>
+            <MenuFlyoutItem Text="Update route" Command="{Binding UpdateTouristRouteCommand}"/>
+            <MenuFlyoutItem Text="Add landmark" Command="{Binding AddLandmarkCommand}"/>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+    
+    <StackLayout Margin="10" Spacing="15">
+        <HorizontalStackLayout>
+            <Picker
+                ItemsSource="{Binding TouristRoutes}"
+                ItemDisplayBinding="{Binding Title}"
+                SelectedItem="{Binding SelectedTouristRoute}">
+                <Picker.Behaviors>
+                    <toolkit:EventToCommandBehavior EventName="SelectedIndexChanged"
+                                                Command="{Binding UpdateLandmarksCommand}"/>
+                </Picker.Behaviors>
+            </Picker>
+
+            <Frame BackgroundColor="Crimson" IsVisible="{Binding SelectedTouristRoute, Converter={StaticResource IsNotNull}}">
+                <VerticalStackLayout>
+                    <HorizontalStackLayout Spacing="5">
+                        <Label Text="Title:"/>
+                        <Label Text="{Binding SelectedTouristRoute.Title}"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Spacing="5">
+                        <Label Text="Distance in Km:"/>
+                        <Label Text="{Binding SelectedTouristRoute.DistanceInKm}"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+        </HorizontalStackLayout>
+
+        <CollectionView  ItemsSource="{Binding Landmarks}" IsVisible="{Binding SelectedTouristRoute, Converter={StaticResource IsNotNull}}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="entities:Landmark">
+                    <Frame Margin="5" Padding="5" BackgroundColor="{Binding TicketPrice, Converter={StaticResource PriceToColor}}">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type models:TouristRoutesViewModel}},
+                                Path=ShowDetailsCommand}" 
+                                CommandParameter="{Binding}"/>
+                        </Frame.GestureRecognizers>
+                        <HorizontalStackLayout Spacing="3">
+                            <Frame Margin="5"
+                                   BorderColor="Black"
+                                   CornerRadius="50"
+                                   HeightRequest="110"
+                                   WidthRequest="110"
+                                   IsClippedToBounds="True" 
+                                   HorizontalOptions="Center"
+                         VerticalOptions="Center">
+                                <Image
+                                    Aspect="AspectFill"
+                                    HeightRequest="70"
+                                    WidthRequest="70"
+                                Source="{Binding Id, Converter={StaticResource IdToImageSource}}"></Image>
+                            </Frame>
+
+                            <HorizontalStackLayout VerticalOptions="Center" Spacing="15">
+                                <Label Text="{Binding Description}" TextColor="Black"/>
+                                <Label Text="{Binding TicketPrice}" TextColor="Black"/>
+                            </HorizontalStackLayout>
+                           
+                        </HorizontalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        
+    </StackLayout>
+</ContentPage>
