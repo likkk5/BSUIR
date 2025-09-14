@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Bluetooth Chess</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="js/chessboard-1.0.0.min.css" />
+    <link rel="stylesheet" href="js/chessboard.css" />
+
+</head>
+<body>
+    <h3>♟ Bluetooth Шахматы</h3>
+    <div id="chessboard" style="width: 400px"></div>
+    <p id="status">Загрузка...</p>
+    <p><b>FEN:</b> <span id="fen"></span></p>
+    <p><b>PGN:</b> <span id="pgn"></span></p>
+
+    <!--<button onclick="resetGame()">🔄 Начать заново</button>-->
+    <button onclick="clearBoard()">🧹 Очистить доску</button>
+    <button onclick="startPosition()">🏁 Стартовая позиция</button>
+    <button onclick="flipBoard()">🔄 Перевернуть доску</button>
+    <button onclick="setWhiteOrientation()">⚪ Белая ориентация</button>
+    <button onclick="setBlackOrientation()">⚫ Чёрная ориентация</button>
+    <!--<button onclick="showOrientation()">🔍 Показать ориентацию</button>-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.12.0/chess.min.js"></script>
+    <script src="js/chessboard-1.0.0.min.js"></script>
+    <script src="js/chessboard.js"></script>
+    <script src="js/chess.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            loadBoard("start", null);
+        });
+    </script>
+
+    <script>
+        function onMoveMade(move) {
+            if (window.external && window.external.Notify) {
+                window.external.Notify("move:" + move); // отправка хода в C#
+            }
+        }
+
+        function resetGame() {
+            if (window.external && window.external.Notify) {
+                window.external.Notify("reset");
+            }
+        }
+    </script>
+</body>
+</html>
