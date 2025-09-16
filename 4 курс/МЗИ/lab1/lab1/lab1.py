@@ -1,10 +1,9 @@
 # coding: windows-1251
-# gost_ecb_file.py — шифрование/дешифрование файлов по ГОСТ 28147-89 (ECB, SBOX Test)
 import struct
 from typing import List
 from pathlib import Path
+import os
 
-# Тестовый S-box (Test param set)
 SBOX_TEST = [
     [4,10,9,2,13,8,0,14,6,11,1,12,7,15,5,3],
     [14,11,4,12,6,13,15,10,2,3,8,1,0,7,5,9],
@@ -113,42 +112,31 @@ def decrypt_data_ecb(ciphertext: bytes, key_bytes: bytes, sbox: List[List[int]] 
     return pkcs7_unpad(bytes(out), 8)
 
 def encrypt_file_ecb(in_path: str, out_path: str, key_bytes: bytes, sbox: List[List[int]] = SBOX_TEST):
-    # читаем как текст в cp1251 и кодируем в cp1251-байты
-    text = Path(in_path).read_text(encoding='cp1251')
-    data = text.encode('cp1251')
+    data = Path(in_path).read_bytes()
     ct = encrypt_data_ecb(data, key_bytes, sbox)
     Path(out_path).write_bytes(ct)
 
 def decrypt_file_ecb(in_path: str, out_path: str, key_bytes: bytes, sbox: List[List[int]] = SBOX_TEST):
     ct = Path(in_path).read_bytes()
     pt_bytes = decrypt_data_ecb(ct, key_bytes, sbox)
-    # расшифрованные байты декодируем в cp1251 и записываем как текст
-    Path(out_path).write_text(pt_bytes.decode('cp1251'), encoding='cp1251')
+    Path(out_path).write_bytes(pt_bytes)
+
 
 if __name__ == "__main__":
-    # Файлы — как в задании
     input_file = Path("input.txt")
     encrypted_file = Path("encrypted.bin")
     decrypted_file = Path("decrypted.txt")
 
-    # Если входного файла нет — создаём с тестовым содержимым
     if not input_file.exists():
         test_text = "Тестовый пример текста для шифрования по ГОСТ 28147-89."
-        input_file.write_text(test_text, encoding="cp1251")
+        input_file.write_text(test_text, encoding="utf-8")
         print(f"Файл '{input_file}' отсутствовал — создан с тестовым текстом.")
 
-    # Если в каталоге есть key.bin (32 байта), используем его. Иначе — демонстрационный ключ.
     key_path = Path("key.bin")
-    if key_path.exists():
-        key_bytes = key_path.read_bytes()
-        if len(key_bytes) != 32:
-            raise SystemExit("Файл key.bin должен содержать ровно 32 байта (256 бит).")
-    else:
-        # демонстрационный ключ (НЕ использовать в реальной защите)
-        key_bytes = bytes(range(32))
-        print("Внимание: используется демонстрационный ключ bytes(range(32)). Для реального шифрования создайте key.bin (32 байта).")
+    key_bytes = os.urandom(32)
+    key_path.write_bytes(key_bytes)
+    print("Сгенерирован новый ключ и сохранён в 'key.bin'.")
 
-    # Выполняем шифрование и дешифрование
     encrypt_file_ecb(str(input_file), str(encrypted_file), key_bytes)
     print(f"Входной файл '{input_file}' зашифрован в '{encrypted_file}'.")
     decrypt_file_ecb(str(encrypted_file), str(decrypted_file), key_bytes)
